@@ -38,6 +38,7 @@
 | 2025 官方规范与差异对照 | [`docs/OFFICIAL_2025.md`](docs/OFFICIAL_2025.md) |
 | 2026 官方培训视频规则整理 | [`docs/COMPETITION_RULES_2026.md`](docs/COMPETITION_RULES_2026.md) |
 | 环境与工具链基线 | [`docs/ENVIRONMENT.md`](docs/ENVIRONMENT.md) |
+| 第一次实测交接单 | [`docs/HANDOFF_FIRST_TEST.md`](docs/HANDOFF_FIRST_TEST.md) |
 | 质量门禁设计 | [`docs/REPORTING.md`](docs/REPORTING.md) |
 | 工程进度与模块所有权 | [`docs/PROGRESS.md`](docs/PROGRESS.md) |
 | 冷启动隐藏验收基准 | [`docs/coldstart/HIDDEN_EXPECTATIONS.md`](docs/coldstart/HIDDEN_EXPECTATIONS.md) |
