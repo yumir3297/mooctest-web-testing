@@ -20,7 +20,8 @@
 | B. 知识蒸馏与 Skill 接入 | **PASS** | `test-design-methodology` 运行时可加载；11 阶段确定性路由；BVA 从「四点法」改为 2-value/3-value |
 | C. 质量自检与内部交付 | **PASS** | G0–G5 六层门禁；12 个负向样本全被阻断；交付包 24/24 且可独立复跑 |
 | 2025 官方格式 | **已适配并实测** | 10 列用例表、`<App>_R001_001` 编号、`<11位时间戳>_<编号>.png` 截图、一需求一函数 |
-| 2026 官方规则 | **未获取** | 不声称符合 2026 要求 |
+| 2026 官方规则 | **已整理培训视频** | 评分维度、提交格式、环境要求见 `docs/COMPETITION_RULES_2026.md`；2026 赛题包与 AI 许可仍未获取 |
+| Python 运行环境 | **READY** | `env_check` 17/17；官方版本组合 Selenium 4.49.0 + pytest 8.4.2 回归 7 passed + 1 xfailed，15/15 证据 |
 | AI 使用许可 | **部分确认** | 2025 携程机票练习赛《注意事项》明文允许用大模型生成用例与代码；2026 未确认 |
 
 完整验收报告见 [`docs/ACCEPTANCE_REPORT_20261031.md`](docs/ACCEPTANCE_REPORT_20261031.md)。
@@ -35,6 +36,8 @@
 | 工作流阶段、执行者、产物 | [`docs/WORKFLOW.md`](docs/WORKFLOW.md) |
 | 模块间机器可读接口契约 | [`docs/CONTRACTS.md`](docs/CONTRACTS.md) |
 | 2025 官方规范与差异对照 | [`docs/OFFICIAL_2025.md`](docs/OFFICIAL_2025.md) |
+| 2026 官方培训视频规则整理 | [`docs/COMPETITION_RULES_2026.md`](docs/COMPETITION_RULES_2026.md) |
+| 环境与工具链基线 | [`docs/ENVIRONMENT.md`](docs/ENVIRONMENT.md) |
 | 质量门禁设计 | [`docs/REPORTING.md`](docs/REPORTING.md) |
 | 工程进度与模块所有权 | [`docs/PROGRESS.md`](docs/PROGRESS.md) |
 | 冷启动隐藏验收基准 | [`docs/coldstart/HIDDEN_EXPECTATIONS.md`](docs/coldstart/HIDDEN_EXPECTATIONS.md) |
@@ -120,6 +123,6 @@ python tools/export_official_2025.py --run-id RUN-X --app <App> --cases <CSV> --
 
 **已做脱敏**：本机用户名、绝对路径已替换为 `<user>` / `<PROJECT_ROOT>`；因此部分报告里的路径与本地原始日志不完全一致，属于预期。
 
-**未验证**：2026 官方评分细则、2026 提交模板、慕测平台接入、正式比赛环境。
+**未验证**：2026 赛题包与提交模板、慕测平台真实比赛环境、AI 使用许可。2026 评分维度与提交格式已从官方培训视频整理，但属于视频画面整理，不是官方文件。
 
 > 内部系统集成验收通过 ≠ 已获得正式竞赛 AI 使用许可或官方交付格式认证。

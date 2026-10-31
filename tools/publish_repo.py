@@ -79,6 +79,8 @@ DENY_DIRS = [
     "submission/RUN-AUDIT-20261030-02/screenshots",
     "submission/RUN-20261031-COLDSTART-01/screenshots",
     "official_2025/RUN-20261031-COLDSTART-01/screenshots",
+    # Playwright MCP auto-output (unscoped, not part of the evidence manifest).
+    "evidence/raw/mcp",
 ]
 
 TEXT_SUFFIX = {

@@ -27,6 +27,9 @@
 | Chrome | `156.0.8078.74` | PE 版本资源（`chrome.exe`） | 见 §3.1 |
 | ChromeDriver | `156.0.8078.80` | `tools\driver\chromedriver.exe --version` | 见 §3 |
 
+> 2026-10-31 晚复核时 Chrome 已自动更新到 `156.0.8078.76`（补丁号变化，主版本仍为 156）；
+> ChromeDriver 仍为 `156.0.8078.80`，主版本一致。以 `python tools/env_check.py` 的实时输出为准。
+
 实测到的完整驱动版本串：
 
 ```text
@@ -334,3 +337,91 @@ Python 依赖升级：先改 `requirements.txt` 的 pin，再 `python -m pip ins
 | P0-2 驱动与浏览器主版本不一致 | §3 固定 156.0.8078.80；§4.2 `driver_major_match` 硬门禁；§5.3 负向验证 |
 | 环境不可复现 | §1 版本表 + `requirements.txt` 锁定 + `DRIVER.md` 哈希锚定 |
 | 无统一自检入口 | §4 `tools/env_check.py`，三档 verdict + 明确退出码 |
+
+## 9. 2026 官方要求对照（2026-10-31 复核）
+
+官方要求的来源、视频时间戳与完整规则见 `docs/COMPETITION_RULES_2026.md`。本节只记录**本机实测**与判定。
+
+### 9.1 官方最低要求
+
+| 路径 | 组件 | 官方要求 | 来源 |
+|---|---|---|---|
+| Python | Python | 3.10.0 以上 | 环境视频 00:06 |
+| Python | Selenium | 4.49.0（官方安装命令） | 环境视频 03:12 |
+| Python | pytest | 8.0 以上 | 介绍视频 05:08、05:28 |
+| Python | Chrome | 150 以上 | 环境视频 00:21 |
+| Python | ChromeDriver | 与 Chrome 版本对应 | 环境视频 00:42–01:33 |
+| Java | JDK | 21 | Java 视频 00:06 |
+| Java | Maven | 3.9 以上 | Java 视频 02:18 |
+| Java | Selenium Java | 4.49.0 | Java 视频 05:33（POM） |
+| Java | JUnit | 5.10 以上（POM 5.10.2） | 介绍视频 04:20；Java 视频 05:33 |
+| Java | Chrome / ChromeDriver | 150 以上 / 与 Chrome 对应 | Java 视频 00:27、00:48 |
+
+### 9.2 本机实测与判定
+
+`python tools/env_check.py`（2026-10-31 复核）：
+
+```text
+verdict: READY  (PASS=17 WARN=0 BLOCKED=0)  exit=0
+```
+
+| 项 | 官方要求 | 本机实测 | 判定 |
+|---|---|---|---|
+| Python | ≥ 3.10.0 | 3.13.9 | PASS |
+| Selenium | 4.49.0 | 4.51.0 | PASS（高于官方安装版本） |
+| pytest | ≥ 8.0 | 9.1.1 | PASS（高于最低要求） |
+| Chrome | ≥ 150 | 156.0.8078.76 | PASS |
+| ChromeDriver | 与 Chrome 主版本一致 | 156.0.8078.80 | PASS |
+| 驱动来源 | SHA-256 与记录一致 | `driver_source=PASS` | PASS |
+| PyCharm | 官方演示 IDE | 未在 PATH 与常见安装目录检测到 | 不影响命令行执行；可选补装 |
+| JDK | 21 | 17.0.18 | 不满足；仅 Java 路径 |
+| Maven | ≥ 3.9 | 未安装 | 不满足；仅 Java 路径 |
+| IDEA | IntelliJ IDEA | 2025.3.3 | PASS |
+| JUnit / Selenium Java | 5.10.2 / 4.49.0 | 未验证 | NOT_VERIFIED |
+
+**结论**：本项目采用的 Python 运行时满足并高于 2026 官方最低要求；Java 路径未就绪，不应在报告中声称 Java 环境合规。
+
+### 9.3 官方版本兼容性回归
+
+本机锁定版本高于官方演示版本，因此额外用隔离虚拟环境验证“官方版本下脚本仍可运行”：
+
+```powershell
+python -m venv .tmp\venv-official
+.tmp\venv-official\Scripts\python.exe -m pip install selenium==4.49.0 pytest==8.4.2
+.tmp\venv-official\Scripts\python.exe tools\run_selenium.py `
+  --run-id RUN-20261031-OFFICIALVER-03 `
+  --target https://demo.playwright.dev/todomvc `
+  --suite tests\test_todomvc.py `
+  --suite tests\test_todomvc_expected_failure.py `
+  --capture-pass
+```
+
+实测结果：
+
+```text
+7 passed, 1 xfailed in 12.12s
+exit_code=0  status=passed  tests=8  failures=0  errors=0  xfailed=1
+```
+
+证据门禁：`python tools\evidence.py verify --run-id RUN-20261031-OFFICIALVER-03 --fail-on-error` → `checked=15, ok=15`，`missing/mismatched/cross_run/unscoped/duplicates` 均为空。
+
+运行环境：Python 3.13.9、Selenium 4.49.0、pytest 8.4.2、Chrome 156.0.8078.76、ChromeDriver 156.0.8078.80。
+
+排障记录：同日 `RUN-20261031-OFFICIALVER-01` 误把 `tests/generated/cartcheck` 一并收集，而本地 8765 fixture 未启动，31 个失败均为 `ERR_CONNECTION_REFUSED`（ENV 类），不是 Selenium 4.49 兼容性问题；该 run 已在 manifest 中标记为 `aborted`，不作为结论。`RUN-20261031-OFFICIALVER-02` 为同一基线的无截图采集版本，结果同为 7 passed + 1 xfailed。
+
+### 9.4 与官方操作方式的差异
+
+| 项 | 官方视频 | 本项目 | 影响 |
+|---|---|---|---|
+| ChromeDriver 位置 | Chrome `Application` 目录 + `Path` | `tools/driver/chromedriver.exe`，脚本显式指定 | 本地不影响；导出官方包时由 `tools/export_official_2025.py` 写回官方路径 |
+| Chrome 自动更新 | 建议禁用 Google 更新服务 | 本机无 `gupdate` / `gupdatem` 服务；已禁用用户级 `\GoogleUser\GoogleUpdater\GoogleUpdaterTaskUser157.0.8089.0{04D2C338-17C3-428A-B652-1CFC7A91F8F9}`（`Disabled`） | 已关闭；任务名含版本号，赛前复核 |
+| IDE | PyCharm / IDEA | OpenCode + 命令行 pytest | 不影响执行 |
+| Python 依赖 | Selenium 4.49.0 | Selenium 4.51.0 + pytest 9.1.1 | 已用官方版本回归，无需降级 |
+
+### 9.5 复核结论
+
+1. Python 路径：**合规**。`env_check` 为 `READY`，核心版本全部高于官方最低要求，官方版本组合回归通过。
+2. Java 路径：**未就绪**。JDK 17 低于官方 21，Maven 未安装；若比赛需要 Java，必须先补装并重跑。
+3. PyCharm：未在 PATH 与常见安装目录检测到，但不是运行依赖；项目用命令行 pytest，官方演示 IDE 只影响操作方式。
+4. Chrome 自动更新：本机没有官方视频中的 `gupdate` / `gupdatem` 服务；已禁用用户级 GoogleUpdater 计划任务（`Disabled`）。Chrome 重装或大版本更新可能重建该任务，赛前需复核。
+5. 比赛前必须重新执行 `python tools/env_check.py`，确认 Chrome 自动更新后驱动主版本仍一致。

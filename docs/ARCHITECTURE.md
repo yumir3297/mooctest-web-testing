@@ -155,7 +155,7 @@ official_2025/<RUN>/  10 列 xlsx + screenshots/ + screenshots.zip
 ```
 
 `--verify` 与门禁 **G5** 校验官方结构；详见 `docs/OFFICIAL_2025.md`。
-2026 规则未获取，导出件只标 `2025-baseline-only`。
+2026 培训视频的规则已整理（见 `docs/COMPETITION_RULES_2026.md`）；2026 赛题包未获取，导出件仍只标 `2025-baseline-only`，待赛题包复核。
 
 ## 7. 证据归档
 

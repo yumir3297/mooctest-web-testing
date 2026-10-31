@@ -15,6 +15,7 @@
 | ChromeDriver | **156.0.8078.80** | `tools\driver\chromedriver.exe --version` |
 
 > 上表是 2026-10-31 实测值。版本会漂移，**以 `python tools/env_check.py` 的实时输出为准**；详细说明见 `docs/ENVIRONMENT.md`。
+> 2026-10-31 晚复核：Chrome 已自动更新到 `156.0.8078.76`（主版本 156 未变），ChromeDriver 仍为 `156.0.8078.80`，`env_check` 判定 `READY`。
 > 历史记录：2026-10-29 时为 Chrome 155.0.8059.86 / Driver 155.0.8059.84；本次已升级驱动并归档旧版至 `tools/driver/archive/`。
 
 Python 未加入系统 PATH 时，使用绝对路径：

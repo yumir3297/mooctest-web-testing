@@ -30,7 +30,7 @@
 | 项目 | 值 |
 |---|---|
 | 本机 Chrome 路径 | `C:\Users\<user>\AppData\Local\Google\Chrome\Application\chrome.exe` |
-| 本机 Chrome 版本 | `156.0.8078.74`（取自 PE 版本资源，`chrome.exe --version` 在 Windows 已有会话时不可靠） |
+| 本机 Chrome 版本 | `156.0.8078.76`（2026-10-31 复核；基线记录为 .74，Chrome 自动更新补丁，主版本未变。取自 PE 版本资源，`chrome.exe --version` 在 Windows 已有会话时不可靠） |
 | 主版本一致性 | 驱动 156 == 浏览器 156 |
 
 > Chrome 自动更新可能把浏览器升级到 157，此时 `python tools/env_check.py` 会立刻

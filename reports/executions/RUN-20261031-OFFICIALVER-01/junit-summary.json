@@ -1,0 +1,288 @@
+{
+  "run_id": "RUN-20261031-OFFICIALVER-01",
+  "exit_code": 1,
+  "elapsed_seconds": 28.03,
+  "timed_out": false,
+  "junit": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-20261031-OFFICIALVER-01\\junit.xml",
+  "console_log": "D:\\桌面\\软件测试competion\\evidence\\logs\\RUN-20261031-OFFICIALVER-01\\pytest-console.log",
+  "tests": 38,
+  "failures": 31,
+  "errors": 0,
+  "skipped": 1,
+  "time": 26.802,
+  "xfailed": 1,
+  "cases": [
+    {
+      "name": "test_tc_cart_001",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 1.186,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_002",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.155,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_003",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.125,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_004",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.127,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_005",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.125,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_006",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.137,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_007",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.131,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_008",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.144,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_009",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.132,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_010",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.125,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_011",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.13,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_012",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.124,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_013",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.125,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_014",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.123,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_015",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.133,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_016",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.123,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_017",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.125,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_018",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.125,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_019",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.133,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_020",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.124,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_021",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.125,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_022",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.123,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_023",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.127,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_024",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.129,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_025",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.129,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_026",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.127,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_027",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.13,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_028",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.132,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_029",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.133,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_tc_cart_030",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.128,
+      "status": "failed",
+      "message": "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=156.0.8078.76)\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff739467ac1]\n\t(No symbol) [0x7ff738c88b37]\n\t(No symbol) [0x7ff739210cfa]\n\t(No symbol) [0x7ff7392100d6]\n\t(No symbol) [0x7ff73921019a]\n\t(No symbol) [0x7ff738c8621d]\n\t(No symbol) [0x7ff738c87142]\n\t(No symbol) [0x7ff738c93710]\n\t(No symbol) [0x7ff738cc7584]\n\t(No symbol) [0x7ff738cbdafa]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_add_todo",
+      "classname": "tests.test_todomvc",
+      "time": 2.471,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_complete_and_filter",
+      "classname": "tests.test_todomvc",
+      "time": 0.775,
+      "status": "failed",
+      "message": "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame\n  (Session info: chrome=156.0.8078.76); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t(No symbol) [0x7ff738f1be65]\n\t(No symbol) [0x7ff738e235f0]\n\t(No symbol) [0x7ff738c926d3]\n\t(No symbol) [0x7ff738c95af0]\n\t(No symbol) [0x7ff73946e2a0]\n\t(No symbol) [0x7ff73946e40f]\n\t(No symbol) [0x7ff73949931c]\n\t(No symbol) [0x7ff7394b07da]\n\t(No symbol) [0x7ff739493b39]\n\t(No symbol) [0x7ff739493ad0]\n\t(No symbol) [0x7ff738cc6661]\n\t(No symbol) [0x7ff738cab969]\n\t(No symbol) [0x7ff738cacca3]\n\t(No symbol) [0x7ff739395af1]\n\t(No symbol) [0x7ff7393b67f7]\n\t(No symbol) [0x7ff7393ace20]\n\t(No symbol) [0x7ff73903ff8e]\n\t(No symbol) [0x7ff738e32865]\n\t(No symbol) [0x7ff738e2d1d4]\n\t(No symbol) [0x7ff738e2d364]\n\t(No symbol) [0x7ff738e1644c]\n\t(No symbol) [0x7ffd6f8dcdf7]\n\t(No symbol) [0x7ffd702a9c2c]"
+    },
+    {
+      "name": "test_edit_todo",
+      "classname": "tests.test_todomvc",
+      "time": 0.756,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_delete_todo",
+      "classname": "tests.test_todomvc",
+      "time": 1.133,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_empty_and_whitespace_rejected",
+      "classname": "tests.test_todomvc",
+      "time": 0.516,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_boundary_lengths",
+      "classname": "tests.test_todomvc",
+      "time": 0.654,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_text_is_escaped",
+      "classname": "tests.test_todomvc",
+      "time": 0.498,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_expected_failure_captures_evidence",
+      "classname": "tests.test_todomvc_expected_failure",
+      "time": 2.791,
+      "status": "xfailed",
+      "message": "受控失败：验证失败截图、日志和断言记录链路"
+    }
+  ],
+  "status": "failed",
+  "case_counts": {
+    "failed": 31,
+    "passed": 6,
+    "xfailed": 1
+  }
+}

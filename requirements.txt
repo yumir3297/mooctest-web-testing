@@ -7,6 +7,10 @@
 # 实测环境：Windows 11（10.0.26340）+ Python 3.13.9（64-bit CPython）
 # 实测日期：2026-10-31
 #
+# 2026 官方最低要求（官方培训视频）：Python 3.10+ / Selenium 4.49.0 / pytest 8.0+ / Chrome 150+。
+# 本文件锁定的是高于最低要求、且已通过回归的版本；Selenium 4.49.0 + pytest 8.4.2 的
+# 兼容性回归见 docs/ENVIRONMENT.md §9.3，完整规则见 docs/COMPETITION_RULES_2026.md。
+#
 # --- 测试执行核心（缺失即 BLOCKED）-------------------------------------------
 selenium==4.51.0          # 浏览器自动化；与 tools/driver/chromedriver.exe 156.0.8078.80 搭配使用
 pytest==9.1.1             # 用例执行、junitxml 输出、xfail 标记

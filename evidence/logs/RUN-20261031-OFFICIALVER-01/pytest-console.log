@@ -1,0 +1,1431 @@
+$ D:\桌面\软件测试competion\.tmp\venv-official\Scripts\python.exe -m pytest -q --tb=short --junitxml D:\桌面\软件测试competion\reports\executions\RUN-20261031-OFFICIALVER-01\junit.xml tests
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF.F.....x                                   [100%]
+================================== FAILURES ===================================
+______________________________ test_tc_cart_001 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:98: in test_tc_cart_001
+    observed = _calculate(case_ctx, "500", "CP1234", "gold", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+----------------------------- Captured log setup ------------------------------
+INFO     mooctest:conftest.py:378 Chrome session created: browser=156.0.8078.76 driver=156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705})
+______________________________ test_tc_cart_002 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:110: in test_tc_cart_002
+    observed = _calculate(case_ctx, "800", "CP1234", "silver", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_003 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:122: in test_tc_cart_003
+    observed = _calculate(case_ctx, "555", "CP1234", "gold", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_004 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:134: in test_tc_cart_004
+    observed = _calculate(case_ctx, "500", "CP1234", "gold", True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_005 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:146: in test_tc_cart_005
+    observed = _calculate(case_ctx, "1000", "CP1234", "regular", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_006 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:158: in test_tc_cart_006
+    observed = _calculate(case_ctx, "499", "CP1234", "gold", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_007 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:170: in test_tc_cart_007
+    observed = _calculate(case_ctx, "799", "CP1234", "silver", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_008 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:185: in test_tc_cart_008
+    observed = _calculate(case_ctx, "0", "CP1234", "gold", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_009 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:197: in test_tc_cart_009
+    observed = _calculate(case_ctx, "1", "CP1234", "regular", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_010 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:209: in test_tc_cart_010
+    observed = _calculate(case_ctx, "2", "CP1234", "regular", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_011 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:221: in test_tc_cart_011
+    observed = _calculate(case_ctx, "9998", "CP1234", "gold", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_012 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:233: in test_tc_cart_012
+    observed = _calculate(case_ctx, "9999", "CP1234", "gold", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_013 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:245: in test_tc_cart_013
+    observed = _calculate(case_ctx, "10000", "CP1234", "gold", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_014 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:257: in test_tc_cart_014
+    observed = _calculate(case_ctx, "501", "CP1234", "gold", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_015 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:269: in test_tc_cart_015
+    observed = _calculate(case_ctx, "801", "CP1234", "silver", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_016 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:284: in test_tc_cart_016
+    observed = _calculate(case_ctx, "", "CP1234", "gold", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_017 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:296: in test_tc_cart_017
+    observed = _calculate(case_ctx, "500.5", "CP1234", "gold", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_018 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:308: in test_tc_cart_018
+    observed = _calculate(case_ctx, "abc", "CP1234", "gold", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_019 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:323: in test_tc_cart_019
+    observed = _calculate(case_ctx, "500", "CP123", "gold", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_020 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:335: in test_tc_cart_020
+    observed = _calculate(case_ctx, "500", "CP12345", "gold", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_021 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:347: in test_tc_cart_021
+    observed = _calculate(case_ctx, "500", "cp1234", "gold", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_022 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:359: in test_tc_cart_022
+    observed = _calculate(case_ctx, "500", "CP12!4", "gold", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_023 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:371: in test_tc_cart_023
+    observed = _calculate(case_ctx, "500", "CP 234", "gold", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_024 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:383: in test_tc_cart_024
+    observed = _calculate(case_ctx, "500", "XX1234", "gold", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_025 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:395: in test_tc_cart_025
+    observed = _calculate(case_ctx, "600", "CP12", "gold", True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_026 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:410: in test_tc_cart_026
+    observed = _calculate(case_ctx, "1", "CP1234", "regular", True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_027 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:423: in test_tc_cart_027
+    observed = _calculate(case_ctx, "1000", "CP1234", "regular", True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_028 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:437: in test_tc_cart_028
+    observed = _calculate(case_ctx, "799", "CP1234", "silver", True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_029 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:452: in test_tc_cart_029
+    observed = _calculate(case_ctx, "500", "CPABCD", "gold", False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\generated\cartcheck\test_cartcheck.py:31: in _calculate
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+______________________________ test_tc_cart_030 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:469: in test_tc_cart_030
+    load_seconds = page.open()
+                   ^^^^^^^^^^^
+tests\generated\cartcheck\page_cartcheck.py:98: in open
+    self.driver.get(self.target)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:526: in get
+    self.execute(Command.GET, {"url": url})
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=156.0.8078.76)
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff739467ac1]
+E   	(No symbol) [0x7ff738c88b37]
+E   	(No symbol) [0x7ff739210cfa]
+E   	(No symbol) [0x7ff7392100d6]
+E   	(No symbol) [0x7ff73921019a]
+E   	(No symbol) [0x7ff738c8621d]
+E   	(No symbol) [0x7ff738c87142]
+E   	(No symbol) [0x7ff738c93710]
+E   	(No symbol) [0x7ff738cc7584]
+E   	(No symbol) [0x7ff738cbdafa]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+__________________________ test_complete_and_filter ___________________________
+tests\test_todomvc.py:40: in test_complete_and_filter
+    active = page.item_texts()
+             ^^^^^^^^^^^^^^^^^
+tests\pages\todo_page.py:55: in item_texts
+    return [item.text.strip() for item in self.items()]
+            ^^^^^^^^^
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webelement.py:103: in text
+    return self._execute(Command.GET_ELEMENT_TEXT)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webelement.py:504: in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\webdriver.py:506: in execute
+    self.error_handler.check_response(response)
+.tmp\venv-official\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+E     (Session info: chrome=156.0.8078.76); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+E   Stacktrace:
+E   Symbols not available. Dumping unresolved backtrace:
+E   	(No symbol) [0x7ff738f1be65]
+E   	(No symbol) [0x7ff738e235f0]
+E   	(No symbol) [0x7ff738c926d3]
+E   	(No symbol) [0x7ff738c95af0]
+E   	(No symbol) [0x7ff73946e2a0]
+E   	(No symbol) [0x7ff73946e40f]
+E   	(No symbol) [0x7ff73949931c]
+E   	(No symbol) [0x7ff7394b07da]
+E   	(No symbol) [0x7ff739493b39]
+E   	(No symbol) [0x7ff739493ad0]
+E   	(No symbol) [0x7ff738cc6661]
+E   	(No symbol) [0x7ff738cab969]
+E   	(No symbol) [0x7ff738cacca3]
+E   	(No symbol) [0x7ff739395af1]
+E   	(No symbol) [0x7ff7393b67f7]
+E   	(No symbol) [0x7ff7393ace20]
+E   	(No symbol) [0x7ff73903ff8e]
+E   	(No symbol) [0x7ff738e32865]
+E   	(No symbol) [0x7ff738e2d1d4]
+E   	(No symbol) [0x7ff738e2d364]
+E   	(No symbol) [0x7ff738e1644c]
+E   	(No symbol) [0x7ffd6f8dcdf7]
+E   	(No symbol) [0x7ffd702a9c2c]
+- generated xml file: D:\桌面\软件测试competion\reports\executions\RUN-20261031-OFFICIALVER-01\junit.xml -
+=========================== short test summary info ===========================
+XFAIL tests/test_todomvc_expected_failure.py::test_expected_failure_captures_evidence - 受控失败：验证失败截图、日志和断言记录链路
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_001 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_002 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_003 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_004 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_005 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_006 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_007 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_008 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_009 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_010 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_011 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_012 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_013 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_014 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_015 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_016 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_017 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_018 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_019 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_020 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_021 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_022 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_023 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_024 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_025 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_026 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_027 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_028 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_029 - seleni...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_030 - seleni...
+FAILED tests/test_todomvc.py::test_complete_and_filter - selenium.common.exce...
+31 failed, 6 passed, 1 xfailed in 26.99s
