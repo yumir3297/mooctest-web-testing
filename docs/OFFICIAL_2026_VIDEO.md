@@ -20,6 +20,8 @@
 
 ## 2. 生成
 
+依赖：`python-docx==1.2.0`（已写入 `requirements.txt`）。
+
 ```powershell
 python tools\export_official_2026.py `
   --run-id <RUN_ID> `
