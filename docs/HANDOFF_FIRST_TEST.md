@@ -46,6 +46,7 @@ ChromeDriver  156.0.8078.80（主版本 156 一致）
 - `docs/OFFICIAL_2025.md`：2025 官方格式基线。
 - `docs/ACCEPTANCE_REPORT_20261031.md`：内部验收报告。
 - `docs/WORKFLOW.md`：阶段与命令。
+- `docs/ISOLATION_PROTOCOL.md`：题目与答案隔离协议（干净工作区、答案移出、开跑前门禁）。
 
 ### 证据与交付样例
 
@@ -82,12 +83,17 @@ ChromeDriver  156.0.8078.80（主版本 156 一致）
 
 ## 4. 实测前 60 秒检查
 
+如果测的是 2025 旧题或本地 CartCheck，**不要在包含 `materials/参考答案` 的当前工作区直接跑**；先按 `docs/ISOLATION_PROTOCOL.md` 建干净工作区。隔离门禁：
+
 ```powershell
+# 0. 干净工作区隔离检查，必须 ISOLATION_CLEAN / exit 0
+python tools\isolation_check.py --workspace <clean_room> --json
+
 # 1. 环境门禁，必须 READY / exit 0
 python tools\env_check.py --strict
 
-# 2. 如果测本地 CartCheck，启动 fixture
-python fixtures\cartcheck\serve.py --port 8765
+# 2. 如果测本地 CartCheck，启动 target 目录里的 fixture（不要在 workspace 里）
+python <target_dir>\serve.py --port 8765
 
 # 3. 确认 Chrome 更新任务仍是 Disabled
 Get-ScheduledTask -TaskPath '\GoogleUser\GoogleUpdater\' | Select-Object TaskName, State
@@ -122,6 +128,7 @@ evidence/logs/<RUN_ID>/          执行日志
 3. **Java 路径未就绪**：本机 JDK 17、无 Maven；本项目选 Python，不影响当前实测。
 4. **官方驱动路径本机不存在**：`C:\Program Files\Google\Chrome\Application\chromedriver.exe` 没有；本地用 `tools/driver/chromedriver.exe`，导出官方包时写回官方路径，比赛环境要再确认。
 5. **Chrome 更新任务可能重建**：Chrome 重装或大版本更新后，赛前要再检查一次 `GoogleUpdater` 任务状态。
+6. **当前工作区含答案**：`materials/参考答案`、历史 `reports/`、`evidence/`、`tests/generated/` 都在当前工作区；限时演练必须另建干净工作区，不能直接在当前目录跑旧题。
 
 ## 7. 相关链接
 
