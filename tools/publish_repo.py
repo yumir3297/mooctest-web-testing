@@ -126,8 +126,16 @@ def build(out: Path, force: bool) -> int:
         if not force:
             print(f"ERROR: {out} exists; use --force", file=sys.stderr)
             return 2
-        shutil.rmtree(out)
-    out.mkdir(parents=True)
+        # Keep the git metadata: publish/ is itself the repository working tree.
+        for child in out.iterdir():
+            if child.name == ".git":
+                continue
+            if child.is_dir():
+                shutil.rmtree(child)
+            else:
+                child.unlink()
+    else:
+        out.mkdir(parents=True)
 
     copied = 0
     skipped = 0
