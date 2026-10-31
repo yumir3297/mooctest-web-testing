@@ -1,0 +1,45 @@
+{
+  "run_id": "RUN-20261031-REALSITE-01",
+  "generated_at": "2026-10-31T12:04:57+0800",
+  "access": "read-only public home page; no login, no submit, no order",
+  "results": [
+    {
+      "key": "sf",
+      "url": "https://www.sf-express.com/",
+      "requirement": "2025-顺丰-省赛 需求文档 R001-R010",
+      "status": "reached",
+      "title": "顺丰官网|一路相伴 不负所托",
+      "final_url": "https://www.sf-express.com/chn/sc",
+      "body_length": 884,
+      "anchors_found": [
+        "服务支持",
+        "服务查询",
+        "运费时效"
+      ],
+      "anchors_missing": [
+        "收寄标准"
+      ],
+      "elapsed_seconds": 3.13,
+      "screenshot": "evidence/raw/RUN-20261031-REALSITE-01/PROBE/sf__home__viewport__20261031T000000-000.png"
+    },
+    {
+      "key": "zhihu",
+      "url": "https://www.zhihu.com/",
+      "requirement": "2025-知乎-总决赛 需求文档 R001-R012",
+      "status": "reached",
+      "title": "知乎 - 有问题，就会有答案",
+      "final_url": "https://www.zhihu.com/signin?next=%2F",
+      "body_length": 467,
+      "anchors_found": [
+        "登录",
+        "注册",
+        "发现"
+      ],
+      "anchors_missing": [
+        "热榜"
+      ],
+      "elapsed_seconds": 4.24,
+      "screenshot": "evidence/raw/RUN-20261031-REALSITE-01/PROBE/zhihu__home__viewport__20261031T000000-000.png"
+    }
+  ]
+}

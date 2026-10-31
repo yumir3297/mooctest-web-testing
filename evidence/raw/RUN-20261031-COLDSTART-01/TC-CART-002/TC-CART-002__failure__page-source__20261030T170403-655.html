@@ -1,0 +1,67 @@
+<html lang="zh-CN"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CartCheck 结算试算器</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer=""></script>
+</head>
+<body>
+  <main class="page">
+    <header class="page__header">
+      <h1>CartCheck 结算试算器</h1>
+      <p class="page__hint">本地练习应用，仅用于测试演练，不连接任何后端。</p>
+    </header>
+
+    <section class="card" aria-labelledby="form-title">
+      <h2 id="form-title" class="card__title">订单信息</h2>
+
+      <div class="field">
+        <label for="amount">订单金额（元）</label>
+        <input id="amount" name="amount" type="text" inputmode="numeric" autocomplete="off" placeholder="1-9999 的整数" data-testid="amount">
+      </div>
+
+      <div class="field">
+        <label for="coupon">优惠券码</label>
+        <input id="coupon" name="coupon" type="text" autocomplete="off" placeholder="例如 CP1234" data-testid="coupon">
+      </div>
+
+      <div class="field">
+        <label for="level">会员等级</label>
+        <select id="level" name="level" data-testid="level">
+          <option value="regular" selected="">普通会员 regular</option>
+          <option value="silver">银卡 silver</option>
+          <option value="gold">金卡 gold</option>
+        </select>
+      </div>
+
+      <div class="field field--checkbox">
+        <input id="points" name="points" type="checkbox" data-testid="points">
+        <label for="points">叠加积分（折扣后再减 1 元）</label>
+      </div>
+
+      <div class="actions">
+        <button id="calc" type="button" data-testid="calc">计算</button>
+      </div>
+    </section>
+
+    <section class="card result" aria-labelledby="result-title">
+      <h2 id="result-title" class="card__title">计算结果</h2>
+
+      <dl class="result__grid">
+        <div class="result__item">
+          <dt>优惠金额</dt>
+          <dd><output data-testid="discount">0</output></dd>
+        </div>
+        <div class="result__item">
+          <dt>应付金额</dt>
+          <dd><output data-testid="payable">800</output></dd>
+        </div>
+      </dl>
+
+      <p class="message" data-testid="message" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+
+</body></html>

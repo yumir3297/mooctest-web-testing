@@ -1,0 +1,232 @@
+{
+  "run_id": "RUN-20261031-COLDSTART-01",
+  "exit_code": 1,
+  "elapsed_seconds": 36.89,
+  "timed_out": false,
+  "junit": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-20261031-COLDSTART-01\\junit.xml",
+  "console_log": "D:\\桌面\\软件测试competion\\evidence\\logs\\RUN-20261031-COLDSTART-01\\pytest-console.log",
+  "tests": 30,
+  "failures": 5,
+  "errors": 0,
+  "skipped": 0,
+  "time": 34.669,
+  "xfailed": 0,
+  "cases": [
+    {
+      "name": "test_tc_cart_001",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 2.208,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_002",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.839,
+      "status": "failed",
+      "message": "AssertionError: 优惠金额: expected=120 actual='0'"
+    },
+    {
+      "name": "test_tc_cart_003",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.843,
+      "status": "failed",
+      "message": "AssertionError: 优惠金额: expected=55 actual='56'"
+    },
+    {
+      "name": "test_tc_cart_004",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.953,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_005",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.864,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_006",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.939,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_007",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.879,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_008",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.813,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_009",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.798,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_010",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.791,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_011",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.785,
+      "status": "failed",
+      "message": "AssertionError: 优惠金额: expected=999 actual='1000'"
+    },
+    {
+      "name": "test_tc_cart_012",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.75,
+      "status": "failed",
+      "message": "AssertionError: 优惠金额: expected=999 actual='1000'"
+    },
+    {
+      "name": "test_tc_cart_013",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.811,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_014",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.845,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_015",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.82,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_016",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.781,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_017",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.84,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_018",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.878,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_019",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.876,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_020",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.875,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_021",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.799,
+      "status": "failed",
+      "message": "AssertionError: 提示文案: expected='优惠券码无效' actual='(空)'"
+    },
+    {
+      "name": "test_tc_cart_022",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.899,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_023",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.901,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_024",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.901,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_025",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.927,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_026",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.962,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_027",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.958,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_028",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.948,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_029",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 0.898,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_tc_cart_030",
+      "classname": "tests.generated.cartcheck.test_cartcheck",
+      "time": 3.257,
+      "status": "passed",
+      "message": ""
+    }
+  ],
+  "status": "failed",
+  "case_counts": {
+    "running": 1,
+    "passed": 25,
+    "failed": 5
+  }
+}

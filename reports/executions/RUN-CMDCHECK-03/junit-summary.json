@@ -1,0 +1,22 @@
+{
+  "run_id": "RUN-CMDCHECK-03",
+  "exit_code": 0,
+  "elapsed_seconds": 5.46,
+  "junit": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-CMDCHECK-03\\junit.xml",
+  "console_log": "D:\\桌面\\软件测试competion\\evidence\\logs\\RUN-CMDCHECK-03\\pytest-console.log",
+  "tests": 1,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "time": 4.423,
+  "xfailed": 0,
+  "cases": [
+    {
+      "name": "test_add_todo",
+      "classname": "tests.test_todomvc",
+      "time": 4.072,
+      "status": "passed",
+      "message": ""
+    }
+  ]
+}

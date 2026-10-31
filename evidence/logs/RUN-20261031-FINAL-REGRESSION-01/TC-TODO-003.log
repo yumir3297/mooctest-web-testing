@@ -1,0 +1,4 @@
+2026-10-31 01:11:59,421 INFO case=TC-TODO-003 run=RUN-20261031-FINAL-REGRESSION-01
+2026-10-31 01:11:59,423 INFO STEP 新增 Old title
+2026-10-31 01:11:59,637 INFO STEP 双击标题并改为 New title
+2026-10-31 01:12:00,093 INFO CHECK 标题被更新 passed=True expected=['New title'] actual=['New title']

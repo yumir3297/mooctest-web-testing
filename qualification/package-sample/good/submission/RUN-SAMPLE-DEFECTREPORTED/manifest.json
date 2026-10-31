@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "run_id": "RUN-SAMPLE-DEFECTREPORTED",
+  "official_format_confirmed": false,
+  "files": [
+    {
+      "path": "reports/junit.xml",
+      "sha256": "aa17eac58c0b45f86897bfd13716ee40a6e0e3b5ca48de4fbe3d818682a59503",
+      "size": 530,
+      "case_id": "TC-SAMPLE-001",
+      "source": "qualification package sample"
+    },
+    {
+      "path": "screenshots/TC-SAMPLE-002.png",
+      "sha256": "1b6d1816bc8f9694ae53261f6bcec397a6564fb34dfde6ae7c785b743bfd04c6",
+      "size": 1058,
+      "case_id": "TC-SAMPLE-001",
+      "source": "qualification package sample"
+    },
+    {
+      "path": "test-cases.xlsx",
+      "sha256": "916903c26ffa4573fb9a0a7f44ff8f970a21a69d2cf2c58a296e369bf5ac24a7",
+      "size": 5186,
+      "case_id": "TC-SAMPLE-001",
+      "source": "qualification package sample"
+    },
+    {
+      "path": "test-code/test_sample.py",
+      "sha256": "862807d9b8cec1296031350c43c04905f264255e9822b412a84781479c33464f",
+      "size": 466,
+      "case_id": "TC-SAMPLE-001",
+      "source": "qualification package sample"
+    },
+    {
+      "path": "submission.zip",
+      "sha256": "0aae6418f038017ce9a34d2d2291b3f1d5a5ab4a3710f2c039f4a12b766f6ca3",
+      "size": 6688,
+      "case_id": "",
+      "source": "qualification package sample"
+    }
+  ]
+}

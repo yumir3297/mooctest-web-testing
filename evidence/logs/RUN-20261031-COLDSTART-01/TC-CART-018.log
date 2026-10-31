@@ -1,0 +1,10 @@
+2026-10-31 01:04:18,704 INFO case=TC-CART-018 run=RUN-20261031-COLDSTART-01
+2026-10-31 01:04:18,813 INFO STEP 打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.077s）
+2026-10-31 01:04:18,843 INFO STEP 在 amount 输入 'abc'，在 coupon 输入 'CP1234'
+2026-10-31 01:04:19,014 INFO STEP level 选择 gold，points 不勾选
+2026-10-31 01:04:19,118 INFO STEP 点击「计算」按钮
+2026-10-31 01:04:19,221 INFO STEP 等待输出变化完成（触发通道：message）
+2026-10-31 01:04:19,442 INFO SCREENSHOT evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-018/TC-CART-018__result__element__20261030T170419-358.png
+2026-10-31 01:04:19,442 INFO CHECK 提示文案 passed=True expected='金额需为 1-9999 的整数' actual='金额需为 1-9999 的整数'
+2026-10-31 01:04:19,470 INFO CHECK 优惠金额为 - passed=True expected='-' actual='-'
+2026-10-31 01:04:19,496 INFO CHECK 应付金额为 - passed=True expected='-' actual='-'

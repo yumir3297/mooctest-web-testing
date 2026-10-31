@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="2" failures="0" skipped="0" tests="2" time="1.250" timestamp="2026-10-31T00:45:26.387281+08:00" hostname="LAPTOP-F6P4DP1J"><testcase classname="tests.test_todomvc" name="test_add_todo" time="0.039"><error message="failed on setup with &quot;RuntimeError: driver compatibility check could not determine a version: chrome='&lt;empty&gt;' chromedriver='ChromeDriver 156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705})'&quot;">tests\conftest.py:373: in driver
+    _assert_major_match(compat)
+tests\conftest.py:100: in _assert_major_match
+    raise RuntimeError(
+E   RuntimeError: driver compatibility check could not determine a version: chrome='&lt;empty&gt;' chromedriver='ChromeDriver 156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705})'</error></testcase><testcase classname="tests.test_todomvc" name="test_empty_and_whitespace_rejected" time="0.027"><error message="failed on setup with &quot;RuntimeError: driver compatibility check could not determine a version: chrome='&lt;empty&gt;' chromedriver='ChromeDriver 156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705})'&quot;">tests\conftest.py:373: in driver
+    _assert_major_match(compat)
+tests\conftest.py:100: in _assert_major_match
+    raise RuntimeError(
+E   RuntimeError: driver compatibility check could not determine a version: chrome='&lt;empty&gt;' chromedriver='ChromeDriver 156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705})'</error></testcase></testsuite></testsuites>

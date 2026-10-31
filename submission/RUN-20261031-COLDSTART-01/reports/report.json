@@ -1,0 +1,5750 @@
+{
+  "schema_version": "2.0",
+  "generator": {
+    "tool": "tools/generate_report.py",
+    "version": "2.0",
+    "generated_at": "2026-10-31T01:08:31+08:00"
+  },
+  "generated_at": "2026-10-31T01:08:31+08:00",
+  "title": "CartCheck 结算试算器 自动化测试报告",
+  "run": {
+    "run_id": "RUN-20261031-COLDSTART-01",
+    "label": "Selenium acceptance",
+    "target": "http://127.0.0.1:8765/",
+    "status": "failed",
+    "status_label": "失败",
+    "stage": "package-ready",
+    "started_at": "2026-10-31T01:00:26+08:00",
+    "finished_at": "2026-10-31T01:04:34+08:00",
+    "case_counts": {
+      "not-run": 1,
+      "passed": 25,
+      "failed": 5
+    },
+    "case_total": 31,
+    "evidence_count": 83,
+    "defect_count": 5,
+    "environment": {
+      "python": "3.13.9",
+      "platform": "win32",
+      "os": "11",
+      "pytest": "9.1.1",
+      "target": "http://127.0.0.1:8765/",
+      "selenium": "4.51.0",
+      "chrome": "Chrome 156.0.8078.74",
+      "chrome_path": "C:\\Users\\<user>\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe",
+      "chromedriver": "ChromeDriver 156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705})",
+      "node": "v24.14.1"
+    },
+    "notes": [
+      {
+        "at": "2026-10-31T01:03:57+08:00",
+        "note": "pytest started"
+      },
+      {
+        "at": "2026-10-31T01:04:34+08:00",
+        "note": "pytest exit=1; total=30; failed=True; blocked=False; xfailed=False"
+      },
+      {
+        "at": "2026-10-31T01:04:34+08:00",
+        "note": "pytest exit=1; tests=30; failures=5; errors=0; xfailed=0; elapsed=36.89s; case_counts={'running': 1, 'passed': 25, 'failed': 5}"
+      },
+      {
+        "at": "2026-10-31T01:08:14+08:00",
+        "note": "交付限制1：tools/package_submission.py 的 _copy_test_code 只收集 tests/conftest.py、tests/pages/**、pytest.ini、requirements.txt 与 automation 指向的测试文件，未包含 tests/generated/cartcheck/page_cartcheck.py；交付包 test-code 目录缺少该 Page Object，包内代码不能独立运行，需从仓库同一路径取该文件。"
+      },
+      {
+        "at": "2026-10-31T01:08:14+08:00",
+        "note": "交付限制2：质量门禁的 requirements 加载器不解析 JSON，--requirements requirements.json 会被逐行当纯文本解析成伪 ID；最终门禁使用内容等价的 requirements.csv（13 条 ID 一致），首次尝试结果保存在 qualification/gate-runs/RUN-20261031-COLDSTART-01/_attempt-requirements-json/。"
+      },
+      {
+        "at": "2026-10-31T01:08:14+08:00",
+        "note": "交付限制3：需求未规定成功计算的 message 文案（G-01）、输出格式（G-03）与输入前导零/空格（G-02），这些行为未纳入断言；TC-CART-030 的 2 秒阈值起点定义为 driver.get 返回到按钮可点击（G-05）。"
+      }
+    ]
+  },
+  "scope": {
+    "target": "http://127.0.0.1:8765/",
+    "scope": "未声明",
+    "scope_source": "missing",
+    "requirement_source": "本运行用例表的 requirement_ids 列",
+    "case_table": "D:\\桌面\\软件测试competion\\reports\\test-cases\\cartcheck-test-cases.csv",
+    "design_doc": "reports/test-cases/cartcheck-requirements.md",
+    "product": "Selenium acceptance"
+  },
+  "environment": {
+    "os": "11",
+    "platform": "win32",
+    "python": "3.13.9",
+    "selenium": "4.51.0",
+    "pytest": "9.1.1",
+    "chrome": "Chrome 156.0.8078.74",
+    "chromedriver": "ChromeDriver 156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705})",
+    "node": "v24.14.1",
+    "target": "http://127.0.0.1:8765/",
+    "chrome_path": "C:\\Users\\<user>\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe"
+  },
+  "environment_meta": {
+    "os": {
+      "label": "操作系统",
+      "value": "11",
+      "raw": "11",
+      "source": "run"
+    },
+    "platform": {
+      "label": "平台",
+      "value": "win32",
+      "raw": "win32",
+      "source": "run"
+    },
+    "python": {
+      "label": "Python",
+      "value": "3.13.9",
+      "raw": "3.13.9",
+      "source": "run"
+    },
+    "selenium": {
+      "label": "Selenium",
+      "value": "4.51.0",
+      "raw": "4.51.0",
+      "source": "run"
+    },
+    "pytest": {
+      "label": "pytest",
+      "value": "9.1.1",
+      "raw": "9.1.1",
+      "source": "run"
+    },
+    "chrome": {
+      "label": "Chrome",
+      "value": "Chrome 156.0.8078.74",
+      "raw": "Chrome 156.0.8078.74",
+      "source": "run"
+    },
+    "chromedriver": {
+      "label": "ChromeDriver",
+      "value": "ChromeDriver 156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705})",
+      "raw": "ChromeDriver 156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705})",
+      "source": "run"
+    },
+    "node": {
+      "label": "Node.js",
+      "value": "v24.14.1",
+      "raw": "v24.14.1",
+      "source": "run"
+    },
+    "target": {
+      "label": "目标 URL",
+      "value": "http://127.0.0.1:8765/",
+      "raw": "http://127.0.0.1:8765/",
+      "source": "run"
+    },
+    "chrome_path": {
+      "label": "Chrome 路径",
+      "value": "C:\\Users\\<user>\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe",
+      "raw": "C:\\Users\\<user>\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe",
+      "source": "run"
+    },
+    "__probe__": {
+      "probed_at": "2026-10-31T01:08:31+08:00",
+      "note": "报告生成时探测，不是运行时刻记录；只作参考，不覆盖 manifest 中的运行环境"
+    }
+  },
+  "environment_probe": {
+    "probe_kind": "report-time",
+    "note": "报告生成时探测，不是运行时刻记录；只作参考，不覆盖 manifest 中的运行环境",
+    "python": "3.13.9",
+    "platform": "Windows-11-10.0.26340-SP0",
+    "os": "11",
+    "target": "http://127.0.0.1:8765/",
+    "pytest": "9.1.1",
+    "selenium": "4.51.0",
+    "openpyxl": "3.1.5",
+    "pillow": "12.2.0",
+    "numpy": "2.4.4",
+    "opencv-python": "<not installed>",
+    "chrome_path": "C:\\Users\\<user>\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe",
+    "chrome": "156.0.8078.74",
+    "chromedriver": "ChromeDriver 156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705})",
+    "node": "v24.14.1",
+    "probed_at": "2026-10-31T01:08:31+08:00"
+  },
+  "case_table": {
+    "found": true,
+    "path": "reports/test-cases/cartcheck-test-cases.csv",
+    "reason": "",
+    "row_count": 30,
+    "source": "run-scoped",
+    "inspected": [
+      {
+        "path": "reports/test-cases/cartcheck-test-cases.csv",
+        "rows": 30,
+        "run_tokens": [
+          "RUN-20261031-COLDSTART-01"
+        ]
+      }
+    ]
+  },
+  "strategy": {
+    "design_source": "case-table",
+    "methods": [
+      {
+        "method": "格式错误猜测（字符集）",
+        "count": 3,
+        "case_ids": [
+          "TC-CART-021",
+          "TC-CART-022",
+          "TC-CART-023"
+        ]
+      },
+      {
+        "method": "判定表",
+        "count": 2,
+        "case_ids": [
+          "TC-CART-004",
+          "TC-CART-005"
+        ]
+      },
+      {
+        "method": "判定表+等价类",
+        "count": 2,
+        "case_ids": [
+          "TC-CART-001",
+          "TC-CART-002"
+        ]
+      },
+      {
+        "method": "格式边界（长度 5/6/7）",
+        "count": 2,
+        "case_ids": [
+          "TC-CART-019",
+          "TC-CART-020"
+        ]
+      },
+      {
+        "method": "边界值 3-value（0/1/2）",
+        "count": 2,
+        "case_ids": [
+          "TC-CART-009",
+          "TC-CART-010"
+        ]
+      },
+      {
+        "method": "边界值 3-value（499/500/501）",
+        "count": 2,
+        "case_ids": [
+          "TC-CART-006",
+          "TC-CART-014"
+        ]
+      },
+      {
+        "method": "边界值 3-value（799/800/801）",
+        "count": 2,
+        "case_ids": [
+          "TC-CART-007",
+          "TC-CART-015"
+        ]
+      },
+      {
+        "method": "边界值 3-value（9998/9999/10000）",
+        "count": 2,
+        "case_ids": [
+          "TC-CART-011",
+          "TC-CART-012"
+        ]
+      },
+      {
+        "method": "判定表（规则列 6 + 7）",
+        "count": 1,
+        "case_ids": [
+          "TC-CART-028"
+        ]
+      },
+      {
+        "method": "判定表（规则列 8）",
+        "count": 1,
+        "case_ids": [
+          "TC-CART-027"
+        ]
+      },
+      {
+        "method": "判定表（规则列 9：C2=否 且 C5=是）",
+        "count": 1,
+        "case_ids": [
+          "TC-CART-025"
+        ]
+      },
+      {
+        "method": "格式等价类（大写字母类）",
+        "count": 1,
+        "case_ids": [
+          "TC-CART-029"
+        ]
+      },
+      {
+        "method": "格式错误猜测（前缀）",
+        "count": 1,
+        "case_ids": [
+          "TC-CART-024"
+        ]
+      },
+      {
+        "method": "等价类（空值无效分区）",
+        "count": 1,
+        "case_ids": [
+          "TC-CART-016"
+        ]
+      },
+      {
+        "method": "等价类（非数字无效分区）",
+        "count": 1,
+        "case_ids": [
+          "TC-CART-018"
+        ]
+      },
+      {
+        "method": "等价类（非整数无效分区）",
+        "count": 1,
+        "case_ids": [
+          "TC-CART-017"
+        ]
+      },
+      {
+        "method": "输出边界值（0/1）+ 判定表",
+        "count": 1,
+        "case_ids": [
+          "TC-CART-026"
+        ]
+      },
+      {
+        "method": "边界值 3-value（0/1/2）+ 无效分区",
+        "count": 1,
+        "case_ids": [
+          "TC-CART-008"
+        ]
+      },
+      {
+        "method": "边界值 3-value（9998/9999/10000）+ 无效分区",
+        "count": 1,
+        "case_ids": [
+          "TC-CART-013"
+        ]
+      },
+      {
+        "method": "边界值+取整口径",
+        "count": 1,
+        "case_ids": [
+          "TC-CART-003"
+        ]
+      },
+      {
+        "method": "非功能阈值检查（MS-07）",
+        "count": 1,
+        "case_ids": [
+          "TC-CART-030"
+        ]
+      }
+    ],
+    "case_types": [
+      {
+        "case_type": "boundary",
+        "count": 12,
+        "case_ids": [
+          "TC-CART-003",
+          "TC-CART-006",
+          "TC-CART-007",
+          "TC-CART-008",
+          "TC-CART-009",
+          "TC-CART-010",
+          "TC-CART-011",
+          "TC-CART-012",
+          "TC-CART-013",
+          "TC-CART-014",
+          "TC-CART-015",
+          "TC-CART-026"
+        ]
+      },
+      {
+        "case_type": "negative",
+        "count": 9,
+        "case_ids": [
+          "TC-CART-016",
+          "TC-CART-017",
+          "TC-CART-018",
+          "TC-CART-019",
+          "TC-CART-020",
+          "TC-CART-021",
+          "TC-CART-022",
+          "TC-CART-023",
+          "TC-CART-024"
+        ]
+      },
+      {
+        "case_type": "positive",
+        "count": 6,
+        "case_ids": [
+          "TC-CART-001",
+          "TC-CART-002",
+          "TC-CART-004",
+          "TC-CART-005",
+          "TC-CART-027",
+          "TC-CART-029"
+        ]
+      },
+      {
+        "case_type": "combination",
+        "count": 2,
+        "case_ids": [
+          "TC-CART-025",
+          "TC-CART-028"
+        ]
+      },
+      {
+        "case_type": "nonfunctional",
+        "count": 1,
+        "case_ids": [
+          "TC-CART-030"
+        ]
+      }
+    ],
+    "priorities": [
+      {
+        "priority": "P0",
+        "count": 14,
+        "case_ids": [
+          "TC-CART-001",
+          "TC-CART-002",
+          "TC-CART-003",
+          "TC-CART-004",
+          "TC-CART-005",
+          "TC-CART-006",
+          "TC-CART-007",
+          "TC-CART-008",
+          "TC-CART-013",
+          "TC-CART-016",
+          "TC-CART-017",
+          "TC-CART-021",
+          "TC-CART-025",
+          "TC-CART-026"
+        ]
+      },
+      {
+        "priority": "P1",
+        "count": 13,
+        "case_ids": [
+          "TC-CART-009",
+          "TC-CART-011",
+          "TC-CART-012",
+          "TC-CART-014",
+          "TC-CART-015",
+          "TC-CART-018",
+          "TC-CART-019",
+          "TC-CART-020",
+          "TC-CART-022",
+          "TC-CART-023",
+          "TC-CART-024",
+          "TC-CART-027",
+          "TC-CART-030"
+        ]
+      },
+      {
+        "priority": "P2",
+        "count": 3,
+        "case_ids": [
+          "TC-CART-010",
+          "TC-CART-028",
+          "TC-CART-029"
+        ]
+      }
+    ],
+    "missing_method_cases": [
+      "EXPLORE"
+    ],
+    "note": ""
+  },
+  "summary": {
+    "case_total": 31,
+    "status_counts": {
+      "not-run": 1,
+      "passed": 25,
+      "failed": 5
+    },
+    "executed": 30,
+    "passed": 25,
+    "failed": 5,
+    "xfailed": 0,
+    "skipped": 0,
+    "not_run": 1,
+    "blocked": 0,
+    "pass_rate": 0.8333,
+    "pass_rate_note": "通过率 = passed / (passed + failed)；xfailed、skipped、not-run 不计入分母"
+  },
+  "cases": [
+    {
+      "case_id": "EXPLORE",
+      "title": "浏览器探索（证据容器，非测试用例）",
+      "source_title": "浏览器探索（证据容器，非测试用例）",
+      "title_source": "manifest",
+      "status": "not-run",
+      "status_label": "未执行",
+      "expected": "完成只读探索：枚举 8 个 data-testid 元素（tag/role/可见性）、记录 select 三个选项、2 张截图与浏览器控制台日志已登记，console SEVERE 条目 0",
+      "expected_raw": "完成只读探索：枚举 8 个 data-testid 元素（tag/role/可见性）、记录 select 三个选项、2 张截图与浏览器控制台日志已登记，console SEVERE 条目 0",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "8 个 data-testid 全部显示且可交互；截图 2 张 + 控制台日志 1 份已登记；控制台错误 0 条",
+      "actual_raw": "8 个 data-testid 全部显示且可交互；截图 2 张 + 控制台日志 1 份已登记；控制台错误 0 条",
+      "actual_source": "case",
+      "assertions": [],
+      "assertion_count": 0,
+      "assertions_passed": 0,
+      "steps": [],
+      "evidence": [
+        {
+          "evidence_id": "EV-851b174e12",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "EXPLORE",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/EXPLORE/EXPLORE__initial__viewport__20261030T170004-883.png",
+          "bucket": "raw",
+          "step": "",
+          "caption": "探索：页面初始加载状态（1280x900 视口，输出区显示 -）",
+          "created_at": "2026-10-31T01:00:26+08:00",
+          "size_bytes": 34019,
+          "sha256": "9770ff3b7581380cf6d764f5742d025b8db73a0c3285e600ad5105a2a5cc805b",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-bc836119bd",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "EXPLORE",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/EXPLORE/EXPLORE__e1-result__element__20261030T170005-325.png",
+          "bucket": "raw",
+          "step": "",
+          "caption": "探索：E1(500/CP1234/gold) 计算后关键区域（表单+结果区）",
+          "created_at": "2026-10-31T01:00:27+08:00",
+          "size_bytes": 31236,
+          "sha256": "f267121a1090596b4faae4e8166f54794f08549e0cd74d9c62506c01193d8080",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-231a844f7d",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "EXPLORE",
+          "kind": "log",
+          "path": "evidence/logs/RUN-20261031-COLDSTART-01/EXPLORE__browser__20261030T170006-425.log",
+          "bucket": "logs",
+          "step": "",
+          "caption": "探索：浏览器控制台日志（无 SEVERE 条目）",
+          "created_at": "2026-10-31T01:00:27+08:00",
+          "size_bytes": 2,
+          "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+          "immutable": true,
+          "meta": {}
+        }
+      ],
+      "evidence_count": 3,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": null,
+      "log_exists": false,
+      "duration_ms": null,
+      "meta": {},
+      "requirement_ids": [],
+      "priority": "",
+      "case_type": "",
+      "method": "",
+      "preconditions": [],
+      "test_data": "",
+      "design_status": "",
+      "in_case_table": false,
+      "automation": "",
+      "junit": null,
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-001",
+      "title": "金卡满 500 享 10% 折扣：E1 应得优惠 50、应付 450",
+      "source_title": "test_tc_cart_001",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "discount=50；payable=450（需求 E1）",
+      "expected_raw": "discount=50；payable=450（需求 E1）",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=50；payable=450；message=(空)",
+      "actual_raw": "discount=50；payable=450；message=(空)",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "优惠金额",
+          "expected": "50",
+          "actual": "50",
+          "passed": true,
+          "at": "2026-10-31T01:04:02+08:00"
+        },
+        {
+          "name": "应付金额",
+          "expected": "450",
+          "actual": "450",
+          "passed": true,
+          "at": "2026-10-31T01:04:02+08:00"
+        },
+        {
+          "name": "合法输入不应出现错误提示",
+          "expected": "message 不属于 (金额需为 1-9999 的整数 | 优惠券码无效)",
+          "actual": "(空)",
+          "passed": true,
+          "at": "2026-10-31T01:04:02+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.235s）",
+        "在 amount 输入 '500'，在 coupon 输入 'CP1234'",
+        "level 选择 gold，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：amount）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-302193cec1",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-001",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-001/TC-CART-001__result__element__20261030T170402-200.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:02+08:00",
+          "size_bytes": 7819,
+          "sha256": "e7439182840dfab718bed67bdfa1a688f383794a0c232a1862fe111b98300793",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-c1d3831593",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-001",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-001/TC-CART-001__final__viewport__20261030T170402-406.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:02+08:00",
+          "size_bytes": 34309,
+          "sha256": "d8f20e42fa44be26efa7c307a085940b4795bce9b0ae82eae384dde75e9754b5",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-001.log",
+      "log_exists": true,
+      "duration_ms": 2180,
+      "meta": {
+        "requirement_ids": "REQ-10;REQ-05",
+        "method": "判定表+等价类",
+        "priority": "P0",
+        "case_type": "positive"
+      },
+      "requirement_ids": [
+        "REQ-10",
+        "REQ-05"
+      ],
+      "priority": "P0",
+      "case_type": "positive",
+      "method": "判定表+等价类",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=500；coupon=CP1234；level=gold；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_001",
+      "junit": {
+        "name": "test_tc_cart_001",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 2.208,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-002",
+      "title": "银卡满 800 享 15% 折扣：E2 应得优惠 120、应付 680",
+      "source_title": "test_tc_cart_002",
+      "title_source": "case-table",
+      "status": "failed",
+      "status_label": "失败",
+      "expected": "discount=120；payable=680（需求 E2）",
+      "expected_raw": "discount=120；payable=680（需求 E2）",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "tests\\generated\\cartcheck\\test_cartcheck.py:111: in test_tc_cart_002\n    _assert_amounts(case_ctx, observed, 120, 680)\ntests\\generated\\cartcheck\\test_cartcheck.py:65: in _assert_amounts\n    case_ctx.check(discount == expected_discount, \"优惠金额\", expected_discount, raw_discount)\ntests\\conftest.py:444: in check\n    raise AssertionError(f\"{name}: expected={expected!r} actual={actual!r}\")\nE   AssertionError: 优惠金额: expected=120 actual='0'",
+      "actual_raw": "tests\\generated\\cartcheck\\test_cartcheck.py:111: in test_tc_cart_002\n    _assert_amounts(case_ctx, observed, 120, 680)\ntests\\generated\\cartcheck\\test_cartcheck.py:65: in _assert_amounts\n    case_ctx.check(discount == expected_discount, \"优惠金额\", expected_discount, raw_discount)\ntests\\conftest.py:444: in check\n    raise AssertionError(f\"{name}: expected={expected!r} actual={actual!r}\")\nE   AssertionError: 优惠金额: expected=120 actual='0'",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "优惠金额",
+          "expected": "120",
+          "actual": "0",
+          "passed": false,
+          "at": "2026-10-31T01:04:03+08:00"
+        }
+      ],
+      "assertion_count": 1,
+      "assertions_passed": 0,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.077s）",
+        "在 amount 输入 '800'，在 coupon 输入 'CP1234'",
+        "level 选择 silver，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：amount）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-b4ff76d876",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-002",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-002/TC-CART-002__result__element__20261030T170403-230.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:03+08:00",
+          "size_bytes": 7884,
+          "sha256": "9fdaaa2b3f28e60481c9614dcbfb18c93f5ecb15f0019238a78b96f6ceb31929",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-251a55b185",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-002",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-002/TC-CART-002__failure__viewport__20261030T170403-655.png",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时视口截图",
+          "created_at": "2026-10-31T01:04:03+08:00",
+          "size_bytes": 34520,
+          "sha256": "f22f0556cd5e077e24c35e4b90c40199eae991a9b827a036d0ecc188c1cc8a9d",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-40f4dfc5e9",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-002",
+          "kind": "fullpage-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-002/TC-CART-002__failure__fullpage__20261030T170403-655.png",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时整页截图",
+          "created_at": "2026-10-31T01:04:03+08:00",
+          "size_bytes": 34004,
+          "sha256": "b80f6e8bd2e8d556f97be811d1e856767fd463627b731f29c0ff1260ad7462c1",
+          "immutable": true,
+          "meta": {},
+          "width": 1239,
+          "height": 792,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-e0593fe1fd",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-002",
+          "kind": "page-source",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-002/TC-CART-002__failure__page-source__20261030T170403-655.html",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时页面源码",
+          "created_at": "2026-10-31T01:04:03+08:00",
+          "size_bytes": 2439,
+          "sha256": "45a502c6585204422de62b309e3439de68670b1202162a45cec5c9d0054eff0f",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-eaafe3550e",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-002",
+          "kind": "log",
+          "path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-002__browser__20261030T170403-655.log",
+          "bucket": "logs",
+          "step": "failure",
+          "caption": "失败时浏览器控制台日志",
+          "created_at": "2026-10-31T01:04:03+08:00",
+          "size_bytes": 2,
+          "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-7fff3e1b62",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-002",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-002/TC-CART-002__repro__element__20261030T170517-678.png",
+          "bucket": "raw",
+          "step": "repro",
+          "caption": "独立复现：同一输入再次执行的结果区截图",
+          "created_at": "2026-10-31T01:05:17+08:00",
+          "size_bytes": 7884,
+          "sha256": "9fdaaa2b3f28e60481c9614dcbfb18c93f5ecb15f0019238a78b96f6ceb31929",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 6,
+      "evidence_complete": true,
+      "defects": [
+        {
+          "defect_id": "DEF-001",
+          "title": "银卡订单 800 元未享受 15% 折扣：门槛判断使用 >800 而非 >=800",
+          "severity": "major",
+          "severity_rationale": "需求 R3 与示例 E2 明确 800 元应享 15%（120 元）。恰好 800 元的订单优惠被完全抹掉，应付多算 120 元，核心金额规则在等号边界失效；800 是常见整数价位且无任何提示。同类输入 801 元可正常得到 120/681（TC-CART-015 通过），说明门槛被写成严格大于。",
+          "category": "APP",
+          "status": "open",
+          "description": "TC-CART-002 输入 amount=800、coupon=CP1234、level=silver、points 未勾选，实测 discount=0、payable=800、message 为空。需求 R3 规定银卡订单金额 >=800 时折扣率 15%，优惠 floor(800x0.15)=120，应付 680；第 3 节 E2 给出同样的期望对。独立复现脚本 repro.py 第二次执行得到相同结果。",
+          "environment": "Windows 11 10.0.26340 / Python 3.13.9 / Selenium 4.51.0 / Chrome 156.0.8078.74 / ChromeDriver 156.0.8078.80 / headless 1280x900 / http://127.0.0.1:8765/",
+          "preconditions": [
+            "页面处于初始状态：amount 与 coupon 为空、level=regular、points 未勾选",
+            "测试数据 amount=800、coupon=CP1234、level=silver、points 未勾选"
+          ],
+          "repro_steps": [
+            "打开 http://127.0.0.1:8765/ 并等待「计算」按钮可点击",
+            "在 amount 输入 800，在 coupon 输入 CP1234",
+            "level 选择 silver，points 保持未勾选",
+            "点击「计算」按钮",
+            "读取 discount 与 payable：实测 0 与 800，期望 120 与 680"
+          ],
+          "repro_status": "reproduced",
+          "repro_count": 2,
+          "expected": "discount=120；payable=680（R3 silver>=800 -> 15%；E2）",
+          "actual": "discount=0；payable=800；message=(空)",
+          "evidence": [
+            "EV-b4ff76d876",
+            "EV-251a55b185",
+            "EV-7fff3e1b62"
+          ],
+          "created_at": "2026-10-31T01:05:57+08:00",
+          "severity_label": "主要",
+          "status_label": "待处理",
+          "category_label": "产品",
+          "repro_label": "已复现",
+          "unconfirmed": false,
+          "evidence_ids": [
+            "EV-b4ff76d876",
+            "EV-251a55b185",
+            "EV-7fff3e1b62"
+          ],
+          "evidence_paths": [
+            "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-002/TC-CART-002__result__element__20261030T170403-230.png",
+            "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-002/TC-CART-002__failure__viewport__20261030T170403-655.png",
+            "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-002/TC-CART-002__repro__element__20261030T170517-678.png"
+          ],
+          "missing_fields": []
+        }
+      ],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-002.log",
+      "log_exists": true,
+      "duration_ms": 1120,
+      "meta": {
+        "requirement_ids": "REQ-10;REQ-06",
+        "method": "判定表+等价类",
+        "priority": "P0",
+        "case_type": "positive",
+        "failure_class": "APP"
+      },
+      "requirement_ids": [
+        "REQ-10",
+        "REQ-06"
+      ],
+      "priority": "P0",
+      "case_type": "positive",
+      "method": "判定表+等价类",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=800；coupon=CP1234；level=silver；points=未勾选",
+      "design_status": "failed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_002",
+      "junit": {
+        "name": "test_tc_cart_002",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.839,
+        "status": "failed",
+        "message": "AssertionError: 优惠金额: expected=120 actual='0'"
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-003",
+      "title": "金卡 555 元的 10% 折扣必须向下取整：55 而非 56",
+      "source_title": "test_tc_cart_003",
+      "title_source": "case-table",
+      "status": "failed",
+      "status_label": "失败",
+      "expected": "discount=55；payable=500（555x0.1=55.5 floor=55，需求 E3 + R3 取整）",
+      "expected_raw": "discount=55；payable=500（555x0.1=55.5 floor=55，需求 E3 + R3 取整）",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "tests\\generated\\cartcheck\\test_cartcheck.py:123: in test_tc_cart_003\n    _assert_amounts(case_ctx, observed, 55, 500)\ntests\\generated\\cartcheck\\test_cartcheck.py:65: in _assert_amounts\n    case_ctx.check(discount == expected_discount, \"优惠金额\", expected_discount, raw_discount)\ntests\\conftest.py:444: in check\n    raise AssertionError(f\"{name}: expected={expected!r} actual={actual!r}\")\nE   AssertionError: 优惠金额: expected=55 actual='56'",
+      "actual_raw": "tests\\generated\\cartcheck\\test_cartcheck.py:123: in test_tc_cart_003\n    _assert_amounts(case_ctx, observed, 55, 500)\ntests\\generated\\cartcheck\\test_cartcheck.py:65: in _assert_amounts\n    case_ctx.check(discount == expected_discount, \"优惠金额\", expected_discount, raw_discount)\ntests\\conftest.py:444: in check\n    raise AssertionError(f\"{name}: expected={expected!r} actual={actual!r}\")\nE   AssertionError: 优惠金额: expected=55 actual='56'",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "优惠金额",
+          "expected": "55",
+          "actual": "56",
+          "passed": false,
+          "at": "2026-10-31T01:04:04+08:00"
+        }
+      ],
+      "assertion_count": 1,
+      "assertions_passed": 0,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.077s）",
+        "在 amount 输入 '555'，在 coupon 输入 'CP1234'",
+        "level 选择 gold，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：amount）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-196b03f496",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-003",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-003/TC-CART-003__result__element__20261030T170404-653.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:04+08:00",
+          "size_bytes": 8023,
+          "sha256": "b9bd03e94e38dee914f0f6f9bac55d056db2c653ac43d320580a8a2c584580c5",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-f172e16f67",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-003",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-003/TC-CART-003__failure__viewport__20261030T170404-808.png",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时视口截图",
+          "created_at": "2026-10-31T01:04:04+08:00",
+          "size_bytes": 34426,
+          "sha256": "b0cdaf1518d91c82e52759066eef73525c59f2214d76dca6213e1230cc645607",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-4f33c8a003",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-003",
+          "kind": "fullpage-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-003/TC-CART-003__failure__fullpage__20261030T170404-808.png",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时整页截图",
+          "created_at": "2026-10-31T01:04:04+08:00",
+          "size_bytes": 33953,
+          "sha256": "73f13d0f224670d050a60fe4c5bfc7dec8174c6daf0b8debf14f00324f9f67a7",
+          "immutable": true,
+          "meta": {},
+          "width": 1239,
+          "height": 792,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-0978a3a65b",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-003",
+          "kind": "page-source",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-003/TC-CART-003__failure__page-source__20261030T170404-808.html",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时页面源码",
+          "created_at": "2026-10-31T01:04:05+08:00",
+          "size_bytes": 2440,
+          "sha256": "74b282f6a79815ec37579666be5cf3e941f3d5886daebdadf894856df212323e",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-433b78b87e",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-003",
+          "kind": "log",
+          "path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-003__browser__20261030T170404-808.log",
+          "bucket": "logs",
+          "step": "failure",
+          "caption": "失败时浏览器控制台日志",
+          "created_at": "2026-10-31T01:04:05+08:00",
+          "size_bytes": 2,
+          "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-6d367d383c",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-003",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-003/TC-CART-003__repro__element__20261030T170518-304.png",
+          "bucket": "raw",
+          "step": "repro",
+          "caption": "独立复现：同一输入再次执行的结果区截图",
+          "created_at": "2026-10-31T01:05:18+08:00",
+          "size_bytes": 8023,
+          "sha256": "b9bd03e94e38dee914f0f6f9bac55d056db2c653ac43d320580a8a2c584580c5",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 6,
+      "evidence_complete": true,
+      "defects": [
+        {
+          "defect_id": "DEF-002",
+          "title": "金卡 10% 折扣采用四舍五入而非向下取整：555 元得 56（应 55）",
+          "severity": "major",
+          "severity_rationale": "R3 明文要求「优惠金额一律向下取整到整元（不得四舍五入）」；555x0.10=55.5 被算成 56，应付 499 而非 500。凡是折扣金额小数部分 >=0.5 的订单都会多减 1 元，属系统性金额偏差，且需求用「一律」「不得」明确禁止该行为。",
+          "category": "APP",
+          "status": "open",
+          "description": "TC-CART-003 输入 amount=555、coupon=CP1234、level=gold、points 未勾选，实测 discount=56、payable=499。需求 R3 与第 3 节 E3 给出 55 与 500。同一根因在 9998 元（TC-CART-011）与 9999 元（TC-CART-012）上再次出现，分别得 1000。独立复现脚本 repro.py 第二次执行结果一致。",
+          "environment": "Windows 11 10.0.26340 / Python 3.13.9 / Selenium 4.51.0 / Chrome 156.0.8078.74 / ChromeDriver 156.0.8078.80 / headless 1280x900 / http://127.0.0.1:8765/",
+          "preconditions": [
+            "页面处于初始状态：amount 与 coupon 为空、level=regular、points 未勾选",
+            "测试数据 amount=555、coupon=CP1234、level=gold、points 未勾选"
+          ],
+          "repro_steps": [
+            "打开 http://127.0.0.1:8765/ 并等待「计算」按钮可点击",
+            "在 amount 输入 555，在 coupon 输入 CP1234",
+            "level 选择 gold，points 保持未勾选",
+            "点击「计算」按钮",
+            "读取 discount 与 payable：实测 56 与 499，期望 55 与 500"
+          ],
+          "repro_status": "reproduced",
+          "repro_count": 2,
+          "expected": "discount=55；payable=500（E3；R3 向下取整）",
+          "actual": "discount=56；payable=499；message=(空)",
+          "evidence": [
+            "EV-196b03f496",
+            "EV-f172e16f67",
+            "EV-6d367d383c"
+          ],
+          "created_at": "2026-10-31T01:06:03+08:00",
+          "severity_label": "主要",
+          "status_label": "待处理",
+          "category_label": "产品",
+          "repro_label": "已复现",
+          "unconfirmed": false,
+          "evidence_ids": [
+            "EV-196b03f496",
+            "EV-f172e16f67",
+            "EV-6d367d383c"
+          ],
+          "evidence_paths": [
+            "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-003/TC-CART-003__result__element__20261030T170404-653.png",
+            "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-003/TC-CART-003__failure__viewport__20261030T170404-808.png",
+            "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-003/TC-CART-003__repro__element__20261030T170518-304.png"
+          ],
+          "missing_fields": []
+        }
+      ],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-003.log",
+      "log_exists": true,
+      "duration_ms": 841,
+      "meta": {
+        "requirement_ids": "REQ-10;REQ-05",
+        "method": "边界值+取整口径",
+        "priority": "P0",
+        "case_type": "boundary",
+        "failure_class": "APP"
+      },
+      "requirement_ids": [
+        "REQ-10",
+        "REQ-05"
+      ],
+      "priority": "P0",
+      "case_type": "boundary",
+      "method": "边界值+取整口径",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=555；coupon=CP1234；level=gold；points=未勾选",
+      "design_status": "failed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_003",
+      "junit": {
+        "name": "test_tc_cart_003",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.843,
+        "status": "failed",
+        "message": "AssertionError: 优惠金额: expected=55 actual='56'"
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-004",
+      "title": "金卡 500 元叠加积分：折后应付再减 1 元等于 449",
+      "source_title": "test_tc_cart_004",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "discount=50；payable=449（需求 E4）",
+      "expected_raw": "discount=50；payable=449（需求 E4）",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=50；payable=449；message=(空)",
+      "actual_raw": "discount=50；payable=449；message=(空)",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "优惠金额",
+          "expected": "50",
+          "actual": "50",
+          "passed": true,
+          "at": "2026-10-31T01:04:06+08:00"
+        },
+        {
+          "name": "应付金额",
+          "expected": "449",
+          "actual": "449",
+          "passed": true,
+          "at": "2026-10-31T01:04:06+08:00"
+        },
+        {
+          "name": "合法输入不应出现错误提示",
+          "expected": "message 不属于 (金额需为 1-9999 的整数 | 优惠券码无效)",
+          "actual": "(空)",
+          "passed": true,
+          "at": "2026-10-31T01:04:06+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.070s）",
+        "在 amount 输入 '500'，在 coupon 输入 'CP1234'",
+        "level 选择 gold，points 勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：amount）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-81421592c5",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-004",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-004/TC-CART-004__result__element__20261030T170405-894.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:05+08:00",
+          "size_bytes": 7740,
+          "sha256": "fa89120b48256e964730258dbee729e9e2989e8782efb68702082988514b41c4",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-2e6ac19761",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-004",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-004/TC-CART-004__final__viewport__20261030T170406-079.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:06+08:00",
+          "size_bytes": 34433,
+          "sha256": "e5279640437c0b5c725cf2101e2f454514955cabe352c9c23ea33c00016cbe0a",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-004.log",
+      "log_exists": true,
+      "duration_ms": 928,
+      "meta": {
+        "requirement_ids": "REQ-10;REQ-08",
+        "method": "判定表",
+        "priority": "P0",
+        "case_type": "positive"
+      },
+      "requirement_ids": [
+        "REQ-10",
+        "REQ-08"
+      ],
+      "priority": "P0",
+      "case_type": "positive",
+      "method": "判定表",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=500；coupon=CP1234；level=gold；points=勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_004",
+      "junit": {
+        "name": "test_tc_cart_004",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.953,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-005",
+      "title": "普通会员 1000 元无折扣：优惠 0、应付等于订单金额",
+      "source_title": "test_tc_cart_005",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "discount=0；payable=1000（需求 E5）",
+      "expected_raw": "discount=0；payable=1000（需求 E5）",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=0；payable=1000；message=(空)",
+      "actual_raw": "discount=0；payable=1000；message=(空)",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "优惠金额",
+          "expected": "0",
+          "actual": "0",
+          "passed": true,
+          "at": "2026-10-31T01:04:06+08:00"
+        },
+        {
+          "name": "应付金额",
+          "expected": "1000",
+          "actual": "1000",
+          "passed": true,
+          "at": "2026-10-31T01:04:06+08:00"
+        },
+        {
+          "name": "合法输入不应出现错误提示",
+          "expected": "message 不属于 (金额需为 1-9999 的整数 | 优惠券码无效)",
+          "actual": "(空)",
+          "passed": true,
+          "at": "2026-10-31T01:04:06+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.067s）",
+        "在 amount 输入 '1000'，在 coupon 输入 'CP1234'",
+        "level 选择 regular，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：amount）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-f6177a66c3",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-005",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-005/TC-CART-005__result__element__20261030T170406-823.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:06+08:00",
+          "size_bytes": 7897,
+          "sha256": "6ff27cfc58c038a15d11c8cfca863b7adb9538d5bba0d53a431616a5684d1183",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-ee9945159c",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-005",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-005/TC-CART-005__final__viewport__20261030T170407-022.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:07+08:00",
+          "size_bytes": 34855,
+          "sha256": "e68f79b7cbd5af964be1f54e9f6fd1842be5422763936af97d9d32abe15fc4f3",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-005.log",
+      "log_exists": true,
+      "duration_ms": 825,
+      "meta": {
+        "requirement_ids": "REQ-10;REQ-07",
+        "method": "判定表",
+        "priority": "P0",
+        "case_type": "positive"
+      },
+      "requirement_ids": [
+        "REQ-10",
+        "REQ-07"
+      ],
+      "priority": "P0",
+      "case_type": "positive",
+      "method": "判定表",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=1000；coupon=CP1234；level=regular；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_005",
+      "junit": {
+        "name": "test_tc_cart_005",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.864,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-006",
+      "title": "金卡 499 元未达门槛：优惠 0、应付 499",
+      "source_title": "test_tc_cart_006",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "discount=0；payable=499（需求 E6）",
+      "expected_raw": "discount=0；payable=499（需求 E6）",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=0；payable=499；message=(空)",
+      "actual_raw": "discount=0；payable=499；message=(空)",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "优惠金额",
+          "expected": "0",
+          "actual": "0",
+          "passed": true,
+          "at": "2026-10-31T01:04:08+08:00"
+        },
+        {
+          "name": "应付金额",
+          "expected": "499",
+          "actual": "499",
+          "passed": true,
+          "at": "2026-10-31T01:04:08+08:00"
+        },
+        {
+          "name": "合法输入不应出现错误提示",
+          "expected": "message 不属于 (金额需为 1-9999 的整数 | 优惠券码无效)",
+          "actual": "(空)",
+          "passed": true,
+          "at": "2026-10-31T01:04:08+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.076s）",
+        "在 amount 输入 '499'，在 coupon 输入 'CP1234'",
+        "level 选择 gold，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：amount）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-cfa6bb682e",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-006",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-006/TC-CART-006__result__element__20261030T170407-925.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:07+08:00",
+          "size_bytes": 7656,
+          "sha256": "0ed0e022824d98c64bc8a4d1c2002301a7a6db83e1838b5e5f27720104add25b",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-9e2dfa97b5",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-006",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-006/TC-CART-006__final__viewport__20261030T170408-089.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:08+08:00",
+          "size_bytes": 34150,
+          "sha256": "f2b17b6aa3801ae6c9ca00eb781ac0162842ef1b0c15c4905a2fcde51a736d37",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-006.log",
+      "log_exists": true,
+      "duration_ms": 912,
+      "meta": {
+        "requirement_ids": "REQ-10;REQ-07;REQ-11",
+        "method": "边界值 3-value（499/500/501）",
+        "priority": "P0",
+        "case_type": "boundary"
+      },
+      "requirement_ids": [
+        "REQ-10",
+        "REQ-07",
+        "REQ-11"
+      ],
+      "priority": "P0",
+      "case_type": "boundary",
+      "method": "边界值 3-value（499/500/501）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=499；coupon=CP1234；level=gold；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_006",
+      "junit": {
+        "name": "test_tc_cart_006",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.939,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-007",
+      "title": "银卡 799 元未达门槛：优惠 0、应付 799",
+      "source_title": "test_tc_cart_007",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "discount=0；payable=799（需求 E7）",
+      "expected_raw": "discount=0；payable=799（需求 E7）",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=0；payable=799；message=(空)",
+      "actual_raw": "discount=0；payable=799；message=(空)",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "优惠金额",
+          "expected": "0",
+          "actual": "0",
+          "passed": true,
+          "at": "2026-10-31T01:04:08+08:00"
+        },
+        {
+          "name": "应付金额",
+          "expected": "799",
+          "actual": "799",
+          "passed": true,
+          "at": "2026-10-31T01:04:09+08:00"
+        },
+        {
+          "name": "合法输入不应出现错误提示",
+          "expected": "message 不属于 (金额需为 1-9999 的整数 | 优惠券码无效)",
+          "actual": "(空)",
+          "passed": true,
+          "at": "2026-10-31T01:04:09+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.074s）",
+        "在 amount 输入 '799'，在 coupon 输入 'CP1234'",
+        "level 选择 silver，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：amount）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-e2e4af1758",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-007",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-007/TC-CART-007__result__element__20261030T170408-918.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:08+08:00",
+          "size_bytes": 7656,
+          "sha256": "26083635fc7f52dae3209063c44185da96b8363706e1be16a34f397e7905b8cd",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-a5f762fba7",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-007",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-007/TC-CART-007__final__viewport__20261030T170409-070.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:09+08:00",
+          "size_bytes": 34227,
+          "sha256": "b377012489e10f522bd58198bcf31bbf337698c954f58436758d4cd8d2609a2f",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-007.log",
+      "log_exists": true,
+      "duration_ms": 855,
+      "meta": {
+        "requirement_ids": "REQ-10;REQ-07;REQ-11",
+        "method": "边界值 3-value（799/800/801）",
+        "priority": "P0",
+        "case_type": "boundary"
+      },
+      "requirement_ids": [
+        "REQ-10",
+        "REQ-07",
+        "REQ-11"
+      ],
+      "priority": "P0",
+      "case_type": "boundary",
+      "method": "边界值 3-value（799/800/801）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=799；coupon=CP1234；level=silver；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_007",
+      "junit": {
+        "name": "test_tc_cart_007",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.879,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-008",
+      "title": "金额 0 低于下边界：提示金额错误且两项输出为 -",
+      "source_title": "test_tc_cart_008",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "message=金额需为 1-9999 的整数；discount=-；payable=-",
+      "expected_raw": "message=金额需为 1-9999 的整数；discount=-；payable=-",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=-；payable=-；message=金额需为 1-9999 的整数",
+      "actual_raw": "discount=-；payable=-；message=金额需为 1-9999 的整数",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "提示文案",
+          "expected": "金额需为 1-9999 的整数",
+          "actual": "金额需为 1-9999 的整数",
+          "passed": true,
+          "at": "2026-10-31T01:04:09+08:00"
+        },
+        {
+          "name": "优惠金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:09+08:00"
+        },
+        {
+          "name": "应付金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:09+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.062s）",
+        "在 amount 输入 '0'，在 coupon 输入 'CP1234'",
+        "level 选择 gold，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：message）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-192f4bf535",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-008",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-008/TC-CART-008__result__element__20261030T170409-812.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:09+08:00",
+          "size_bytes": 7852,
+          "sha256": "90fb83e6a5416efedffdf53550ab5db928276ff96bda6668fb601c743ecd0530",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-4cf2dce3e2",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-008",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-008/TC-CART-008__final__viewport__20261030T170409-982.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:10+08:00",
+          "size_bytes": 34081,
+          "sha256": "901a395f4b32336923e0622d9b2fc1fe55da64ec39d66ac6cb12d0e0287fc63f",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-008.log",
+      "log_exists": true,
+      "duration_ms": 783,
+      "meta": {
+        "requirement_ids": "REQ-02;REQ-11",
+        "method": "边界值 3-value（0/1/2）+ 无效分区",
+        "priority": "P0",
+        "case_type": "boundary"
+      },
+      "requirement_ids": [
+        "REQ-02",
+        "REQ-11"
+      ],
+      "priority": "P0",
+      "case_type": "boundary",
+      "method": "边界值 3-value（0/1/2）+ 无效分区",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=0；coupon=CP1234；level=gold；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_008",
+      "junit": {
+        "name": "test_tc_cart_008",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.813,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-009",
+      "title": "金额 1 为最小有效值：普通会员优惠 0、应付 1",
+      "source_title": "test_tc_cart_009",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "discount=0；payable=1",
+      "expected_raw": "discount=0；payable=1",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=0；payable=1；message=(空)",
+      "actual_raw": "discount=0；payable=1；message=(空)",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "优惠金额",
+          "expected": "0",
+          "actual": "0",
+          "passed": true,
+          "at": "2026-10-31T01:04:10+08:00"
+        },
+        {
+          "name": "应付金额",
+          "expected": "1",
+          "actual": "1",
+          "passed": true,
+          "at": "2026-10-31T01:04:10+08:00"
+        },
+        {
+          "name": "合法输入不应出现错误提示",
+          "expected": "message 不属于 (金额需为 1-9999 的整数 | 优惠券码无效)",
+          "actual": "(空)",
+          "passed": true,
+          "at": "2026-10-31T01:04:10+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.073s）",
+        "在 amount 输入 '1'，在 coupon 输入 'CP1234'",
+        "level 选择 regular，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：amount）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-ef743656d3",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-009",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-009/TC-CART-009__result__element__20261030T170410-728.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:10+08:00",
+          "size_bytes": 6511,
+          "sha256": "e100454d13a30f47c58a360e7dd8886fae1575a445cb8a8fb0af67c478a8ee93",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-26140b366a",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-009",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-009/TC-CART-009__final__viewport__20261030T170410-896.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:10+08:00",
+          "size_bytes": 33048,
+          "sha256": "c03b0b7d7d849a8b02db822bf4454bb1373bfdb8197c7b0ff114cda179e0e04f",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-009.log",
+      "log_exists": true,
+      "duration_ms": 772,
+      "meta": {
+        "requirement_ids": "REQ-01;REQ-11",
+        "method": "边界值 3-value（0/1/2）",
+        "priority": "P1",
+        "case_type": "boundary"
+      },
+      "requirement_ids": [
+        "REQ-01",
+        "REQ-11"
+      ],
+      "priority": "P1",
+      "case_type": "boundary",
+      "method": "边界值 3-value（0/1/2）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=1；coupon=CP1234；level=regular；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_009",
+      "junit": {
+        "name": "test_tc_cart_009",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.798,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-010",
+      "title": "金额 2 为下边界邻近有效值：普通会员应付 2",
+      "source_title": "test_tc_cart_010",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "discount=0；payable=2",
+      "expected_raw": "discount=0；payable=2",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=0；payable=2；message=(空)",
+      "actual_raw": "discount=0；payable=2；message=(空)",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "优惠金额",
+          "expected": "0",
+          "actual": "0",
+          "passed": true,
+          "at": "2026-10-31T01:04:11+08:00"
+        },
+        {
+          "name": "应付金额",
+          "expected": "2",
+          "actual": "2",
+          "passed": true,
+          "at": "2026-10-31T01:04:11+08:00"
+        },
+        {
+          "name": "合法输入不应出现错误提示",
+          "expected": "message 不属于 (金额需为 1-9999 的整数 | 优惠券码无效)",
+          "actual": "(空)",
+          "passed": true,
+          "at": "2026-10-31T01:04:11+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.064s）",
+        "在 amount 输入 '2'，在 coupon 输入 'CP1234'",
+        "level 选择 regular，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：amount）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-afdc596fad",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-010",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-010/TC-CART-010__result__element__20261030T170411-631.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:11+08:00",
+          "size_bytes": 6826,
+          "sha256": "6359b458c51a2006212c006171e8d2f9b4d1323c6a675afd1dda3abea0068146",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-106e62a284",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-010",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-010/TC-CART-010__final__viewport__20261030T170411-787.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:11+08:00",
+          "size_bytes": 33418,
+          "sha256": "010856f42359746fdb675050c44581e6720892fc68b3d16ea4f7cceb1488a348",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-010.log",
+      "log_exists": true,
+      "duration_ms": 766,
+      "meta": {
+        "requirement_ids": "REQ-01;REQ-11",
+        "method": "边界值 3-value（0/1/2）",
+        "priority": "P2",
+        "case_type": "boundary"
+      },
+      "requirement_ids": [
+        "REQ-01",
+        "REQ-11"
+      ],
+      "priority": "P2",
+      "case_type": "boundary",
+      "method": "边界值 3-value（0/1/2）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=2；coupon=CP1234；level=regular；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_010",
+      "junit": {
+        "name": "test_tc_cart_010",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.791,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-011",
+      "title": "金额 9998 为有效上边界邻近值：金卡优惠 999、应付 8999",
+      "source_title": "test_tc_cart_011",
+      "title_source": "case-table",
+      "status": "failed",
+      "status_label": "失败",
+      "expected": "discount=999；payable=8999（9998x0.1=999.8 floor=999）",
+      "expected_raw": "discount=999；payable=8999（9998x0.1=999.8 floor=999）",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "tests\\generated\\cartcheck\\test_cartcheck.py:222: in test_tc_cart_011\n    _assert_amounts(case_ctx, observed, 999, 8999)\ntests\\generated\\cartcheck\\test_cartcheck.py:65: in _assert_amounts\n    case_ctx.check(discount == expected_discount, \"优惠金额\", expected_discount, raw_discount)\ntests\\conftest.py:444: in check\n    raise AssertionError(f\"{name}: expected={expected!r} actual={actual!r}\")\nE   AssertionError: 优惠金额: expected=999 actual='1000'",
+      "actual_raw": "tests\\generated\\cartcheck\\test_cartcheck.py:222: in test_tc_cart_011\n    _assert_amounts(case_ctx, observed, 999, 8999)\ntests\\generated\\cartcheck\\test_cartcheck.py:65: in _assert_amounts\n    case_ctx.check(discount == expected_discount, \"优惠金额\", expected_discount, raw_discount)\ntests\\conftest.py:444: in check\n    raise AssertionError(f\"{name}: expected={expected!r} actual={actual!r}\")\nE   AssertionError: 优惠金额: expected=999 actual='1000'",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "优惠金额",
+          "expected": "999",
+          "actual": "1000",
+          "passed": false,
+          "at": "2026-10-31T01:04:12+08:00"
+        }
+      ],
+      "assertion_count": 1,
+      "assertions_passed": 0,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.070s）",
+        "在 amount 输入 '9998'，在 coupon 输入 'CP1234'",
+        "level 选择 gold，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：amount）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-b10b2ed669",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-011",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-011/TC-CART-011__result__element__20261030T170412-556.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:12+08:00",
+          "size_bytes": 9553,
+          "sha256": "24aee32978f032d9f4dbd3a0ce72cfa928aad858f21a0760426fb3982932ca1c",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-0a25812b8d",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-011",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-011/TC-CART-011__failure__viewport__20261030T170412-696.png",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时视口截图",
+          "created_at": "2026-10-31T01:04:12+08:00",
+          "size_bytes": 36210,
+          "sha256": "a6c863a9edd0151198d09ac15efa0f33f120bd10cd43c3a84de525463880f82f",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-31d3753564",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-011",
+          "kind": "fullpage-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-011/TC-CART-011__failure__fullpage__20261030T170412-696.png",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时整页截图",
+          "created_at": "2026-10-31T01:04:12+08:00",
+          "size_bytes": 35765,
+          "sha256": "7989503b98f96ce45083e79c897cb28701167ff05225ad7b95cf59f20e019e4e",
+          "immutable": true,
+          "meta": {},
+          "width": 1239,
+          "height": 792,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-a0d83f3944",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-011",
+          "kind": "page-source",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-011/TC-CART-011__failure__page-source__20261030T170412-696.html",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时页面源码",
+          "created_at": "2026-10-31T01:04:12+08:00",
+          "size_bytes": 2443,
+          "sha256": "482bbeec6ff8d4c926387b7e6abf387d8e72cc51af3bccf159e1e62945852303",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-98e92d076c",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-011",
+          "kind": "log",
+          "path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-011__browser__20261030T170412-696.log",
+          "bucket": "logs",
+          "step": "failure",
+          "caption": "失败时浏览器控制台日志",
+          "created_at": "2026-10-31T01:04:12+08:00",
+          "size_bytes": 2,
+          "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-ee7085ab95",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-011",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-011/TC-CART-011__repro__element__20261030T170518-810.png",
+          "bucket": "raw",
+          "step": "repro",
+          "caption": "独立复现：同一输入再次执行的结果区截图",
+          "created_at": "2026-10-31T01:05:18+08:00",
+          "size_bytes": 9553,
+          "sha256": "24aee32978f032d9f4dbd3a0ce72cfa928aad858f21a0760426fb3982932ca1c",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 6,
+      "evidence_complete": true,
+      "defects": [
+        {
+          "defect_id": "DEF-003",
+          "title": "金卡 9998 元折扣四舍五入为 1000（应 999）",
+          "severity": "minor",
+          "severity_rationale": "与 TC-CART-003 同一根因（未向下取整），但发生在金额上边界附近，单次金额偏差 1 元，业务影响小于中段金额；单独登记以便边界回归可追溯。",
+          "category": "APP",
+          "status": "open",
+          "description": "TC-CART-011 输入 amount=9998、coupon=CP1234、level=gold、points 未勾选，实测 discount=1000、payable=8998；9998x0.10=999.8 向下取整应为 999，应付 8999。独立复现脚本 repro.py 结果一致。根因同 DEF-002（四舍五入），本条为边界取值上的独立证据。",
+          "environment": "Windows 11 10.0.26340 / Python 3.13.9 / Selenium 4.51.0 / Chrome 156.0.8078.74 / ChromeDriver 156.0.8078.80 / headless 1280x900 / http://127.0.0.1:8765/",
+          "preconditions": [
+            "页面处于初始状态：amount 与 coupon 为空、level=regular、points 未勾选",
+            "测试数据 amount=9998、coupon=CP1234、level=gold、points 未勾选"
+          ],
+          "repro_steps": [
+            "打开 http://127.0.0.1:8765/ 并等待「计算」按钮可点击",
+            "在 amount 输入 9998，在 coupon 输入 CP1234",
+            "level 选择 gold，points 保持未勾选",
+            "点击「计算」按钮",
+            "读取 discount 与 payable：实测 1000 与 8998，期望 999 与 8999"
+          ],
+          "repro_status": "reproduced",
+          "repro_count": 2,
+          "expected": "discount=999；payable=8999（9998x0.1=999.8 floor）",
+          "actual": "discount=1000；payable=8998；message=(空)",
+          "evidence": [
+            "EV-b10b2ed669",
+            "EV-0a25812b8d",
+            "EV-ee7085ab95"
+          ],
+          "created_at": "2026-10-31T01:06:03+08:00",
+          "severity_label": "次要",
+          "status_label": "待处理",
+          "category_label": "产品",
+          "repro_label": "已复现",
+          "unconfirmed": false,
+          "evidence_ids": [
+            "EV-b10b2ed669",
+            "EV-0a25812b8d",
+            "EV-ee7085ab95"
+          ],
+          "evidence_paths": [
+            "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-011/TC-CART-011__result__element__20261030T170412-556.png",
+            "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-011/TC-CART-011__failure__viewport__20261030T170412-696.png",
+            "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-011/TC-CART-011__repro__element__20261030T170518-810.png"
+          ],
+          "missing_fields": []
+        }
+      ],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-011.log",
+      "log_exists": true,
+      "duration_ms": 782,
+      "meta": {
+        "requirement_ids": "REQ-01;REQ-05;REQ-11",
+        "method": "边界值 3-value（9998/9999/10000）",
+        "priority": "P1",
+        "case_type": "boundary",
+        "failure_class": "APP"
+      },
+      "requirement_ids": [
+        "REQ-01",
+        "REQ-05",
+        "REQ-11"
+      ],
+      "priority": "P1",
+      "case_type": "boundary",
+      "method": "边界值 3-value（9998/9999/10000）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=9998；coupon=CP1234；level=gold；points=未勾选",
+      "design_status": "failed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_011",
+      "junit": {
+        "name": "test_tc_cart_011",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.785,
+        "status": "failed",
+        "message": "AssertionError: 优惠金额: expected=999 actual='1000'"
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-012",
+      "title": "金额 9999 为有效上边界：金卡优惠 999、应付 9000",
+      "source_title": "test_tc_cart_012",
+      "title_source": "case-table",
+      "status": "failed",
+      "status_label": "失败",
+      "expected": "discount=999；payable=9000（9999x0.1=999.9 floor=999）",
+      "expected_raw": "discount=999；payable=9000（9999x0.1=999.9 floor=999）",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "tests\\generated\\cartcheck\\test_cartcheck.py:234: in test_tc_cart_012\n    _assert_amounts(case_ctx, observed, 999, 9000)\ntests\\generated\\cartcheck\\test_cartcheck.py:65: in _assert_amounts\n    case_ctx.check(discount == expected_discount, \"优惠金额\", expected_discount, raw_discount)\ntests\\conftest.py:444: in check\n    raise AssertionError(f\"{name}: expected={expected!r} actual={actual!r}\")\nE   AssertionError: 优惠金额: expected=999 actual='1000'",
+      "actual_raw": "tests\\generated\\cartcheck\\test_cartcheck.py:234: in test_tc_cart_012\n    _assert_amounts(case_ctx, observed, 999, 9000)\ntests\\generated\\cartcheck\\test_cartcheck.py:65: in _assert_amounts\n    case_ctx.check(discount == expected_discount, \"优惠金额\", expected_discount, raw_discount)\ntests\\conftest.py:444: in check\n    raise AssertionError(f\"{name}: expected={expected!r} actual={actual!r}\")\nE   AssertionError: 优惠金额: expected=999 actual='1000'",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "优惠金额",
+          "expected": "999",
+          "actual": "1000",
+          "passed": false,
+          "at": "2026-10-31T01:04:13+08:00"
+        }
+      ],
+      "assertion_count": 1,
+      "assertions_passed": 0,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.064s）",
+        "在 amount 输入 '9999'，在 coupon 输入 'CP1234'",
+        "level 选择 gold，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：amount）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-7853ca95bc",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-012",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-012/TC-CART-012__result__element__20261030T170413-627.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:13+08:00",
+          "size_bytes": 9425,
+          "sha256": "ddfc939e080013a866b7637ad57f4122f80b89a3e2e3bd15d96a59f5df83eb9d",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-5bf2046869",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-012",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-012/TC-CART-012__failure__viewport__20261030T170413-762.png",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时视口截图",
+          "created_at": "2026-10-31T01:04:13+08:00",
+          "size_bytes": 35992,
+          "sha256": "db3f7e4a097837e8e398a27500425edfbbe3a4d0195e3d63800a735dcd2e06ea",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-3623e012c8",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-012",
+          "kind": "fullpage-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-012/TC-CART-012__failure__fullpage__20261030T170413-762.png",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时整页截图",
+          "created_at": "2026-10-31T01:04:13+08:00",
+          "size_bytes": 35566,
+          "sha256": "cbc73f006b68655afd298d803fce33fc9b3cf871c3b98ce00b6ca4b8456f569e",
+          "immutable": true,
+          "meta": {},
+          "width": 1239,
+          "height": 792,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-4d662b533b",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-012",
+          "kind": "page-source",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-012/TC-CART-012__failure__page-source__20261030T170413-762.html",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时页面源码",
+          "created_at": "2026-10-31T01:04:13+08:00",
+          "size_bytes": 2443,
+          "sha256": "5ee9b8a78efa95478fe6432b7d44c70ec3031c299eea7e80c9c5e53b1d179cac",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-a4a4ab41d6",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-012",
+          "kind": "log",
+          "path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-012__browser__20261030T170413-762.log",
+          "bucket": "logs",
+          "step": "failure",
+          "caption": "失败时浏览器控制台日志",
+          "created_at": "2026-10-31T01:04:14+08:00",
+          "size_bytes": 2,
+          "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-fead5dfe76",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-012",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-012/TC-CART-012__repro__element__20261030T170519-364.png",
+          "bucket": "raw",
+          "step": "repro",
+          "caption": "独立复现：同一输入再次执行的结果区截图",
+          "created_at": "2026-10-31T01:05:19+08:00",
+          "size_bytes": 9425,
+          "sha256": "ddfc939e080013a866b7637ad57f4122f80b89a3e2e3bd15d96a59f5df83eb9d",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 6,
+      "evidence_complete": true,
+      "defects": [
+        {
+          "defect_id": "DEF-004",
+          "title": "金卡 9999 元折扣四舍五入为 1000（应 999）",
+          "severity": "minor",
+          "severity_rationale": "与 TC-CART-003 同一根因（未向下取整），出现在允许金额的最大值上，单次偏差 1 元；作为上边界回归证据独立登记，便于修复后逐条验证。",
+          "category": "APP",
+          "status": "open",
+          "description": "TC-CART-012 输入 amount=9999、coupon=CP1234、level=gold、points 未勾选，实测 discount=1000、payable=8999；9999x0.10=999.9 向下取整应为 999，应付 9000。探索阶段对同一输入也观察到 1000 与 8999，独立复现脚本 repro.py 第三次结果一致。",
+          "environment": "Windows 11 10.0.26340 / Python 3.13.9 / Selenium 4.51.0 / Chrome 156.0.8078.74 / ChromeDriver 156.0.8078.80 / headless 1280x900 / http://127.0.0.1:8765/",
+          "preconditions": [
+            "页面处于初始状态：amount 与 coupon 为空、level=regular、points 未勾选",
+            "测试数据 amount=9999、coupon=CP1234、level=gold、points 未勾选"
+          ],
+          "repro_steps": [
+            "打开 http://127.0.0.1:8765/ 并等待「计算」按钮可点击",
+            "在 amount 输入 9999，在 coupon 输入 CP1234",
+            "level 选择 gold，points 保持未勾选",
+            "点击「计算」按钮",
+            "读取 discount 与 payable：实测 1000 与 8999，期望 999 与 9000"
+          ],
+          "repro_status": "reproduced",
+          "repro_count": 2,
+          "expected": "discount=999；payable=9000（9999x0.1=999.9 floor）",
+          "actual": "discount=1000；payable=8999；message=(空)",
+          "evidence": [
+            "EV-7853ca95bc",
+            "EV-5bf2046869",
+            "EV-fead5dfe76"
+          ],
+          "created_at": "2026-10-31T01:06:09+08:00",
+          "severity_label": "次要",
+          "status_label": "待处理",
+          "category_label": "产品",
+          "repro_label": "已复现",
+          "unconfirmed": false,
+          "evidence_ids": [
+            "EV-7853ca95bc",
+            "EV-5bf2046869",
+            "EV-fead5dfe76"
+          ],
+          "evidence_paths": [
+            "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-012/TC-CART-012__result__element__20261030T170413-627.png",
+            "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-012/TC-CART-012__failure__viewport__20261030T170413-762.png",
+            "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-012/TC-CART-012__repro__element__20261030T170519-364.png"
+          ],
+          "missing_fields": []
+        }
+      ],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-012.log",
+      "log_exists": true,
+      "duration_ms": 753,
+      "meta": {
+        "requirement_ids": "REQ-01;REQ-05;REQ-11",
+        "method": "边界值 3-value（9998/9999/10000）",
+        "priority": "P1",
+        "case_type": "boundary",
+        "failure_class": "APP"
+      },
+      "requirement_ids": [
+        "REQ-01",
+        "REQ-05",
+        "REQ-11"
+      ],
+      "priority": "P1",
+      "case_type": "boundary",
+      "method": "边界值 3-value（9998/9999/10000）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=9999；coupon=CP1234；level=gold；points=未勾选",
+      "design_status": "failed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_012",
+      "junit": {
+        "name": "test_tc_cart_012",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.75,
+        "status": "failed",
+        "message": "AssertionError: 优惠金额: expected=999 actual='1000'"
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-013",
+      "title": "金额 10000 超出上边界：提示金额错误且两项输出为 -",
+      "source_title": "test_tc_cart_013",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "message=金额需为 1-9999 的整数；discount=-；payable=-",
+      "expected_raw": "message=金额需为 1-9999 的整数；discount=-；payable=-",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=-；payable=-；message=金额需为 1-9999 的整数",
+      "actual_raw": "discount=-；payable=-；message=金额需为 1-9999 的整数",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "提示文案",
+          "expected": "金额需为 1-9999 的整数",
+          "actual": "金额需为 1-9999 的整数",
+          "passed": true,
+          "at": "2026-10-31T01:04:14+08:00"
+        },
+        {
+          "name": "优惠金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:14+08:00"
+        },
+        {
+          "name": "应付金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:14+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.064s）",
+        "在 amount 输入 '10000'，在 coupon 输入 'CP1234'",
+        "level 选择 gold，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：message）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-09c27f6edc",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-013",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-013/TC-CART-013__result__element__20261030T170414-695.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:14+08:00",
+          "size_bytes": 7852,
+          "sha256": "90fb83e6a5416efedffdf53550ab5db928276ff96bda6668fb601c743ecd0530",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-a55359d604",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-013",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-013/TC-CART-013__final__viewport__20261030T170414-861.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:14+08:00",
+          "size_bytes": 34424,
+          "sha256": "2d332c8c3d2fdb106e3eff16d11bf1008f29273fa4918f0d741ae42fd605e6cc",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-013.log",
+      "log_exists": true,
+      "duration_ms": 782,
+      "meta": {
+        "requirement_ids": "REQ-02;REQ-11",
+        "method": "边界值 3-value（9998/9999/10000）+ 无效分区",
+        "priority": "P0",
+        "case_type": "boundary"
+      },
+      "requirement_ids": [
+        "REQ-02",
+        "REQ-11"
+      ],
+      "priority": "P0",
+      "case_type": "boundary",
+      "method": "边界值 3-value（9998/9999/10000）+ 无效分区",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=10000；coupon=CP1234；level=gold；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_013",
+      "junit": {
+        "name": "test_tc_cart_013",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.811,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-014",
+      "title": "金卡 501 元刚过门槛：优惠 floor(50.1)=50、应付 451",
+      "source_title": "test_tc_cart_014",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "discount=50；payable=451",
+      "expected_raw": "discount=50；payable=451",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=50；payable=451；message=(空)",
+      "actual_raw": "discount=50；payable=451；message=(空)",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "优惠金额",
+          "expected": "50",
+          "actual": "50",
+          "passed": true,
+          "at": "2026-10-31T01:04:15+08:00"
+        },
+        {
+          "name": "应付金额",
+          "expected": "451",
+          "actual": "451",
+          "passed": true,
+          "at": "2026-10-31T01:04:15+08:00"
+        },
+        {
+          "name": "合法输入不应出现错误提示",
+          "expected": "message 不属于 (金额需为 1-9999 的整数 | 优惠券码无效)",
+          "actual": "(空)",
+          "passed": true,
+          "at": "2026-10-31T01:04:15+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.069s）",
+        "在 amount 输入 '501'，在 coupon 输入 'CP1234'",
+        "level 选择 gold，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：amount）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-19f2df71cd",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-014",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-014/TC-CART-014__result__element__20261030T170415-645.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:15+08:00",
+          "size_bytes": 7443,
+          "sha256": "7ba1cefbc6b6aa16d7a5575603d73948841d49bc12c3d175295d0145bf3332a0",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-ba9d0c6ca2",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-014",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-014/TC-CART-014__final__viewport__20261030T170415-809.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:15+08:00",
+          "size_bytes": 33840,
+          "sha256": "b1e164094d83811af715fbeb6e9003b61855e1dbf2c979eb80364b576cc57aee",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-014.log",
+      "log_exists": true,
+      "duration_ms": 817,
+      "meta": {
+        "requirement_ids": "REQ-05;REQ-11",
+        "method": "边界值 3-value（499/500/501）",
+        "priority": "P1",
+        "case_type": "boundary"
+      },
+      "requirement_ids": [
+        "REQ-05",
+        "REQ-11"
+      ],
+      "priority": "P1",
+      "case_type": "boundary",
+      "method": "边界值 3-value（499/500/501）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=501；coupon=CP1234；level=gold；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_014",
+      "junit": {
+        "name": "test_tc_cart_014",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.845,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-015",
+      "title": "银卡 801 元刚过门槛：优惠 floor(120.15)=120、应付 681",
+      "source_title": "test_tc_cart_015",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "discount=120；payable=681",
+      "expected_raw": "discount=120；payable=681",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=120；payable=681；message=(空)",
+      "actual_raw": "discount=120；payable=681；message=(空)",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "优惠金额",
+          "expected": "120",
+          "actual": "120",
+          "passed": true,
+          "at": "2026-10-31T01:04:16+08:00"
+        },
+        {
+          "name": "应付金额",
+          "expected": "681",
+          "actual": "681",
+          "passed": true,
+          "at": "2026-10-31T01:04:16+08:00"
+        },
+        {
+          "name": "合法输入不应出现错误提示",
+          "expected": "message 不属于 (金额需为 1-9999 的整数 | 优惠券码无效)",
+          "actual": "(空)",
+          "passed": true,
+          "at": "2026-10-31T01:04:16+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.070s）",
+        "在 amount 输入 '801'，在 coupon 输入 'CP1234'",
+        "level 选择 silver，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：amount）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-1210e9f882",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-015",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-015/TC-CART-015__result__element__20261030T170416-561.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:16+08:00",
+          "size_bytes": 8118,
+          "sha256": "57fbb7c7a81b2d7da514171192a96dcaa7b8fd9b1d048e29f3faefcd1959464b",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-104634f454",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-015",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-015/TC-CART-015__final__viewport__20261030T170416-724.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:16+08:00",
+          "size_bytes": 34620,
+          "sha256": "5b54ad5cf5ab85d3fcb10fb6be6d7488fe82beee768835f78e6f32c6b06912da",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-015.log",
+      "log_exists": true,
+      "duration_ms": 790,
+      "meta": {
+        "requirement_ids": "REQ-06;REQ-11",
+        "method": "边界值 3-value（799/800/801）",
+        "priority": "P1",
+        "case_type": "boundary"
+      },
+      "requirement_ids": [
+        "REQ-06",
+        "REQ-11"
+      ],
+      "priority": "P1",
+      "case_type": "boundary",
+      "method": "边界值 3-value（799/800/801）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=801；coupon=CP1234；level=silver；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_015",
+      "junit": {
+        "name": "test_tc_cart_015",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.82,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-016",
+      "title": "金额为空：提示金额错误且不进行计算",
+      "source_title": "test_tc_cart_016",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "message=金额需为 1-9999 的整数；discount=-；payable=-",
+      "expected_raw": "message=金额需为 1-9999 的整数；discount=-；payable=-",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=-；payable=-；message=金额需为 1-9999 的整数",
+      "actual_raw": "discount=-；payable=-；message=金额需为 1-9999 的整数",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "提示文案",
+          "expected": "金额需为 1-9999 的整数",
+          "actual": "金额需为 1-9999 的整数",
+          "passed": true,
+          "at": "2026-10-31T01:04:17+08:00"
+        },
+        {
+          "name": "优惠金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:17+08:00"
+        },
+        {
+          "name": "应付金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:17+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.067s）",
+        "在 amount 输入 ''，在 coupon 输入 'CP1234'",
+        "level 选择 gold，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：message）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-56fa262ed6",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-016",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-016/TC-CART-016__result__element__20261030T170417-446.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:17+08:00",
+          "size_bytes": 7852,
+          "sha256": "90fb83e6a5416efedffdf53550ab5db928276ff96bda6668fb601c743ecd0530",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-bcfd8ff112",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-016",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-016/TC-CART-016__final__viewport__20261030T170417-608.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:17+08:00",
+          "size_bytes": 35107,
+          "sha256": "49ee7bcd1f30e6a61c257c72513961c0cf2c5bd087a4257d6422fcd785f0b624",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-016.log",
+      "log_exists": true,
+      "duration_ms": 753,
+      "meta": {
+        "requirement_ids": "REQ-02",
+        "method": "等价类（空值无效分区）",
+        "priority": "P0",
+        "case_type": "negative"
+      },
+      "requirement_ids": [
+        "REQ-02"
+      ],
+      "priority": "P0",
+      "case_type": "negative",
+      "method": "等价类（空值无效分区）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=（空）；coupon=CP1234；level=gold；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_016",
+      "junit": {
+        "name": "test_tc_cart_016",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.781,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-017",
+      "title": "金额为小数 500.5：属于非整数，必须拒绝",
+      "source_title": "test_tc_cart_017",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "message=金额需为 1-9999 的整数；discount=-；payable=-",
+      "expected_raw": "message=金额需为 1-9999 的整数；discount=-；payable=-",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=-；payable=-；message=金额需为 1-9999 的整数",
+      "actual_raw": "discount=-；payable=-；message=金额需为 1-9999 的整数",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "提示文案",
+          "expected": "金额需为 1-9999 的整数",
+          "actual": "金额需为 1-9999 的整数",
+          "passed": true,
+          "at": "2026-10-31T01:04:18+08:00"
+        },
+        {
+          "name": "优惠金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:18+08:00"
+        },
+        {
+          "name": "应付金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:18+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.068s）",
+        "在 amount 输入 '500.5'，在 coupon 输入 'CP1234'",
+        "level 选择 gold，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：message）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-42b7114bb3",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-017",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-017/TC-CART-017__result__element__20261030T170418-368.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:18+08:00",
+          "size_bytes": 7852,
+          "sha256": "90fb83e6a5416efedffdf53550ab5db928276ff96bda6668fb601c743ecd0530",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-2ff66c4d70",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-017",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-017/TC-CART-017__final__viewport__20261030T170418-541.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:18+08:00",
+          "size_bytes": 34339,
+          "sha256": "cb2f702af113c0056323a19eaadf95499d91a45822f29ba69bf3f89a0f7f4cba",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-017.log",
+      "log_exists": true,
+      "duration_ms": 809,
+      "meta": {
+        "requirement_ids": "REQ-02",
+        "method": "等价类（非整数无效分区）",
+        "priority": "P0",
+        "case_type": "negative"
+      },
+      "requirement_ids": [
+        "REQ-02"
+      ],
+      "priority": "P0",
+      "case_type": "negative",
+      "method": "等价类（非整数无效分区）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=500.5；coupon=CP1234；level=gold；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_017",
+      "junit": {
+        "name": "test_tc_cart_017",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.84,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-018",
+      "title": "金额为非数字 abc：提示金额错误且两项输出为 -",
+      "source_title": "test_tc_cart_018",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "message=金额需为 1-9999 的整数；discount=-；payable=-",
+      "expected_raw": "message=金额需为 1-9999 的整数；discount=-；payable=-",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=-；payable=-；message=金额需为 1-9999 的整数",
+      "actual_raw": "discount=-；payable=-；message=金额需为 1-9999 的整数",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "提示文案",
+          "expected": "金额需为 1-9999 的整数",
+          "actual": "金额需为 1-9999 的整数",
+          "passed": true,
+          "at": "2026-10-31T01:04:19+08:00"
+        },
+        {
+          "name": "优惠金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:19+08:00"
+        },
+        {
+          "name": "应付金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:19+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.077s）",
+        "在 amount 输入 'abc'，在 coupon 输入 'CP1234'",
+        "level 选择 gold，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：message）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-bc8da73870",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-018",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-018/TC-CART-018__result__element__20261030T170419-358.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:19+08:00",
+          "size_bytes": 7852,
+          "sha256": "90fb83e6a5416efedffdf53550ab5db928276ff96bda6668fb601c743ecd0530",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-3d04225198",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-018",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-018/TC-CART-018__final__viewport__20261030T170419-525.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:19+08:00",
+          "size_bytes": 34194,
+          "sha256": "79d5d7656cc4ac2f479d47e6d212387644c2edfeccb1330ee92dd910c394cc83",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-018.log",
+      "log_exists": true,
+      "duration_ms": 852,
+      "meta": {
+        "requirement_ids": "REQ-02",
+        "method": "等价类（非数字无效分区）",
+        "priority": "P1",
+        "case_type": "negative"
+      },
+      "requirement_ids": [
+        "REQ-02"
+      ],
+      "priority": "P1",
+      "case_type": "negative",
+      "method": "等价类（非数字无效分区）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=abc；coupon=CP1234；level=gold；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_018",
+      "junit": {
+        "name": "test_tc_cart_018",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.878,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-019",
+      "title": "券码 5 位 CP123：长度不足应提示券码无效",
+      "source_title": "test_tc_cart_019",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "message=优惠券码无效；discount=-；payable=-",
+      "expected_raw": "message=优惠券码无效；discount=-；payable=-",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=-；payable=-；message=优惠券码无效",
+      "actual_raw": "discount=-；payable=-；message=优惠券码无效",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "提示文案",
+          "expected": "优惠券码无效",
+          "actual": "优惠券码无效",
+          "passed": true,
+          "at": "2026-10-31T01:04:20+08:00"
+        },
+        {
+          "name": "优惠金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:20+08:00"
+        },
+        {
+          "name": "应付金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:20+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.069s）",
+        "在 amount 输入 '500'，在 coupon 输入 'CP123'",
+        "level 选择 gold，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：message）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-df86048c4e",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-019",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-019/TC-CART-019__result__element__20261030T170420-304.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:20+08:00",
+          "size_bytes": 7316,
+          "sha256": "077cc59082e0bc2543877f7424f75b117d5fc48fabc9c1a1eaab3d4af424527a",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-0c271559e4",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-019",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-019/TC-CART-019__final__viewport__20261030T170420-492.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:20+08:00",
+          "size_bytes": 33665,
+          "sha256": "da1342efc4f619103b9eb4338ec06248940efc86734ecf70f4c78ca77e78cabd",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-019.log",
+      "log_exists": true,
+      "duration_ms": 845,
+      "meta": {
+        "requirement_ids": "REQ-04;REQ-11",
+        "method": "格式边界（长度 5/6/7）",
+        "priority": "P1",
+        "case_type": "negative"
+      },
+      "requirement_ids": [
+        "REQ-04",
+        "REQ-11"
+      ],
+      "priority": "P1",
+      "case_type": "negative",
+      "method": "格式边界（长度 5/6/7）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=500；coupon=CP123；level=gold；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_019",
+      "junit": {
+        "name": "test_tc_cart_019",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.876,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-020",
+      "title": "券码 7 位 CP12345：长度超出应提示券码无效",
+      "source_title": "test_tc_cart_020",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "message=优惠券码无效；discount=-；payable=-",
+      "expected_raw": "message=优惠券码无效；discount=-；payable=-",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=-；payable=-；message=优惠券码无效",
+      "actual_raw": "discount=-；payable=-；message=优惠券码无效",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "提示文案",
+          "expected": "优惠券码无效",
+          "actual": "优惠券码无效",
+          "passed": true,
+          "at": "2026-10-31T01:04:21+08:00"
+        },
+        {
+          "name": "优惠金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:21+08:00"
+        },
+        {
+          "name": "应付金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:21+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.077s）",
+        "在 amount 输入 '500'，在 coupon 输入 'CP12345'",
+        "level 选择 gold，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：message）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-bd891df993",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-020",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-020/TC-CART-020__result__element__20261030T170421-299.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:21+08:00",
+          "size_bytes": 7316,
+          "sha256": "077cc59082e0bc2543877f7424f75b117d5fc48fabc9c1a1eaab3d4af424527a",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-c0f07467ff",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-020",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-020/TC-CART-020__final__viewport__20261030T170421-466.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:21+08:00",
+          "size_bytes": 33832,
+          "sha256": "374791d91a18f47dacb867c623c468430df32b31759625ba85004589f7d13556",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-020.log",
+      "log_exists": true,
+      "duration_ms": 844,
+      "meta": {
+        "requirement_ids": "REQ-04;REQ-11",
+        "method": "格式边界（长度 5/6/7）",
+        "priority": "P1",
+        "case_type": "negative"
+      },
+      "requirement_ids": [
+        "REQ-04",
+        "REQ-11"
+      ],
+      "priority": "P1",
+      "case_type": "negative",
+      "method": "格式边界（长度 5/6/7）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=500；coupon=CP12345；level=gold；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_020",
+      "junit": {
+        "name": "test_tc_cart_020",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.875,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-021",
+      "title": "券码含小写 cp1234：字符集不符必须拒绝",
+      "source_title": "test_tc_cart_021",
+      "title_source": "case-table",
+      "status": "failed",
+      "status_label": "失败",
+      "expected": "message=优惠券码无效；discount=-；payable=-",
+      "expected_raw": "message=优惠券码无效；discount=-；payable=-",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "tests\\generated\\cartcheck\\test_cartcheck.py:348: in test_tc_cart_021\n    _assert_error(case_ctx, observed, MSG_COUPON)\ntests\\generated\\cartcheck\\test_cartcheck.py:81: in _assert_error\n    case_ctx.check(observed[\"message\"] == expected_message, \"提示文案\", expected_message,\ntests\\conftest.py:444: in check\n    raise AssertionError(f\"{name}: expected={expected!r} actual={actual!r}\")\nE   AssertionError: 提示文案: expected='优惠券码无效' actual='(空)'",
+      "actual_raw": "tests\\generated\\cartcheck\\test_cartcheck.py:348: in test_tc_cart_021\n    _assert_error(case_ctx, observed, MSG_COUPON)\ntests\\generated\\cartcheck\\test_cartcheck.py:81: in _assert_error\n    case_ctx.check(observed[\"message\"] == expected_message, \"提示文案\", expected_message,\ntests\\conftest.py:444: in check\n    raise AssertionError(f\"{name}: expected={expected!r} actual={actual!r}\")\nE   AssertionError: 提示文案: expected='优惠券码无效' actual='(空)'",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "提示文案",
+          "expected": "优惠券码无效",
+          "actual": "(空)",
+          "passed": false,
+          "at": "2026-10-31T01:04:22+08:00"
+        }
+      ],
+      "assertion_count": 1,
+      "assertions_passed": 0,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.071s）",
+        "在 amount 输入 '500'，在 coupon 输入 'cp1234'",
+        "level 选择 gold，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：amount）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-7847d10e4a",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-021",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-021/TC-CART-021__result__element__20261030T170422-258.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:22+08:00",
+          "size_bytes": 7819,
+          "sha256": "e7439182840dfab718bed67bdfa1a688f383794a0c232a1862fe111b98300793",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-38a49db792",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-021",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-021/TC-CART-021__failure__viewport__20261030T170422-411.png",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时视口截图",
+          "created_at": "2026-10-31T01:04:22+08:00",
+          "size_bytes": 34331,
+          "sha256": "06b662fa0f1fa93e194db93f3e7c6c3d54fa4076ed9e4bdc8a5ff8c021ee3c43",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-603df52158",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-021",
+          "kind": "fullpage-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-021/TC-CART-021__failure__fullpage__20261030T170422-411.png",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时整页截图",
+          "created_at": "2026-10-31T01:04:22+08:00",
+          "size_bytes": 33878,
+          "sha256": "06637480e308a9060dd8da0865869dafb7e6ea2bdd44ea2bb670dddd472097dc",
+          "immutable": true,
+          "meta": {},
+          "width": 1239,
+          "height": 792,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-c36b916598",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-021",
+          "kind": "page-source",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-021/TC-CART-021__failure__page-source__20261030T170422-411.html",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时页面源码",
+          "created_at": "2026-10-31T01:04:22+08:00",
+          "size_bytes": 2440,
+          "sha256": "fb61c543f796442789f4cdc6594dff9fb7015d978c08dadcda1961c60cd9d987",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-2ac99205d4",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-021",
+          "kind": "log",
+          "path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-021__browser__20261030T170422-411.log",
+          "bucket": "logs",
+          "step": "failure",
+          "caption": "失败时浏览器控制台日志",
+          "created_at": "2026-10-31T01:04:22+08:00",
+          "size_bytes": 2,
+          "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-16852fea4e",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-021",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-021/TC-CART-021__repro__element__20261030T170519-913.png",
+          "bucket": "raw",
+          "step": "repro",
+          "caption": "独立复现：同一输入再次执行的结果区截图",
+          "created_at": "2026-10-31T01:05:19+08:00",
+          "size_bytes": 7819,
+          "sha256": "e7439182840dfab718bed67bdfa1a688f383794a0c232a1862fe111b98300793",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 6,
+      "evidence_complete": true,
+      "defects": [
+        {
+          "defect_id": "DEF-005",
+          "title": "优惠券码大小写校验缺失：cp1234 被接受并完成折扣计算",
+          "severity": "major",
+          "severity_rationale": "R2 规定券码必须匹配 ^CP[A-Z0-9]{4}$，小写属明文列出的非法字符；实现接受小写变体并照常计算折扣，等于绕过券码校验，影响所有含小写的券码而不只是单个取值，属校验规则缺失。",
+          "category": "APP",
+          "status": "open",
+          "description": "TC-CART-021 输入 amount=500、coupon=cp1234、level=gold、points 未勾选，实测 message 为空、discount=50、payable=450；需求 R2 要求提示「优惠券码无效」且两项显示 -、不进行计算。探索阶段（O-01）与独立复现脚本 repro.py 均得到相同结果，说明实现对比前统一转成了大写（或使用了大小写不敏感的比较）。",
+          "environment": "Windows 11 10.0.26340 / Python 3.13.9 / Selenium 4.51.0 / Chrome 156.0.8078.74 / ChromeDriver 156.0.8078.80 / headless 1280x900 / http://127.0.0.1:8765/",
+          "preconditions": [
+            "页面处于初始状态：amount 与 coupon 为空、level=regular、points 未勾选",
+            "测试数据 amount=500、coupon=cp1234、level=gold、points 未勾选"
+          ],
+          "repro_steps": [
+            "打开 http://127.0.0.1:8765/ 并等待「计算」按钮可点击",
+            "在 amount 输入 500，在 coupon 输入 cp1234（全小写）",
+            "level 选择 gold，points 保持未勾选",
+            "点击「计算」按钮",
+            "读取 message、discount 与 payable：实测空、50、450，期望优惠券码无效、-、-"
+          ],
+          "repro_status": "reproduced",
+          "repro_count": 2,
+          "expected": "message=优惠券码无效；discount=-；payable=-",
+          "actual": "message=(空)；discount=50；payable=450",
+          "evidence": [
+            "EV-7847d10e4a",
+            "EV-38a49db792",
+            "EV-16852fea4e"
+          ],
+          "created_at": "2026-10-31T01:06:09+08:00",
+          "severity_label": "主要",
+          "status_label": "待处理",
+          "category_label": "产品",
+          "repro_label": "已复现",
+          "unconfirmed": false,
+          "evidence_ids": [
+            "EV-7847d10e4a",
+            "EV-38a49db792",
+            "EV-16852fea4e"
+          ],
+          "evidence_paths": [
+            "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-021/TC-CART-021__result__element__20261030T170422-258.png",
+            "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-021/TC-CART-021__failure__viewport__20261030T170422-411.png",
+            "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-021/TC-CART-021__repro__element__20261030T170519-913.png"
+          ],
+          "missing_fields": []
+        }
+      ],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-021.log",
+      "log_exists": true,
+      "duration_ms": 802,
+      "meta": {
+        "requirement_ids": "REQ-04;REQ-11",
+        "method": "格式错误猜测（字符集）",
+        "priority": "P0",
+        "case_type": "negative",
+        "failure_class": "APP"
+      },
+      "requirement_ids": [
+        "REQ-04",
+        "REQ-11"
+      ],
+      "priority": "P0",
+      "case_type": "negative",
+      "method": "格式错误猜测（字符集）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=500；coupon=cp1234；level=gold；points=未勾选",
+      "design_status": "failed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_021",
+      "junit": {
+        "name": "test_tc_cart_021",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.799,
+        "status": "failed",
+        "message": "AssertionError: 提示文案: expected='优惠券码无效' actual='(空)'"
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-022",
+      "title": "券码含符号 CP12!4：符号属于非法字符应拒绝",
+      "source_title": "test_tc_cart_022",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "message=优惠券码无效；discount=-；payable=-",
+      "expected_raw": "message=优惠券码无效；discount=-；payable=-",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=-；payable=-；message=优惠券码无效",
+      "actual_raw": "discount=-；payable=-；message=优惠券码无效",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "提示文案",
+          "expected": "优惠券码无效",
+          "actual": "优惠券码无效",
+          "passed": true,
+          "at": "2026-10-31T01:04:23+08:00"
+        },
+        {
+          "name": "优惠金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:23+08:00"
+        },
+        {
+          "name": "应付金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:23+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.074s）",
+        "在 amount 输入 '500'，在 coupon 输入 'CP12!4'",
+        "level 选择 gold，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：message）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-d3aea220fe",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-022",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-022/TC-CART-022__result__element__20261030T170423-430.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:23+08:00",
+          "size_bytes": 7316,
+          "sha256": "077cc59082e0bc2543877f7424f75b117d5fc48fabc9c1a1eaab3d4af424527a",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-c9095e4331",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-022",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-022/TC-CART-022__final__viewport__20261030T170423-610.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:23+08:00",
+          "size_bytes": 33698,
+          "sha256": "674bce9d67e0e64d41727c8e61fdaadc9d03aab58e1fa1784687487f4d8febff",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-022.log",
+      "log_exists": true,
+      "duration_ms": 869,
+      "meta": {
+        "requirement_ids": "REQ-04;REQ-11",
+        "method": "格式错误猜测（字符集）",
+        "priority": "P1",
+        "case_type": "negative"
+      },
+      "requirement_ids": [
+        "REQ-04",
+        "REQ-11"
+      ],
+      "priority": "P1",
+      "case_type": "negative",
+      "method": "格式错误猜测（字符集）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=500；coupon=CP12!4；level=gold；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_022",
+      "junit": {
+        "name": "test_tc_cart_022",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.899,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-023",
+      "title": "券码含空格 CP 234：空格属于非法字符应拒绝",
+      "source_title": "test_tc_cart_023",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "message=优惠券码无效；discount=-；payable=-",
+      "expected_raw": "message=优惠券码无效；discount=-；payable=-",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=-；payable=-；message=优惠券码无效",
+      "actual_raw": "discount=-；payable=-；message=优惠券码无效",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "提示文案",
+          "expected": "优惠券码无效",
+          "actual": "优惠券码无效",
+          "passed": true,
+          "at": "2026-10-31T01:04:24+08:00"
+        },
+        {
+          "name": "优惠金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:24+08:00"
+        },
+        {
+          "name": "应付金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:24+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.074s）",
+        "在 amount 输入 '500'，在 coupon 输入 'CP 234'",
+        "level 选择 gold，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：message）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-7cd49c7027",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-023",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-023/TC-CART-023__result__element__20261030T170424-449.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:24+08:00",
+          "size_bytes": 7316,
+          "sha256": "077cc59082e0bc2543877f7424f75b117d5fc48fabc9c1a1eaab3d4af424527a",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-c20d9f348c",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-023",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-023/TC-CART-023__final__viewport__20261030T170424-613.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:24+08:00",
+          "size_bytes": 33719,
+          "sha256": "5f2d51f16226297289a5b742aae5871d8472050c59ee31538d9e9b321c273757",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-023.log",
+      "log_exists": true,
+      "duration_ms": 869,
+      "meta": {
+        "requirement_ids": "REQ-04;REQ-11",
+        "method": "格式错误猜测（字符集）",
+        "priority": "P1",
+        "case_type": "negative"
+      },
+      "requirement_ids": [
+        "REQ-04",
+        "REQ-11"
+      ],
+      "priority": "P1",
+      "case_type": "negative",
+      "method": "格式错误猜测（字符集）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=500；coupon=CP 234；level=gold；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_023",
+      "junit": {
+        "name": "test_tc_cart_023",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.901,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-024",
+      "title": "券码前缀错误 XX1234：前缀不是 CP 应拒绝",
+      "source_title": "test_tc_cart_024",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "message=优惠券码无效；discount=-；payable=-",
+      "expected_raw": "message=优惠券码无效；discount=-；payable=-",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=-；payable=-；message=优惠券码无效",
+      "actual_raw": "discount=-；payable=-；message=优惠券码无效",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "提示文案",
+          "expected": "优惠券码无效",
+          "actual": "优惠券码无效",
+          "passed": true,
+          "at": "2026-10-31T01:04:25+08:00"
+        },
+        {
+          "name": "优惠金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:25+08:00"
+        },
+        {
+          "name": "应付金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:25+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.075s）",
+        "在 amount 输入 '500'，在 coupon 输入 'XX1234'",
+        "level 选择 gold，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：message）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-4b31c28034",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-024",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-024/TC-CART-024__result__element__20261030T170425-461.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:25+08:00",
+          "size_bytes": 7316,
+          "sha256": "077cc59082e0bc2543877f7424f75b117d5fc48fabc9c1a1eaab3d4af424527a",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-114ecaf534",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-024",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-024/TC-CART-024__final__viewport__20261030T170425-628.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:25+08:00",
+          "size_bytes": 33904,
+          "sha256": "2a4b0cffc8f7c616cbd757fd3945911df79ab5931f2e06eb0deb992a12968d63",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-024.log",
+      "log_exists": true,
+      "duration_ms": 869,
+      "meta": {
+        "requirement_ids": "REQ-04",
+        "method": "格式错误猜测（前缀）",
+        "priority": "P1",
+        "case_type": "negative"
+      },
+      "requirement_ids": [
+        "REQ-04"
+      ],
+      "priority": "P1",
+      "case_type": "negative",
+      "method": "格式错误猜测（前缀）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=500；coupon=XX1234；level=gold；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_024",
+      "junit": {
+        "name": "test_tc_cart_024",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.901,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-025",
+      "title": "券码 4 位 CP12 与金卡折扣同时存在：券码校验优先，不得产生金额",
+      "source_title": "test_tc_cart_025",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "message=优惠券码无效；discount=-；payable=-",
+      "expected_raw": "message=优惠券码无效；discount=-；payable=-",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=-；payable=-；message=优惠券码无效",
+      "actual_raw": "discount=-；payable=-；message=优惠券码无效",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "提示文案",
+          "expected": "优惠券码无效",
+          "actual": "优惠券码无效",
+          "passed": true,
+          "at": "2026-10-31T01:04:26+08:00"
+        },
+        {
+          "name": "优惠金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:26+08:00"
+        },
+        {
+          "name": "应付金额为 -",
+          "expected": "-",
+          "actual": "-",
+          "passed": true,
+          "at": "2026-10-31T01:04:26+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.074s）",
+        "在 amount 输入 '600'，在 coupon 输入 'CP12'",
+        "level 选择 gold，points 勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：message）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-b0f8b15d31",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-025",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-025/TC-CART-025__result__element__20261030T170426-482.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:26+08:00",
+          "size_bytes": 7332,
+          "sha256": "4db1c97c4c105d78867dd40fc2e51562260f10454b643c480d0d25d0c1bf561e",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-f871fd2bea",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-025",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-025/TC-CART-025__final__viewport__20261030T170426-656.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:26+08:00",
+          "size_bytes": 33854,
+          "sha256": "a55b575a7d3fe232d8dc4ea313938624e4c7e92e04ddecf3715f63b1304cbec0",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-025.log",
+      "log_exists": true,
+      "duration_ms": 895,
+      "meta": {
+        "requirement_ids": "REQ-04",
+        "method": "判定表（规则列 9：C2=否 且 C5=是）",
+        "priority": "P0",
+        "case_type": "combination"
+      },
+      "requirement_ids": [
+        "REQ-04"
+      ],
+      "priority": "P0",
+      "case_type": "combination",
+      "method": "判定表（规则列 9：C2=否 且 C5=是）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=600；coupon=CP12；level=gold；points=勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_025",
+      "junit": {
+        "name": "test_tc_cart_025",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.927,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-026",
+      "title": "金额 1 元叠加积分：应付不得为负，最小为 0",
+      "source_title": "test_tc_cart_026",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "discount=0；payable=0",
+      "expected_raw": "discount=0；payable=0",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=0；payable=0；message=(空)",
+      "actual_raw": "discount=0；payable=0；message=(空)",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "优惠金额",
+          "expected": "0",
+          "actual": "0",
+          "passed": true,
+          "at": "2026-10-31T01:04:27+08:00"
+        },
+        {
+          "name": "应付金额",
+          "expected": "0",
+          "actual": "0",
+          "passed": true,
+          "at": "2026-10-31T01:04:27+08:00"
+        },
+        {
+          "name": "合法输入不应出现错误提示",
+          "expected": "message 不属于 (金额需为 1-9999 的整数 | 优惠券码无效)",
+          "actual": "(空)",
+          "passed": true,
+          "at": "2026-10-31T01:04:27+08:00"
+        },
+        {
+          "name": "应付金额非负",
+          "expected": ">=0",
+          "actual": "0",
+          "passed": true,
+          "at": "2026-10-31T01:04:27+08:00"
+        }
+      ],
+      "assertion_count": 4,
+      "assertions_passed": 4,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.074s）",
+        "在 amount 输入 '1'，在 coupon 输入 'CP1234'",
+        "level 选择 regular，points 勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：amount）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-701f26169a",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-026",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-026/TC-CART-026__result__element__20261030T170427-508.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:27+08:00",
+          "size_bytes": 6498,
+          "sha256": "9095ab7fdabd05cc109fc44f92f2e83f44c48855ca82f165f7726f699b83654e",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-290e19e60f",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-026",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-026/TC-CART-026__final__viewport__20261030T170427-722.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:27+08:00",
+          "size_bytes": 33236,
+          "sha256": "893886b3a1087917a1160208cb0018256d6868284aca7c1f37e5e7b2d7cd3970",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-026.log",
+      "log_exists": true,
+      "duration_ms": 929,
+      "meta": {
+        "requirement_ids": "REQ-08",
+        "method": "输出边界值（0/1）+ 判定表",
+        "priority": "P0",
+        "case_type": "boundary"
+      },
+      "requirement_ids": [
+        "REQ-08"
+      ],
+      "priority": "P0",
+      "case_type": "boundary",
+      "method": "输出边界值（0/1）+ 判定表",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=1；coupon=CP1234；level=regular；points=勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_026",
+      "junit": {
+        "name": "test_tc_cart_026",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.962,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-027",
+      "title": "普通会员 1000 元叠加积分：应付为 999 且不报错",
+      "source_title": "test_tc_cart_027",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "discount=0；payable=999",
+      "expected_raw": "discount=0；payable=999",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=0；payable=999；message=(空)",
+      "actual_raw": "discount=0；payable=999；message=(空)",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "优惠金额",
+          "expected": "0",
+          "actual": "0",
+          "passed": true,
+          "at": "2026-10-31T01:04:28+08:00"
+        },
+        {
+          "name": "应付金额",
+          "expected": "999",
+          "actual": "999",
+          "passed": true,
+          "at": "2026-10-31T01:04:28+08:00"
+        },
+        {
+          "name": "合法输入不应出现错误提示",
+          "expected": "message 不属于 (金额需为 1-9999 的整数 | 优惠券码无效)",
+          "actual": "(空)",
+          "passed": true,
+          "at": "2026-10-31T01:04:28+08:00"
+        },
+        {
+          "name": "普通会员不因无折扣报错",
+          "expected": "无错误提示",
+          "actual": "(空)",
+          "passed": true,
+          "at": "2026-10-31T01:04:28+08:00"
+        }
+      ],
+      "assertion_count": 4,
+      "assertions_passed": 4,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.072s）",
+        "在 amount 输入 '1000'，在 coupon 输入 'CP1234'",
+        "level 选择 regular，points 勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：amount）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-4699f09496",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-027",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-027/TC-CART-027__result__element__20261030T170428-578.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:28+08:00",
+          "size_bytes": 7888,
+          "sha256": "40d332983d839d334ea64dc5fd57fa39e7adf6ebe8f47ddb4b5a185b852f7c0c",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-33ae7d1b74",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-027",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-027/TC-CART-027__final__viewport__20261030T170428-785.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:28+08:00",
+          "size_bytes": 35041,
+          "sha256": "a4641ae3a8cc567f02d936c32396b2a10922198fb55aefcdac202320c1df3743",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-027.log",
+      "log_exists": true,
+      "duration_ms": 923,
+      "meta": {
+        "requirement_ids": "REQ-08;REQ-09",
+        "method": "判定表（规则列 8）",
+        "priority": "P1",
+        "case_type": "positive"
+      },
+      "requirement_ids": [
+        "REQ-08",
+        "REQ-09"
+      ],
+      "priority": "P1",
+      "case_type": "positive",
+      "method": "判定表（规则列 8）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=1000；coupon=CP1234；level=regular；points=勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_027",
+      "junit": {
+        "name": "test_tc_cart_027",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.958,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-028",
+      "title": "银卡 799 元未达门槛并叠加积分：优惠 0、应付 798",
+      "source_title": "test_tc_cart_028",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "discount=0；payable=798",
+      "expected_raw": "discount=0；payable=798",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=0；payable=798；message=(空)",
+      "actual_raw": "discount=0；payable=798；message=(空)",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "优惠金额",
+          "expected": "0",
+          "actual": "0",
+          "passed": true,
+          "at": "2026-10-31T01:04:29+08:00"
+        },
+        {
+          "name": "应付金额",
+          "expected": "798",
+          "actual": "798",
+          "passed": true,
+          "at": "2026-10-31T01:04:29+08:00"
+        },
+        {
+          "name": "合法输入不应出现错误提示",
+          "expected": "message 不属于 (金额需为 1-9999 的整数 | 优惠券码无效)",
+          "actual": "(空)",
+          "passed": true,
+          "at": "2026-10-31T01:04:29+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.076s）",
+        "在 amount 输入 '799'，在 coupon 输入 'CP1234'",
+        "level 选择 silver，points 勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：amount）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-03bd5d245c",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-028",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-028/TC-CART-028__result__element__20261030T170429-680.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:29+08:00",
+          "size_bytes": 7770,
+          "sha256": "6c423c58c96e2fcc1f347dfad84f6ca8904ed831ede1c433581ae86a9b52af64",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-9beb0b4eab",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-028",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-028/TC-CART-028__final__viewport__20261030T170429-851.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:29+08:00",
+          "size_bytes": 34583,
+          "sha256": "03a7dae8d2f5f7fe802a982ed462596394611206e975d1da152bef2c33aecae3",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-028.log",
+      "log_exists": true,
+      "duration_ms": 914,
+      "meta": {
+        "requirement_ids": "REQ-07;REQ-08",
+        "method": "判定表（规则列 6 + 7）",
+        "priority": "P2",
+        "case_type": "combination"
+      },
+      "requirement_ids": [
+        "REQ-07",
+        "REQ-08"
+      ],
+      "priority": "P2",
+      "case_type": "combination",
+      "method": "判定表（规则列 6 + 7）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=799；coupon=CP1234；level=silver；points=勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_028",
+      "junit": {
+        "name": "test_tc_cart_028",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.948,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-029",
+      "title": "券码 CPABCD（4 位大写字母）合法：按金卡 10% 计算 50/450",
+      "source_title": "test_tc_cart_029",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "discount=50；payable=450（券码视为合法，无券码错误提示）",
+      "expected_raw": "discount=50；payable=450（券码视为合法，无券码错误提示）",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "discount=50；payable=450；message=(空)",
+      "actual_raw": "discount=50；payable=450；message=(空)",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "优惠金额",
+          "expected": "50",
+          "actual": "50",
+          "passed": true,
+          "at": "2026-10-31T01:04:30+08:00"
+        },
+        {
+          "name": "应付金额",
+          "expected": "450",
+          "actual": "450",
+          "passed": true,
+          "at": "2026-10-31T01:04:30+08:00"
+        },
+        {
+          "name": "合法输入不应出现错误提示",
+          "expected": "message 不属于 (金额需为 1-9999 的整数 | 优惠券码无效)",
+          "actual": "(空)",
+          "passed": true,
+          "at": "2026-10-31T01:04:30+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.066s）",
+        "在 amount 输入 '500'，在 coupon 输入 'CPABCD'",
+        "level 选择 gold，points 不勾选",
+        "点击「计算」按钮",
+        "等待输出变化完成（触发通道：amount）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-13438dcdbc",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-029",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-029/TC-CART-029__result__element__20261030T170430-695.png",
+          "bucket": "raw",
+          "step": "result",
+          "caption": "用例证据：result",
+          "created_at": "2026-10-31T01:04:30+08:00",
+          "size_bytes": 7819,
+          "sha256": "e7439182840dfab718bed67bdfa1a688f383794a0c232a1862fe111b98300793",
+          "immutable": true,
+          "meta": {},
+          "width": 760,
+          "height": 239,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-d49760e34f",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-029",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-029/TC-CART-029__final__viewport__20261030T170430-872.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:30+08:00",
+          "size_bytes": 34428,
+          "sha256": "903a26d65ba3b47098268c1197daad18eabca64fbd64c137a57bebfe2e850ec8",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-029.log",
+      "log_exists": true,
+      "duration_ms": 864,
+      "meta": {
+        "requirement_ids": "REQ-03;REQ-11",
+        "method": "格式等价类（大写字母类）",
+        "priority": "P2",
+        "case_type": "positive"
+      },
+      "requirement_ids": [
+        "REQ-03",
+        "REQ-11"
+      ],
+      "priority": "P2",
+      "case_type": "positive",
+      "method": "格式等价类（大写字母类）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=500；coupon=CPABCD；level=gold；points=未勾选",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_029",
+      "junit": {
+        "name": "test_tc_cart_029",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.898,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-CART-030",
+      "title": "1280x900 视口无横向滚动、结果区计算前后可见、无弹窗且 2 秒内可交互",
+      "source_title": "test_tc_cart_030",
+      "title_source": "case-table",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "scrollWidth<=clientWidth；discount/payable/message 计算前后均可见；alert 计数=0；load_to_clickable<=2.0s",
+      "expected_raw": "scrollWidth<=clientWidth；discount/payable/message 计算前后均可见；alert 计数=0；load_to_clickable<=2.0s",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "scrollWidth=1239；clientWidth=1239；before={'discount': True, 'payable': True, 'message': True}；after={'discount': True, 'payable': True, 'message': True}；alert_count=0；native_alert=False；load_to_clickable=0.084s",
+      "actual_raw": "scrollWidth=1239；clientWidth=1239；before={'discount': True, 'payable': True, 'message': True}；after={'discount': True, 'payable': True, 'message': True}；alert_count=0；native_alert=False；load_to_clickable=0.084s",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "无横向滚动",
+          "expected": "scrollWidth<=clientWidth (1239)",
+          "actual": "1239",
+          "passed": true,
+          "at": "2026-10-31T01:04:31+08:00"
+        },
+        {
+          "name": "计算前结果区可见",
+          "expected": "True",
+          "actual": "{'discount': True, 'payable': True, 'message': True}",
+          "passed": true,
+          "at": "2026-10-31T01:04:31+08:00"
+        },
+        {
+          "name": "计算后结果区可见",
+          "expected": "True",
+          "actual": "{'discount': True, 'payable': True, 'message': True}",
+          "passed": true,
+          "at": "2026-10-31T01:04:31+08:00"
+        },
+        {
+          "name": "无 JavaScript 弹窗",
+          "expected": "0",
+          "actual": "0",
+          "passed": true,
+          "at": "2026-10-31T01:04:31+08:00"
+        },
+        {
+          "name": "2 秒内可交互",
+          "expected": "<=2.0s",
+          "actual": "0.084s",
+          "passed": true,
+          "at": "2026-10-31T01:04:31+08:00"
+        }
+      ],
+      "assertion_count": 5,
+      "assertions_passed": 5,
+      "steps": [
+        "1280x900 视口打开页面，计时到「计算」按钮可点击：0.084s",
+        "读取布局：scrollWidth=1239 clientWidth=1239 innerWidth=1254",
+        "计算完成（amount），再次读取输出可见性，alert 计数=0，原生对话框={'present': False, 'text': ''}"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-a3d843928e",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-030",
+          "kind": "fullpage-screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-030/TC-CART-030__layout__fullpage__20261030T170431-675.png",
+          "bucket": "raw",
+          "step": "layout",
+          "caption": "用例证据：layout",
+          "created_at": "2026-10-31T01:04:31+08:00",
+          "size_bytes": 33857,
+          "sha256": "501a5eabf92242d6c27a8d3f8eeabba95d480ad67793ed987d728fca6c18a417",
+          "immutable": true,
+          "meta": {},
+          "width": 1239,
+          "height": 792,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-4e460d1a81",
+          "run_id": "RUN-20261031-COLDSTART-01",
+          "case_id": "TC-CART-030",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-030/TC-CART-030__final__viewport__20261030T170431-942.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-31T01:04:31+08:00",
+          "size_bytes": 33573,
+          "sha256": "3490f17c14111244a02d88f0adcb46623b180cdb354baa0616e1f128b5574f85",
+          "immutable": true,
+          "meta": {},
+          "width": 1254,
+          "height": 744,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261031-COLDSTART-01/TC-CART-030.log",
+      "log_exists": true,
+      "duration_ms": 916,
+      "meta": {
+        "requirement_ids": "REQ-12;REQ-13",
+        "method": "非功能阈值检查（MS-07）",
+        "priority": "P1",
+        "case_type": "nonfunctional"
+      },
+      "requirement_ids": [
+        "REQ-12",
+        "REQ-13"
+      ],
+      "priority": "P1",
+      "case_type": "nonfunctional",
+      "method": "非功能阈值检查（MS-07）",
+      "preconditions": [
+        "页面已打开 http://127.0.0.1:8765/，表单为初始状态（amount 与 coupon 为空，level=regular，points 未勾选）"
+      ],
+      "test_data": "amount=500；coupon=CP1234；level=gold；points=未勾选；视口 1280x900",
+      "design_status": "passed",
+      "in_case_table": true,
+      "automation": "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_030",
+      "junit": {
+        "name": "test_tc_cart_030",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 3.257,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    }
+  ],
+  "defects": [
+    {
+      "defect_id": "DEF-001",
+      "title": "银卡订单 800 元未享受 15% 折扣：门槛判断使用 >800 而非 >=800",
+      "severity": "major",
+      "severity_rationale": "需求 R3 与示例 E2 明确 800 元应享 15%（120 元）。恰好 800 元的订单优惠被完全抹掉，应付多算 120 元，核心金额规则在等号边界失效；800 是常见整数价位且无任何提示。同类输入 801 元可正常得到 120/681（TC-CART-015 通过），说明门槛被写成严格大于。",
+      "category": "APP",
+      "status": "open",
+      "description": "TC-CART-002 输入 amount=800、coupon=CP1234、level=silver、points 未勾选，实测 discount=0、payable=800、message 为空。需求 R3 规定银卡订单金额 >=800 时折扣率 15%，优惠 floor(800x0.15)=120，应付 680；第 3 节 E2 给出同样的期望对。独立复现脚本 repro.py 第二次执行得到相同结果。",
+      "environment": "Windows 11 10.0.26340 / Python 3.13.9 / Selenium 4.51.0 / Chrome 156.0.8078.74 / ChromeDriver 156.0.8078.80 / headless 1280x900 / http://127.0.0.1:8765/",
+      "preconditions": [
+        "页面处于初始状态：amount 与 coupon 为空、level=regular、points 未勾选",
+        "测试数据 amount=800、coupon=CP1234、level=silver、points 未勾选"
+      ],
+      "repro_steps": [
+        "打开 http://127.0.0.1:8765/ 并等待「计算」按钮可点击",
+        "在 amount 输入 800，在 coupon 输入 CP1234",
+        "level 选择 silver，points 保持未勾选",
+        "点击「计算」按钮",
+        "读取 discount 与 payable：实测 0 与 800，期望 120 与 680"
+      ],
+      "repro_status": "reproduced",
+      "repro_count": 2,
+      "expected": "discount=120；payable=680（R3 silver>=800 -> 15%；E2）",
+      "actual": "discount=0；payable=800；message=(空)",
+      "evidence": [
+        "EV-b4ff76d876",
+        "EV-251a55b185",
+        "EV-7fff3e1b62"
+      ],
+      "created_at": "2026-10-31T01:05:57+08:00",
+      "severity_label": "主要",
+      "status_label": "待处理",
+      "category_label": "产品",
+      "repro_label": "已复现",
+      "unconfirmed": false,
+      "evidence_ids": [
+        "EV-b4ff76d876",
+        "EV-251a55b185",
+        "EV-7fff3e1b62"
+      ],
+      "evidence_paths": [
+        "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-002/TC-CART-002__result__element__20261030T170403-230.png",
+        "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-002/TC-CART-002__failure__viewport__20261030T170403-655.png",
+        "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-002/TC-CART-002__repro__element__20261030T170517-678.png"
+      ],
+      "missing_fields": []
+    },
+    {
+      "defect_id": "DEF-002",
+      "title": "金卡 10% 折扣采用四舍五入而非向下取整：555 元得 56（应 55）",
+      "severity": "major",
+      "severity_rationale": "R3 明文要求「优惠金额一律向下取整到整元（不得四舍五入）」；555x0.10=55.5 被算成 56，应付 499 而非 500。凡是折扣金额小数部分 >=0.5 的订单都会多减 1 元，属系统性金额偏差，且需求用「一律」「不得」明确禁止该行为。",
+      "category": "APP",
+      "status": "open",
+      "description": "TC-CART-003 输入 amount=555、coupon=CP1234、level=gold、points 未勾选，实测 discount=56、payable=499。需求 R3 与第 3 节 E3 给出 55 与 500。同一根因在 9998 元（TC-CART-011）与 9999 元（TC-CART-012）上再次出现，分别得 1000。独立复现脚本 repro.py 第二次执行结果一致。",
+      "environment": "Windows 11 10.0.26340 / Python 3.13.9 / Selenium 4.51.0 / Chrome 156.0.8078.74 / ChromeDriver 156.0.8078.80 / headless 1280x900 / http://127.0.0.1:8765/",
+      "preconditions": [
+        "页面处于初始状态：amount 与 coupon 为空、level=regular、points 未勾选",
+        "测试数据 amount=555、coupon=CP1234、level=gold、points 未勾选"
+      ],
+      "repro_steps": [
+        "打开 http://127.0.0.1:8765/ 并等待「计算」按钮可点击",
+        "在 amount 输入 555，在 coupon 输入 CP1234",
+        "level 选择 gold，points 保持未勾选",
+        "点击「计算」按钮",
+        "读取 discount 与 payable：实测 56 与 499，期望 55 与 500"
+      ],
+      "repro_status": "reproduced",
+      "repro_count": 2,
+      "expected": "discount=55；payable=500（E3；R3 向下取整）",
+      "actual": "discount=56；payable=499；message=(空)",
+      "evidence": [
+        "EV-196b03f496",
+        "EV-f172e16f67",
+        "EV-6d367d383c"
+      ],
+      "created_at": "2026-10-31T01:06:03+08:00",
+      "severity_label": "主要",
+      "status_label": "待处理",
+      "category_label": "产品",
+      "repro_label": "已复现",
+      "unconfirmed": false,
+      "evidence_ids": [
+        "EV-196b03f496",
+        "EV-f172e16f67",
+        "EV-6d367d383c"
+      ],
+      "evidence_paths": [
+        "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-003/TC-CART-003__result__element__20261030T170404-653.png",
+        "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-003/TC-CART-003__failure__viewport__20261030T170404-808.png",
+        "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-003/TC-CART-003__repro__element__20261030T170518-304.png"
+      ],
+      "missing_fields": []
+    },
+    {
+      "defect_id": "DEF-003",
+      "title": "金卡 9998 元折扣四舍五入为 1000（应 999）",
+      "severity": "minor",
+      "severity_rationale": "与 TC-CART-003 同一根因（未向下取整），但发生在金额上边界附近，单次金额偏差 1 元，业务影响小于中段金额；单独登记以便边界回归可追溯。",
+      "category": "APP",
+      "status": "open",
+      "description": "TC-CART-011 输入 amount=9998、coupon=CP1234、level=gold、points 未勾选，实测 discount=1000、payable=8998；9998x0.10=999.8 向下取整应为 999，应付 8999。独立复现脚本 repro.py 结果一致。根因同 DEF-002（四舍五入），本条为边界取值上的独立证据。",
+      "environment": "Windows 11 10.0.26340 / Python 3.13.9 / Selenium 4.51.0 / Chrome 156.0.8078.74 / ChromeDriver 156.0.8078.80 / headless 1280x900 / http://127.0.0.1:8765/",
+      "preconditions": [
+        "页面处于初始状态：amount 与 coupon 为空、level=regular、points 未勾选",
+        "测试数据 amount=9998、coupon=CP1234、level=gold、points 未勾选"
+      ],
+      "repro_steps": [
+        "打开 http://127.0.0.1:8765/ 并等待「计算」按钮可点击",
+        "在 amount 输入 9998，在 coupon 输入 CP1234",
+        "level 选择 gold，points 保持未勾选",
+        "点击「计算」按钮",
+        "读取 discount 与 payable：实测 1000 与 8998，期望 999 与 8999"
+      ],
+      "repro_status": "reproduced",
+      "repro_count": 2,
+      "expected": "discount=999；payable=8999（9998x0.1=999.8 floor）",
+      "actual": "discount=1000；payable=8998；message=(空)",
+      "evidence": [
+        "EV-b10b2ed669",
+        "EV-0a25812b8d",
+        "EV-ee7085ab95"
+      ],
+      "created_at": "2026-10-31T01:06:03+08:00",
+      "severity_label": "次要",
+      "status_label": "待处理",
+      "category_label": "产品",
+      "repro_label": "已复现",
+      "unconfirmed": false,
+      "evidence_ids": [
+        "EV-b10b2ed669",
+        "EV-0a25812b8d",
+        "EV-ee7085ab95"
+      ],
+      "evidence_paths": [
+        "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-011/TC-CART-011__result__element__20261030T170412-556.png",
+        "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-011/TC-CART-011__failure__viewport__20261030T170412-696.png",
+        "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-011/TC-CART-011__repro__element__20261030T170518-810.png"
+      ],
+      "missing_fields": []
+    },
+    {
+      "defect_id": "DEF-004",
+      "title": "金卡 9999 元折扣四舍五入为 1000（应 999）",
+      "severity": "minor",
+      "severity_rationale": "与 TC-CART-003 同一根因（未向下取整），出现在允许金额的最大值上，单次偏差 1 元；作为上边界回归证据独立登记，便于修复后逐条验证。",
+      "category": "APP",
+      "status": "open",
+      "description": "TC-CART-012 输入 amount=9999、coupon=CP1234、level=gold、points 未勾选，实测 discount=1000、payable=8999；9999x0.10=999.9 向下取整应为 999，应付 9000。探索阶段对同一输入也观察到 1000 与 8999，独立复现脚本 repro.py 第三次结果一致。",
+      "environment": "Windows 11 10.0.26340 / Python 3.13.9 / Selenium 4.51.0 / Chrome 156.0.8078.74 / ChromeDriver 156.0.8078.80 / headless 1280x900 / http://127.0.0.1:8765/",
+      "preconditions": [
+        "页面处于初始状态：amount 与 coupon 为空、level=regular、points 未勾选",
+        "测试数据 amount=9999、coupon=CP1234、level=gold、points 未勾选"
+      ],
+      "repro_steps": [
+        "打开 http://127.0.0.1:8765/ 并等待「计算」按钮可点击",
+        "在 amount 输入 9999，在 coupon 输入 CP1234",
+        "level 选择 gold，points 保持未勾选",
+        "点击「计算」按钮",
+        "读取 discount 与 payable：实测 1000 与 8999，期望 999 与 9000"
+      ],
+      "repro_status": "reproduced",
+      "repro_count": 2,
+      "expected": "discount=999；payable=9000（9999x0.1=999.9 floor）",
+      "actual": "discount=1000；payable=8999；message=(空)",
+      "evidence": [
+        "EV-7853ca95bc",
+        "EV-5bf2046869",
+        "EV-fead5dfe76"
+      ],
+      "created_at": "2026-10-31T01:06:09+08:00",
+      "severity_label": "次要",
+      "status_label": "待处理",
+      "category_label": "产品",
+      "repro_label": "已复现",
+      "unconfirmed": false,
+      "evidence_ids": [
+        "EV-7853ca95bc",
+        "EV-5bf2046869",
+        "EV-fead5dfe76"
+      ],
+      "evidence_paths": [
+        "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-012/TC-CART-012__result__element__20261030T170413-627.png",
+        "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-012/TC-CART-012__failure__viewport__20261030T170413-762.png",
+        "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-012/TC-CART-012__repro__element__20261030T170519-364.png"
+      ],
+      "missing_fields": []
+    },
+    {
+      "defect_id": "DEF-005",
+      "title": "优惠券码大小写校验缺失：cp1234 被接受并完成折扣计算",
+      "severity": "major",
+      "severity_rationale": "R2 规定券码必须匹配 ^CP[A-Z0-9]{4}$，小写属明文列出的非法字符；实现接受小写变体并照常计算折扣，等于绕过券码校验，影响所有含小写的券码而不只是单个取值，属校验规则缺失。",
+      "category": "APP",
+      "status": "open",
+      "description": "TC-CART-021 输入 amount=500、coupon=cp1234、level=gold、points 未勾选，实测 message 为空、discount=50、payable=450；需求 R2 要求提示「优惠券码无效」且两项显示 -、不进行计算。探索阶段（O-01）与独立复现脚本 repro.py 均得到相同结果，说明实现对比前统一转成了大写（或使用了大小写不敏感的比较）。",
+      "environment": "Windows 11 10.0.26340 / Python 3.13.9 / Selenium 4.51.0 / Chrome 156.0.8078.74 / ChromeDriver 156.0.8078.80 / headless 1280x900 / http://127.0.0.1:8765/",
+      "preconditions": [
+        "页面处于初始状态：amount 与 coupon 为空、level=regular、points 未勾选",
+        "测试数据 amount=500、coupon=cp1234、level=gold、points 未勾选"
+      ],
+      "repro_steps": [
+        "打开 http://127.0.0.1:8765/ 并等待「计算」按钮可点击",
+        "在 amount 输入 500，在 coupon 输入 cp1234（全小写）",
+        "level 选择 gold，points 保持未勾选",
+        "点击「计算」按钮",
+        "读取 message、discount 与 payable：实测空、50、450，期望优惠券码无效、-、-"
+      ],
+      "repro_status": "reproduced",
+      "repro_count": 2,
+      "expected": "message=优惠券码无效；discount=-；payable=-",
+      "actual": "message=(空)；discount=50；payable=450",
+      "evidence": [
+        "EV-7847d10e4a",
+        "EV-38a49db792",
+        "EV-16852fea4e"
+      ],
+      "created_at": "2026-10-31T01:06:09+08:00",
+      "severity_label": "主要",
+      "status_label": "待处理",
+      "category_label": "产品",
+      "repro_label": "已复现",
+      "unconfirmed": false,
+      "evidence_ids": [
+        "EV-7847d10e4a",
+        "EV-38a49db792",
+        "EV-16852fea4e"
+      ],
+      "evidence_paths": [
+        "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-021/TC-CART-021__result__element__20261030T170422-258.png",
+        "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-021/TC-CART-021__failure__viewport__20261030T170422-411.png",
+        "evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-021/TC-CART-021__repro__element__20261030T170519-913.png"
+      ],
+      "missing_fields": []
+    }
+  ],
+  "coverage": {
+    "case_table_found": true,
+    "run_id": "RUN-20261031-COLDSTART-01",
+    "requirements": [
+      {
+        "requirement_id": "REQ-01",
+        "case_ids": [
+          "TC-CART-009",
+          "TC-CART-010",
+          "TC-CART-011",
+          "TC-CART-012"
+        ],
+        "executed_case_ids": [
+          "TC-CART-009",
+          "TC-CART-010",
+          "TC-CART-011",
+          "TC-CART-012"
+        ],
+        "status_counts": {
+          "passed": 2,
+          "failed": 2
+        },
+        "covered_by_design": true,
+        "executed": true,
+        "case_total": 4,
+        "executed_total": 4
+      },
+      {
+        "requirement_id": "REQ-02",
+        "case_ids": [
+          "TC-CART-008",
+          "TC-CART-013",
+          "TC-CART-016",
+          "TC-CART-017",
+          "TC-CART-018"
+        ],
+        "executed_case_ids": [
+          "TC-CART-008",
+          "TC-CART-013",
+          "TC-CART-016",
+          "TC-CART-017",
+          "TC-CART-018"
+        ],
+        "status_counts": {
+          "passed": 5
+        },
+        "covered_by_design": true,
+        "executed": true,
+        "case_total": 5,
+        "executed_total": 5
+      },
+      {
+        "requirement_id": "REQ-03",
+        "case_ids": [
+          "TC-CART-029"
+        ],
+        "executed_case_ids": [
+          "TC-CART-029"
+        ],
+        "status_counts": {
+          "passed": 1
+        },
+        "covered_by_design": true,
+        "executed": true,
+        "case_total": 1,
+        "executed_total": 1
+      },
+      {
+        "requirement_id": "REQ-04",
+        "case_ids": [
+          "TC-CART-019",
+          "TC-CART-020",
+          "TC-CART-021",
+          "TC-CART-022",
+          "TC-CART-023",
+          "TC-CART-024",
+          "TC-CART-025"
+        ],
+        "executed_case_ids": [
+          "TC-CART-019",
+          "TC-CART-020",
+          "TC-CART-021",
+          "TC-CART-022",
+          "TC-CART-023",
+          "TC-CART-024",
+          "TC-CART-025"
+        ],
+        "status_counts": {
+          "passed": 6,
+          "failed": 1
+        },
+        "covered_by_design": true,
+        "executed": true,
+        "case_total": 7,
+        "executed_total": 7
+      },
+      {
+        "requirement_id": "REQ-05",
+        "case_ids": [
+          "TC-CART-001",
+          "TC-CART-003",
+          "TC-CART-011",
+          "TC-CART-012",
+          "TC-CART-014"
+        ],
+        "executed_case_ids": [
+          "TC-CART-001",
+          "TC-CART-003",
+          "TC-CART-011",
+          "TC-CART-012",
+          "TC-CART-014"
+        ],
+        "status_counts": {
+          "passed": 2,
+          "failed": 3
+        },
+        "covered_by_design": true,
+        "executed": true,
+        "case_total": 5,
+        "executed_total": 5
+      },
+      {
+        "requirement_id": "REQ-06",
+        "case_ids": [
+          "TC-CART-002",
+          "TC-CART-015"
+        ],
+        "executed_case_ids": [
+          "TC-CART-002",
+          "TC-CART-015"
+        ],
+        "status_counts": {
+          "failed": 1,
+          "passed": 1
+        },
+        "covered_by_design": true,
+        "executed": true,
+        "case_total": 2,
+        "executed_total": 2
+      },
+      {
+        "requirement_id": "REQ-07",
+        "case_ids": [
+          "TC-CART-005",
+          "TC-CART-006",
+          "TC-CART-007",
+          "TC-CART-028"
+        ],
+        "executed_case_ids": [
+          "TC-CART-005",
+          "TC-CART-006",
+          "TC-CART-007",
+          "TC-CART-028"
+        ],
+        "status_counts": {
+          "passed": 4
+        },
+        "covered_by_design": true,
+        "executed": true,
+        "case_total": 4,
+        "executed_total": 4
+      },
+      {
+        "requirement_id": "REQ-08",
+        "case_ids": [
+          "TC-CART-004",
+          "TC-CART-026",
+          "TC-CART-027",
+          "TC-CART-028"
+        ],
+        "executed_case_ids": [
+          "TC-CART-004",
+          "TC-CART-026",
+          "TC-CART-027",
+          "TC-CART-028"
+        ],
+        "status_counts": {
+          "passed": 4
+        },
+        "covered_by_design": true,
+        "executed": true,
+        "case_total": 4,
+        "executed_total": 4
+      },
+      {
+        "requirement_id": "REQ-09",
+        "case_ids": [
+          "TC-CART-027"
+        ],
+        "executed_case_ids": [
+          "TC-CART-027"
+        ],
+        "status_counts": {
+          "passed": 1
+        },
+        "covered_by_design": true,
+        "executed": true,
+        "case_total": 1,
+        "executed_total": 1
+      },
+      {
+        "requirement_id": "REQ-10",
+        "case_ids": [
+          "TC-CART-001",
+          "TC-CART-002",
+          "TC-CART-003",
+          "TC-CART-004",
+          "TC-CART-005",
+          "TC-CART-006",
+          "TC-CART-007"
+        ],
+        "executed_case_ids": [
+          "TC-CART-001",
+          "TC-CART-002",
+          "TC-CART-003",
+          "TC-CART-004",
+          "TC-CART-005",
+          "TC-CART-006",
+          "TC-CART-007"
+        ],
+        "status_counts": {
+          "passed": 5,
+          "failed": 2
+        },
+        "covered_by_design": true,
+        "executed": true,
+        "case_total": 7,
+        "executed_total": 7
+      },
+      {
+        "requirement_id": "REQ-11",
+        "case_ids": [
+          "TC-CART-006",
+          "TC-CART-007",
+          "TC-CART-008",
+          "TC-CART-009",
+          "TC-CART-010",
+          "TC-CART-011",
+          "TC-CART-012",
+          "TC-CART-013",
+          "TC-CART-014",
+          "TC-CART-015",
+          "TC-CART-019",
+          "TC-CART-020",
+          "TC-CART-021",
+          "TC-CART-022",
+          "TC-CART-023",
+          "TC-CART-029"
+        ],
+        "executed_case_ids": [
+          "TC-CART-006",
+          "TC-CART-007",
+          "TC-CART-008",
+          "TC-CART-009",
+          "TC-CART-010",
+          "TC-CART-011",
+          "TC-CART-012",
+          "TC-CART-013",
+          "TC-CART-014",
+          "TC-CART-015",
+          "TC-CART-019",
+          "TC-CART-020",
+          "TC-CART-021",
+          "TC-CART-022",
+          "TC-CART-023",
+          "TC-CART-029"
+        ],
+        "status_counts": {
+          "passed": 13,
+          "failed": 3
+        },
+        "covered_by_design": true,
+        "executed": true,
+        "case_total": 16,
+        "executed_total": 16
+      },
+      {
+        "requirement_id": "REQ-12",
+        "case_ids": [
+          "TC-CART-030"
+        ],
+        "executed_case_ids": [
+          "TC-CART-030"
+        ],
+        "status_counts": {
+          "passed": 1
+        },
+        "covered_by_design": true,
+        "executed": true,
+        "case_total": 1,
+        "executed_total": 1
+      },
+      {
+        "requirement_id": "REQ-13",
+        "case_ids": [
+          "TC-CART-030"
+        ],
+        "executed_case_ids": [
+          "TC-CART-030"
+        ],
+        "status_counts": {
+          "passed": 1
+        },
+        "covered_by_design": true,
+        "executed": true,
+        "case_total": 1,
+        "executed_total": 1
+      }
+    ],
+    "requirements_without_execution": [],
+    "unmapped_cases": [
+      "EXPLORE"
+    ],
+    "not_run": [],
+    "partial": [],
+    "note": ""
+  },
+  "visual": [],
+  "evidence": {
+    "checked": 83,
+    "ok": 83,
+    "missing": [],
+    "mismatched": [],
+    "cross_run": [],
+    "unscoped": [],
+    "duplicates": []
+  },
+  "junit": {
+    "run_id": "RUN-20261031-COLDSTART-01",
+    "exit_code": 1,
+    "elapsed_seconds": 36.89,
+    "timed_out": false,
+    "junit": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-20261031-COLDSTART-01\\junit.xml",
+    "console_log": "D:\\桌面\\软件测试competion\\evidence\\logs\\RUN-20261031-COLDSTART-01\\pytest-console.log",
+    "tests": 30,
+    "failures": 5,
+    "errors": 0,
+    "skipped": 0,
+    "time": 34.669,
+    "xfailed": 0,
+    "cases": [
+      {
+        "name": "test_tc_cart_001",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 2.208,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_002",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.839,
+        "status": "failed",
+        "message": "AssertionError: 优惠金额: expected=120 actual='0'"
+      },
+      {
+        "name": "test_tc_cart_003",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.843,
+        "status": "failed",
+        "message": "AssertionError: 优惠金额: expected=55 actual='56'"
+      },
+      {
+        "name": "test_tc_cart_004",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.953,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_005",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.864,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_006",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.939,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_007",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.879,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_008",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.813,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_009",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.798,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_010",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.791,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_011",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.785,
+        "status": "failed",
+        "message": "AssertionError: 优惠金额: expected=999 actual='1000'"
+      },
+      {
+        "name": "test_tc_cart_012",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.75,
+        "status": "failed",
+        "message": "AssertionError: 优惠金额: expected=999 actual='1000'"
+      },
+      {
+        "name": "test_tc_cart_013",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.811,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_014",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.845,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_015",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.82,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_016",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.781,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_017",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.84,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_018",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.878,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_019",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.876,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_020",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.875,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_021",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.799,
+        "status": "failed",
+        "message": "AssertionError: 提示文案: expected='优惠券码无效' actual='(空)'"
+      },
+      {
+        "name": "test_tc_cart_022",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.899,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_023",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.901,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_024",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.901,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_025",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.927,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_026",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.962,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_027",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.958,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_028",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.948,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_029",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 0.898,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_tc_cart_030",
+        "classname": "tests.generated.cartcheck.test_cartcheck",
+        "time": 3.257,
+        "status": "passed",
+        "message": ""
+      }
+    ],
+    "status": "failed",
+    "case_counts": {
+      "running": 1,
+      "passed": 25,
+      "failed": 5
+    }
+  },
+  "junit_summary_path": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-20261031-COLDSTART-01\\junit-summary.json",
+  "junit_counts": {
+    "total": 30,
+    "passed": 25,
+    "failed": 5,
+    "xfailed": 0,
+    "other": 0
+  },
+  "test_functions": {
+    "junit_backed_cases": [
+      "TC-CART-001",
+      "TC-CART-002",
+      "TC-CART-003",
+      "TC-CART-004",
+      "TC-CART-005",
+      "TC-CART-006",
+      "TC-CART-007",
+      "TC-CART-008",
+      "TC-CART-009",
+      "TC-CART-010",
+      "TC-CART-011",
+      "TC-CART-012",
+      "TC-CART-013",
+      "TC-CART-014",
+      "TC-CART-015",
+      "TC-CART-016",
+      "TC-CART-017",
+      "TC-CART-018",
+      "TC-CART-019",
+      "TC-CART-020",
+      "TC-CART-021",
+      "TC-CART-022",
+      "TC-CART-023",
+      "TC-CART-024",
+      "TC-CART-025",
+      "TC-CART-026",
+      "TC-CART-027",
+      "TC-CART-028",
+      "TC-CART-029",
+      "TC-CART-030"
+    ],
+    "non_junit_cases": [
+      "EXPLORE"
+    ],
+    "junit_names": [
+      "test_tc_cart_001",
+      "test_tc_cart_002",
+      "test_tc_cart_003",
+      "test_tc_cart_004",
+      "test_tc_cart_005",
+      "test_tc_cart_006",
+      "test_tc_cart_007",
+      "test_tc_cart_008",
+      "test_tc_cart_009",
+      "test_tc_cart_010",
+      "test_tc_cart_011",
+      "test_tc_cart_012",
+      "test_tc_cart_013",
+      "test_tc_cart_014",
+      "test_tc_cart_015",
+      "test_tc_cart_016",
+      "test_tc_cart_017",
+      "test_tc_cart_018",
+      "test_tc_cart_019",
+      "test_tc_cart_020",
+      "test_tc_cart_021",
+      "test_tc_cart_022",
+      "test_tc_cart_023",
+      "test_tc_cart_024",
+      "test_tc_cart_025",
+      "test_tc_cart_026",
+      "test_tc_cart_027",
+      "test_tc_cart_028",
+      "test_tc_cart_029",
+      "test_tc_cart_030"
+    ]
+  },
+  "junit_backed_cases": [
+    "TC-CART-001",
+    "TC-CART-002",
+    "TC-CART-003",
+    "TC-CART-004",
+    "TC-CART-005",
+    "TC-CART-006",
+    "TC-CART-007",
+    "TC-CART-008",
+    "TC-CART-009",
+    "TC-CART-010",
+    "TC-CART-011",
+    "TC-CART-012",
+    "TC-CART-013",
+    "TC-CART-014",
+    "TC-CART-015",
+    "TC-CART-016",
+    "TC-CART-017",
+    "TC-CART-018",
+    "TC-CART-019",
+    "TC-CART-020",
+    "TC-CART-021",
+    "TC-CART-022",
+    "TC-CART-023",
+    "TC-CART-024",
+    "TC-CART-025",
+    "TC-CART-026",
+    "TC-CART-027",
+    "TC-CART-028",
+    "TC-CART-029",
+    "TC-CART-030"
+  ],
+  "non_junit_cases": [
+    "EXPLORE"
+  ],
+  "test_case_design": "D:\\桌面\\软件测试competion\\reports\\test-cases\\cartcheck-requirements.md",
+  "quality_gate": {
+    "found": true,
+    "path": "qualification/gate-runs/RUN-20261031-COLDSTART-01/gate-report.json",
+    "generated_at": "2026-10-31T01:08:24+08:00",
+    "delivery_verdict": "PASS",
+    "test_verdict": "FAIL",
+    "gate_status": {
+      "G0": "PASS",
+      "G1": "PASS",
+      "G2": "PASS",
+      "G3": "PASS",
+      "G4": "PASS"
+    },
+    "summary": {
+      "FAIL": 0,
+      "WARNING": 1,
+      "BLOCKED": 0,
+      "UNVERIFIED": 1,
+      "PASS": 587
+    },
+    "finding_total": 2,
+    "fail_findings": [],
+    "message": ""
+  },
+  "artifacts": {
+    "markdown": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-20261031-COLDSTART-01\\report.md",
+    "html": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-20261031-COLDSTART-01\\report.html",
+    "json": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-20261031-COLDSTART-01\\report.json",
+    "out_dir": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-20261031-COLDSTART-01"
+  },
+  "limitations": [
+    "未执行/跳过的用例不会标记为通过，见第 11 节。",
+    "运行备注：pytest exit=1; total=30; failed=True; blocked=False; xfailed=False（2026-10-31T01:04:34+08:00）",
+    "比赛前需确认当届赛项对 AI 辅助工具的合规要求。"
+  ],
+  "gate": {
+    "enabled": true,
+    "verdict": "WARNING",
+    "exit_code": 0,
+    "findings": [
+      {
+        "code": "CASE_NOT_IN_CASE_TABLE",
+        "severity": "WARNING",
+        "subject": "EXPLORE",
+        "message": "用例不在本运行的用例表中，需求/方法字段只能来自 manifest",
+        "evidence": ""
+      }
+    ],
+    "counts": {
+      "WARNING": 1
+    },
+    "require_cases": null,
+    "fail_findings": [],
+    "blocked_findings": [],
+    "warning_findings": [
+      {
+        "code": "CASE_NOT_IN_CASE_TABLE",
+        "severity": "WARNING",
+        "subject": "EXPLORE",
+        "message": "用例不在本运行的用例表中，需求/方法字段只能来自 manifest",
+        "evidence": ""
+      }
+    ]
+  },
+  "exit_code": 0
+}

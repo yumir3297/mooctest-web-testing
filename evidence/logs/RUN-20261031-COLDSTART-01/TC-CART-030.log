@@ -1,0 +1,10 @@
+2026-10-31 01:04:31,060 INFO case=TC-CART-030 run=RUN-20261031-COLDSTART-01
+2026-10-31 01:04:31,183 INFO STEP 1280x900 视口打开页面，计时到「计算」按钮可点击：0.084s
+2026-10-31 01:04:31,269 INFO STEP 读取布局：scrollWidth=1239 clientWidth=1239 innerWidth=1254
+2026-10-31 01:04:31,613 INFO STEP 计算完成（amount），再次读取输出可见性，alert 计数=0，原生对话框={'present': False, 'text': ''}
+2026-10-31 01:04:31,778 INFO SCREENSHOT evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-030/TC-CART-030__layout__fullpage__20261030T170431-675.png
+2026-10-31 01:04:31,778 INFO CHECK 无横向滚动 passed=True expected='scrollWidth<=clientWidth (1239)' actual=1239
+2026-10-31 01:04:31,809 INFO CHECK 计算前结果区可见 passed=True expected=True actual={'discount': True, 'payable': True, 'message': True}
+2026-10-31 01:04:31,841 INFO CHECK 计算后结果区可见 passed=True expected=True actual={'discount': True, 'payable': True, 'message': True}
+2026-10-31 01:04:31,874 INFO CHECK 无 JavaScript 弹窗 passed=True expected=0 actual=0
+2026-10-31 01:04:31,910 INFO CHECK 2 秒内可交互 passed=True expected='<=2.0s' actual='0.084s'

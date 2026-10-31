@@ -1,0 +1,10 @@
+2026-10-29T17:22:31+08:00 INFO baseline=evidence/raw/RUN-20261029-01/browser/viewport.png 1280x720
+2026-10-29T17:22:31+08:00 INFO actual=evidence/raw/RUN-20261029-01/browser/fullpage.png 1280x720
+2026-10-29T17:22:31+08:00 INFO threshold=25 min_area=30
+2026-10-29T17:22:31+08:00 INFO raw_changed_pixels=13433 changed_pixels=8122 total_pixels=921600 diff_ratio=0.008813
+2026-10-29T17:22:31+08:00 INFO mean_abs_diff=1.7283 rmse=7.8533 psnr=30.2297
+2026-10-29T17:22:31+08:00 INFO region_count=5 largest=550x15 at (365,240) area=7564
+2026-10-29T17:22:31+08:00 INFO verdict=visual-change-detected defect_claim=false
+2026-10-29T17:22:31+08:00 INFO outputs evidence/diff/RUN-20261029-02/TC-TODO-001-before-after/{annotated,comparison,heatmap,diff}.png metrics.json regions.json
+2026-10-29T17:22:45+08:00 INFO annotated=evidence/annotated/RUN-20261029-02/TC-TODO-001/new-item-annotated.png
+2026-10-29T17:22:45+08:00 INFO crop=evidence/annotated/RUN-20261029-02/TC-TODO-001/new-item-crop.png 550x48

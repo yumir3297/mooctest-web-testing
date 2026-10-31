@@ -1,0 +1,6 @@
+2026-10-29 17:22:13,253 INFO case=TC-TODO-004 run=RUN-20261029-02
+2026-10-29 17:22:13,254 INFO STEP 新增 Delete me
+2026-10-29 17:22:13,424 INFO STEP 悬停并点击删除按钮
+2026-10-29 17:22:13,779 INFO CHECK 列表被清空 passed=True expected=[] actual=[]
+2026-10-29 17:22:13,802 INFO CHECK 无待办时底部状态栏隐藏 passed=True expected=False actual=False
+2026-10-29 17:22:13,889 INFO SCREENSHOT evidence/raw/RUN-20261029-02/TC-TODO-004/TC-TODO-004__case__fullpage__20261029T092213-817.png

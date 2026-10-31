@@ -1,0 +1,167 @@
+<!doctype html><html lang='zh-CN'><head><meta charset='utf-8'>
+<title>TodoMVC Web 应用测试执行报告（RUN-AUDIT-20261030-02）</title>
+<style>body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;margin:32px;max-width:1200px;color:#1f2328}h1{border-bottom:2px solid #d0d7de;padding-bottom:8px}h2{margin-top:36px;border-bottom:1px solid #d0d7de;padding-bottom:4px}h3{margin-top:24px}table{border-collapse:collapse;width:100%;margin:12px 0}th,td{border:1px solid #d0d7de;padding:6px 8px;text-align:left;vertical-align:top}th{background:#f6f8fa}code{background:#f6f8fa;padding:1px 4px;border-radius:4px}.pass{color:#1a7f37;font-weight:600}.fail{color:#cf222e;font-weight:600}.xfail{color:#9a6700;font-weight:600}.none{color:#57606a;font-weight:600}figure{display:inline-block;margin:8px 12px 8px 0;max-width:48%;vertical-align:top}img{max-width:100%;border:1px solid #d0d7de;border-radius:6px}figcaption{font-size:12px;color:#57606a;word-break:break-all}.warn{background:#fff8c5;border-left:4px solid #d4a72c;padding:8px 12px;margin:12px 0}.ok{background:#dafbe1;border-left:4px solid #1a7f37;padding:8px 12px;margin:12px 0}.bad{background:#ffebe9;border-left:4px solid #cf222e;padding:8px 12px;margin:12px 0}</style></head><body>
+<h1>TodoMVC Web 应用测试执行报告（RUN-AUDIT-20261030-02）</h1>
+<p>生成时间：2026-10-31T00:57:06+08:00<br>运行 ID：<code>RUN-AUDIT-20261030-02</code><br>目标：https://demo.playwright.dev/todomvc<br>状态：通过<br>交付门禁：<strong>WARNING</strong>（exit 0）</p>
+<h2>1. 测试目标与范围</h2>
+<table class=''><tr><th>项目</th><th>内容</th></tr><tr><td>目标 URL</td><td>https://demo.playwright.dev/todomvc</td></tr><tr><td>测试范围</td><td>未声明（来源：missing）</td></tr><tr><td>需求来源</td><td>未找到本运行的用例表</td></tr><tr><td>用例表</td><td>未采集</td></tr><tr><td>用例设计文档</td><td>未采集</td></tr><tr><td>用例数</td><td>8</td></tr><tr><td>通过率</td><td>100.0%（7/7）</td></tr></table>
+<p>本报告只陈述 manifest 中登记且能在 JUnit 与证据文件中追溯的结果；未执行、被跳过、受控预期失败的结果单独统计，不并入通过率。</p>
+<h2>2. 测试环境</h2>
+<table class=''><tr><th>项目</th><th>值</th><th>来源</th><th>运行记录原值</th></tr><tr><td>操作系统</td><td>Windows-11-10.0.26340-SP0</td><td>运行记录（platform 字段）</td><td>Windows-11-10.0.26340-SP0</td></tr><tr><td>平台</td><td>Windows-11-10.0.26340-SP0</td><td>运行记录</td><td>Windows-11-10.0.26340-SP0</td></tr><tr><td>Python</td><td>3.13.9</td><td>运行记录</td><td>3.13.9</td></tr><tr><td>Selenium</td><td>未采集</td><td>未采集</td><td>—</td></tr><tr><td>pytest</td><td>pytest</td><td>运行记录</td><td>pytest</td></tr><tr><td>Chrome</td><td>未采集</td><td>未采集</td><td>—</td></tr><tr><td>ChromeDriver</td><td>未采集</td><td>未采集</td><td>—</td></tr><tr><td>Node.js</td><td>未采集</td><td>未采集</td><td>—</td></tr><tr><td>目标 URL</td><td>https://demo.playwright.dev/todomvc</td><td>运行记录</td><td>https://demo.playwright.dev/todomvc</td></tr></table>
+<h3>运行备注</h3><ul>
+<li>2026-10-30T17:48:18+08:00：pytest started</li>
+<li>2026-10-30T17:48:29+08:00：pytest exit=0; total=8; failed=False; xfailed=True</li>
+<li>2026-10-30T17:48:29+08:00：pytest exit=0; tests=8; failures=0; errors=0; xfailed=1; elapsed=10.5s</li>
+</ul>
+<h3>环境补充探测</h3>
+<p class='warn'>报告生成时探测，不是运行时刻记录；只作参考，不覆盖 manifest 中的运行环境（探测时间 2026-10-31T00:57:06+08:00）。这些值不覆盖上表的运行记录。</p>
+<table class=''><tr><th>项目</th><th>探测值</th></tr><tr><td>python</td><td>3.13.9</td></tr><tr><td>platform</td><td>Windows-11-10.0.26340-SP0</td></tr><tr><td>os</td><td>11</td></tr><tr><td>pytest</td><td>9.1.1</td></tr><tr><td>selenium</td><td>4.51.0</td></tr><tr><td>chrome</td><td>156.0.8078.74</td></tr><tr><td>chrome_path</td><td>C:\Users\<user>\AppData\Local\Google\Chrome\Application\chrome.exe</td></tr><tr><td>chromedriver</td><td>ChromeDriver 156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705})</td></tr><tr><td>node</td><td>v24.14.1</td></tr><tr><td>openpyxl</td><td>3.1.5</td></tr><tr><td>pillow</td><td>12.2.0</td></tr></table>
+<h2>3. 测试策略与设计方法</h2>
+<p>设计方法分布按用例表 <code>method</code> 列聚合；无法聚合时明确标注，不做推测。</p>
+<p class='warn'>未找到本运行的用例表，无法从 method 列聚合设计方法分布。</p>
+<ul><li>浏览器探索优先使用 DOM/无障碍快照，截图只用于视觉证据。</li><li>功能用例使用 Selenium + pytest + 显式等待，断言绑定可观察状态。</li><li>失败与受控预期失败自动保存视口/整页截图、页面源码和浏览器日志。</li><li>视觉差异只作为复核信号，不单独据此判定产品缺陷。</li></ul>
+<h2>4. 用例与执行结果</h2>
+<p>manifest 登记 8 条（通过 7、受控预期失败 1、失败 0、未执行 0、跳过 0、阻塞 0）；JUnit tests=8、passed=7、failed=0、xfailed=1。xfailed 不计入通过率（100.0%（7/7））。</p>
+<table class=''><tr><th>用例 ID</th><th>标题</th><th>类型</th><th>优先级</th><th>方法与需求</th><th>状态</th><th>证据数</th><th>日志</th></tr><tr><td>TC-TODO-001</td><td>test_add_todo</td><td>未登记</td><td>未登记</td><td>方法未登记 / 需求未登记</td><td>通过</td><td>3</td><td>evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-001.log</td></tr><tr><td>TC-TODO-002</td><td>test_complete_and_filter</td><td>未登记</td><td>未登记</td><td>方法未登记 / 需求未登记</td><td>通过</td><td>2</td><td>evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-002.log</td></tr><tr><td>TC-TODO-003</td><td>test_edit_todo</td><td>未登记</td><td>未登记</td><td>方法未登记 / 需求未登记</td><td>通过</td><td>1</td><td>evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-003.log</td></tr><tr><td>TC-TODO-004</td><td>test_delete_todo</td><td>未登记</td><td>未登记</td><td>方法未登记 / 需求未登记</td><td>通过</td><td>2</td><td>evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-004.log</td></tr><tr><td>TC-TODO-005</td><td>test_empty_and_whitespace_rejected</td><td>未登记</td><td>未登记</td><td>方法未登记 / 需求未登记</td><td>通过</td><td>1</td><td>evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-005.log</td></tr><tr><td>TC-TODO-006</td><td>test_boundary_lengths</td><td>未登记</td><td>未登记</td><td>方法未登记 / 需求未登记</td><td>通过</td><td>1</td><td>evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-006.log</td></tr><tr><td>TC-TODO-007</td><td>test_text_is_escaped</td><td>未登记</td><td>未登记</td><td>方法未登记 / 需求未登记</td><td>通过</td><td>1</td><td>evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-007.log</td></tr><tr><td>TC-TODO-099</td><td>test_expected_failure_captures_evidence</td><td>未登记</td><td>未登记</td><td>方法未登记 / 需求未登记</td><td>受控预期失败</td><td>4</td><td>evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-099.log</td></tr></table>
+<h2>5. 用例明细</h2>
+<h3>TC-TODO-001 test_add_todo</h3>
+<p>状态：<span class='pass'>通过</span><br>类型：未登记　优先级：未登记　方法：未登记　需求：未登记<br>自动化：<code>tests/test_todomvc.py::test_add_todo</code><br>日志：<code>evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-001.log</code></p>
+<h4>前置条件</h4>
+<p>未登记</p>
+<h4>测试数据</h4><p>未登记</p>
+<h4>步骤</h4>
+<ol><li>打开 TodoMVC 演示页</li><li>在新增输入框中输入 Buy milk 并回车</li></ol>
+<h4>用例级预期</h4><p>见断言明细（3 条断言）</p>
+<p class='warn'>运行记录中的 &#x27;True&#x27; 是历史断言取值，不作为用例级预期（运行记录原值：<code>True</code>）</p>
+<h4>用例级实际</h4><p>断言通过</p>
+<h4>断言（3 条，通过 3）</h4>
+<table class=''><tr><th>#</th><th>断言</th><th>预期</th><th>实际</th><th>结果</th></tr><tr><td>1</td><td>待办列表包含新增项</td><td>[&#x27;Buy milk&#x27;]</td><td>[&#x27;Buy milk&#x27;]</td><td>通过</td></tr><tr><td>2</td><td>剩余计数为 1</td><td>1 item left</td><td>1 item left</td><td>通过</td></tr><tr><td>3</td><td>底部状态栏可见</td><td>True</td><td>True</td><td>通过</td></tr></table>
+<h4>证据（3）</h4>
+<figure><a href="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-001/TC-TODO-001__case__element__20261030T094821-351.png"><img src="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-001/TC-TODO-001__case__element__20261030T094821-351.png" alt="用例证据：新增待办后的元素" loading="lazy"></a><figcaption>用例证据：新增待办后的元素<br><code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-001/TC-TODO-001__case__element__20261030T094821-351.png</code></figcaption></figure><figure><a href="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-001/TC-TODO-001__case__fullpage__20261030T094821-450.png"><img src="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-001/TC-TODO-001__case__fullpage__20261030T094821-450.png" alt="用例证据：新增待办后的整页" loading="lazy"></a><figcaption>用例证据：新增待办后的整页<br><code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-001/TC-TODO-001__case__fullpage__20261030T094821-450.png</code></figcaption></figure><figure><a href="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-001/TC-TODO-001__final__viewport__20261030T094821-526.png"><img src="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-001/TC-TODO-001__final__viewport__20261030T094821-526.png" alt="通过后的最终视口截图" loading="lazy"></a><figcaption>通过后的最终视口截图<br><code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-001/TC-TODO-001__final__viewport__20261030T094821-526.png</code></figcaption></figure>
+<ul><li><code>EV-c26fe08417</code> [element-screenshot] <code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-001/TC-TODO-001__case__element__20261030T094821-351.png</code></li><li><code>EV-4f8b19c5c9</code> [fullpage-screenshot] <code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-001/TC-TODO-001__case__fullpage__20261030T094821-450.png</code></li><li><code>EV-f55f7f1362</code> [screenshot] <code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-001/TC-TODO-001__final__viewport__20261030T094821-526.png</code></li></ul>
+<h3>TC-TODO-002 test_complete_and_filter</h3>
+<p>状态：<span class='pass'>通过</span><br>类型：未登记　优先级：未登记　方法：未登记　需求：未登记<br>自动化：<code>tests/test_todomvc.py::test_complete_and_filter</code><br>日志：<code>evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-002.log</code></p>
+<h4>前置条件</h4>
+<p>未登记</p>
+<h4>测试数据</h4><p>未登记</p>
+<h4>步骤</h4>
+<ol><li>新增 Task A 与 Task B</li><li>勾选第一条待办</li><li>切换到 Completed 过滤器</li><li>切换到 Active 过滤器</li></ol>
+<h4>用例级预期</h4><p>[&#x27;Task B&#x27;]</p>
+<h4>用例级实际</h4><p>断言通过</p>
+<h4>断言（3 条，通过 3）</h4>
+<table class=''><tr><th>#</th><th>断言</th><th>预期</th><th>实际</th><th>结果</th></tr><tr><td>1</td><td>完成后剩余计数为 1</td><td>1 item left</td><td>1 item left</td><td>通过</td></tr><tr><td>2</td><td>Completed 仅显示已完成项</td><td>[&#x27;Task A&#x27;]</td><td>[&#x27;Task A&#x27;]</td><td>通过</td></tr><tr><td>3</td><td>Active 仅显示未完成项</td><td>[&#x27;Task B&#x27;]</td><td>[&#x27;Task B&#x27;]</td><td>通过</td></tr></table>
+<h4>证据（2）</h4>
+<figure><a href="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-002/TC-TODO-002__Active__fullpage__20261030T094822-312.png"><img src="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-002/TC-TODO-002__Active__fullpage__20261030T094822-312.png" alt="用例证据：Active 过滤器结果" loading="lazy"></a><figcaption>用例证据：Active 过滤器结果<br><code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-002/TC-TODO-002__Active__fullpage__20261030T094822-312.png</code></figcaption></figure><figure><a href="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-002/TC-TODO-002__final__viewport__20261030T094822-393.png"><img src="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-002/TC-TODO-002__final__viewport__20261030T094822-393.png" alt="通过后的最终视口截图" loading="lazy"></a><figcaption>通过后的最终视口截图<br><code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-002/TC-TODO-002__final__viewport__20261030T094822-393.png</code></figcaption></figure>
+<ul><li><code>EV-ce5641d35f</code> [fullpage-screenshot] <code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-002/TC-TODO-002__Active__fullpage__20261030T094822-312.png</code></li><li><code>EV-3609b73776</code> [screenshot] <code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-002/TC-TODO-002__final__viewport__20261030T094822-393.png</code></li></ul>
+<h3>TC-TODO-003 test_edit_todo</h3>
+<p>状态：<span class='pass'>通过</span><br>类型：未登记　优先级：未登记　方法：未登记　需求：未登记<br>自动化：<code>tests/test_todomvc.py::test_edit_todo</code><br>日志：<code>evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-003.log</code></p>
+<h4>前置条件</h4>
+<p>未登记</p>
+<h4>测试数据</h4><p>未登记</p>
+<h4>步骤</h4>
+<ol><li>新增 Old title</li><li>双击标题并改为 New title</li></ol>
+<h4>用例级预期</h4><p>[&#x27;New title&#x27;]</p>
+<h4>用例级实际</h4><p>断言通过</p>
+<h4>断言（1 条，通过 1）</h4>
+<table class=''><tr><th>#</th><th>断言</th><th>预期</th><th>实际</th><th>结果</th></tr><tr><td>1</td><td>标题被更新</td><td>[&#x27;New title&#x27;]</td><td>[&#x27;New title&#x27;]</td><td>通过</td></tr></table>
+<h4>证据（1）</h4>
+<figure><a href="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-003/TC-TODO-003__final__viewport__20261030T094823-181.png"><img src="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-003/TC-TODO-003__final__viewport__20261030T094823-181.png" alt="通过后的最终视口截图" loading="lazy"></a><figcaption>通过后的最终视口截图<br><code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-003/TC-TODO-003__final__viewport__20261030T094823-181.png</code></figcaption></figure>
+<ul><li><code>EV-fb186d76c4</code> [screenshot] <code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-003/TC-TODO-003__final__viewport__20261030T094823-181.png</code></li></ul>
+<h3>TC-TODO-004 test_delete_todo</h3>
+<p>状态：<span class='pass'>通过</span><br>类型：未登记　优先级：未登记　方法：未登记　需求：未登记<br>自动化：<code>tests/test_todomvc.py::test_delete_todo</code><br>日志：<code>evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-004.log</code></p>
+<h4>前置条件</h4>
+<p>未登记</p>
+<h4>测试数据</h4><p>未登记</p>
+<h4>步骤</h4>
+<ol><li>新增 Delete me</li><li>悬停并点击删除按钮</li></ol>
+<h4>用例级预期</h4><p>见断言明细（2 条断言）</p>
+<p class='warn'>运行记录中的 &#x27;False&#x27; 是历史断言取值，不作为用例级预期（运行记录原值：<code>False</code>）</p>
+<h4>用例级实际</h4><p>断言通过</p>
+<h4>断言（2 条，通过 2）</h4>
+<table class=''><tr><th>#</th><th>断言</th><th>预期</th><th>实际</th><th>结果</th></tr><tr><td>1</td><td>列表被清空</td><td>[]</td><td>[]</td><td>通过</td></tr><tr><td>2</td><td>无待办时底部状态栏隐藏</td><td>False</td><td>False</td><td>通过</td></tr></table>
+<h4>证据（2）</h4>
+<figure><a href="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-004/TC-TODO-004__case__fullpage__20261030T094823-950.png"><img src="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-004/TC-TODO-004__case__fullpage__20261030T094823-950.png" alt="用例证据：删除后的空列表" loading="lazy"></a><figcaption>用例证据：删除后的空列表<br><code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-004/TC-TODO-004__case__fullpage__20261030T094823-950.png</code></figcaption></figure><figure><a href="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-004/TC-TODO-004__final__viewport__20261030T094824-029.png"><img src="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-004/TC-TODO-004__final__viewport__20261030T094824-029.png" alt="通过后的最终视口截图" loading="lazy"></a><figcaption>通过后的最终视口截图<br><code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-004/TC-TODO-004__final__viewport__20261030T094824-029.png</code></figcaption></figure>
+<ul><li><code>EV-5836c843dc</code> [fullpage-screenshot] <code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-004/TC-TODO-004__case__fullpage__20261030T094823-950.png</code></li><li><code>EV-1b78a5cf8c</code> [screenshot] <code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-004/TC-TODO-004__final__viewport__20261030T094824-029.png</code></li></ul>
+<h3>TC-TODO-005 test_empty_and_whitespace_rejected</h3>
+<p>状态：<span class='pass'>通过</span><br>类型：未登记　优先级：未登记　方法：未登记　需求：未登记<br>自动化：<code>tests/test_todomvc.py::test_empty_and_whitespace_rejected</code><br>日志：<code>evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-005.log</code></p>
+<h4>前置条件</h4>
+<p>未登记</p>
+<h4>测试数据</h4><p>未登记</p>
+<h4>步骤</h4>
+<ol><li>直接回车，不输入内容</li><li>输入三个空格并回车</li></ol>
+<h4>用例级预期</h4><p>[]</p>
+<h4>用例级实际</h4><p>断言通过</p>
+<h4>断言（2 条，通过 2）</h4>
+<table class=''><tr><th>#</th><th>断言</th><th>预期</th><th>实际</th><th>结果</th></tr><tr><td>1</td><td>空输入不新增待办</td><td>[]</td><td>[]</td><td>通过</td></tr><tr><td>2</td><td>纯空白输入不新增待办</td><td>[]</td><td>[]</td><td>通过</td></tr></table>
+<h4>证据（1）</h4>
+<figure><a href="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-005/TC-TODO-005__final__viewport__20261030T094824-528.png"><img src="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-005/TC-TODO-005__final__viewport__20261030T094824-528.png" alt="通过后的最终视口截图" loading="lazy"></a><figcaption>通过后的最终视口截图<br><code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-005/TC-TODO-005__final__viewport__20261030T094824-528.png</code></figcaption></figure>
+<ul><li><code>EV-0fa900f9c3</code> [screenshot] <code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-005/TC-TODO-005__final__viewport__20261030T094824-528.png</code></li></ul>
+<h3>TC-TODO-006 test_boundary_lengths</h3>
+<p>状态：<span class='pass'>通过</span><br>类型：未登记　优先级：未登记　方法：未登记　需求：未登记<br>自动化：<code>tests/test_todomvc.py::test_boundary_lengths</code><br>日志：<code>evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-006.log</code></p>
+<h4>前置条件</h4>
+<p>未登记</p>
+<h4>测试数据</h4><p>未登记</p>
+<h4>步骤</h4>
+<ol><li>输入 1 个字符 A</li><li>再输入 200 个字符</li></ol>
+<h4>用例级预期</h4><p>[&#x27;A&#x27;, &#x27;BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB&#x27;]</p>
+<h4>用例级实际</h4><p>断言通过</p>
+<h4>断言（2 条，通过 2）</h4>
+<table class=''><tr><th>#</th><th>断言</th><th>预期</th><th>实际</th><th>结果</th></tr><tr><td>1</td><td>1 字符边界被接受</td><td>[&#x27;A&#x27;]</td><td>[&#x27;A&#x27;]</td><td>通过</td></tr><tr><td>2</td><td>200 字符输入被完整保存</td><td>[&#x27;A&#x27;, &#x27;BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB&#x27;]</td><td>[&#x27;A&#x27;, &#x27;BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB&#x27;]</td><td>通过</td></tr></table>
+<h4>证据（1）</h4>
+<figure><a href="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-006/TC-TODO-006__final__viewport__20261030T094825-153.png"><img src="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-006/TC-TODO-006__final__viewport__20261030T094825-153.png" alt="通过后的最终视口截图" loading="lazy"></a><figcaption>通过后的最终视口截图<br><code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-006/TC-TODO-006__final__viewport__20261030T094825-153.png</code></figcaption></figure>
+<ul><li><code>EV-e741cc9bfa</code> [screenshot] <code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-006/TC-TODO-006__final__viewport__20261030T094825-153.png</code></li></ul>
+<h3>TC-TODO-007 test_text_is_escaped</h3>
+<p>状态：<span class='pass'>通过</span><br>类型：未登记　优先级：未登记　方法：未登记　需求：未登记<br>自动化：<code>tests/test_todomvc.py::test_text_is_escaped</code><br>日志：<code>evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-007.log</code></p>
+<h4>前置条件</h4>
+<p>未登记</p>
+<h4>测试数据</h4><p>未登记</p>
+<h4>步骤</h4>
+<ol><li>输入包含 HTML 事件属性的文本</li></ol>
+<h4>用例级预期</h4><p>见断言明细（2 条断言）</p>
+<p class='warn'>运行记录中的 &#x27;None&#x27; 是历史断言取值，不作为用例级预期（运行记录原值：<code>None</code>）</p>
+<h4>用例级实际</h4><p>断言通过</p>
+<h4>断言（2 条，通过 2）</h4>
+<table class=''><tr><th>#</th><th>断言</th><th>预期</th><th>实际</th><th>结果</th></tr><tr><td>1</td><td>HTML 文本按纯文本展示</td><td>[&#x27;&lt;img src=x onerror=window.__xss=1&gt;&#x27;]</td><td>[&#x27;&lt;img src=x onerror=window.__xss=1&gt;&#x27;]</td><td>通过</td></tr><tr><td>2</td><td>未执行注入脚本</td><td>None</td><td>None</td><td>通过</td></tr></table>
+<h4>证据（1）</h4>
+<figure><a href="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-007/TC-TODO-007__final__viewport__20261030T094825-612.png"><img src="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-007/TC-TODO-007__final__viewport__20261030T094825-612.png" alt="通过后的最终视口截图" loading="lazy"></a><figcaption>通过后的最终视口截图<br><code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-007/TC-TODO-007__final__viewport__20261030T094825-612.png</code></figcaption></figure>
+<ul><li><code>EV-51bf0eb345</code> [screenshot] <code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-007/TC-TODO-007__final__viewport__20261030T094825-612.png</code></li></ul>
+<h3>TC-TODO-099 test_expected_failure_captures_evidence</h3>
+<p>状态：<span class='xfail'>受控预期失败</span><br>类型：未登记　优先级：未登记　方法：未登记　需求：未登记<br>自动化：<code>tests/test_todomvc_expected_failure.py::test_expected_failure_captures_evidence</code><br>日志：<code>evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-099.log</code></p>
+<h4>前置条件</h4>
+<p>未登记</p>
+<h4>测试数据</h4><p>未登记</p>
+<h4>步骤</h4>
+<ol><li>新增 Only one</li><li>故意断言剩余计数为 2（实际为 1）</li></ol>
+<h4>用例级预期</h4><p>2 items left</p>
+<h4>用例级实际</h4><p>tests\test_todomvc_expected_failure.py:22: in test_expected_failure_captures_evidence
+    case_ctx.check(page.count_text().startswith(&quot;2&quot;), &quot;受控失败断言&quot;, &quot;2 items left&quot;, page.count_text())
+tests\conftest.py:309: in check
+    raise AssertionError(f&quot;{name}: expected={expected!r} actual={actual!r}&quot;)
+E   AssertionError: 受控失败断言: expected=&#x27;2 items left&#x27; actual=&#x27;1 item left&#x27;</p>
+<h4>断言（1 条，通过 0）</h4>
+<table class=''><tr><th>#</th><th>断言</th><th>预期</th><th>实际</th><th>结果</th></tr><tr><td>1</td><td>受控失败断言</td><td>2 items left</td><td>1 item left</td><td>失败</td></tr></table>
+<h4>证据（4）</h4>
+<figure><a href="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-099/TC-TODO-099__failure__viewport__20261030T094826-504.png"><img src="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-099/TC-TODO-099__failure__viewport__20261030T094826-504.png" alt="失败时视口截图" loading="lazy"></a><figcaption>失败时视口截图<br><code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-099/TC-TODO-099__failure__viewport__20261030T094826-504.png</code></figcaption></figure><figure><a href="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-099/TC-TODO-099__failure__fullpage__20261030T094826-504.png"><img src="../../../evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-099/TC-TODO-099__failure__fullpage__20261030T094826-504.png" alt="失败时整页截图" loading="lazy"></a><figcaption>失败时整页截图<br><code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-099/TC-TODO-099__failure__fullpage__20261030T094826-504.png</code></figcaption></figure>
+<ul><li><code>EV-de49b1c530</code> [screenshot] <code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-099/TC-TODO-099__failure__viewport__20261030T094826-504.png</code></li><li><code>EV-fca950100f</code> [fullpage-screenshot] <code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-099/TC-TODO-099__failure__fullpage__20261030T094826-504.png</code></li><li><code>EV-5a6d581e1a</code> [page-source] <code>evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-099/TC-TODO-099__failure__page-source__20261030T094826-504.html</code></li><li><code>EV-1b5f60dc0f</code> [log] <code>evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-099__browser__20261030T094826-504.log</code></li></ul>
+<h2>6. 缺陷</h2>
+<p>本轮未登记产品缺陷。xfailed 用例只用于验证失败取证链路，不等同于产品缺陷。</p>
+<h2>7. 视觉差异</h2><p>本轮未生成差异图；有效截图证据见第 5 节。</p>
+<h2>8. 证据完整性</h2>
+<table class=''><tr><th>指标</th><th>数量</th></tr><tr><td>checked（登记）</td><td>15</td></tr><tr><td>ok（校验通过）</td><td>15</td></tr><tr><td>missing（文件缺失）</td><td>0</td></tr><tr><td>mismatched（哈希不一致）</td><td>0</td></tr><tr><td>cross_run（跨 run 引用）</td><td>0</td></tr><tr><td>unscoped（路径无 run id）</td><td>0</td></tr><tr><td>duplicates（重复登记）</td><td>0</td></tr></table>
+<h2>9. 执行日志</h2>
+<p>JUnit：<code><PROJECT_ROOT>\reports\executions\RUN-AUDIT-20261030-02\junit.xml</code><br>摘要：<code><PROJECT_ROOT>\evidence\logs\RUN-AUDIT-20261030-02\pytest-console.log</code><br>tests=8 failures=0 errors=0 skipped=1 xfailed=1</p>
+<table class=''><tr><th>测试函数</th><th>类</th><th>耗时(s)</th><th>状态</th><th>信息</th></tr><tr><td>test_add_todo</td><td>tests.test_todomvc</td><td>1.669</td><td>passed</td><td></td></tr><tr><td>test_complete_and_filter</td><td>tests.test_todomvc</td><td>0.784</td><td>passed</td><td></td></tr><tr><td>test_edit_todo</td><td>tests.test_todomvc</td><td>0.722</td><td>passed</td><td></td></tr><tr><td>test_delete_todo</td><td>tests.test_todomvc</td><td>0.756</td><td>passed</td><td></td></tr><tr><td>test_empty_and_whitespace_rejected</td><td>tests.test_todomvc</td><td>0.421</td><td>passed</td><td></td></tr><tr><td>test_boundary_lengths</td><td>tests.test_todomvc</td><td>0.544</td><td>passed</td><td></td></tr><tr><td>test_text_is_escaped</td><td>tests.test_todomvc</td><td>0.366</td><td>passed</td><td></td></tr><tr><td>test_expected_failure_captures_evidence</td><td>tests.test_todomvc_expected_failure</td><td>2.829</td><td>xfailed</td><td>受控失败：验证失败截图、日志和断言记录链路</td></tr></table>
+<h2>10. 需求覆盖情况</h2>
+<p class='warn'>未找到本运行的用例表，需求覆盖只能依据 manifest 中登记的 meta.requirement_ids。</p>
+<h2>11. 未执行项与已知限制</h2>
+<h3>已知限制</h3><ul><li>运行环境缺少字段：selenium、chrome、chromedriver、node（报告显示为「未采集」，未用报告生成时的探测值冒充运行环境）</li><li>未找到本运行的用例表（没有 CSV 的 executed_in_run 包含 RUN-AUDIT-20261030-02），设计方法与需求覆盖无法按用例表聚合。</li><li>本次未运行质量门禁（qualification/gate-runs/&lt;run&gt;/gate-report.json 不存在）。</li><li>以下用例的运行记录把断言取值写进了用例级预期，报告已剔除并回退到断言明细：TC-TODO-001、TC-TODO-004、TC-TODO-007</li><li>1 条 xfailed 用例只用于验证失败取证链路，不计入通过率，也不等同于产品缺陷。</li><li>比赛前需确认当届赛项对 AI 辅助工具的合规要求。</li></ul>
+<h2>12. 质量门禁结果</h2>
+<p>本次未运行质量门禁（未找到 <code>qualification/gate-runs/RUN-AUDIT-20261030-02/gate-report.json</code>）。</p>
+<h3>报告交付门禁</h3><p class='ok'>结论：<strong>WARNING</strong>（退出码 0）</p>
+<table class=''><tr><th>代码</th><th>级别</th><th>对象</th><th>说明</th></tr><tr><td>CASE_EXPECTED_FROM_ASSERTIONS</td><td>WARNING</td><td>TC-TODO-001</td><td>用例级预期缺失或为历史断言取值，报告已回退到断言明细</td></tr><tr><td>CASE_EXPECTED_FROM_ASSERTIONS</td><td>WARNING</td><td>TC-TODO-004</td><td>用例级预期缺失或为历史断言取值，报告已回退到断言明细</td></tr><tr><td>CASE_EXPECTED_FROM_ASSERTIONS</td><td>WARNING</td><td>TC-TODO-007</td><td>用例级预期缺失或为历史断言取值，报告已回退到断言明细</td></tr><tr><td>CASE_TABLE_MISSING</td><td>WARNING</td><td>RUN-AUDIT-20261030-02</td><td>未找到本运行的用例表（没有 CSV 的 executed_in_run 包含 RUN-AUDIT-20261030-02）</td></tr><tr><td>QUALITY_GATE_NOT_RUN</td><td>WARNING</td><td>RUN-AUDIT-20261030-02</td><td>未找到质量门禁报告，交付结论只依赖本报告的门禁</td></tr></table>
+<h2>附录</h2><ul>
+<li>报告生成器：<code>tools/generate_report.py</code> v2.0</li>
+<li>报告 schema：<code>2.0</code></li>
+<li>用例表来源：<code>未采集</code></li>
+<li>用例表查找说明：未找到本运行的用例表（没有 CSV 的 executed_in_run 包含 RUN-AUDIT-20261030-02）</li>
+</ul></body></html>

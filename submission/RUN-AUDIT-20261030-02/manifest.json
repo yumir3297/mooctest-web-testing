@@ -1,0 +1,245 @@
+{
+  "schema_version": "1.0",
+  "package_kind": "internal-rehearsal",
+  "official_format_confirmed": false,
+  "official_format_note": "内部演练交付包，2026 官方提交格式未确认",
+  "generator": {
+    "tool": "tools/package_submission.py",
+    "version": "1.0"
+  },
+  "run_id": "RUN-AUDIT-20261030-02",
+  "generated_at": "2026-10-31T00:57:07+08:00",
+  "target": "https://demo.playwright.dev/todomvc",
+  "tool_versions": {
+    "python": "3.13.9",
+    "platform": "Windows-11-10.0.26340-SP0",
+    "pytest": "9.1.1",
+    "selenium": "4.51.0",
+    "openpyxl": "3.1.5",
+    "pillow": "12.2.0",
+    "package_submission": "1.0"
+  },
+  "case_count": 8,
+  "case_table": {
+    "source": "synthesised-from-manifest",
+    "path": null
+  },
+  "counts": {
+    "files": 29,
+    "test_code": 6,
+    "screenshots": 13,
+    "reports": 6
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "a3a3e144e555c82fea48a524698ff9684cd807d284ba5b55f5c54ceab604a5ce",
+      "size_bytes": 1525,
+      "case_id": null,
+      "source": "generated"
+    },
+    {
+      "path": "reports/defects.md",
+      "sha256": "6d486500681b901f98720b1f8599db5546f71133cf3bcf68c58b3c0f5b850306",
+      "size_bytes": 146,
+      "case_id": null,
+      "source": "reports"
+    },
+    {
+      "path": "reports/junit-summary.json",
+      "sha256": "4f7100a534a63d3b948562fb6ecce22726abe370383833e5cb9accd3f42915f8",
+      "size_bytes": 1858,
+      "case_id": null,
+      "source": "reports"
+    },
+    {
+      "path": "reports/junit.xml",
+      "sha256": "cf02ac346fbd1f894321962afeb1cb0d65987f7e5ada348e2154b3e60aa0d91d",
+      "size_bytes": 1075,
+      "case_id": null,
+      "source": "reports"
+    },
+    {
+      "path": "reports/pytest-console.log",
+      "sha256": "3fc91aed301200e62fab544e9bdffabf160a37dff0d10a0f1f07c08a7b79824e",
+      "size_bytes": 534,
+      "case_id": null,
+      "source": "reports"
+    },
+    {
+      "path": "reports/report.html",
+      "sha256": "0cfde6e0a6314425e6da8af558daebfcd17b72498de54875f4d18fb74eb68b72",
+      "size_bytes": 30475,
+      "case_id": null,
+      "source": "reports"
+    },
+    {
+      "path": "reports/report.json",
+      "sha256": "06c1a9ad960e400e700559553362551e46b44ad43ac0ab528135adf4debef2b3",
+      "size_bytes": 42703,
+      "case_id": null,
+      "source": "reports"
+    },
+    {
+      "path": "reports/report.md",
+      "sha256": "bb16b3a21c3472efa4b81bcce5e8e48d71826d963a06fb839e9c26bac2147d60",
+      "size_bytes": 22390,
+      "case_id": null,
+      "source": "reports"
+    },
+    {
+      "path": "screenshots/TC-TODO-001__case__element__20261030T094821-351.png",
+      "sha256": "8ea0d5faa634e604978962cc979758182671a4c88e795bc5aa6b473c8637308b",
+      "size_bytes": 1999,
+      "case_id": "TC-TODO-001",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-TODO-001__case__fullpage__20261030T094821-450.png",
+      "sha256": "fb13b17e660a50a4ea5f9a00362a4c2b2084f6be649317f409e41942cc9e334d",
+      "size_bytes": 27928,
+      "case_id": "TC-TODO-001",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-TODO-001__final__viewport__20261030T094821-526.png",
+      "sha256": "fb13b17e660a50a4ea5f9a00362a4c2b2084f6be649317f409e41942cc9e334d",
+      "size_bytes": 27928,
+      "case_id": "TC-TODO-001",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-TODO-002__Active__fullpage__20261030T094822-312.png",
+      "sha256": "ea5ed797d07a31a818663ad4c877d10137b6eeaa31ec279e0cf5f05dc2b3ed90",
+      "size_bytes": 28529,
+      "case_id": "TC-TODO-002",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-TODO-002__final__viewport__20261030T094822-393.png",
+      "sha256": "ea5ed797d07a31a818663ad4c877d10137b6eeaa31ec279e0cf5f05dc2b3ed90",
+      "size_bytes": 28529,
+      "case_id": "TC-TODO-002",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-TODO-003__final__viewport__20261030T094823-181.png",
+      "sha256": "515e9683216c1e45fe50b2fb05196a842d005a0c7cb1de8fe5b49694d8373315",
+      "size_bytes": 28512,
+      "case_id": "TC-TODO-003",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-TODO-004__case__fullpage__20261030T094823-950.png",
+      "sha256": "c21e81a55f29fb6b4f0512b8abba021b4a1cccdc22339e42114d1c200004d1d3",
+      "size_bytes": 23590,
+      "case_id": "TC-TODO-004",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-TODO-004__final__viewport__20261030T094824-029.png",
+      "sha256": "c21e81a55f29fb6b4f0512b8abba021b4a1cccdc22339e42114d1c200004d1d3",
+      "size_bytes": 23590,
+      "case_id": "TC-TODO-004",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-TODO-005__final__viewport__20261030T094824-528.png",
+      "sha256": "83a2f16bad885655fe64ec27d081aee23ace37e3f8b01c5ff26768b25eb2606f",
+      "size_bytes": 20079,
+      "case_id": "TC-TODO-005",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-TODO-006__final__viewport__20261030T094825-153.png",
+      "sha256": "d2886c72e3af1535394ea30f77980b153e88c5db50048bc56083be869bc02c20",
+      "size_bytes": 31225,
+      "case_id": "TC-TODO-006",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-TODO-007__final__viewport__20261030T094825-612.png",
+      "sha256": "1176f622e99452de07def456638b84ed595e15406e47113f0adba4b092317c08",
+      "size_bytes": 31970,
+      "case_id": "TC-TODO-007",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-TODO-099__failure__fullpage__20261030T094826-504.png",
+      "sha256": "7493c3bb98308d3a19ba526444a9d7baa734373927a6f57914b13de95613d6e4",
+      "size_bytes": 28544,
+      "case_id": "TC-TODO-099",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-TODO-099__failure__viewport__20261030T094826-504.png",
+      "sha256": "7493c3bb98308d3a19ba526444a9d7baa734373927a6f57914b13de95613d6e4",
+      "size_bytes": 28544,
+      "case_id": "TC-TODO-099",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/index.csv",
+      "sha256": "9fc9226c50ee38e62ed8d0ad726d8a1ed2c8381643f7cd83f92bc17b41809c75",
+      "size_bytes": 2551,
+      "case_id": null,
+      "source": "evidence"
+    },
+    {
+      "path": "test-cases.xlsx",
+      "sha256": "4f3df4e8ee667e5d6f758d857b07d31af4cf6a2372e737eea55690047c24bae8",
+      "size_bytes": 7947,
+      "case_id": null,
+      "source": "generated"
+    },
+    {
+      "path": "test-code/pytest.ini",
+      "sha256": "92fb94859b46bd016753f5faded0ff56485cf5dc1e448d24315a47996718cdfc",
+      "size_bytes": 168,
+      "case_id": null,
+      "source": "project"
+    },
+    {
+      "path": "test-code/requirements.txt",
+      "sha256": "aa31a24ae0849a369527caa7714b0dafbcfa5b521147baf325e472c14ae914bc",
+      "size_bytes": 1430,
+      "case_id": null,
+      "source": "project"
+    },
+    {
+      "path": "test-code/tests/conftest.py",
+      "sha256": "e1b3b16ce567938801ab532795b2b2527d369e47a54723216d273420b769dd96",
+      "size_bytes": 20869,
+      "case_id": null,
+      "source": "project"
+    },
+    {
+      "path": "test-code/tests/pages/todo_page.py",
+      "sha256": "a27ecd56b8ae7ce545adace4f6a8a247ea42b75c0078ec545bb1801a57814b20",
+      "size_bytes": 5194,
+      "case_id": null,
+      "source": "project"
+    },
+    {
+      "path": "test-code/tests/test_todomvc.py",
+      "sha256": "10c86bde5fbad23005b6a516d5adcf5d4d139e0088185eb502d6061461c775ed",
+      "size_bytes": 4521,
+      "case_id": "TC-TODO-007",
+      "source": "project"
+    },
+    {
+      "path": "test-code/tests/test_todomvc_expected_failure.py",
+      "sha256": "c069b6dc20e32670175cb5d563bdfe4c75d61be3739826d9c2078e77a8b09d88",
+      "size_bytes": 911,
+      "case_id": "TC-TODO-099",
+      "source": "project"
+    }
+  ],
+  "zip": {
+    "path": "submission.zip",
+    "sha256": "028214e62fc3a8a0d82796b83b6505f3365616265a77debba401bcdc97890b74",
+    "size_bytes": 338247,
+    "entries": 29,
+    "entry_time": "1980-01-01T00:00:00"
+  }
+}

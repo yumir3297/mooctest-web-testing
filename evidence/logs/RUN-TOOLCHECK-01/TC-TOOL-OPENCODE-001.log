@@ -1,0 +1,9 @@
+2026-10-29T17:56:00+08:00 INFO skill visual-testing loaded successfully in current OpenCode session
+2026-10-29T17:56:00+08:00 INFO glob docs/*.md -> 4 files
+2026-10-29T17:56:00+08:00 INFO glob **/*.md path=.opencode/commands -> 5 command files
+2026-10-29T17:56:00+08:00 INFO glob .opencode/commands/*.md from root -> no match (hidden-dir traversal); path-scoped glob works
+2026-10-29T17:56:00+08:00 INFO grep VISUAL_CHECK_READY|SELENIUM_READY|WEB_TEST_READY -> 3 matches in .opencode/commands
+2026-10-29T17:56:00+08:00 INFO webfetch https://example.com -> "Example Domain..." text returned
+2026-10-29T17:56:00+08:00 INFO task explore -> 6 skills, 5 commands, 39 manifest evidence entries at that moment
+2026-10-29T17:56:00+08:00 INFO read image mcp-fullpage.png -> image loaded and displayed; checked item visible
+2026-10-29T17:56:00+08:00 INFO bash/write/edit/todowrite used throughout the session

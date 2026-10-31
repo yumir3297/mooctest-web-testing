@@ -1,0 +1,366 @@
+{
+  "schema_version": "1.0",
+  "run_id": "RUN-AUDIT-20261030-01",
+  "generated_at": "2026-10-31T00:56:25+08:00",
+  "gate_status": {
+    "G0": "WARNING",
+    "G1": "SKIP",
+    "G2": "FAIL",
+    "G3": "WARNING",
+    "G4": "SKIP"
+  },
+  "delivery_verdict": "FAIL",
+  "test_verdict": "PASS",
+  "findings": [
+    {
+      "gate": "G0",
+      "code": "ENV_RECORD_INCOMPLETE",
+      "severity": "WARNING",
+      "subject": "RUN-AUDIT-20261030-01",
+      "message": "run.environment 缺少 chrome, chromedriver, selenium, pytest：环境无法复核（本地演练：仅告警）",
+      "evidence": "chrome=None, chromedriver=None, selenium=None, pytest=None"
+    },
+    {
+      "gate": "G0",
+      "code": "ENV_VERSION_UNPARSABLE",
+      "severity": "WARNING",
+      "subject": "RUN-AUDIT-20261030-01",
+      "message": "无法从 run.environment 解析 chrome/chromedriver 主版本，兼容性未验证",
+      "evidence": "chrome=None chromedriver=None"
+    },
+    {
+      "gate": "G0",
+      "code": "ENV_CHECK_UNAVAILABLE",
+      "severity": "WARNING",
+      "subject": "tools/env_check.py",
+      "message": "env_check.py 不存在或无法输出 JSON：跳过实时环境探测，仅使用 manifest 记录（本次运行显式关闭）",
+      "evidence": "",
+      "advisory": true
+    },
+    {
+      "gate": "G0",
+      "code": "AI_USE_UNVERIFIED",
+      "severity": "UNVERIFIED",
+      "subject": "RUN-AUDIT-20261030-01",
+      "message": "未声明 AI 使用合规确认（meta.ai_use_confirmed）：本地产出视为 UNVERIFIED，不阻断本地演练；正式提交前必须人工核对当届赛项规则",
+      "evidence": "",
+      "advisory": true
+    },
+    {
+      "gate": "G2",
+      "code": "JUNIT_SUMMARY_MISSING",
+      "severity": "FAIL",
+      "subject": "RUN-AUDIT-20261030-01",
+      "message": "manifest 声称 2 个用例已执行，但没有 junit-summary.json",
+      "evidence": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-AUDIT-20261030-01\\junit-summary.json"
+    },
+    {
+      "gate": "G2",
+      "code": "AUTOMATION_VALUE_UNRECOGNISED",
+      "severity": "WARNING",
+      "subject": "automation",
+      "message": "automation 列含非代码值（按手工用例处理）：TC-TODO-008:未实现, TC-TODO-009:未实现, TC-TODO-008:待实现, TC-TODO-009:待实现, TC-TODO-010:待实现, TC-TODO-011:部分由 001/002 覆盖, TC-TODO-012:待实现",
+      "evidence": ""
+    },
+    {
+      "gate": "G3",
+      "code": "EVIDENCE_UNSCOPED",
+      "severity": "WARNING",
+      "subject": "RUN-AUDIT-20261030-01",
+      "message": "3 条证据路径不含 RUN-*，无法归属到具体 run",
+      "evidence": ""
+    },
+    {
+      "gate": "G3",
+      "code": "EVIDENCE_UNSCOPED",
+      "severity": "WARNING",
+      "subject": "evidence/raw/mcp/page-2026-10-30T09-47-18-037Z.yml",
+      "message": "证据路径不含 run 归属",
+      "evidence": "evidence/raw/mcp/page-2026-10-30T09-47-18-037Z.yml"
+    },
+    {
+      "gate": "G3",
+      "code": "EVIDENCE_UNSCOPED",
+      "severity": "WARNING",
+      "subject": "evidence/raw/mcp/page-2026-10-30T09-47-26-602Z.yml",
+      "message": "证据路径不含 run 归属",
+      "evidence": "evidence/raw/mcp/page-2026-10-30T09-47-26-602Z.yml"
+    },
+    {
+      "gate": "G3",
+      "code": "EVIDENCE_UNSCOPED",
+      "severity": "WARNING",
+      "subject": "evidence/raw/mcp/console-2026-10-30T09-47-17-022Z.log",
+      "message": "证据路径不含 run 归属",
+      "evidence": "evidence/raw/mcp/console-2026-10-30T09-47-17-022Z.log"
+    },
+    {
+      "gate": "G3",
+      "code": "HISTORICAL_EVIDENCE_ANOMALY",
+      "severity": "WARNING",
+      "subject": "*",
+      "message": "全量扫描：manifest 共 9 条跨 run 登记、3 条无 run 归属证据；历史事实只报告不修改，不影响本 run 判定",
+      "evidence": "evidence/raw/RUN-20261029-01/exploration/snapshot.yml, evidence/raw/RUN-20261029-01/exploration/after-add.yml, evidence/raw/RUN-20261029-01/browser/viewport.png",
+      "advisory": true
+    }
+  ],
+  "summary": {
+    "FAIL": 1,
+    "WARNING": 9,
+    "BLOCKED": 0,
+    "UNVERIFIED": 1,
+    "PASS": 71
+  },
+  "advisory": {
+    "count": 3,
+    "codes": [
+      "ENV_CHECK_UNAVAILABLE",
+      "AI_USE_UNVERIFIED",
+      "HISTORICAL_EVIDENCE_ANOMALY"
+    ],
+    "note": "advisory findings 只记录不阻断本地演练；--official-submission 会把合规项升级为 BLOCKED"
+  },
+  "exit_code": 1,
+  "verdict_notes": {
+    "delivery": "测试成果是否可信、可交付（确认缺陷不会拉低该结论）",
+    "test": "2 个用例已执行且无失败"
+  },
+  "inputs": {
+    "manifest": "D:\\桌面\\软件测试competion\\evidence\\manifest.json",
+    "manifest_schema": "1.0",
+    "manifest_error": null,
+    "cases": [
+      "D:\\桌面\\软件测试competion\\reports\\test-cases\\TodoMVC-CMDCHECK-test-cases.csv",
+      "D:\\桌面\\软件测试competion\\reports\\test-cases\\TodoMVC-CMDCHECK3-test-cases.csv",
+      "D:\\桌面\\软件测试competion\\reports\\test-cases\\todomvc-test-cases.csv"
+    ],
+    "junit_summary": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-AUDIT-20261030-01\\junit-summary.json",
+    "requirements": null,
+    "submission": null,
+    "official_submission": false,
+    "gates": [
+      "G0",
+      "G2",
+      "G3"
+    ]
+  },
+  "execution": {
+    "manifest_case_counts": {
+      "passed": 2
+    },
+    "junit_summary_passed": null,
+    "junit_summary_counts": null,
+    "junit_xml_counts": null,
+    "collected_nodes": [
+      "tests/test_todomvc.py::test_add_todo",
+      "tests/test_todomvc.py::test_boundary_lengths",
+      "tests/test_todomvc.py::test_complete_and_filter",
+      "tests/test_todomvc.py::test_delete_todo",
+      "tests/test_todomvc.py::test_edit_todo",
+      "tests/test_todomvc.py::test_empty_and_whitespace_rejected",
+      "tests/test_todomvc.py::test_text_is_escaped",
+      "tests/test_todomvc_expected_failure.py::test_expected_failure_captures_evidence"
+    ],
+    "failed_case_triage": {}
+  },
+  "evidence": {
+    "verify": {
+      "checked": 5,
+      "ok": 5,
+      "missing": 0,
+      "mismatched": 0,
+      "cross_run": 0,
+      "unscoped": 3
+    },
+    "manifest_audit": {
+      "evidence_total": 133,
+      "cross_run": 9,
+      "unscoped": 3,
+      "examples": [
+        "evidence/raw/RUN-20261029-01/exploration/snapshot.yml",
+        "evidence/raw/RUN-20261029-01/exploration/after-add.yml",
+        "evidence/raw/RUN-20261029-01/browser/viewport.png",
+        "evidence/raw/RUN-20261029-01/browser/fullpage.png",
+        "evidence/raw/RUN-20261029-01/browser/element-todo-item.png"
+      ]
+    }
+  },
+  "compliance": {
+    "ai_use_confirmed": false,
+    "ai_status": "UNVERIFIED",
+    "official_submission": false,
+    "env_check": null
+  },
+  "stats": {
+    "G0": {
+      "environment_keys": [],
+      "missing_env_keys": [
+        "chrome",
+        "chromedriver",
+        "selenium",
+        "pytest"
+      ],
+      "ai_use_confirmed": false,
+      "ai_use_raw": ""
+    },
+    "G2": {
+      "manifest_case_counts": {
+        "passed": 2
+      },
+      "junit_summary": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-AUDIT-20261030-01\\junit-summary.json",
+      "junit_summary_state": "missing",
+      "automation": [
+        {
+          "case_id": "TC-CMDCHECK-001",
+          "file": "tests/test_todomvc.py",
+          "func": "test_add_todo"
+        },
+        {
+          "case_id": "TC-CMDCHECK-002",
+          "file": "tests/test_todomvc.py",
+          "func": "test_complete_and_filter"
+        },
+        {
+          "case_id": "TC-CMDCHECK-003",
+          "file": "tests/test_todomvc.py",
+          "func": "test_edit_todo"
+        },
+        {
+          "case_id": "TC-CMDCHECK-004",
+          "file": "tests/test_todomvc.py",
+          "func": "test_delete_todo"
+        },
+        {
+          "case_id": "TC-CMDCHECK-005",
+          "file": "tests/test_todomvc.py",
+          "func": "test_empty_and_whitespace_rejected"
+        },
+        {
+          "case_id": "TC-CMDCHECK-006",
+          "file": "tests/test_todomvc.py",
+          "func": "test_boundary_lengths"
+        },
+        {
+          "case_id": "TC-CMDCHECK-007",
+          "file": "tests/test_todomvc.py",
+          "func": "test_text_is_escaped"
+        },
+        {
+          "case_id": "TC-CMDCHECK-099",
+          "file": "tests/test_todomvc_expected_failure.py",
+          "func": ""
+        },
+        {
+          "case_id": "TC-TODO-001",
+          "file": "tests/test_todomvc.py",
+          "func": "test_add_todo"
+        },
+        {
+          "case_id": "TC-TODO-002",
+          "file": "tests/test_todomvc.py",
+          "func": "test_complete_and_filter"
+        },
+        {
+          "case_id": "TC-TODO-003",
+          "file": "tests/test_todomvc.py",
+          "func": "test_edit_todo"
+        },
+        {
+          "case_id": "TC-TODO-004",
+          "file": "tests/test_todomvc.py",
+          "func": "test_delete_todo"
+        },
+        {
+          "case_id": "TC-TODO-005",
+          "file": "tests/test_todomvc.py",
+          "func": "test_empty_and_whitespace_rejected"
+        },
+        {
+          "case_id": "TC-TODO-006",
+          "file": "tests/test_todomvc.py",
+          "func": "test_boundary_lengths"
+        },
+        {
+          "case_id": "TC-TODO-007",
+          "file": "tests/test_todomvc.py",
+          "func": "test_text_is_escaped"
+        },
+        {
+          "case_id": "TC-TODO-001",
+          "file": "tests/test_todomvc.py",
+          "func": "test_add_todo"
+        },
+        {
+          "case_id": "TC-TODO-002",
+          "file": null,
+          "func": "test_complete_and_filter"
+        },
+        {
+          "case_id": "TC-TODO-003",
+          "file": null,
+          "func": "test_edit_todo"
+        },
+        {
+          "case_id": "TC-TODO-004",
+          "file": null,
+          "func": "test_delete_todo"
+        },
+        {
+          "case_id": "TC-TODO-005",
+          "file": null,
+          "func": "test_empty_and_whitespace_rejected"
+        },
+        {
+          "case_id": "TC-TODO-006",
+          "file": null,
+          "func": "test_boundary_lengths"
+        },
+        {
+          "case_id": "TC-TODO-007",
+          "file": null,
+          "func": "test_text_is_escaped"
+        },
+        {
+          "case_id": "TC-TODO-099",
+          "file": "tests/test_todomvc_expected_failure.py",
+          "func": ""
+        }
+      ],
+      "collected_nodes": [
+        "tests/test_todomvc.py::test_add_todo",
+        "tests/test_todomvc.py::test_boundary_lengths",
+        "tests/test_todomvc.py::test_complete_and_filter",
+        "tests/test_todomvc.py::test_delete_todo",
+        "tests/test_todomvc.py::test_edit_todo",
+        "tests/test_todomvc.py::test_empty_and_whitespace_rejected",
+        "tests/test_todomvc.py::test_text_is_escaped",
+        "tests/test_todomvc_expected_failure.py::test_expected_failure_captures_evidence"
+      ]
+    },
+    "G3": {
+      "evidence_verify": {
+        "checked": 5,
+        "ok": 5,
+        "missing": 0,
+        "mismatched": 0,
+        "cross_run": 0,
+        "unscoped": 3
+      },
+      "manifest_audit": {
+        "evidence_total": 133,
+        "cross_run": 9,
+        "unscoped": 3,
+        "examples": [
+          "evidence/raw/RUN-20261029-01/exploration/snapshot.yml",
+          "evidence/raw/RUN-20261029-01/exploration/after-add.yml",
+          "evidence/raw/RUN-20261029-01/browser/viewport.png",
+          "evidence/raw/RUN-20261029-01/browser/fullpage.png",
+          "evidence/raw/RUN-20261029-01/browser/element-todo-item.png"
+        ]
+      },
+      "failed_case_triage": {},
+      "unconfirmed_defects": 0,
+      "confirmed_defects": 0
+    }
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "schema_version": "1.1",
+  "project": "mooctest-web-testing-qualification-sample",
+  "created_at": "2026-10-31T08:00:00+08:00",
+  "updated_at": "2026-10-31T08:00:30+08:00",
+  "runs": {
+    "RUN-SAMPLE-JUNITMISMATCH": {
+      "run_id": "RUN-SAMPLE-JUNITMISMATCH",
+      "label": "qualification sample",
+      "target": "https://example.invalid/qualification-sample",
+      "started_at": "2026-10-31T08:00:00+08:00",
+      "finished_at": "2026-10-31T08:00:20+08:00",
+      "status": "passed",
+      "stage": "executed",
+      "environment": {
+        "python": "3.13.9",
+        "pytest": "9.1.1",
+        "selenium": "4.51.0",
+        "chrome": "Chrome 156.0.8078.74",
+        "chromedriver": "ChromeDriver 156.0.8078.80",
+        "target": "https://example.invalid/qualification-sample"
+      },
+      "notes": [
+        {
+          "at": "2026-10-31T08:00:00+08:00",
+          "note": "synthetic qualification sample"
+        }
+      ],
+      "cases": {
+        "TC-SAMPLE-001": {
+          "case_id": "TC-SAMPLE-001",
+          "title": "test_case_1",
+          "status": "passed",
+          "started_at": "2026-10-31T08:00:00+08:00",
+          "finished_at": "2026-10-31T08:00:10+08:00",
+          "expected": "",
+          "actual": "",
+          "steps": [
+            "打开页面",
+            "执行操作"
+          ],
+          "assertions": [
+            {
+              "name": "断言",
+              "expected": "x",
+              "actual": "x",
+              "passed": true
+            }
+          ],
+          "evidence": [
+            "EV-4b9423a978"
+          ],
+          "defects": [],
+          "log_path": null,
+          "notes": [],
+          "meta": {
+            "requirement_ids": "R1",
+            "case_type": "positive"
+          }
+        },
+        "TC-SAMPLE-002": {
+          "case_id": "TC-SAMPLE-002",
+          "title": "test_case_2",
+          "status": "passed",
+          "started_at": "2026-10-31T08:00:00+08:00",
+          "finished_at": "2026-10-31T08:00:10+08:00",
+          "expected": "",
+          "actual": "",
+          "steps": [
+            "打开页面",
+            "执行操作"
+          ],
+          "assertions": [
+            {
+              "name": "断言",
+              "expected": "x",
+              "actual": "x",
+              "passed": true
+            }
+          ],
+          "evidence": [
+            "EV-070080f76c"
+          ],
+          "defects": [],
+          "log_path": null,
+          "notes": [],
+          "meta": {
+            "requirement_ids": "R2",
+            "case_type": "negative"
+          }
+        },
+        "TC-SAMPLE-003": {
+          "case_id": "TC-SAMPLE-003",
+          "title": "test_case_3",
+          "status": "passed",
+          "started_at": "2026-10-31T08:00:00+08:00",
+          "finished_at": "2026-10-31T08:00:10+08:00",
+          "expected": "",
+          "actual": "",
+          "steps": [
+            "打开页面",
+            "执行操作"
+          ],
+          "assertions": [
+            {
+              "name": "断言",
+              "expected": "x",
+              "actual": "x",
+              "passed": true
+            }
+          ],
+          "evidence": [
+            "EV-33fadceda8"
+          ],
+          "defects": [],
+          "log_path": null,
+          "notes": [],
+          "meta": {
+            "requirement_ids": "R3",
+            "case_type": "boundary"
+          }
+        },
+        "TC-SAMPLE-004": {
+          "case_id": "TC-SAMPLE-004",
+          "title": "test_case_4",
+          "status": "passed",
+          "started_at": "2026-10-31T08:00:00+08:00",
+          "finished_at": "2026-10-31T08:00:10+08:00",
+          "expected": "",
+          "actual": "",
+          "steps": [
+            "打开页面",
+            "执行操作"
+          ],
+          "assertions": [
+            {
+              "name": "断言",
+              "expected": "x",
+              "actual": "x",
+              "passed": true
+            }
+          ],
+          "evidence": [
+            "EV-3303fcded5"
+          ],
+          "defects": [],
+          "log_path": null,
+          "notes": [],
+          "meta": {
+            "requirement_ids": "R4",
+            "case_type": "positive"
+          }
+        },
+        "TC-SAMPLE-005": {
+          "case_id": "TC-SAMPLE-005",
+          "title": "test_case_5",
+          "status": "passed",
+          "started_at": "2026-10-31T08:00:00+08:00",
+          "finished_at": "2026-10-31T08:00:10+08:00",
+          "expected": "",
+          "actual": "",
+          "steps": [
+            "打开页面",
+            "执行操作"
+          ],
+          "assertions": [
+            {
+              "name": "断言",
+              "expected": "x",
+              "actual": "x",
+              "passed": true
+            }
+          ],
+          "evidence": [
+            "EV-e7d6d2d01b"
+          ],
+          "defects": [],
+          "log_path": null,
+          "notes": [],
+          "meta": {
+            "requirement_ids": "R5",
+            "case_type": "negative"
+          }
+        }
+      }
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "EV-4b9423a978",
+      "run_id": "RUN-SAMPLE-JUNITMISMATCH",
+      "case_id": "TC-SAMPLE-001",
+      "kind": "screenshot",
+      "path": "evidence/raw/RUN-SAMPLE-JUNITMISMATCH/TC-SAMPLE-001/TC-SAMPLE-001__final__viewport__20261031T000000-000.png",
+      "bucket": "raw",
+      "step": "final",
+      "caption": "样例证据",
+      "created_at": "2026-10-31T08:00:00+08:00",
+      "size_bytes": 1307,
+      "sha256": "d39721456de87d1b0845a4a62e9c96f99c682b07385111ecc9c8797202f4f556",
+      "immutable": true,
+      "meta": {}
+    },
+    {
+      "evidence_id": "EV-070080f76c",
+      "run_id": "RUN-SAMPLE-JUNITMISMATCH",
+      "case_id": "TC-SAMPLE-002",
+      "kind": "screenshot",
+      "path": "evidence/raw/RUN-SAMPLE-JUNITMISMATCH/TC-SAMPLE-002/TC-SAMPLE-002__final__viewport__20261031T000000-000.png",
+      "bucket": "raw",
+      "step": "final",
+      "caption": "样例证据",
+      "created_at": "2026-10-31T08:00:00+08:00",
+      "size_bytes": 1386,
+      "sha256": "09a5bbb0a6865fe1f7ad5edc595c13458be50fe1f685019a9bce6cff7109d4c8",
+      "immutable": true,
+      "meta": {}
+    },
+    {
+      "evidence_id": "EV-33fadceda8",
+      "run_id": "RUN-SAMPLE-JUNITMISMATCH",
+      "case_id": "TC-SAMPLE-003",
+      "kind": "screenshot",
+      "path": "evidence/raw/RUN-SAMPLE-JUNITMISMATCH/TC-SAMPLE-003/TC-SAMPLE-003__final__viewport__20261031T000000-000.png",
+      "bucket": "raw",
+      "step": "final",
+      "caption": "样例证据",
+      "created_at": "2026-10-31T08:00:00+08:00",
+      "size_bytes": 1396,
+      "sha256": "409094c07a3e3621e398ee92dbc3643fc61bb9937eb41b6902c0048d8a34a330",
+      "immutable": true,
+      "meta": {}
+    },
+    {
+      "evidence_id": "EV-3303fcded5",
+      "run_id": "RUN-SAMPLE-JUNITMISMATCH",
+      "case_id": "TC-SAMPLE-004",
+      "kind": "screenshot",
+      "path": "evidence/raw/RUN-SAMPLE-JUNITMISMATCH/TC-SAMPLE-004/TC-SAMPLE-004__final__viewport__20261031T000000-000.png",
+      "bucket": "raw",
+      "step": "final",
+      "caption": "样例证据",
+      "created_at": "2026-10-31T08:00:00+08:00",
+      "size_bytes": 1366,
+      "sha256": "119b886d582700108afdcbbd3f8b6e6888d7b16a56bd91cdc24f54d56999b197",
+      "immutable": true,
+      "meta": {}
+    },
+    {
+      "evidence_id": "EV-e7d6d2d01b",
+      "run_id": "RUN-SAMPLE-JUNITMISMATCH",
+      "case_id": "TC-SAMPLE-005",
+      "kind": "screenshot",
+      "path": "evidence/raw/RUN-SAMPLE-JUNITMISMATCH/TC-SAMPLE-005/TC-SAMPLE-005__final__viewport__20261031T000000-000.png",
+      "bucket": "raw",
+      "step": "final",
+      "caption": "样例证据",
+      "created_at": "2026-10-31T08:00:00+08:00",
+      "size_bytes": 1368,
+      "sha256": "37d28823b2896edb694faab3d0fdc48a92e3471ca9e5955c6f31f698433d9b8b",
+      "immutable": true,
+      "meta": {}
+    }
+  ]
+}

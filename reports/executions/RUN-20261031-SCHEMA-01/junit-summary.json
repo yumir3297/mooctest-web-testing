@@ -1,0 +1,31 @@
+{
+  "run_id": "RUN-20261031-SCHEMA-01",
+  "exit_code": 1,
+  "elapsed_seconds": 3.61,
+  "timed_out": false,
+  "junit": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-20261031-SCHEMA-01\\junit.xml",
+  "console_log": "D:\\桌面\\软件测试competion\\evidence\\logs\\RUN-20261031-SCHEMA-01\\pytest-console.log",
+  "tests": 2,
+  "failures": 0,
+  "errors": 2,
+  "skipped": 0,
+  "time": 1.25,
+  "xfailed": 0,
+  "cases": [
+    {
+      "name": "test_add_todo",
+      "classname": "tests.test_todomvc",
+      "time": 0.039,
+      "status": "failed",
+      "message": "failed on setup with \"RuntimeError: driver compatibility check could not determine a version: chrome='<empty>' chromedriver='ChromeDriver 156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705})'\""
+    },
+    {
+      "name": "test_empty_and_whitespace_rejected",
+      "classname": "tests.test_todomvc",
+      "time": 0.027,
+      "status": "failed",
+      "message": "failed on setup with \"RuntimeError: driver compatibility check could not determine a version: chrome='<empty>' chromedriver='ChromeDriver 156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705})'\""
+    }
+  ],
+  "status": "failed"
+}

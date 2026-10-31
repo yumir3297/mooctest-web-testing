@@ -1,0 +1,127 @@
+{
+  "verdict": "READY",
+  "strict": false,
+  "exit_code": 0,
+  "generated_at": "2026-10-30T16:57:34Z",
+  "summary": {
+    "PASS": 17,
+    "WARN": 0,
+    "BLOCKED": 0,
+    "total": 17
+  },
+  "blocking": [],
+  "warnings": [],
+  "facts": {
+    "python_executable": "C:\\Users\\鏉庢吹\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "platform": "Windows-11-10.0.26340-SP0",
+    "chrome_binary": "C:\\Users\\鏉庢吹\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe",
+    "chrome_version": "156.0.8078.74",
+    "chromedriver_binary": "D:\\妗岄潰\\杞欢娴嬭瘯competion\\tools\\driver\\chromedriver.exe",
+    "chromedriver_version": "156.0.8078.80",
+    "chromedriver_sha256": "95AE04AEBD7DAF845DCE58D42139F0ACBF1A5172FD480DB328EA70BDC6301790"
+  },
+  "checks": [
+    {
+      "id": "python_version",
+      "status": "PASS",
+      "detail": "Python 3.13.9 (>= 3.8)",
+      "evidence": "C:\\Users\\鏉庢吹\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"
+    },
+    {
+      "id": "selenium",
+      "status": "PASS",
+      "detail": "selenium 4.51.0 (import selenium ok)",
+      "evidence": "python -c \"import selenium; print(selenium.__version__)\""
+    },
+    {
+      "id": "pytest",
+      "status": "PASS",
+      "detail": "pytest 9.1.1 (import pytest ok)",
+      "evidence": "python -c \"import pytest; print(pytest.__version__)\""
+    },
+    {
+      "id": "openpyxl",
+      "status": "PASS",
+      "detail": "openpyxl 3.1.5 (import openpyxl ok)",
+      "evidence": "python -c \"import openpyxl; print(openpyxl.__version__)\""
+    },
+    {
+      "id": "pillow",
+      "status": "PASS",
+      "detail": "pillow 12.2.0 (import PIL ok)",
+      "evidence": "python -c \"import PIL; print(PIL.__version__)\""
+    },
+    {
+      "id": "opencv",
+      "status": "PASS",
+      "detail": "opencv-python 5.0.0.93 (import cv2 ok, runtime 5.0.0)",
+      "evidence": "python -c \"import cv2; print(cv2.__version__)\""
+    },
+    {
+      "id": "numpy",
+      "status": "PASS",
+      "detail": "numpy 2.4.4 (import numpy ok)",
+      "evidence": "python -c \"import numpy; print(numpy.__version__)\""
+    },
+    {
+      "id": "chrome_binary",
+      "status": "PASS",
+      "detail": "C:\\Users\\鏉庢吹\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe",
+      "evidence": "C:\\Users\\鏉庢吹\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe (exists, 4.32 MB)"
+    },
+    {
+      "id": "chrome_version",
+      "status": "PASS",
+      "detail": "156.0.8078.74",
+      "evidence": "resolution=pe-version-resource, binary=C:\\Users\\鏉庢吹\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe"
+    },
+    {
+      "id": "chromedriver_binary",
+      "status": "PASS",
+      "detail": "D:\\妗岄潰\\杞欢娴嬭瘯competion\\tools\\driver\\chromedriver.exe",
+      "evidence": "D:\\妗岄潰\\杞欢娴嬭瘯competion\\tools\\driver\\chromedriver.exe (exists, 23.17 MB)"
+    },
+    {
+      "id": "chromedriver_version",
+      "status": "PASS",
+      "detail": "156.0.8078.80",
+      "evidence": "cmd: D:\\妗岄潰\\杞欢娴嬭瘯competion\\tools\\driver\\chromedriver.exe --version -> ChromeDriver 156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705})"
+    },
+    {
+      "id": "driver_major_match",
+      "status": "PASS",
+      "detail": "chrome major 156 == driver major 156",
+      "evidence": "chrome=156.0.8078.74, chromedriver=156.0.8078.80"
+    },
+    {
+      "id": "driver_source",
+      "status": "PASS",
+      "detail": "sha256 matches DRIVER.md (recorded driver 156.0.8078.80)",
+      "evidence": "sha256=95AE04AEBD7DAF845DCE58D42139F0ACBF1A5172FD480DB328EA70BDC6301790; source=parsed tools\\driver\\DRIVER.md; archive: chromedriver-155.0.8059.84.exe"
+    },
+    {
+      "id": "node",
+      "status": "PASS",
+      "detail": "node v24.14.1 (D:\\nodejs\\node.EXE)",
+      "evidence": "D:\\nodejs\\node.EXE --version"
+    },
+    {
+      "id": "playwright_cli",
+      "status": "PASS",
+      "detail": "playwright-cli 0.1.22",
+      "evidence": "D:\\妗岄潰\\杞欢娴嬭瘯competion\\node_modules\\.bin\\playwright-cli.cmd -> 0.1.22"
+    },
+    {
+      "id": "evidence_dirs",
+      "status": "PASS",
+      "detail": "all 5 evidence dirs present; manifest.json present",
+      "evidence": "evidence/raw=ok; evidence/annotated=ok; evidence/diff=ok; evidence/logs=ok; reports/executions=ok"
+    },
+    {
+      "id": "skills_dir",
+      "status": "PASS",
+      "detail": "project=7 (.opencode/skills) external=5 (.agents/skills), missing=0",
+      "evidence": "project_dir=D:\\妗岄潰\\杞欢娴嬭瘯competion\\.opencode\\skills (7/7 required); external_dir=D:\\妗岄潰\\杞欢娴嬭瘯competion\\.agents\\skills (5); missing=none; knowledge_missing=none"
+    }
+  ]
+}

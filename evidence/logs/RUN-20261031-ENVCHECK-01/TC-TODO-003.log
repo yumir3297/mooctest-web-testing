@@ -1,0 +1,4 @@
+2026-10-31 00:47:09,721 INFO case=TC-TODO-003 run=RUN-20261031-ENVCHECK-01
+2026-10-31 00:47:09,722 INFO STEP 新增 Old title
+2026-10-31 00:47:09,948 INFO STEP 双击标题并改为 New title
+2026-10-31 00:47:10,404 INFO CHECK 标题被更新 passed=True expected=['New title'] actual=['New title']

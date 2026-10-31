@@ -1,0 +1,30 @@
+{
+  "label": "identical",
+  "created_at": "2026-10-29T17:54:32+08:00",
+  "baseline": "evidence\\raw\\RUN-TOOLCHECK-01\\browser\\diff-before.png",
+  "actual": "evidence\\raw\\RUN-TOOLCHECK-01\\browser\\diff-before.png",
+  "size_mismatch": false,
+  "baseline_size": [
+    1280,
+    720
+  ],
+  "actual_size": [
+    1280,
+    720
+  ],
+  "threshold": 25,
+  "min_area": 30,
+  "ignore_boxes": [],
+  "raw_changed_pixels": 0,
+  "changed_pixels": 0,
+  "total_pixels": 921600,
+  "diff_ratio": 0.0,
+  "mean_abs_diff": 0.0,
+  "rmse": 0.0,
+  "psnr": null,
+  "region_count": 0,
+  "regions": [],
+  "verdict": "no-change",
+  "defect_claim": false,
+  "defect_note": "Pixel changes are review signals. Confirm with DOM, expected behavior, and reproducible steps before filing a defect."
+}

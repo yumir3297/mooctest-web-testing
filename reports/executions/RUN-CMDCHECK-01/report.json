@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-10-30T17:49:57+08:00",
+  "run": {
+    "run_id": "RUN-CMDCHECK-01",
+    "label": "TodoMVC-CMDCHECK smoke 命令链验证",
+    "target": "https://demo.playwright.dev/todomvc",
+    "status": "blocked",
+    "stage": "blocked",
+    "started_at": "2026-10-29T18:00:44+08:00",
+    "finished_at": "2026-10-29T18:26:37+08:00",
+    "case_counts": {},
+    "case_total": 0,
+    "evidence_count": 0,
+    "defect_count": 0,
+    "environment": {},
+    "notes": [
+      {
+        "at": "2026-10-29T18:01:06+08:00",
+        "note": "用例文件 reports/test-cases/TodoMVC-CMDCHECK-test-cases.md|.csv；主用例7条+辅助1条；smoke 执行001；缺口=002-007未执行"
+      },
+      {
+        "at": "2026-10-29T18:26:37+08:00",
+        "note": "完整命令在 playwright-cli open 阶段阻塞，未完成探索/Selenium/报告；已保留 test-cases 文件，改用 MCP 重跑 RUN-CMDCHECK-03。"
+      }
+    ]
+  },
+  "verify": {
+    "checked": 0,
+    "ok": 0,
+    "missing": [],
+    "mismatched": []
+  },
+  "junit": null,
+  "junit_counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0,
+    "xfailed": 0,
+    "other": 0
+  },
+  "cases": [],
+  "junit_backed_cases": [],
+  "non_junit_cases": [],
+  "coverage": {
+    "not_run": [
+      {
+        "case_id": "TC-TODO-008",
+        "title": "刷新后持久化",
+        "design_status": "未执行"
+      },
+      {
+        "case_id": "TC-TODO-009",
+        "title": "全部完成/取消全部",
+        "design_status": "未执行"
+      },
+      {
+        "case_id": "TC-TODO-010",
+        "title": "清除已完成",
+        "design_status": "未执行"
+      },
+      {
+        "case_id": "TC-TODO-012",
+        "title": "键盘可访问性",
+        "design_status": "未执行"
+      }
+    ],
+    "partial": [
+      {
+        "case_id": "TC-TODO-011",
+        "title": "计数单复数",
+        "design_status": "部分覆盖"
+      }
+    ]
+  },
+  "visual": [],
+  "test_case_design": "D:\\桌面\\软件测试competion\\reports\\test-cases\\TodoMVC-CMDCHECK-test-cases.md"
+}

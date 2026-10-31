@@ -1,0 +1,44 @@
+﻿=== evidence.py add-defect self-check (synthetic, not a product defect) ===
+RUN-TOOLCHECK-DEFECT
+{
+  "case_id": "TC-SYNTH-001",
+  "title": "宸ュ叿鑷铏氭嫙鐢ㄤ緥",
+  "status": "failed",
+  "started_at": "2026-10-29T17:55:42+08:00",
+  "finished_at": "2026-10-29T17:55:42+08:00",
+  "expected": "铏氭嫙棰勬湡",
+  "actual": "铏氭嫙瀹為檯",
+  "steps": [],
+  "assertions": [],
+  "evidence": [],
+  "defects": [],
+  "log_path": null,
+  "notes": [],
+  "updated_at": "2026-10-29T17:55:42+08:00"
+}
+{
+  "defect_id": "DEF-001",
+  "title": "宸ュ叿鑷铏氭嫙缂洪櫡锛堥潪浜у搧缂洪櫡锛?,
+  "severity": "trivial",
+  "status": "open",
+  "description": "浠呯敤浜庨獙璇?add-defect CLI 璺緞锛岄獙璇佸悗鍒犻櫎涓存椂杩愯銆?,
+  "expected": "铏氭嫙棰勬湡",
+  "actual": "铏氭嫙瀹為檯",
+  "evidence": [],
+  "created_at": "2026-10-29T17:55:42+08:00"
+}
+{
+  "run_id": "RUN-TOOLCHECK-DEFECT",
+  "label": "add-defect 鑷",
+  "target": "synthetic://toolcheck",
+  "status": "running",
+  "stage": "init",
+  "started_at": "2026-10-29T17:55:42+08:00",
+  "finished_at": null,
+  "case_counts": {
+    "failed": 1
+  },
+  "case_total": 1,
+  "evidence_count": 0,
+  "defect_count": 1
+}

@@ -1,0 +1,6 @@
+﻿case_id,title,priority,requirement_ids,case_type,method,preconditions,test_data,steps,expected,actual,status,automation,evidence_required,executed_in_run,notes
+TC-SAMPLE-001,自动化用例 1,P0,R1,positive,等价类划分,列表为空,数据1,1. 打开页面;2. 执行断言,结果等于 1,,已执行-通过,tests/test_sample.py::test_case_1,用例日志,RUN-SAMPLE-JUNITMISMATCH,qualification sample
+TC-SAMPLE-002,自动化用例 2,P1,R2,negative,等价类划分,列表为空,数据2,1. 打开页面;2. 执行断言,结果等于 2,,已执行-通过,tests/test_sample.py::test_case_2,用例日志,RUN-SAMPLE-JUNITMISMATCH,qualification sample
+TC-SAMPLE-003,自动化用例 3,P1,R3,boundary,等价类划分,列表为空,数据3,1. 打开页面;2. 执行断言,结果等于 3,,已执行-通过,tests/test_sample.py::test_case_3,用例日志,RUN-SAMPLE-JUNITMISMATCH,qualification sample
+TC-SAMPLE-004,自动化用例 4,P0,R4,positive,等价类划分,列表为空,数据4,1. 打开页面;2. 执行断言,结果等于 4,,已执行-通过,tests/test_sample.py::test_case_4,用例日志,RUN-SAMPLE-JUNITMISMATCH,qualification sample
+TC-SAMPLE-005,自动化用例 5,P1,R5,negative,等价类划分,列表为空,数据5,1. 打开页面;2. 执行断言,结果等于 5,,已执行-通过,tests/test_sample.py::test_case_5,用例日志,RUN-SAMPLE-JUNITMISMATCH,qualification sample

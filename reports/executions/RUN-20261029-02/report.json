@@ -1,0 +1,1203 @@
+{
+  "generated_at": "2026-10-29T18:29:36+08:00",
+  "run": {
+    "run_id": "RUN-20261029-02",
+    "label": "pytest Selenium acceptance",
+    "target": "https://demo.playwright.dev/todomvc",
+    "status": "passed",
+    "stage": "executed",
+    "started_at": "2026-10-29T17:22:08+08:00",
+    "finished_at": "2026-10-29T17:22:18+08:00",
+    "case_counts": {
+      "passed": 10,
+      "xfailed": 1
+    },
+    "case_total": 11,
+    "evidence_count": 33,
+    "defect_count": 0,
+    "environment": {
+      "python": "3.13.9",
+      "platform": "Windows-11-10.0.26340-SP0",
+      "pytest": "pytest",
+      "target": "https://demo.playwright.dev/todomvc"
+    },
+    "notes": [
+      {
+        "at": "2026-10-29T17:22:08+08:00",
+        "note": "pytest started"
+      },
+      {
+        "at": "2026-10-29T17:22:18+08:00",
+        "note": "pytest exit=0; total=8; failed=False; xfailed=True"
+      },
+      {
+        "at": "2026-10-29T17:22:18+08:00",
+        "note": "pytest exit=0; tests=8; failures=0; errors=0; xfailed=1; elapsed=10.62s"
+      },
+      {
+        "at": "2026-10-29T17:28:39+08:00",
+        "note": "TC-TODO-099 为受控预期失败，仅验证失败截图/源码/日志链路，不是产品缺陷；TC-TODO-008/009/010/012 未执行，按用例设计文档标注为缺口。"
+      },
+      {
+        "at": "2026-10-29T17:28:44+08:00",
+        "note": "浏览器/MCP 证据采集于 17:15-17:18，Selenium 运行于 17:22；为统一验收登记到本运行，原始路径保留采集运行 RUN-20261029-01，未复制/覆盖原图。"
+      },
+      {
+        "at": "2026-10-29T17:29:27+08:00",
+        "note": "用例计数口径：manifest 通过 9 = pytest 通过 7 + 浏览器/视觉验收登记 2（TC-BROWSER-001、TC-VISUAL-001，非 pytest 用例）；pytest 结果以 JUnit 为准 tests=8, failures=0, errors=0, xfailed=1（JUnit 记为 skipped），xfail 不计入通过率。"
+      },
+      {
+        "at": "2026-10-29T17:32:34+08:00",
+        "note": "计数口径更新（覆盖 17:29 的旧口径）：manifest 登记 11 条 = 通过 10 + 受控预期失败 1；其中 JUnit 支撑 8 条（7 passed + 1 xfailed），非 JUnit 验收登记 3 条（TC-BROWSER-001、TC-VISUAL-001、TC-VISION-001）。xfail 不计入通过率。"
+      }
+    ]
+  },
+  "verify": {
+    "checked": 33,
+    "ok": 33,
+    "missing": [],
+    "mismatched": []
+  },
+  "junit": {
+    "run_id": "RUN-20261029-02",
+    "exit_code": 0,
+    "elapsed_seconds": 10.62,
+    "junit": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-20261029-02\\junit.xml",
+    "console_log": "D:\\桌面\\软件测试competion\\evidence\\logs\\RUN-20261029-02\\pytest-console.log",
+    "tests": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 1,
+    "time": 9.432,
+    "xfailed": 1,
+    "cases": [
+      {
+        "name": "test_add_todo",
+        "classname": "tests.test_todomvc",
+        "time": 1.944,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_complete_and_filter",
+        "classname": "tests.test_todomvc",
+        "time": 0.7,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_edit_todo",
+        "classname": "tests.test_todomvc",
+        "time": 0.794,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_delete_todo",
+        "classname": "tests.test_todomvc",
+        "time": 0.78,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_empty_and_whitespace_rejected",
+        "classname": "tests.test_todomvc",
+        "time": 0.362,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_boundary_lengths",
+        "classname": "tests.test_todomvc",
+        "time": 0.506,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_text_is_escaped",
+        "classname": "tests.test_todomvc",
+        "time": 0.55,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_expected_failure_captures_evidence",
+        "classname": "tests.test_todomvc_expected_failure",
+        "time": 2.497,
+        "status": "xfailed",
+        "message": "受控失败：验证失败截图、日志和断言记录链路"
+      }
+    ]
+  },
+  "junit_counts": {
+    "total": 8,
+    "passed": 7,
+    "failed": 0,
+    "xfailed": 1,
+    "other": 0
+  },
+  "cases": [
+    {
+      "case_id": "TC-BROWSER-001",
+      "title": "浏览器探索、交互与截图能力验收",
+      "source_title": "浏览器探索、交互与截图能力验收",
+      "status": "passed",
+      "expected": "打开 TodoMVC，获取无障碍快照，输入 Acceptance todo，列表出现该文本；视口/整页/元素截图与 MCP 截图均可读取。",
+      "actual": "页面标题 React • TodoMVC；输入后列表出现 Acceptance todo；CLI 与 MCP 截图均为有效 PNG；Playwright MCP 工具列表 25 个。",
+      "steps": [
+        "playwright-cli 打开 https://demo.playwright.dev/todomvc",
+        "获取页面无障碍快照并确认输入框 ref",
+        "输入 Acceptance todo 并回车",
+        "再次获取快照，确认列表出现该文本",
+        "保存视口、整页、待办项元素、状态栏元素截图",
+        "独立启动 Playwright MCP，调用 browser_navigate、browser_snapshot、browser_take_screenshot"
+      ],
+      "assertions": [],
+      "evidence": [
+        {
+          "evidence_id": "EV-e5c65d8b44",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-BROWSER-001",
+          "kind": "snapshot",
+          "path": "evidence/raw/RUN-20261029-01/exploration/snapshot.yml",
+          "bucket": "raw",
+          "step": "exploration",
+          "caption": "初始页面无障碍快照",
+          "created_at": "2026-10-29T17:23:21+08:00",
+          "size_bytes": 690,
+          "sha256": "758e906b0edab46d584f4809e58b62367a24e7b0b1c542f7a240251e3a4d5e70",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-c21b89fa6b",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-BROWSER-001",
+          "kind": "snapshot",
+          "path": "evidence/raw/RUN-20261029-01/exploration/after-add.yml",
+          "bucket": "raw",
+          "step": "interaction",
+          "caption": "新增待办后的无障碍快照",
+          "created_at": "2026-10-29T17:23:21+08:00",
+          "size_bytes": 1527,
+          "sha256": "2289d0a2eeae2f889a8d63efda93c55853a9262b9bbaba2e8a477544e0dea690",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-3d3a4badd2",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-BROWSER-001",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261029-01/browser/viewport.png",
+          "bucket": "raw",
+          "step": "screenshot",
+          "caption": "Playwright CLI 视口截图（新增前）",
+          "created_at": "2026-10-29T17:23:21+08:00",
+          "size_bytes": 24429,
+          "sha256": "d195ffdebee6699d88f50f2441b0b18008cb1a0567c93846924ea8c2d4796d92",
+          "immutable": true,
+          "meta": {},
+          "width": 1280,
+          "height": 720,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-a54c1e208b",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-BROWSER-001",
+          "kind": "fullpage-screenshot",
+          "path": "evidence/raw/RUN-20261029-01/browser/fullpage.png",
+          "bucket": "raw",
+          "step": "screenshot",
+          "caption": "Playwright CLI 整页截图（新增后）",
+          "created_at": "2026-10-29T17:23:21+08:00",
+          "size_bytes": 31361,
+          "sha256": "4e775976ca549cfd60a0861ddd23213ad0e06e290524802f896a435a3d9c4743",
+          "immutable": true,
+          "meta": {},
+          "width": 1280,
+          "height": 720,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-5f6c9f9948",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-BROWSER-001",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261029-01/browser/element-todo-item.png",
+          "bucket": "raw",
+          "step": "element",
+          "caption": "待办项元素截图",
+          "created_at": "2026-10-29T17:23:21+08:00",
+          "size_bytes": 3907,
+          "sha256": "a281166b5e2c588b29199b7db4a260a3bd00faef095e2c913c909a0f3761f646",
+          "immutable": true,
+          "meta": {},
+          "width": 550,
+          "height": 59,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-cb82ea57f1",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-BROWSER-001",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261029-01/browser/element-footer.png",
+          "bucket": "raw",
+          "step": "element",
+          "caption": "状态栏元素截图",
+          "created_at": "2026-10-29T17:23:21+08:00",
+          "size_bytes": 1979,
+          "sha256": "0bdd36b60188d61d90672f1e8481e00db42d65bded8002cd22211caa6717e4e5",
+          "immutable": true,
+          "meta": {},
+          "width": 550,
+          "height": 42,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-021b8758db",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-BROWSER-001",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261029-01/mcp/mcp-screenshot.png",
+          "bucket": "raw",
+          "step": "mcp",
+          "caption": "Playwright MCP 截图",
+          "created_at": "2026-10-29T17:23:21+08:00",
+          "size_bytes": 24429,
+          "sha256": "d195ffdebee6699d88f50f2441b0b18008cb1a0567c93846924ea8c2d4796d92",
+          "immutable": true,
+          "meta": {},
+          "width": 1280,
+          "height": 720,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-0385262538",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-BROWSER-001",
+          "kind": "snapshot",
+          "path": "evidence/raw/RUN-20261029-01/mcp/mcp-snapshot.yml",
+          "bucket": "raw",
+          "step": "mcp",
+          "caption": "Playwright MCP 无障碍快照",
+          "created_at": "2026-10-29T17:23:21+08:00",
+          "size_bytes": 690,
+          "sha256": "758e906b0edab46d584f4809e58b62367a24e7b0b1c542f7a240251e3a4d5e70",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-a3ba3f0667",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-BROWSER-001",
+          "kind": "log",
+          "path": "evidence/raw/RUN-20261029-01/mcp/mcp-smoke.json",
+          "bucket": "raw",
+          "step": "mcp",
+          "caption": "Playwright MCP 工具列表与调用结果",
+          "created_at": "2026-10-29T17:23:21+08:00",
+          "size_bytes": 3048,
+          "sha256": "e1205130cba240431744bcc0797f3c5aca27cb493f423662acbe1015dff24686",
+          "immutable": true,
+          "meta": {}
+        }
+      ],
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261029-02/TC-BROWSER-001.log",
+      "duration_ms": null
+    },
+    {
+      "case_id": "TC-TODO-001",
+      "title": "新增一条待办",
+      "source_title": "test_add_todo",
+      "status": "passed",
+      "expected": "True",
+      "actual": "断言通过",
+      "steps": [
+        "打开 TodoMVC 演示页",
+        "在新增输入框中输入 Buy milk 并回车"
+      ],
+      "assertions": [
+        {
+          "name": "待办列表包含新增项",
+          "expected": "['Buy milk']",
+          "actual": "['Buy milk']",
+          "passed": true,
+          "at": "2026-10-29T17:22:10+08:00"
+        },
+        {
+          "name": "剩余计数为 1",
+          "expected": "1 item left",
+          "actual": "1 item left",
+          "passed": true,
+          "at": "2026-10-29T17:22:11+08:00"
+        },
+        {
+          "name": "底部状态栏可见",
+          "expected": "True",
+          "actual": "True",
+          "passed": true,
+          "at": "2026-10-29T17:22:11+08:00"
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-4047ea19f5",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-TODO-001",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-20261029-02/TC-TODO-001/TC-TODO-001__case__element__20261029T092211-112.png",
+          "bucket": "raw",
+          "step": "新增待办后的元素",
+          "caption": "用例证据：新增待办后的元素",
+          "created_at": "2026-10-29T17:22:11+08:00",
+          "size_bytes": 1999,
+          "sha256": "8ea0d5faa634e604978962cc979758182671a4c88e795bc5aa6b473c8637308b",
+          "immutable": true,
+          "meta": {},
+          "width": 550,
+          "height": 59,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-1c482e8913",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-TODO-001",
+          "kind": "fullpage-screenshot",
+          "path": "evidence/raw/RUN-20261029-02/TC-TODO-001/TC-TODO-001__case__fullpage__20261029T092211-218.png",
+          "bucket": "raw",
+          "step": "新增待办后的整页",
+          "caption": "用例证据：新增待办后的整页",
+          "created_at": "2026-10-29T17:22:11+08:00",
+          "size_bytes": 27928,
+          "sha256": "fb13b17e660a50a4ea5f9a00362a4c2b2084f6be649317f409e41942cc9e334d",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-6e33364104",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-TODO-001",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261029-02/TC-TODO-001/TC-TODO-001__final__viewport__20261029T092211-289.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-29T17:22:11+08:00",
+          "size_bytes": 27928,
+          "sha256": "fb13b17e660a50a4ea5f9a00362a4c2b2084f6be649317f409e41942cc9e334d",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261029-02/TC-TODO-001.log",
+      "duration_ms": 1925
+    },
+    {
+      "case_id": "TC-TODO-002",
+      "title": "完成待办并按状态过滤",
+      "source_title": "test_complete_and_filter",
+      "status": "passed",
+      "expected": "['Task B']",
+      "actual": "断言通过",
+      "steps": [
+        "新增 Task A 与 Task B",
+        "勾选第一条待办",
+        "切换到 Completed 过滤器",
+        "切换到 Active 过滤器"
+      ],
+      "assertions": [
+        {
+          "name": "完成后剩余计数为 1",
+          "expected": "1 item left",
+          "actual": "1 item left",
+          "passed": true,
+          "at": "2026-10-29T17:22:11+08:00"
+        },
+        {
+          "name": "Completed 仅显示已完成项",
+          "expected": "['Task A']",
+          "actual": "['Task A']",
+          "passed": true,
+          "at": "2026-10-29T17:22:11+08:00"
+        },
+        {
+          "name": "Active 仅显示未完成项",
+          "expected": "['Task B']",
+          "actual": "['Task B']",
+          "passed": true,
+          "at": "2026-10-29T17:22:12+08:00"
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-c09a1fd3de",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-TODO-002",
+          "kind": "fullpage-screenshot",
+          "path": "evidence/raw/RUN-20261029-02/TC-TODO-002/TC-TODO-002__Active__fullpage__20261029T092212-060.png",
+          "bucket": "raw",
+          "step": "Active 过滤器结果",
+          "caption": "用例证据：Active 过滤器结果",
+          "created_at": "2026-10-29T17:22:12+08:00",
+          "size_bytes": 28529,
+          "sha256": "ea5ed797d07a31a818663ad4c877d10137b6eeaa31ec279e0cf5f05dc2b3ed90",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-2acfa1aa70",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-TODO-002",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261029-02/TC-TODO-002/TC-TODO-002__final__viewport__20261029T092212-127.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-29T17:22:12+08:00",
+          "size_bytes": 28529,
+          "sha256": "ea5ed797d07a31a818663ad4c877d10137b6eeaa31ec279e0cf5f05dc2b3ed90",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261029-02/TC-TODO-002.log",
+      "duration_ms": 681
+    },
+    {
+      "case_id": "TC-TODO-003",
+      "title": "编辑待办标题",
+      "source_title": "test_edit_todo",
+      "status": "passed",
+      "expected": "['New title']",
+      "actual": "断言通过",
+      "steps": [
+        "新增 Old title",
+        "双击标题并改为 New title"
+      ],
+      "assertions": [
+        {
+          "name": "标题被更新",
+          "expected": "['New title']",
+          "actual": "['New title']",
+          "passed": true,
+          "at": "2026-10-29T17:22:12+08:00"
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-1142de74e4",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-TODO-003",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261029-02/TC-TODO-003/TC-TODO-003__final__viewport__20261029T092213-010.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-29T17:22:13+08:00",
+          "size_bytes": 28512,
+          "sha256": "515e9683216c1e45fe50b2fb05196a842d005a0c7cb1de8fe5b49694d8373315",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261029-02/TC-TODO-003.log",
+      "duration_ms": 775
+    },
+    {
+      "case_id": "TC-TODO-004",
+      "title": "删除待办",
+      "source_title": "test_delete_todo",
+      "status": "passed",
+      "expected": "False",
+      "actual": "断言通过",
+      "steps": [
+        "新增 Delete me",
+        "悬停并点击删除按钮"
+      ],
+      "assertions": [
+        {
+          "name": "列表被清空",
+          "expected": "[]",
+          "actual": "[]",
+          "passed": true,
+          "at": "2026-10-29T17:22:13+08:00"
+        },
+        {
+          "name": "无待办时底部状态栏隐藏",
+          "expected": "False",
+          "actual": "False",
+          "passed": true,
+          "at": "2026-10-29T17:22:13+08:00"
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-d835390454",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-TODO-004",
+          "kind": "fullpage-screenshot",
+          "path": "evidence/raw/RUN-20261029-02/TC-TODO-004/TC-TODO-004__case__fullpage__20261029T092213-817.png",
+          "bucket": "raw",
+          "step": "删除后的空列表",
+          "caption": "用例证据：删除后的空列表",
+          "created_at": "2026-10-29T17:22:13+08:00",
+          "size_bytes": 23590,
+          "sha256": "c21e81a55f29fb6b4f0512b8abba021b4a1cccdc22339e42114d1c200004d1d3",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-f6a8ba9bc8",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-TODO-004",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261029-02/TC-TODO-004/TC-TODO-004__final__viewport__20261029T092213-889.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-29T17:22:13+08:00",
+          "size_bytes": 23590,
+          "sha256": "c21e81a55f29fb6b4f0512b8abba021b4a1cccdc22339e42114d1c200004d1d3",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261029-02/TC-TODO-004.log",
+      "duration_ms": 764
+    },
+    {
+      "case_id": "TC-TODO-005",
+      "title": "空与纯空白输入被拒绝",
+      "source_title": "test_empty_and_whitespace_rejected",
+      "status": "passed",
+      "expected": "[]",
+      "actual": "断言通过",
+      "steps": [
+        "直接回车，不输入内容",
+        "输入三个空格并回车"
+      ],
+      "assertions": [
+        {
+          "name": "空输入不新增待办",
+          "expected": "[]",
+          "actual": "[]",
+          "passed": true,
+          "at": "2026-10-29T17:22:14+08:00"
+        },
+        {
+          "name": "纯空白输入不新增待办",
+          "expected": "[]",
+          "actual": "[]",
+          "passed": true,
+          "at": "2026-10-29T17:22:14+08:00"
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-c9d74841cf",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-TODO-005",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261029-02/TC-TODO-005/TC-TODO-005__final__viewport__20261029T092214-340.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-29T17:22:14+08:00",
+          "size_bytes": 20079,
+          "sha256": "83a2f16bad885655fe64ec27d081aee23ace37e3f8b01c5ff26768b25eb2606f",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261029-02/TC-TODO-005.log",
+      "duration_ms": 348
+    },
+    {
+      "case_id": "TC-TODO-006",
+      "title": "输入长度边界",
+      "source_title": "test_boundary_lengths",
+      "status": "passed",
+      "expected": "['A', 'BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB']",
+      "actual": "断言通过",
+      "steps": [
+        "输入 1 个字符 A",
+        "再输入 200 个字符"
+      ],
+      "assertions": [
+        {
+          "name": "1 字符边界被接受",
+          "expected": "['A']",
+          "actual": "['A']",
+          "passed": true,
+          "at": "2026-10-29T17:22:14+08:00"
+        },
+        {
+          "name": "200 字符输入被完整保存",
+          "expected": "['A', 'BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB']",
+          "actual": "['A', 'BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB']",
+          "passed": true,
+          "at": "2026-10-29T17:22:14+08:00"
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-723b746485",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-TODO-006",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261029-02/TC-TODO-006/TC-TODO-006__final__viewport__20261029T092214-922.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-29T17:22:14+08:00",
+          "size_bytes": 31225,
+          "sha256": "d2886c72e3af1535394ea30f77980b153e88c5db50048bc56083be869bc02c20",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261029-02/TC-TODO-006.log",
+      "duration_ms": 491
+    },
+    {
+      "case_id": "TC-TODO-007",
+      "title": "HTML/脚本文本被转义",
+      "source_title": "test_text_is_escaped",
+      "status": "passed",
+      "expected": "None",
+      "actual": "断言通过",
+      "steps": [
+        "输入包含 HTML 事件属性的文本"
+      ],
+      "assertions": [
+        {
+          "name": "HTML 文本按纯文本展示",
+          "expected": "['<img src=x onerror=window.__xss=1>']",
+          "actual": "['<img src=x onerror=window.__xss=1>']",
+          "passed": true,
+          "at": "2026-10-29T17:22:15+08:00"
+        },
+        {
+          "name": "未执行注入脚本",
+          "expected": "None",
+          "actual": "None",
+          "passed": true,
+          "at": "2026-10-29T17:22:15+08:00"
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-bcbf77dee9",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-TODO-007",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261029-02/TC-TODO-007/TC-TODO-007__final__viewport__20261029T092215-539.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-29T17:22:15+08:00",
+          "size_bytes": 31970,
+          "sha256": "1176f622e99452de07def456638b84ed595e15406e47113f0adba4b092317c08",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261029-02/TC-TODO-007.log",
+      "duration_ms": 536
+    },
+    {
+      "case_id": "TC-TODO-099",
+      "title": "受控失败断言",
+      "source_title": "test_expected_failure_captures_evidence",
+      "status": "xfailed",
+      "expected": "2 items left",
+      "actual": "tests\\test_todomvc_expected_failure.py:22: in test_expected_failure_captures_evidence\n    case_ctx.check(page.count_text().startswith(\"2\"), \"受控失败断言\", \"2 items left\", page.count_text())\ntests\\conftest.py:307: in check\n    raise AssertionError(f\"{name}: expected={expected!r} actual={actual!r}\")\nE   AssertionError: 受控失败断言: expected='2 items left' actual='1 item left'",
+      "steps": [
+        "新增 Only one",
+        "故意断言剩余计数为 2（实际为 1）"
+      ],
+      "assertions": [
+        {
+          "name": "受控失败断言",
+          "expected": "2 items left",
+          "actual": "1 item left",
+          "passed": false,
+          "at": "2026-10-29T17:22:15+08:00"
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-94e279956f",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-TODO-099",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-20261029-02/TC-TODO-099/TC-TODO-099__failure__viewport__20261029T092216-142.png",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时视口截图",
+          "created_at": "2026-10-29T17:22:16+08:00",
+          "size_bytes": 28544,
+          "sha256": "7493c3bb98308d3a19ba526444a9d7baa734373927a6f57914b13de95613d6e4",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-92f517203f",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-TODO-099",
+          "kind": "fullpage-screenshot",
+          "path": "evidence/raw/RUN-20261029-02/TC-TODO-099/TC-TODO-099__failure__fullpage__20261029T092216-142.png",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时整页截图",
+          "created_at": "2026-10-29T17:22:16+08:00",
+          "size_bytes": 28544,
+          "sha256": "7493c3bb98308d3a19ba526444a9d7baa734373927a6f57914b13de95613d6e4",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-5e7e81196d",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-TODO-099",
+          "kind": "page-source",
+          "path": "evidence/raw/RUN-20261029-02/TC-TODO-099/TC-TODO-099__failure__page-source__20261029T092216-142.html",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时页面源码",
+          "created_at": "2026-10-29T17:22:16+08:00",
+          "size_bytes": 1727,
+          "sha256": "ecf386695d2b7389ef5b89db91402721d22c46d70aa906fb12db609657326e13",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-084d3fb33c",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-TODO-099",
+          "kind": "log",
+          "path": "evidence/logs/RUN-20261029-02/TC-TODO-099__browser__20261029T092216-142.log",
+          "bucket": "logs",
+          "step": "failure",
+          "caption": "失败时浏览器控制台日志",
+          "created_at": "2026-10-29T17:22:16+08:00",
+          "size_bytes": 6556,
+          "sha256": "1b6e170e4d5c16384c2f5bdd2f3dab00b150936d457c4edc3e13a537839fbaf1",
+          "immutable": true,
+          "meta": {}
+        }
+      ],
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261029-02/TC-TODO-099.log",
+      "duration_ms": 504
+    },
+    {
+      "case_id": "TC-VISION-001",
+      "title": "模型图像输入与视觉理解能力验收",
+      "source_title": "模型图像输入与视觉理解能力验收",
+      "status": "passed",
+      "expected": "模型能识别截图中的圆形复选框和文本 Acceptance todo",
+      "actual": "模型回答：有；图片中显示一个圆形复选框元素，右侧为蓝色文本 Acceptance todo。",
+      "steps": [
+        "用 opencode run --file 附加 element-todo-item.png",
+        "要求模型只回答是否包含 Acceptance todo 并描述元素",
+        "保存 CLI 输出日志并登记"
+      ],
+      "assertions": [],
+      "evidence": [
+        {
+          "evidence_id": "EV-79179fa93c",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-VISION-001",
+          "kind": "log",
+          "path": "evidence/logs/RUN-20261029-02/vision-check-utf8.log",
+          "bucket": "logs",
+          "step": "vision-check",
+          "caption": "模型视觉输入实测输出（UTF-16 日志）",
+          "created_at": "2026-10-29T17:32:22+08:00",
+          "size_bytes": 1194,
+          "sha256": "2dc0fa001b16ad1c4af1711b3ac2fc5246e08ddf76d42971010898fe62940578",
+          "immutable": true,
+          "meta": {}
+        }
+      ],
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261029-02/vision-check-utf8.log",
+      "duration_ms": null
+    },
+    {
+      "case_id": "TC-VISUAL-001",
+      "title": "截图差异检测、区域定位、裁剪与标注",
+      "source_title": "截图差异检测、区域定位、裁剪与标注",
+      "status": "passed",
+      "expected": "对同一视口的新增前/后截图返回非零差异像素和差异区域，生成差异图、热力图、对比图、标注图与裁剪图，原始截图保持不变。",
+      "actual": "检测到 8122 个差异像素（0.8813%），5 个差异区域，最大区域 550x15；派生文件已单独保存，原始截图仍保留在 evidence/raw。",
+      "steps": [
+        "用同一视口保存新增待办前后的原始截图",
+        "运行 tools/visual_diff.py compare",
+        "读取 metrics.json 与 regions.json",
+        "生成 annotated/comparison/heatmap/diff 图像",
+        "对新增待办区域执行 crop 和中文标注",
+        "登记证据并校验 SHA-256"
+      ],
+      "assertions": [],
+      "evidence": [
+        {
+          "evidence_id": "EV-801b5b1d89",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-VISUAL-001",
+          "kind": "annotation",
+          "path": "evidence/diff/RUN-20261029-02/TC-TODO-001-before-after/annotated.png",
+          "bucket": "diff",
+          "step": "visual-diff",
+          "caption": "差异区域标注图（自动）",
+          "created_at": "2026-10-29T17:23:21+08:00",
+          "size_bytes": 41412,
+          "sha256": "9e98db4b739689da300258a4c9c1d96c8ba45e93f84f79b0ff91c41f3669cd7e",
+          "immutable": true,
+          "meta": {},
+          "width": 1280,
+          "height": 720,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-28f0345ed5",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-VISUAL-001",
+          "kind": "comparison",
+          "path": "evidence/diff/RUN-20261029-02/TC-TODO-001-before-after/comparison.png",
+          "bucket": "diff",
+          "step": "visual-diff",
+          "caption": "新增前后并排对比图",
+          "created_at": "2026-10-29T17:23:21+08:00",
+          "size_bytes": 84545,
+          "sha256": "e7cb3e004e21a5ea4b054ca72a15f21be2106000ff239bfdeb5bbf479c70f831",
+          "immutable": true,
+          "meta": {},
+          "width": 2560,
+          "height": 720,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-6e3ac36a76",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-VISUAL-001",
+          "kind": "heatmap",
+          "path": "evidence/diff/RUN-20261029-02/TC-TODO-001-before-after/heatmap.png",
+          "bucket": "diff",
+          "step": "visual-diff",
+          "caption": "差异热力图",
+          "created_at": "2026-10-29T17:23:21+08:00",
+          "size_bytes": 63549,
+          "sha256": "8feac3f677147c0857cf0570744d74d5d13e8a8ae7478f23fb1bdda8e14479f1",
+          "immutable": true,
+          "meta": {},
+          "width": 1280,
+          "height": 720,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-92ede719ad",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-VISUAL-001",
+          "kind": "diff",
+          "path": "evidence/diff/RUN-20261029-02/TC-TODO-001-before-after/diff.png",
+          "bucket": "diff",
+          "step": "visual-diff",
+          "caption": "逐像素差异图",
+          "created_at": "2026-10-29T17:23:21+08:00",
+          "size_bytes": 41256,
+          "sha256": "9f0ad8236de8c5ddaa42f7fe7c26f973e4ba8f62472e87db5e28a1b4b345e2fc",
+          "immutable": true,
+          "meta": {},
+          "width": 1280,
+          "height": 720,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-ae3469289d",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-VISUAL-001",
+          "kind": "metrics",
+          "path": "evidence/diff/RUN-20261029-02/TC-TODO-001-before-after/metrics.json",
+          "bucket": "diff",
+          "step": "visual-diff",
+          "caption": "差异指标",
+          "created_at": "2026-10-29T17:23:21+08:00",
+          "size_bytes": 1772,
+          "sha256": "cd1b111aeb03cfb30c64ac64ca7c975c12de5eb2c3cb8aea8568a1edab3d556b",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-2ad73379c5",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-VISUAL-001",
+          "kind": "regions",
+          "path": "evidence/diff/RUN-20261029-02/TC-TODO-001-before-after/regions.json",
+          "bucket": "diff",
+          "step": "visual-diff",
+          "caption": "差异区域坐标",
+          "created_at": "2026-10-29T17:23:22+08:00",
+          "size_bytes": 994,
+          "sha256": "eae826eaa38ff3bd7829ba730d35a81841bfbd9337bc7418e2d1bbfec337656d",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-e9f75f1536",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-VISUAL-001",
+          "kind": "annotation",
+          "path": "evidence/annotated/RUN-20261029-02/TC-TODO-001/new-item-annotated.png",
+          "bucket": "annotated",
+          "step": "annotation",
+          "caption": "新增待办行与状态栏中文标注图",
+          "created_at": "2026-10-29T17:23:22+08:00",
+          "size_bytes": 41336,
+          "sha256": "4685236c1d2496c8fd312acb5134bc805904b9bc73e552a5fbf180d107224aa5",
+          "immutable": true,
+          "meta": {},
+          "width": 1280,
+          "height": 720,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-83b98a72ba",
+          "run_id": "RUN-20261029-02",
+          "case_id": "TC-VISUAL-001",
+          "kind": "crop",
+          "path": "evidence/annotated/RUN-20261029-02/TC-TODO-001/new-item-crop.png",
+          "bucket": "annotated",
+          "step": "crop",
+          "caption": "新增待办行裁剪图",
+          "created_at": "2026-10-29T17:23:22+08:00",
+          "size_bytes": 5633,
+          "sha256": "8eed96291032c827ae4c3fc93460da2bb3dc5077f13e822e28a6371cb2a71c10",
+          "immutable": true,
+          "meta": {},
+          "width": 550,
+          "height": 48,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-20261029-02/TC-VISUAL-001.log",
+      "duration_ms": null
+    }
+  ],
+  "junit_backed_cases": [
+    "TC-TODO-001",
+    "TC-TODO-002",
+    "TC-TODO-003",
+    "TC-TODO-004",
+    "TC-TODO-005",
+    "TC-TODO-006",
+    "TC-TODO-007",
+    "TC-TODO-099"
+  ],
+  "non_junit_cases": [
+    "TC-BROWSER-001",
+    "TC-VISION-001",
+    "TC-VISUAL-001"
+  ],
+  "coverage": {
+    "not_run": [
+      {
+        "case_id": "TC-TODO-008",
+        "title": "刷新后持久化",
+        "design_status": "未执行"
+      },
+      {
+        "case_id": "TC-TODO-009",
+        "title": "全部完成/取消全部",
+        "design_status": "未执行"
+      },
+      {
+        "case_id": "TC-TODO-010",
+        "title": "清除已完成",
+        "design_status": "未执行"
+      },
+      {
+        "case_id": "TC-TODO-012",
+        "title": "键盘可访问性",
+        "design_status": "未执行"
+      }
+    ],
+    "partial": [
+      {
+        "case_id": "TC-TODO-011",
+        "title": "计数单复数",
+        "design_status": "部分覆盖"
+      }
+    ]
+  },
+  "visual": [
+    {
+      "label": "TodoMVC 添加待办前后",
+      "created_at": "2026-10-29T17:22:31+08:00",
+      "baseline": "evidence\\raw\\RUN-20261029-01\\browser\\viewport.png",
+      "actual": "evidence\\raw\\RUN-20261029-01\\browser\\fullpage.png",
+      "size_mismatch": false,
+      "baseline_size": [
+        1280,
+        720
+      ],
+      "actual_size": [
+        1280,
+        720
+      ],
+      "threshold": 25,
+      "min_area": 30,
+      "ignore_boxes": [],
+      "raw_changed_pixels": 13433,
+      "changed_pixels": 8122,
+      "total_pixels": 921600,
+      "diff_ratio": 0.008813,
+      "mean_abs_diff": 1.7283,
+      "rmse": 7.8533,
+      "psnr": 30.2297,
+      "region_count": 5,
+      "regions": [
+        {
+          "x": 365,
+          "y": 240,
+          "w": 550,
+          "h": 15,
+          "area": 7564,
+          "mean_abs_diff": 32.803,
+          "max_abs_diff": 56,
+          "region_id": "R1"
+        },
+        {
+          "x": 585,
+          "y": 261,
+          "w": 9,
+          "h": 17,
+          "area": 79,
+          "mean_abs_diff": 101.139,
+          "max_abs_diff": 160,
+          "region_id": "R2"
+        },
+        {
+          "x": 521,
+          "y": 267,
+          "w": 8,
+          "h": 11,
+          "area": 68,
+          "mean_abs_diff": 87.441,
+          "max_abs_diff": 160,
+          "region_id": "R3"
+        },
+        {
+          "x": 435,
+          "y": 268,
+          "w": 10,
+          "h": 8,
+          "area": 49,
+          "mean_abs_diff": 108.286,
+          "max_abs_diff": 159,
+          "region_id": "R4"
+        },
+        {
+          "x": 513,
+          "y": 265,
+          "w": 3,
+          "h": 13,
+          "area": 39,
+          "mean_abs_diff": 111.359,
+          "max_abs_diff": 160,
+          "region_id": "R5"
+        }
+      ],
+      "verdict": "visual-change-detected",
+      "defect_claim": false,
+      "defect_note": "Pixel changes are review signals. Confirm with DOM, expected behavior, and reproducible steps before filing a defect.",
+      "_metrics_path": "evidence/diff/RUN-20261029-02/TC-TODO-001-before-after/metrics.json",
+      "_dir": "evidence/diff/RUN-20261029-02/TC-TODO-001-before-after"
+    }
+  ],
+  "test_case_design": "D:\\桌面\\软件测试competion\\reports\\test-cases\\todomvc-test-cases.md"
+}

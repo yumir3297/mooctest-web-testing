@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.1",
+  "project": "mooctest-web-testing-qualification-sample",
+  "created_at": "2026-10-31T08:00:00+08:00",
+  "updated_at": "2026-10-31T08:00:30+08:00",
+  "runs": {
+    "RUN-SAMPLE-MISSINGEXPECTED": {
+      "run_id": "RUN-SAMPLE-MISSINGEXPECTED",
+      "label": "qualification sample",
+      "target": "https://example.invalid/qualification-sample",
+      "started_at": "2026-10-31T08:00:00+08:00",
+      "finished_at": "2026-10-31T08:00:20+08:00",
+      "status": "passed",
+      "stage": "executed",
+      "environment": {
+        "python": "3.13.9",
+        "pytest": "9.1.1",
+        "selenium": "4.51.0",
+        "chrome": "Chrome 156.0.8078.74",
+        "chromedriver": "ChromeDriver 156.0.8078.80",
+        "target": "https://example.invalid/qualification-sample"
+      },
+      "notes": [
+        {
+          "at": "2026-10-31T08:00:00+08:00",
+          "note": "synthetic qualification sample"
+        }
+      ],
+      "cases": {
+        "TC-SAMPLE-001": {
+          "case_id": "TC-SAMPLE-001",
+          "title": "test_add_valid",
+          "status": "passed",
+          "started_at": "2026-10-31T08:00:00+08:00",
+          "finished_at": "2026-10-31T08:00:10+08:00",
+          "expected": "列表只出现一条 Buy milk；计数为 1 item left",
+          "actual": "列表为 ['Buy milk']；计数 1 item left",
+          "steps": [
+            "打开页面",
+            "执行操作"
+          ],
+          "assertions": [
+            {
+              "name": "断言",
+              "expected": "x",
+              "actual": "x",
+              "passed": true
+            }
+          ],
+          "evidence": [
+            "EV-1c56c22f44"
+          ],
+          "defects": [],
+          "log_path": null,
+          "notes": [],
+          "meta": {
+            "requirement_ids": "R1",
+            "case_type": "positive",
+            "method": "等价类划分"
+          }
+        },
+        "TC-SAMPLE-002": {
+          "case_id": "TC-SAMPLE-002",
+          "title": "拒绝空标题",
+          "status": "not-run",
+          "started_at": "2026-10-31T08:00:00+08:00",
+          "finished_at": null,
+          "expected": "列表保持为空",
+          "actual": "",
+          "steps": [
+            "打开页面",
+            "执行操作"
+          ],
+          "assertions": [],
+          "evidence": [],
+          "defects": [],
+          "log_path": null,
+          "notes": [],
+          "meta": {
+            "requirement_ids": "R2",
+            "case_type": "negative"
+          }
+        },
+        "TC-SAMPLE-003": {
+          "case_id": "TC-SAMPLE-003",
+          "title": "拒绝纯空白标题",
+          "status": "not-run",
+          "started_at": "2026-10-31T08:00:00+08:00",
+          "finished_at": null,
+          "expected": "列表保持为空",
+          "actual": "",
+          "steps": [
+            "打开页面",
+            "执行操作"
+          ],
+          "assertions": [],
+          "evidence": [],
+          "defects": [],
+          "log_path": null,
+          "notes": [],
+          "meta": {
+            "requirement_ids": "R3",
+            "case_type": "boundary"
+          }
+        }
+      }
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "EV-1c56c22f44",
+      "run_id": "RUN-SAMPLE-MISSINGEXPECTED",
+      "case_id": "TC-SAMPLE-001",
+      "kind": "screenshot",
+      "path": "evidence/raw/RUN-SAMPLE-MISSINGEXPECTED/TC-SAMPLE-001/TC-SAMPLE-001__final__viewport__20261031T000000-000.png",
+      "bucket": "raw",
+      "step": "final",
+      "caption": "样例证据",
+      "created_at": "2026-10-31T08:00:00+08:00",
+      "size_bytes": 1527,
+      "sha256": "79970d562dc0d3b3c482ab913c8dc5666a41c5a6d50c00aec6215e0dda0bd7dd",
+      "immutable": true,
+      "meta": {}
+    }
+  ]
+}

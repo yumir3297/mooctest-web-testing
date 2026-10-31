@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.0",
+  "run_id": "RUN-SAMPLE-NOBOUNDARY",
+  "generated_at": "2026-10-31T00:58:41+08:00",
+  "gate_status": {
+    "G0": "PASS",
+    "G1": "FAIL",
+    "G2": "PASS",
+    "G3": "PASS",
+    "G4": "SKIP"
+  },
+  "delivery_verdict": "FAIL",
+  "test_verdict": "PASS",
+  "findings": [
+    {
+      "gate": "G0",
+      "code": "ENV_CHECK_UNAVAILABLE",
+      "severity": "WARNING",
+      "subject": "tools/env_check.py",
+      "message": "env_check.py 不存在或无法输出 JSON：跳过实时环境探测，仅使用 manifest 记录（本次运行显式关闭）",
+      "evidence": "",
+      "advisory": true
+    },
+    {
+      "gate": "G0",
+      "code": "AI_USE_UNVERIFIED",
+      "severity": "UNVERIFIED",
+      "subject": "RUN-SAMPLE-NOBOUNDARY",
+      "message": "未声明 AI 使用合规确认（meta.ai_use_confirmed）：本地产出视为 UNVERIFIED，不阻断本地演练；正式提交前必须人工核对当届赛项规则",
+      "evidence": "",
+      "advisory": true
+    },
+    {
+      "gate": "G1",
+      "code": "CASE_TYPE_COVERAGE_MISSING",
+      "severity": "FAIL",
+      "subject": "case_type",
+      "message": "缺少用例类型覆盖：boundary",
+      "evidence": ""
+    },
+    {
+      "gate": "G4",
+      "code": "PACKAGE_SKIPPED",
+      "severity": "WARNING",
+      "subject": "submission",
+      "message": "未提供 --submission：交付包结构与哈希未校验",
+      "evidence": "",
+      "advisory": true
+    }
+  ],
+  "summary": {
+    "FAIL": 1,
+    "WARNING": 2,
+    "BLOCKED": 0,
+    "UNVERIFIED": 1,
+    "PASS": 76
+  },
+  "advisory": {
+    "count": 3,
+    "codes": [
+      "ENV_CHECK_UNAVAILABLE",
+      "AI_USE_UNVERIFIED",
+      "PACKAGE_SKIPPED"
+    ],
+    "note": "advisory findings 只记录不阻断本地演练；--official-submission 会把合规项升级为 BLOCKED"
+  },
+  "exit_code": 1,
+  "verdict_notes": {
+    "delivery": "测试成果是否可信、可交付（确认缺陷不会拉低该结论）",
+    "test": "1 个用例已执行且无失败"
+  },
+  "inputs": {
+    "manifest": "D:\\桌面\\软件测试competion\\qualification\\negative\\no-boundary-coverage\\manifest.json",
+    "manifest_schema": "1.1",
+    "manifest_error": null,
+    "cases": [
+      "D:\\桌面\\软件测试competion\\qualification\\negative\\no-boundary-coverage\\cases.csv"
+    ],
+    "cases_candidates": [],
+    "junit_summary": "D:\\桌面\\软件测试competion\\qualification\\negative\\no-boundary-coverage\\junit-summary.json",
+    "requirements": "D:\\桌面\\软件测试competion\\qualification\\negative\\no-boundary-coverage\\requirements.csv",
+    "submission": null,
+    "official_submission": false,
+    "gates": [
+      "G0",
+      "G1",
+      "G2",
+      "G3",
+      "G4"
+    ]
+  },
+  "execution": {
+    "manifest_case_counts": {
+      "passed": 1,
+      "not-run": 2
+    },
+    "junit_summary_passed": 1,
+    "junit_summary_counts": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xfailed": 0
+    },
+    "junit_xml_counts": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xfailed": 0
+    },
+    "collected_nodes": [
+      "tests/test_sample.py::test_add_valid"
+    ],
+    "failed_case_triage": {}
+  },
+  "evidence": {
+    "verify": {
+      "checked": 1,
+      "ok": 1,
+      "missing": 0,
+      "mismatched": 0,
+      "cross_run": 0,
+      "unscoped": 0
+    },
+    "manifest_audit": {
+      "evidence_total": 1,
+      "cross_run": 0,
+      "unscoped": 0,
+      "examples": []
+    }
+  },
+  "compliance": {
+    "ai_use_confirmed": false,
+    "ai_status": "UNVERIFIED",
+    "official_submission": false,
+    "env_check": null
+  },
+  "stats": {
+    "G0": {
+      "environment_keys": [
+        "chrome",
+        "chromedriver",
+        "pytest",
+        "python",
+        "selenium",
+        "target"
+      ],
+      "missing_env_keys": [],
+      "chrome_major": 156,
+      "chromedriver_major": 156,
+      "ai_use_confirmed": false,
+      "ai_use_raw": ""
+    },
+    "G1": {
+      "rows": 3,
+      "unique_case_ids": 3,
+      "case_types": {
+        "positive": 1,
+        "negative": 1,
+        "state": 1
+      },
+      "sources": [
+        "D:\\桌面\\软件测试competion\\qualification\\negative\\no-boundary-coverage\\cases.csv"
+      ]
+    },
+    "G2": {
+      "manifest_case_counts": {
+        "passed": 1,
+        "not-run": 2
+      },
+      "junit_summary": "D:\\桌面\\软件测试competion\\qualification\\negative\\no-boundary-coverage\\junit-summary.json",
+      "junit_summary_state": "ok",
+      "junit_summary_passed": 1,
+      "junit_summary_counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0
+      },
+      "junit_xml": "D:\\桌面\\软件测试competion\\qualification\\negative\\no-boundary-coverage\\junit.xml",
+      "junit_xml_counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0
+      },
+      "junit_case_names": [
+        "test_add_valid"
+      ],
+      "automation": [
+        {
+          "case_id": "TC-SAMPLE-001",
+          "file": "tests/test_sample.py",
+          "func": "test_add_valid"
+        }
+      ],
+      "collected_nodes": [
+        "tests/test_sample.py::test_add_valid"
+      ]
+    },
+    "G3": {
+      "evidence_verify": {
+        "checked": 1,
+        "ok": 1,
+        "missing": 0,
+        "mismatched": 0,
+        "cross_run": 0,
+        "unscoped": 0
+      },
+      "manifest_audit": {
+        "evidence_total": 1,
+        "cross_run": 0,
+        "unscoped": 0,
+        "examples": []
+      },
+      "failed_case_triage": {},
+      "unconfirmed_defects": 0,
+      "confirmed_defects": 0
+    }
+  }
+}

@@ -1,0 +1,3 @@
+$ C:\Users\李洵\AppData\Local\Programs\Python\Python313\python.exe -m pytest -q --tb=short --junitxml D:\桌面\软件测试competion\reports\executions\RUN-TOOLCHECK-01\junit.xml tests/test_todomvc.py::test_add_todo
+.                                                                        [100%]
+1 passed in 6.65s

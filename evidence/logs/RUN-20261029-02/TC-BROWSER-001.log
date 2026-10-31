@@ -1,0 +1,10 @@
+2026-10-29T17:15:04+08:00 INFO playwright-cli=0.1.22 browser=chrome 155.0.8059.86
+2026-10-29T17:15:06+08:00 INFO navigate https://demo.playwright.dev/todomvc -> title="React • TodoMVC" url=https://demo.playwright.dev/todomvc/#/
+2026-10-29T17:15:06+08:00 INFO snapshot textbox "What needs to be done?" ref=e8
+2026-10-29T17:17:23+08:00 INFO fill e8 "Acceptance todo" + Enter -> listitem text "Acceptance todo"; todo-count "1 item left"
+2026-10-29T17:17:31+08:00 INFO screenshot viewport evidence/raw/RUN-20261029-01/browser/viewport.png 1280x720
+2026-10-29T17:17:31+08:00 INFO screenshot fullpage evidence/raw/RUN-20261029-01/browser/fullpage.png 1280x720
+2026-10-29T17:17:31+08:00 INFO screenshot element evidence/raw/RUN-20261029-01/browser/element-todo-item.png 550x59
+2026-10-29T17:17:31+08:00 INFO screenshot element evidence/raw/RUN-20261029-01/browser/element-footer.png 550x42
+2026-10-29T17:18:07+08:00 INFO Playwright MCP 0.0.83 server=1.64.0-alpha-1790635538000 protocol=2025-06-18 tools=25
+2026-10-29T17:18:07+08:00 INFO MCP browser_navigate ok; browser_snapshot ok; browser_take_screenshot ok -> 1280x720 PNG

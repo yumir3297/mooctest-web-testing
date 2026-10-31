@@ -1,0 +1,90 @@
+$ C:\Users\李洵\AppData\Local\Programs\Python\Python313\python.exe -m pytest -q --tb=short --junitxml D:\桌面\软件测试competion\reports\executions\RUN-20261031-COLDSTART-01\junit.xml tests/generated/cartcheck
+.FF.......FF........F.........                                           [100%]
+================================== FAILURES ===================================
+______________________________ test_tc_cart_002 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:111: in test_tc_cart_002
+    _assert_amounts(case_ctx, observed, 120, 680)
+tests\generated\cartcheck\test_cartcheck.py:65: in _assert_amounts
+    case_ctx.check(discount == expected_discount, "优惠金额", expected_discount, raw_discount)
+tests\conftest.py:444: in check
+    raise AssertionError(f"{name}: expected={expected!r} actual={actual!r}")
+E   AssertionError: 优惠金额: expected=120 actual='0'
+------------------------------ Captured log call ------------------------------
+INFO     mooctest.case.TC-CART-002:conftest.py:419 STEP 打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.077s）
+INFO     mooctest.case.TC-CART-002:conftest.py:419 STEP 在 amount 输入 '800'，在 coupon 输入 'CP1234'
+INFO     mooctest.case.TC-CART-002:conftest.py:419 STEP level 选择 silver，points 不勾选
+INFO     mooctest.case.TC-CART-002:conftest.py:419 STEP 点击「计算」按钮
+INFO     mooctest.case.TC-CART-002:conftest.py:419 STEP 等待输出变化完成（触发通道：amount）
+INFO     mooctest.case.TC-CART-002:conftest.py:462 SCREENSHOT evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-002/TC-CART-002__result__element__20261030T170403-230.png
+INFO     mooctest.case.TC-CART-002:conftest.py:439 CHECK 优惠金额 passed=False expected=120 actual='0'
+______________________________ test_tc_cart_003 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:123: in test_tc_cart_003
+    _assert_amounts(case_ctx, observed, 55, 500)
+tests\generated\cartcheck\test_cartcheck.py:65: in _assert_amounts
+    case_ctx.check(discount == expected_discount, "优惠金额", expected_discount, raw_discount)
+tests\conftest.py:444: in check
+    raise AssertionError(f"{name}: expected={expected!r} actual={actual!r}")
+E   AssertionError: 优惠金额: expected=55 actual='56'
+------------------------------ Captured log call ------------------------------
+INFO     mooctest.case.TC-CART-003:conftest.py:419 STEP 打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.077s）
+INFO     mooctest.case.TC-CART-003:conftest.py:419 STEP 在 amount 输入 '555'，在 coupon 输入 'CP1234'
+INFO     mooctest.case.TC-CART-003:conftest.py:419 STEP level 选择 gold，points 不勾选
+INFO     mooctest.case.TC-CART-003:conftest.py:419 STEP 点击「计算」按钮
+INFO     mooctest.case.TC-CART-003:conftest.py:419 STEP 等待输出变化完成（触发通道：amount）
+INFO     mooctest.case.TC-CART-003:conftest.py:462 SCREENSHOT evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-003/TC-CART-003__result__element__20261030T170404-653.png
+INFO     mooctest.case.TC-CART-003:conftest.py:439 CHECK 优惠金额 passed=False expected=55 actual='56'
+______________________________ test_tc_cart_011 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:222: in test_tc_cart_011
+    _assert_amounts(case_ctx, observed, 999, 8999)
+tests\generated\cartcheck\test_cartcheck.py:65: in _assert_amounts
+    case_ctx.check(discount == expected_discount, "优惠金额", expected_discount, raw_discount)
+tests\conftest.py:444: in check
+    raise AssertionError(f"{name}: expected={expected!r} actual={actual!r}")
+E   AssertionError: 优惠金额: expected=999 actual='1000'
+------------------------------ Captured log call ------------------------------
+INFO     mooctest.case.TC-CART-011:conftest.py:419 STEP 打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.070s）
+INFO     mooctest.case.TC-CART-011:conftest.py:419 STEP 在 amount 输入 '9998'，在 coupon 输入 'CP1234'
+INFO     mooctest.case.TC-CART-011:conftest.py:419 STEP level 选择 gold，points 不勾选
+INFO     mooctest.case.TC-CART-011:conftest.py:419 STEP 点击「计算」按钮
+INFO     mooctest.case.TC-CART-011:conftest.py:419 STEP 等待输出变化完成（触发通道：amount）
+INFO     mooctest.case.TC-CART-011:conftest.py:462 SCREENSHOT evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-011/TC-CART-011__result__element__20261030T170412-556.png
+INFO     mooctest.case.TC-CART-011:conftest.py:439 CHECK 优惠金额 passed=False expected=999 actual='1000'
+______________________________ test_tc_cart_012 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:234: in test_tc_cart_012
+    _assert_amounts(case_ctx, observed, 999, 9000)
+tests\generated\cartcheck\test_cartcheck.py:65: in _assert_amounts
+    case_ctx.check(discount == expected_discount, "优惠金额", expected_discount, raw_discount)
+tests\conftest.py:444: in check
+    raise AssertionError(f"{name}: expected={expected!r} actual={actual!r}")
+E   AssertionError: 优惠金额: expected=999 actual='1000'
+------------------------------ Captured log call ------------------------------
+INFO     mooctest.case.TC-CART-012:conftest.py:419 STEP 打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.064s）
+INFO     mooctest.case.TC-CART-012:conftest.py:419 STEP 在 amount 输入 '9999'，在 coupon 输入 'CP1234'
+INFO     mooctest.case.TC-CART-012:conftest.py:419 STEP level 选择 gold，points 不勾选
+INFO     mooctest.case.TC-CART-012:conftest.py:419 STEP 点击「计算」按钮
+INFO     mooctest.case.TC-CART-012:conftest.py:419 STEP 等待输出变化完成（触发通道：amount）
+INFO     mooctest.case.TC-CART-012:conftest.py:462 SCREENSHOT evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-012/TC-CART-012__result__element__20261030T170413-627.png
+INFO     mooctest.case.TC-CART-012:conftest.py:439 CHECK 优惠金额 passed=False expected=999 actual='1000'
+______________________________ test_tc_cart_021 _______________________________
+tests\generated\cartcheck\test_cartcheck.py:348: in test_tc_cart_021
+    _assert_error(case_ctx, observed, MSG_COUPON)
+tests\generated\cartcheck\test_cartcheck.py:81: in _assert_error
+    case_ctx.check(observed["message"] == expected_message, "提示文案", expected_message,
+tests\conftest.py:444: in check
+    raise AssertionError(f"{name}: expected={expected!r} actual={actual!r}")
+E   AssertionError: 提示文案: expected='优惠券码无效' actual='(空)'
+------------------------------ Captured log call ------------------------------
+INFO     mooctest.case.TC-CART-021:conftest.py:419 STEP 打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.071s）
+INFO     mooctest.case.TC-CART-021:conftest.py:419 STEP 在 amount 输入 '500'，在 coupon 输入 'cp1234'
+INFO     mooctest.case.TC-CART-021:conftest.py:419 STEP level 选择 gold，points 不勾选
+INFO     mooctest.case.TC-CART-021:conftest.py:419 STEP 点击「计算」按钮
+INFO     mooctest.case.TC-CART-021:conftest.py:419 STEP 等待输出变化完成（触发通道：amount）
+INFO     mooctest.case.TC-CART-021:conftest.py:462 SCREENSHOT evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-021/TC-CART-021__result__element__20261030T170422-258.png
+INFO     mooctest.case.TC-CART-021:conftest.py:439 CHECK 提示文案 passed=False expected='优惠券码无效' actual='(空)'
+=========================== short test summary info ===========================
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_002 - Assert...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_003 - Assert...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_011 - Assert...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_012 - Assert...
+FAILED tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_021 - Assert...
+5 failed, 25 passed in 34.87s

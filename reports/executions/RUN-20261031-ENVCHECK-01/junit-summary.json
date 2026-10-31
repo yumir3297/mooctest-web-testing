@@ -1,0 +1,77 @@
+{
+  "run_id": "RUN-20261031-ENVCHECK-01",
+  "exit_code": 0,
+  "elapsed_seconds": 19.96,
+  "timed_out": false,
+  "junit": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-20261031-ENVCHECK-01\\junit.xml",
+  "console_log": "D:\\桌面\\软件测试competion\\evidence\\logs\\RUN-20261031-ENVCHECK-01\\pytest-console.log",
+  "tests": 8,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 1,
+  "time": 17.382,
+  "xfailed": 1,
+  "cases": [
+    {
+      "name": "test_add_todo",
+      "classname": "tests.test_todomvc",
+      "time": 5.28,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_complete_and_filter",
+      "classname": "tests.test_todomvc",
+      "time": 1.524,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_edit_todo",
+      "classname": "tests.test_todomvc",
+      "time": 1.195,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_delete_todo",
+      "classname": "tests.test_todomvc",
+      "time": 1.349,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_empty_and_whitespace_rejected",
+      "classname": "tests.test_todomvc",
+      "time": 0.866,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_boundary_lengths",
+      "classname": "tests.test_todomvc",
+      "time": 1.071,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_text_is_escaped",
+      "classname": "tests.test_todomvc",
+      "time": 1.097,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "test_expected_failure_captures_evidence",
+      "classname": "tests.test_todomvc_expected_failure",
+      "time": 3.036,
+      "status": "xfailed",
+      "message": "受控失败：验证失败截图、日志和断言记录链路"
+    }
+  ],
+  "status": "passed",
+  "case_counts": {
+    "passed": 7,
+    "xfailed": 1
+  }
+}

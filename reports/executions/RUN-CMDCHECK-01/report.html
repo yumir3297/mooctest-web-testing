@@ -1,0 +1,31 @@
+<!doctype html><html lang='zh-CN'><head><meta charset='utf-8'>
+<title>负向验证：阻塞运行是否被报告门禁拦截</title>
+<style>body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;margin:32px;max-width:1200px;color:#1f2328}h1{border-bottom:2px solid #d0d7de;padding-bottom:8px}h2{margin-top:36px;border-bottom:1px solid #d0d7de;padding-bottom:4px}table{border-collapse:collapse;width:100%;margin:12px 0}th,td{border:1px solid #d0d7de;padding:8px;text-align:left;vertical-align:top}th{background:#f6f8fa}code{background:#f6f8fa;padding:1px 4px;border-radius:4px}.pass{color:#1a7f37;font-weight:600}.fail{color:#cf222e;font-weight:600}.xfail{color:#9a6700;font-weight:600}figure{display:inline-block;margin:8px 12px 8px 0;max-width:48%;vertical-align:top}img{max-width:100%;border:1px solid #d0d7de;border-radius:6px}figcaption{font-size:12px;color:#57606a;word-break:break-all}.warn{background:#fff8c5;border-left:4px solid #d4a72c;padding:8px 12px}</style></head><body>
+<h1>负向验证：阻塞运行是否被报告门禁拦截</h1>
+<p>生成时间：2026-10-30T17:49:57+08:00<br>运行 ID：<code>RUN-CMDCHECK-01</code><br>目标：https://demo.playwright.dev/todomvc<br>状态：<span class='fail'>阻塞</span></p>
+<h2>1. 测试目标</h2>
+<p>验证 <code>https://demo.playwright.dev/todomvc</code> 的核心交互、输入边界、状态过滤与失败取证链路。仅陈述本机实际执行且可追溯的结果。</p>
+<h2>2. 测试环境</h2><table><tr><th>项目</th><th>值</th></tr>
+</table>
+<h3>运行备注</h3><ul>
+<li>2026-10-29T18:01:06+08:00：用例文件 reports/test-cases/TodoMVC-CMDCHECK-test-cases.md|.csv；主用例7条+辅助1条；smoke 执行001；缺口=002-007未执行</li>
+<li>2026-10-29T18:26:37+08:00：完整命令在 playwright-cli open 阶段阻塞，未完成探索/Selenium/报告；已保留 test-cases 文件，改用 MCP 重跑 RUN-CMDCHECK-03。</li>
+</ul>
+<h2>3. 测试用例与执行结果</h2><table><tr><th>用例 ID</th><th>标题</th><th>状态</th><th>证据数</th><th>日志</th></tr>
+</table>
+<h2>4. 用例明细</h2>
+<h2>5. 缺陷与异常</h2>
+<p>未登记产品缺陷。若有 xfailed 用例，它只用于验证失败取证链路，不等同于产品缺陷。</p>
+<h2>6. 视觉差异证据</h2><p>本轮未生成差异图；有效截图证据见第 4 节。</p>
+<h2>7. 证据完整性</h2>
+<p>已登记 0，校验通过 0；缺失 0；哈希不一致 0。</p>
+<h2>8. 执行日志</h2>
+<p>未找到 JUnit 汇总文件。</p>
+<h2>9. 结论与限制</h2>
+<p>本轮状态不是通过，需结合日志与证据进一步确认。</p>
+<div class='warn'><strong>覆盖缺口</strong><ul>
+<li>未覆盖（设计完成但本轮未执行，不计入通过率）：TC-TODO-008 刷新后持久化；TC-TODO-009 全部完成/取消全部；TC-TODO-010 清除已完成；TC-TODO-012 键盘可访问性</li>
+<li>部分覆盖：TC-TODO-011 计数单复数</li>
+</ul></div>
+<p>像素差异不等同于产品缺陷；未执行场景不会标记为通过；比赛前需确认 AI 工具合规要求。</p>
+</body></html>

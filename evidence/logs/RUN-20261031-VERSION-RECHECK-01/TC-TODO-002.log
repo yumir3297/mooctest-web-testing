@@ -1,0 +1,9 @@
+2026-10-31 12:08:39,182 INFO case=TC-TODO-002 run=RUN-20261031-VERSION-RECHECK-01
+2026-10-31 12:08:39,182 INFO STEP 新增 Task A 与 Task B
+2026-10-31 12:08:39,368 INFO STEP 勾选第一条待办
+2026-10-31 12:08:39,466 INFO CHECK 完成后剩余计数为 1 passed=True expected='1 item left' actual='1 item left'
+2026-10-31 12:08:39,494 INFO STEP 切换到 Completed 过滤器
+2026-10-31 12:08:39,620 INFO CHECK Completed 仅显示已完成项 passed=True expected=['Task A'] actual=['Task A']
+2026-10-31 12:08:39,648 INFO STEP 切换到 Active 过滤器
+2026-10-31 12:08:39,736 INFO CHECK Active 仅显示未完成项 passed=True expected=['Task B'] actual=['Task B']
+2026-10-31 12:08:39,862 INFO SCREENSHOT evidence/raw/RUN-20261031-VERSION-RECHECK-01/TC-TODO-002/TC-TODO-002__Active__fullpage__20261031T040839-767.png

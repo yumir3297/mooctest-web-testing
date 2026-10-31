@@ -1,0 +1,397 @@
+[
+  {
+    "polarity": "negative",
+    "sample": "bad-sha256",
+    "run_id": "RUN-SAMPLE-BADSHA",
+    "exit_code": 1,
+    "delivery_verdict": "FAIL",
+    "test_verdict": "PASS",
+    "gate_status": {
+      "G0": "PASS",
+      "G1": "PASS",
+      "G2": "PASS",
+      "G3": "FAIL",
+      "G4": "SKIP"
+    },
+    "codes": [
+      "AI_USE_UNVERIFIED",
+      "ENV_CHECK_UNAVAILABLE",
+      "EVIDENCE_HASH_MISMATCH",
+      "PACKAGE_SKIPPED"
+    ],
+    "blocking_codes": [
+      "EVIDENCE_HASH_MISMATCH"
+    ],
+    "report": "qualification\\gate-runs\\negative-bad-sha256\\gate-report.json",
+    "stdout_tail": [
+      "}"
+    ]
+  },
+  {
+    "polarity": "negative",
+    "sample": "blocked-run",
+    "run_id": "RUN-SAMPLE-BLOCKED",
+    "exit_code": 2,
+    "delivery_verdict": "BLOCKED",
+    "test_verdict": "BLOCKED",
+    "gate_status": {
+      "G0": "PASS",
+      "G1": "PASS",
+      "G2": "BLOCKED",
+      "G3": "PASS",
+      "G4": "SKIP"
+    },
+    "codes": [
+      "AI_USE_UNVERIFIED",
+      "ENV_CHECK_UNAVAILABLE",
+      "PACKAGE_SKIPPED",
+      "RUN_STATUS_BLOCKED"
+    ],
+    "blocking_codes": [
+      "RUN_STATUS_BLOCKED"
+    ],
+    "report": "qualification\\gate-runs\\negative-blocked-run\\gate-report.json",
+    "stdout_tail": [
+      "}"
+    ]
+  },
+  {
+    "polarity": "negative",
+    "sample": "defect-no-repro",
+    "run_id": "RUN-SAMPLE-DEFECTNOREPRO",
+    "exit_code": 1,
+    "delivery_verdict": "FAIL",
+    "test_verdict": "FAIL",
+    "gate_status": {
+      "G0": "PASS",
+      "G1": "PASS",
+      "G2": "PASS",
+      "G3": "FAIL",
+      "G4": "SKIP"
+    },
+    "codes": [
+      "AI_USE_UNVERIFIED",
+      "DEFECT_FIELD_MISSING",
+      "ENV_CHECK_UNAVAILABLE",
+      "PACKAGE_SKIPPED"
+    ],
+    "blocking_codes": [
+      "DEFECT_FIELD_MISSING"
+    ],
+    "report": "qualification\\gate-runs\\negative-defect-no-repro\\gate-report.json",
+    "stdout_tail": [
+      "}"
+    ]
+  },
+  {
+    "polarity": "negative",
+    "sample": "duplicate-case-id",
+    "run_id": "RUN-SAMPLE-DUPLICATEID",
+    "exit_code": 1,
+    "delivery_verdict": "FAIL",
+    "test_verdict": "PASS",
+    "gate_status": {
+      "G0": "PASS",
+      "G1": "FAIL",
+      "G2": "PASS",
+      "G3": "PASS",
+      "G4": "SKIP"
+    },
+    "codes": [
+      "AI_USE_UNVERIFIED",
+      "CASE_ID_DUPLICATE",
+      "ENV_CHECK_UNAVAILABLE",
+      "PACKAGE_SKIPPED"
+    ],
+    "blocking_codes": [
+      "CASE_ID_DUPLICATE"
+    ],
+    "report": "qualification\\gate-runs\\negative-duplicate-case-id\\gate-report.json",
+    "stdout_tail": [
+      "}"
+    ]
+  },
+  {
+    "polarity": "negative",
+    "sample": "empty-cases",
+    "run_id": "RUN-SAMPLE-EMPTYCASES",
+    "exit_code": 1,
+    "delivery_verdict": "FAIL",
+    "test_verdict": "PASS",
+    "gate_status": {
+      "G0": "PASS",
+      "G1": "FAIL",
+      "G2": "PASS",
+      "G3": "PASS",
+      "G4": "SKIP"
+    },
+    "codes": [
+      "AI_USE_UNVERIFIED",
+      "CASES_EMPTY",
+      "ENV_CHECK_UNAVAILABLE",
+      "PACKAGE_SKIPPED",
+      "REQUIREMENT_NOT_COVERED"
+    ],
+    "blocking_codes": [
+      "CASES_EMPTY",
+      "REQUIREMENT_NOT_COVERED"
+    ],
+    "report": "qualification\\gate-runs\\negative-empty-cases\\gate-report.json",
+    "stdout_tail": [
+      "}"
+    ]
+  },
+  {
+    "polarity": "negative",
+    "sample": "fake-pass",
+    "run_id": "RUN-SAMPLE-FAKEPASS",
+    "exit_code": 1,
+    "delivery_verdict": "FAIL",
+    "test_verdict": "PASS",
+    "gate_status": {
+      "G0": "PASS",
+      "G1": "PASS",
+      "G2": "FAIL",
+      "G3": "PASS",
+      "G4": "SKIP"
+    },
+    "codes": [
+      "AI_USE_UNVERIFIED",
+      "ENV_CHECK_UNAVAILABLE",
+      "JUNIT_SUMMARY_MISSING",
+      "PACKAGE_SKIPPED"
+    ],
+    "blocking_codes": [
+      "JUNIT_SUMMARY_MISSING"
+    ],
+    "report": "qualification\\gate-runs\\negative-fake-pass\\gate-report.json",
+    "stdout_tail": [
+      "}"
+    ]
+  },
+  {
+    "polarity": "negative",
+    "sample": "junit-manifest-mismatch",
+    "run_id": "RUN-SAMPLE-JUNITMISMATCH",
+    "exit_code": 1,
+    "delivery_verdict": "FAIL",
+    "test_verdict": "PASS",
+    "gate_status": {
+      "G0": "PASS",
+      "G1": "PASS",
+      "G2": "FAIL",
+      "G3": "PASS",
+      "G4": "SKIP"
+    },
+    "codes": [
+      "AI_USE_UNVERIFIED",
+      "ENV_CHECK_UNAVAILABLE",
+      "JUNIT_MANIFEST_COUNT_MISMATCH",
+      "MANIFEST_PASSED_WITHOUT_JUNIT",
+      "PACKAGE_SKIPPED"
+    ],
+    "blocking_codes": [
+      "JUNIT_MANIFEST_COUNT_MISMATCH",
+      "MANIFEST_PASSED_WITHOUT_JUNIT"
+    ],
+    "report": "qualification\\gate-runs\\negative-junit-manifest-mismatch\\gate-report.json",
+    "stdout_tail": [
+      "}"
+    ]
+  },
+  {
+    "polarity": "negative",
+    "sample": "missing-expected",
+    "run_id": "RUN-SAMPLE-MISSINGEXPECTED",
+    "exit_code": 1,
+    "delivery_verdict": "FAIL",
+    "test_verdict": "PASS",
+    "gate_status": {
+      "G0": "PASS",
+      "G1": "FAIL",
+      "G2": "PASS",
+      "G3": "PASS",
+      "G4": "SKIP"
+    },
+    "codes": [
+      "AI_USE_UNVERIFIED",
+      "CASE_EXPECTED_MISSING",
+      "ENV_CHECK_UNAVAILABLE",
+      "PACKAGE_SKIPPED"
+    ],
+    "blocking_codes": [
+      "CASE_EXPECTED_MISSING"
+    ],
+    "report": "qualification\\gate-runs\\negative-missing-expected\\gate-report.json",
+    "stdout_tail": [
+      "}"
+    ]
+  },
+  {
+    "polarity": "negative",
+    "sample": "missing-screenshot",
+    "run_id": "RUN-SAMPLE-MISSINGEVIDENCE",
+    "exit_code": 1,
+    "delivery_verdict": "FAIL",
+    "test_verdict": "PASS",
+    "gate_status": {
+      "G0": "PASS",
+      "G1": "PASS",
+      "G2": "PASS",
+      "G3": "FAIL",
+      "G4": "SKIP"
+    },
+    "codes": [
+      "AI_USE_UNVERIFIED",
+      "ENV_CHECK_UNAVAILABLE",
+      "PACKAGE_SKIPPED",
+      "PASSED_CASE_WITHOUT_EVIDENCE"
+    ],
+    "blocking_codes": [
+      "PASSED_CASE_WITHOUT_EVIDENCE"
+    ],
+    "report": "qualification\\gate-runs\\negative-missing-screenshot\\gate-report.json",
+    "stdout_tail": [
+      "}"
+    ]
+  },
+  {
+    "polarity": "negative",
+    "sample": "no-assertion",
+    "run_id": "RUN-SAMPLE-NOASSERTION",
+    "exit_code": 1,
+    "delivery_verdict": "FAIL",
+    "test_verdict": "PASS",
+    "gate_status": {
+      "G0": "PASS",
+      "G1": "PASS",
+      "G2": "FAIL",
+      "G3": "PASS",
+      "G4": "SKIP"
+    },
+    "codes": [
+      "AI_USE_UNVERIFIED",
+      "CASE_WITHOUT_ASSERTION",
+      "ENV_CHECK_UNAVAILABLE",
+      "PACKAGE_SKIPPED"
+    ],
+    "blocking_codes": [
+      "CASE_WITHOUT_ASSERTION"
+    ],
+    "report": "qualification\\gate-runs\\negative-no-assertion\\gate-report.json",
+    "stdout_tail": [
+      "}"
+    ]
+  },
+  {
+    "polarity": "negative",
+    "sample": "no-boundary-coverage",
+    "run_id": "RUN-SAMPLE-NOBOUNDARY",
+    "exit_code": 1,
+    "delivery_verdict": "FAIL",
+    "test_verdict": "PASS",
+    "gate_status": {
+      "G0": "PASS",
+      "G1": "FAIL",
+      "G2": "PASS",
+      "G3": "PASS",
+      "G4": "SKIP"
+    },
+    "codes": [
+      "AI_USE_UNVERIFIED",
+      "CASE_TYPE_COVERAGE_MISSING",
+      "ENV_CHECK_UNAVAILABLE",
+      "PACKAGE_SKIPPED"
+    ],
+    "blocking_codes": [
+      "CASE_TYPE_COVERAGE_MISSING"
+    ],
+    "report": "qualification\\gate-runs\\negative-no-boundary-coverage\\gate-report.json",
+    "stdout_tail": [
+      "}"
+    ]
+  },
+  {
+    "polarity": "negative",
+    "sample": "unverifiable-run",
+    "run_id": "RUN-SAMPLE-UNVERIFIABLE",
+    "exit_code": 3,
+    "delivery_verdict": "UNVERIFIED",
+    "test_verdict": "UNVERIFIED",
+    "gate_status": {
+      "G0": "PASS",
+      "G1": "PASS",
+      "G2": "UNVERIFIED",
+      "G3": "PASS",
+      "G4": "SKIP"
+    },
+    "codes": [
+      "AI_USE_UNVERIFIED",
+      "ENV_CHECK_UNAVAILABLE",
+      "EXECUTION_NOT_VERIFIABLE",
+      "PACKAGE_SKIPPED",
+      "RUN_STATUS_RUNNING"
+    ],
+    "blocking_codes": [
+      "EXECUTION_NOT_VERIFIABLE",
+      "RUN_STATUS_RUNNING"
+    ],
+    "report": "qualification\\gate-runs\\negative-unverifiable-run\\gate-report.json",
+    "stdout_tail": [
+      "}"
+    ]
+  },
+  {
+    "polarity": "positive",
+    "sample": "defect-reported",
+    "run_id": "RUN-SAMPLE-DEFECTREPORTED",
+    "exit_code": 0,
+    "delivery_verdict": "PASS",
+    "test_verdict": "FAIL",
+    "gate_status": {
+      "G0": "PASS",
+      "G1": "PASS",
+      "G2": "PASS",
+      "G3": "PASS",
+      "G4": "SKIP"
+    },
+    "codes": [
+      "AI_USE_UNVERIFIED",
+      "ENV_CHECK_UNAVAILABLE",
+      "PACKAGE_SKIPPED"
+    ],
+    "blocking_codes": [],
+    "report": "qualification\\gate-runs\\positive-defect-reported\\gate-report.json",
+    "stdout_tail": [
+      "}"
+    ]
+  },
+  {
+    "polarity": "positive",
+    "sample": "suspected-defect",
+    "run_id": "RUN-SAMPLE-SUSPECTED",
+    "exit_code": 0,
+    "delivery_verdict": "WARNING",
+    "test_verdict": "FAIL",
+    "gate_status": {
+      "G0": "PASS",
+      "G1": "PASS",
+      "G2": "PASS",
+      "G3": "WARNING",
+      "G4": "SKIP"
+    },
+    "codes": [
+      "AI_USE_UNVERIFIED",
+      "DEFECT_STATUS_UNCONFIRMED",
+      "ENV_CHECK_UNAVAILABLE",
+      "PACKAGE_SKIPPED"
+    ],
+    "blocking_codes": [
+      "DEFECT_STATUS_UNCONFIRMED"
+    ],
+    "report": "qualification\\gate-runs\\positive-suspected-defect\\gate-report.json",
+    "stdout_tail": [
+      "}"
+    ]
+  }
+]

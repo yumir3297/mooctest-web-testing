@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.1",
+  "project": "mooctest-web-testing-qualification-sample",
+  "created_at": "2026-10-31T08:00:00+08:00",
+  "updated_at": "2026-10-31T08:00:30+08:00",
+  "runs": {
+    "RUN-SAMPLE-DEFECTNOREPRO": {
+      "run_id": "RUN-SAMPLE-DEFECTNOREPRO",
+      "label": "qualification sample",
+      "target": "https://example.invalid/qualification-sample",
+      "started_at": "2026-10-31T08:00:00+08:00",
+      "finished_at": "2026-10-31T08:00:20+08:00",
+      "status": "passed",
+      "stage": "executed",
+      "environment": {
+        "python": "3.13.9",
+        "pytest": "9.1.1",
+        "selenium": "4.51.0",
+        "chrome": "Chrome 156.0.8078.74",
+        "chromedriver": "ChromeDriver 156.0.8078.80",
+        "target": "https://example.invalid/qualification-sample"
+      },
+      "notes": [
+        {
+          "at": "2026-10-31T08:00:00+08:00",
+          "note": "synthetic qualification sample"
+        }
+      ],
+      "cases": {
+        "TC-SAMPLE-001": {
+          "case_id": "TC-SAMPLE-001",
+          "title": "test_add_valid",
+          "status": "passed",
+          "started_at": "2026-10-31T08:00:00+08:00",
+          "finished_at": "2026-10-31T08:00:10+08:00",
+          "expected": "",
+          "actual": "",
+          "steps": [
+            "打开页面",
+            "执行操作"
+          ],
+          "assertions": [
+            {
+              "name": "断言",
+              "expected": "x",
+              "actual": "x",
+              "passed": true
+            }
+          ],
+          "evidence": [
+            "EV-922ea148b6"
+          ],
+          "defects": [],
+          "log_path": null,
+          "notes": [],
+          "meta": {
+            "requirement_ids": "R1",
+            "case_type": "positive"
+          }
+        },
+        "TC-SAMPLE-002": {
+          "case_id": "TC-SAMPLE-002",
+          "title": "test_reject_blank_title",
+          "status": "failed",
+          "started_at": "2026-10-31T08:00:00+08:00",
+          "finished_at": "2026-10-31T08:00:10+08:00",
+          "expected": "提交三个空格时列表保持为空",
+          "actual": "列表出现条目 '   '",
+          "steps": [
+            "打开页面",
+            "执行操作"
+          ],
+          "assertions": [
+            {
+              "name": "空白标题被拒绝",
+              "expected": "[]",
+              "actual": "['   ']",
+              "passed": false
+            }
+          ],
+          "evidence": [
+            "EV-7c3d9f2dfc"
+          ],
+          "defects": [
+            {
+              "defect_id": "DEF-001",
+              "title": "空白标题被接受",
+              "severity": "major",
+              "severity_rationale": "产生脏数据条目",
+              "category": "APP",
+              "status": "open",
+              "description": "提交三个空格后列表出现空白条目",
+              "environment": "",
+              "preconditions": [],
+              "repro_steps": [],
+              "repro_status": "not-reproduced",
+              "repro_count": 0,
+              "expected": "列表保持为空",
+              "actual": "列表出现 '   '",
+              "evidence": [
+                "EV-7c3d9f2dfc"
+              ],
+              "created_at": "2026-10-31T08:00:00+08:00"
+            }
+          ],
+          "log_path": null,
+          "notes": [],
+          "meta": {
+            "requirement_ids": "R2",
+            "case_type": "negative",
+            "failure_class": "ASSERT"
+          }
+        }
+      }
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "EV-922ea148b6",
+      "run_id": "RUN-SAMPLE-DEFECTNOREPRO",
+      "case_id": "TC-SAMPLE-001",
+      "kind": "screenshot",
+      "path": "evidence/raw/RUN-SAMPLE-DEFECTNOREPRO/TC-SAMPLE-001/TC-SAMPLE-001__final__viewport__20261031T000000-000.png",
+      "bucket": "raw",
+      "step": "final",
+      "caption": "样例证据",
+      "created_at": "2026-10-31T08:00:00+08:00",
+      "size_bytes": 1307,
+      "sha256": "d39721456de87d1b0845a4a62e9c96f99c682b07385111ecc9c8797202f4f556",
+      "immutable": true,
+      "meta": {}
+    },
+    {
+      "evidence_id": "EV-7c3d9f2dfc",
+      "run_id": "RUN-SAMPLE-DEFECTNOREPRO",
+      "case_id": "TC-SAMPLE-002",
+      "kind": "screenshot",
+      "path": "evidence/raw/RUN-SAMPLE-DEFECTNOREPRO/TC-SAMPLE-002/TC-SAMPLE-002__failure__viewport__20261031T000000-000.png",
+      "bucket": "raw",
+      "step": "final",
+      "caption": "样例证据",
+      "created_at": "2026-10-31T08:00:00+08:00",
+      "size_bytes": 1103,
+      "sha256": "84ecf3c28bbd162d87944bcf8d59203d71db38ecbbf40291edb34361d6bb9d26",
+      "immutable": true,
+      "meta": {}
+    }
+  ]
+}

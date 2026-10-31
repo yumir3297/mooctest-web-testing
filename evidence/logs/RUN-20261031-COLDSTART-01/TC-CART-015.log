@@ -1,0 +1,10 @@
+2026-10-31 01:04:15,965 INFO case=TC-CART-015 run=RUN-20261031-COLDSTART-01
+2026-10-31 01:04:16,066 INFO STEP 打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.070s）
+2026-10-31 01:04:16,096 INFO STEP 在 amount 输入 '801'，在 coupon 输入 'CP1234'
+2026-10-31 01:04:16,245 INFO STEP level 选择 silver，points 不勾选
+2026-10-31 01:04:16,342 INFO STEP 点击「计算」按钮
+2026-10-31 01:04:16,445 INFO STEP 等待输出变化完成（触发通道：amount）
+2026-10-31 01:04:16,643 INFO SCREENSHOT evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-015/TC-CART-015__result__element__20261030T170416-561.png
+2026-10-31 01:04:16,643 INFO CHECK 优惠金额 passed=True expected=120 actual='120'
+2026-10-31 01:04:16,672 INFO CHECK 应付金额 passed=True expected=681 actual='681'
+2026-10-31 01:04:16,695 INFO CHECK 合法输入不应出现错误提示 passed=True expected='message 不属于 (金额需为 1-9999 的整数 | 优惠券码无效)' actual='(空)'

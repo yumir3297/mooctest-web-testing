@@ -1,0 +1,5 @@
+$ C:\Users\李洵\AppData\Local\Programs\Python\Python313\python.exe -m pytest -q --tb=short --junitxml D:\桌面\软件测试competion\reports\executions\RUN-AUDIT-20261030-02\junit.xml tests
+.......x                                                                 [100%]
+=========================== short test summary info ===========================
+XFAIL tests/test_todomvc_expected_failure.py::test_expected_failure_captures_evidence - 受控失败：验证失败截图、日志和断言记录链路
+7 passed, 1 xfailed in 9.46s

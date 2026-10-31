@@ -1,0 +1,152 @@
+﻿node.exe : The system cannot find the path specified.
+所在位置 行:1 字符: 1
++ & "D:\nodejs/node.exe" "D:\nodejs/node_modules/npm/bin/npx-cli.js" -y ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (The system cann...path specified.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+The system cannot find the path specified.
+The system cannot find the path specified.
+The system cannot find the path specified.
+[0m
+> build 路 deepseek-flash
+[0m
+[0m鈫?[0mSkill "mooctest-web-testing"
+[0m鈫?[0mRead docs/WORKFLOW.md
+[0m鈫?[0mRead docs/CONVENTIONS.md
+鎴戜細鍏堝姞杞?skill 骞惰鍙栧伐浣滄祦鏂囨。銆?
+[0m
+[0m$ [0mpython --version; if ($?) { python -c "import selenium, pytest; print('selenium', selenium.__version__); prin
+t('pytest', pytest.__version__)" }
+Python 3.13.9
+selenium 4.51.0
+pytest 9.1.1
+[0m
+[0m$ [0m$chrome = @("C:\Program Files\Google\Chrome\Application\chrome.exe","C:\Program Files (x86)\Google\Chrome\App
+lication\chrome.exe") | Where-Object { Test-Path -LiteralPath $_ }; if ($chrome) { $chrome; (Get-Item -LiteralPath $chr
+ome[0]).VersionInfo.ProductVersion } else { "CHROME_NOT_FOUND" }; $cd = Get-Command chromedriver -ErrorAction SilentlyC
+ontinue; if ($cd) { $cd.Source; & $cd.Source --version } else { "CHROMEDRIVER_NOT_IN_PATH" }
+CHROME_NOT_FOUND
+CHROMEDRIVER_NOT_IN_PATH
+[0m
+[0m$ [0m$p = Get-Command playwright -ErrorAction SilentlyContinue; if ($p) { "CLI: " + $p.Source } else { "PLAYWRIGHT
+_CLI_NOT_FOUND" }; $n = Get-Command npx -ErrorAction SilentlyContinue; if ($n) { "NPX: " + $n.Source } else { "NPX_NOT_
+FOUND" }
+CLI: D:\锟斤拷锟斤拷\锟斤拷锟斤拷锟斤拷锟斤拷competion\node_modules\.bin\playwright.ps1
+NPX: D:\nodejs\npx.ps1
+[0m
+[0m$ [0mforeach ($d in @("evidence","evidence/raw","evidence/logs","evidence/annotated","evidence/diff","reports","re
+ports/test-cases","reports/executions","reports/defects","tests","tools")) { "{0} : {1}" -f $d, (Test-Path -LiteralPath
+ $d) }; foreach ($f in @("tools/evidence.py","tools/run_selenium.py","tools/generate_report.py","tools/visual_diff.py",
+"evidence/manifest.json")) { "{0} : {1}" -f $f, (Test-Path -LiteralPath $f) }
+evidence : True
+evidence/raw : True
+evidence/logs : True
+evidence/annotated : True
+evidence/diff : True
+reports : True
+reports/test-cases : True
+reports/executions : True
+reports/defects : True
+tests : True
+tools : True
+tools/evidence.py : True
+tools/run_selenium.py : True
+tools/generate_report.py : True
+tools/visual_diff.py : True
+evidence/manifest.json : True
+[0m
+鍙傛暟涓寘鍚?`--check`锛屽洜姝よ繘鍏?A 鑺傦紙浠呮鏌ワ級銆傚紑濮嬬幆澧冩鏌ャ€?
+[0m$ [0mforeach ($s in @("D:\妗岄潰\杞欢娴嬭瘯competion\.opencode\skills\mooctest-web-testing\SKILL.md","D:\妗岄潰\杞欢娴嬭瘯compet
+ion\.opencode\skills\test-case-design\SKILL.md","D:\妗岄潰\杞欢娴嬭瘯competion\.opencode\skills\browser-exploration\SKILL.md",
+"D:\妗岄潰\杞欢娴嬭瘯competion\.opencode\skills\selenium-testing\SKILL.md","D:\妗岄潰\杞欢娴嬭瘯competion\.opencode\skills\visual-tes
+ting\SKILL.md","D:\妗岄潰\杞欢娴嬭瘯competion\.opencode\skills\test-reporting\SKILL.md")) { "{0} : {1}" -f (Split-Path (Split-
+Path $s -Parent) -Leaf), (Test-Path -LiteralPath $s) }
+mooctest-web-testing : True
+test-case-design : True
+browser-exploration : True
+selenium-testing : True
+visual-testing : True
+test-reporting : True
+[0m
+[0m$ [0m$paths = @("$env:LOCALAPPDATA\Google\Chrome\Application\chrome.exe","$env:PROGRAMFILES\Google\Chrome\Applicat
+ion\chrome.exe","${env:PROGRAMFILES(X86)}\Google\Chrome\Application\chrome.exe","$env:LOCALAPPDATA\Microsoft\Edge\Appli
+cation\msedge.exe","C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"); foreach ($p in $paths) { if (Test-P
+ath -LiteralPath $p) { "FOUND: $p"; (Get-Item -LiteralPath $p).VersionInfo.ProductVersion } }; try { $k = Get-ItemPrope
+rty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chrome.exe" -ErrorAction Stop; "REG: " + $k.'(default)' 
+} catch { "REG_NONE" }; $r = Get-Command chromedriver.exe -ErrorAction SilentlyContinue; if ($r) { $r.Source } else { "
+CHROMEDRIVER_NONE" }; if (Test-Path -LiteralPath "tools") { Get-ChildItem -LiteralPath "tools" -Filter "*driver*" -Recu
+rse -ErrorAction SilentlyContinue | ForEach-Object { $_.FullName } }
+FOUND: C:\Users\锟斤拷锟絓AppData\Local\Google\Chrome\Application\chrome.exe
+156.0.8078.74
+FOUND: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+157.0.4341.24
+REG_NONE
+CHROMEDRIVER_NONE
+D:\锟斤拷锟斤拷\锟斤拷锟斤拷锟斤拷锟斤拷competion\tools\driver
+D:\锟斤拷锟斤拷\锟斤拷锟斤拷锟斤拷锟斤拷competion\tools\driver\chromedriver.exe
+[0m
+[0m$ [0mif (Test-Path -LiteralPath "tests") { Get-ChildItem -LiteralPath "tests" | ForEach-Object { $_.Name } }; pyth
+on -c "from selenium import webdriver; import shutil; print('driver_path:', webdriver.Chrome.__module__); print('which:
+', shutil.which('chromedriver'))" 2>&1
+pages
+__pycache__
+conftest.py
+test_todomvc.py
+test_todomvc_expected_failure.py
+driver_path: selenium.webdriver.chrome.webdriver
+which: None
+[0m
+[0m$ [0m& "tools\driver\chromedriver.exe" --version
+ChromeDriver 155.0.8059.84 (5869fe313571d75152b77813cf0a4ee26a4e6df0-refs/branch-heads/8059@{#1303})
+[0m
+[0m$ [0mpython -c "import json; m=json.load(open('evidence/manifest.json',encoding='utf-8')); r=m.get('runs',{}); pri
+nt('runs:', len(r)); print(list(r)[-5:] if r else 'none')"
+runs: 7
+['RUN-TOOLCHECK-01', 'RUN-CMDCHECK-01', 'RUN-CMDCHECK-03', 'RUN-AUDIT-20261030-01', 'RUN-AUDIT-20261030-02']
+[0m
+[0m$ [0mpython -c "
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+o=Options(); o.binary_location=r'C:\Users\鏉庢吹\AppData\Local\Google\Chrome\Application\chrome.exe'; o.add_argument('--he
+adless=new'); o.add_argument('--no-sandbox')
+try:
+    d=webdriver.Chrome(service=Service(r'tools\driver\chromedriver.exe'), options=o)
+    print('SESSION_OK', d.capabilities.get('browserVersion'), d.capabilities.get('chrome',{}).get('chromedriverVersion'
+,'')[:20]); d.quit()
+except Exception as e:
+    print('SESSION_FAIL', type(e).__name__, str(e).splitlines()[0][:300])
+" 2>&1
+SESSION_OK 156.0.8078.74 155.0.8059.84 (5869f
+[0m
+[0m$ [0m& node "node_modules\playwright\cli.js" --version 2>&1; $b="$env:LOCALAPPDATA\ms-playwright"; if (Test-Path -
+LiteralPath $b) { Get-ChildItem -LiteralPath $b | ForEach-Object { $_.Name } } else { "NO_PLAYWRIGHT_BROWSERS" }
+Version 1.64.0-alpha-1790635538000
+.links
+b
+chromium-1228
+chromium-1243
+chromium_headless_shell-1228
+chromium_headless_shell-1243
+daemon
+ffmpeg-1011
+winldd-1007
+cli-update-check.json
+[0m
+浠ヤ笅鍚勯」鍏ㄩ儴閫氳繃锛?
+| 椤圭洰 | 缁撴灉 |
+|---|---|
+| Python | 3.13.9 |
+| Selenium | 4.51.0 |
+| pytest | 9.1.1 |
+| Chrome | 156.0.8078.74锛堜綅浜?`%LOCALAPPDATA%\Google\Chrome\Application\chrome.exe`锛屼笉鍦ㄦ爣鍑嗗畨瑁呰矾寰勶級 |
+| chromedriver | 155.0.8059.84锛堜綅浜?`tools\driver\chromedriver.exe`锛?|
+| Selenium 浼氳瘽 | 鍙互姝ｅ父鍚姩锛屽苟鑳借鍙?`browserVersion=156` |
+| Playwright CLI | 1.64.0-alpha锛宑hromium-1243 宸插畨瑁咃紝MCP `browser_*` 鍙敤 |
+| 璇佹嵁鐩綍 | evidence/{raw,logs,annotated,diff}銆乵anifest.json 瀛樺湪 |
+| 椤圭洰 Skill | 6/6 鍧囧彲鍙戠幇 |
+
+`run_id` 鏈彁渚涳紝鍥犳璺宠繃闀滃儚鏌ヨ锛涙病鏈夊垱寤鸿繍琛屻€佹病鏈夎闂洰鏍囥€佹病鏈夋墽琛屾祴璇曘€?
+鎻愮ず锛歝hromedriver 鏄?155 鐗堬紝涓?Chrome 156 涓荤増鏈笉涓€鑷达紱瀹炴祴鏈浠嶈兘姝ｅ父寤虹珛浼氳瘽锛屼絾寤鸿璧涘墠鎶婇┍鍔ㄦ洿鏂板埌 156 鐗堬紝浠ュ厤鍚庣画鍑虹幇涓嶇ǔ瀹氥€?
+WEB_TEST_READY

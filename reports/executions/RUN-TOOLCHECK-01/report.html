@@ -1,0 +1,105 @@
+<!doctype html><html lang='zh-CN'><head><meta charset='utf-8'>
+<title>工具调用自检报告</title>
+<style>body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;margin:32px;max-width:1200px;color:#1f2328}h1{border-bottom:2px solid #d0d7de;padding-bottom:8px}h2{margin-top:36px;border-bottom:1px solid #d0d7de;padding-bottom:4px}table{border-collapse:collapse;width:100%;margin:12px 0}th,td{border:1px solid #d0d7de;padding:8px;text-align:left;vertical-align:top}th{background:#f6f8fa}code{background:#f6f8fa;padding:1px 4px;border-radius:4px}.pass{color:#1a7f37;font-weight:600}.fail{color:#cf222e;font-weight:600}.xfail{color:#9a6700;font-weight:600}figure{display:inline-block;margin:8px 12px 8px 0;max-width:48%;vertical-align:top}img{max-width:100%;border:1px solid #d0d7de;border-radius:6px}figcaption{font-size:12px;color:#57606a;word-break:break-all}.warn{background:#fff8c5;border-left:4px solid #d4a72c;padding:8px 12px}</style></head><body>
+<h1>工具调用自检报告</h1>
+<p>生成时间：2026-10-29T18:29:36+08:00<br>运行 ID：<code>RUN-TOOLCHECK-01</code><br>目标：https://demo.playwright.dev/todomvc<br>状态：<span class='pass'>通过</span></p>
+<h2>1. 测试目标</h2>
+<p>验证 <code>https://demo.playwright.dev/todomvc</code> 的核心交互、输入边界、状态过滤与失败取证链路。仅陈述本机实际执行且可追溯的结果。</p>
+<h2>2. 测试环境</h2><table><tr><th>项目</th><th>值</th></tr>
+<tr><td>python</td><td>3.13.9</td></tr>
+<tr><td>platform</td><td>Windows-11-10.0.26340-SP0</td></tr>
+<tr><td>pytest</td><td>pytest</td></tr>
+<tr><td>target</td><td>https://demo.playwright.dev/todomvc</td></tr>
+</table>
+<h3>运行备注</h3><ul>
+<li>2026-10-29T17:55:07+08:00：pytest started</li>
+<li>2026-10-29T17:55:14+08:00：pytest exit=0; total=1; failed=False; xfailed=False</li>
+<li>2026-10-29T17:55:14+08:00：pytest exit=0; tests=1; failures=0; errors=0; xfailed=0; elapsed=7.53s</li>
+<li>2026-10-29T17:56:33+08:00：工具自检完成：Playwright CLI、Playwright MCP、Selenium、图像工具、证据 CLI、OpenCode 当前会话工具均实际调用成功；未发现产品缺陷。MCP 控制台有 1 个资源加载错误，仅记录，不作为缺陷。</li>
+<li>2026-10-29T17:57:27+08:00：本运行目的是工具调用自检，不是完整功能覆盖；报告中的 TodoMVC 覆盖缺口来自用例设计文档，不代表工具调用失败。question 工具会打断用户，未主动调用；其余当前会话工具均已实测。</li>
+</ul>
+<h2>3. 测试用例与执行结果</h2><table><tr><th>用例 ID</th><th>标题</th><th>状态</th><th>证据数</th><th>日志</th></tr>
+<tr><td>TC-TODO-001</td><td>新增一条待办</td><td class='pass'>通过</td><td>3</td><td><code>evidence/logs/RUN-TOOLCHECK-01/TC-TODO-001.log</code></td></tr>
+<tr><td>TC-TOOL-BROWSER-001</td><td>Playwright CLI 全链路工具自检</td><td class='pass'>通过</td><td>10</td><td><code>evidence/logs/RUN-TOOLCHECK-01/TC-TOOL-BROWSER-001.log</code></td></tr>
+<tr><td>TC-TOOL-EVIDENCE-001</td><td>证据管理器 CLI 自检</td><td class='pass'>通过</td><td>1</td><td><code>evidence/logs/RUN-TOOLCHECK-01/evidence-add-defect.log</code></td></tr>
+<tr><td>TC-TOOL-IMAGE-001</td><td>图像 inspect/差异/裁剪/标注工具自检</td><td class='pass'>通过</td><td>18</td><td><code>evidence/logs/RUN-TOOLCHECK-01/TC-TOOL-IMAGE-001.log</code></td></tr>
+<tr><td>TC-TOOL-MCP-001</td><td>Playwright MCP 扩展工具自检</td><td class='pass'>通过</td><td>3</td><td><code>evidence/logs/RUN-TOOLCHECK-01/TC-TOOL-MCP-001.log</code></td></tr>
+<tr><td>TC-TOOL-OPENCODE-001</td><td>OpenCode 当前会话工具自检</td><td class='pass'>通过</td><td>1</td><td><code>evidence/logs/RUN-TOOLCHECK-01/TC-TOOL-OPENCODE-001.log</code></td></tr>
+</table>
+<h2>4. 用例明细</h2>
+<h3>TC-TODO-001 新增一条待办</h3>
+<p>状态：<span class='pass'>通过</span><br>预期：True<br>实际：断言通过<br>日志：<code>evidence/logs/RUN-TOOLCHECK-01/TC-TODO-001.log</code></p>
+<ol><li>打开 TodoMVC 演示页</li><li>在新增输入框中输入 Buy milk 并回车</li></ol>
+<table><tr><th>#</th><th>断言</th><th>预期</th><th>实际</th><th>结果</th></tr>
+<tr><td>1</td><td>待办列表包含新增项</td><td>[&#x27;Buy milk&#x27;]</td><td>[&#x27;Buy milk&#x27;]</td><td class='pass'>通过</td></tr>
+<tr><td>2</td><td>剩余计数为 1</td><td>1 item left</td><td>1 item left</td><td class='pass'>通过</td></tr>
+<tr><td>3</td><td>底部状态栏可见</td><td>True</td><td>True</td><td class='pass'>通过</td></tr>
+</table>
+<figure><a href="../../../evidence/raw/RUN-TOOLCHECK-01/TC-TODO-001/TC-TODO-001__case__element__20261029T095511-879.png"><img src="../../../evidence/raw/RUN-TOOLCHECK-01/TC-TODO-001/TC-TODO-001__case__element__20261029T095511-879.png" alt="用例证据：新增待办后的元素" loading="lazy"></a><figcaption>用例证据：新增待办后的元素<br><code>evidence/raw/RUN-TOOLCHECK-01/TC-TODO-001/TC-TODO-001__case__element__20261029T095511-879.png</code></figcaption></figure>
+<figure><a href="../../../evidence/raw/RUN-TOOLCHECK-01/TC-TODO-001/TC-TODO-001__case__fullpage__20261029T095511-974.png"><img src="../../../evidence/raw/RUN-TOOLCHECK-01/TC-TODO-001/TC-TODO-001__case__fullpage__20261029T095511-974.png" alt="用例证据：新增待办后的整页" loading="lazy"></a><figcaption>用例证据：新增待办后的整页<br><code>evidence/raw/RUN-TOOLCHECK-01/TC-TODO-001/TC-TODO-001__case__fullpage__20261029T095511-974.png</code></figcaption></figure>
+<figure><a href="../../../evidence/raw/RUN-TOOLCHECK-01/TC-TODO-001/TC-TODO-001__final__viewport__20261029T095512-047.png"><img src="../../../evidence/raw/RUN-TOOLCHECK-01/TC-TODO-001/TC-TODO-001__final__viewport__20261029T095512-047.png" alt="通过后的最终视口截图" loading="lazy"></a><figcaption>通过后的最终视口截图<br><code>evidence/raw/RUN-TOOLCHECK-01/TC-TODO-001/TC-TODO-001__final__viewport__20261029T095512-047.png</code></figcaption></figure>
+<h3>TC-TOOL-BROWSER-001 Playwright CLI 全链路工具自检</h3>
+<p>状态：<span class='pass'>通过</span><br>预期：打开 TodoMVC；快照、输入、勾选、悬停、求值、缩放、视口/整页/元素截图、控制台/网络、状态保存、标签页切换均成功。<br>实际：全部成功；items=1 checked=1 count=&#x27;0 items left&#x27;；截图 1280x720/1024x768/550x59 均可读取。<br>日志：<code>evidence/logs/RUN-TOOLCHECK-01/TC-TOOL-BROWSER-001.log</code></p>
+<ol><li>playwright-cli 打开 TodoMVC 并保存快照</li><li>输入 Tool check item 并回车</li><li>点击 input.toggle 完成待办</li><li>悬停待办项并执行 eval 读取计数</li><li>缩放到 1024x768，保存视口/整页/元素截图</li><li>读取控制台、网络请求、localStorage，保存 storageState</li><li>新建 example.com 标签页、切换、关闭</li><li>关闭浏览器会话</li></ol>
+<figure><a href="../../../evidence/raw/RUN-TOOLCHECK-01/browser/before-viewport.png"><img src="../../../evidence/raw/RUN-TOOLCHECK-01/browser/before-viewport.png" alt="Playwright CLI screenshot" loading="lazy"></a><figcaption>Playwright CLI screenshot<br><code>evidence/raw/RUN-TOOLCHECK-01/browser/before-viewport.png</code></figcaption></figure>
+<figure><a href="../../../evidence/raw/RUN-TOOLCHECK-01/browser/after-viewport.png"><img src="../../../evidence/raw/RUN-TOOLCHECK-01/browser/after-viewport.png" alt="Playwright CLI screenshot" loading="lazy"></a><figcaption>Playwright CLI screenshot<br><code>evidence/raw/RUN-TOOLCHECK-01/browser/after-viewport.png</code></figcaption></figure>
+<figure><a href="../../../evidence/raw/RUN-TOOLCHECK-01/browser/after-fullpage.png"><img src="../../../evidence/raw/RUN-TOOLCHECK-01/browser/after-fullpage.png" alt="Playwright CLI fullpage-screenshot" loading="lazy"></a><figcaption>Playwright CLI fullpage-screenshot<br><code>evidence/raw/RUN-TOOLCHECK-01/browser/after-fullpage.png</code></figcaption></figure>
+<figure><a href="../../../evidence/raw/RUN-TOOLCHECK-01/browser/after-element.png"><img src="../../../evidence/raw/RUN-TOOLCHECK-01/browser/after-element.png" alt="Playwright CLI element-screenshot" loading="lazy"></a><figcaption>Playwright CLI element-screenshot<br><code>evidence/raw/RUN-TOOLCHECK-01/browser/after-element.png</code></figcaption></figure>
+<h3>TC-TOOL-EVIDENCE-001 证据管理器 CLI 自检</h3>
+<p>状态：<span class='pass'>通过</span><br>预期：start-run/update-case/add-defect/summary/register/verify/index 均可执行；临时虚拟缺陷在验证后清理。<br>实际：add-defect 在临时运行中生成 1 条虚拟缺陷并统计为 defect_count=1；随后删除临时运行；正式运行未登记产品缺陷。<br>日志：<code>evidence/logs/RUN-TOOLCHECK-01/evidence-add-defect.log</code></p>
+<ol><li>创建临时运行 RUN-TOOLCHECK-DEFECT</li><li>更新虚拟用例并调用 add-defect</li><li>summary 显示 defect_count=1</li><li>删除临时运行，保留自检日志</li></ol>
+<h3>TC-TOOL-IMAGE-001 图像 inspect/差异/裁剪/标注工具自检</h3>
+<p>状态：<span class='pass'>通过</span><br>预期：inspect 读取尺寸；相同图差异为 0；受控差异返回区域；裁剪和中文标注成功；原始图不变。<br>实际：相同图 0 像素/no-change；前后图 7981/921600（0.866%）、6 区域、PSNR 31.0085；裁剪 550x48、标注图生成。<br>日志：<code>evidence/logs/RUN-TOOLCHECK-01/TC-TOOL-IMAGE-001.log</code></p>
+<ol><li>inspect diff-before.png / diff-after.png</li><li>compare 相同图 -&gt; no-change</li><li>compare 前后图 -&gt; visual-change-detected</li><li>crop 新增待办区域</li><li>annotate 中文标签</li></ol>
+<figure><a href="../../../evidence/raw/RUN-TOOLCHECK-01/browser/diff-before.png"><img src="../../../evidence/raw/RUN-TOOLCHECK-01/browser/diff-before.png" alt="图像工具源图 diff-before.png" loading="lazy"></a><figcaption>图像工具源图 diff-before.png<br><code>evidence/raw/RUN-TOOLCHECK-01/browser/diff-before.png</code></figcaption></figure>
+<figure><a href="../../../evidence/raw/RUN-TOOLCHECK-01/browser/diff-after.png"><img src="../../../evidence/raw/RUN-TOOLCHECK-01/browser/diff-after.png" alt="图像工具源图 diff-after.png" loading="lazy"></a><figcaption>图像工具源图 diff-after.png<br><code>evidence/raw/RUN-TOOLCHECK-01/browser/diff-after.png</code></figcaption></figure>
+<figure><a href="../../../evidence/diff/RUN-TOOLCHECK-01/identical/annotated.png"><img src="../../../evidence/diff/RUN-TOOLCHECK-01/identical/annotated.png" alt="identical annotation" loading="lazy"></a><figcaption>identical annotation<br><code>evidence/diff/RUN-TOOLCHECK-01/identical/annotated.png</code></figcaption></figure>
+<figure><a href="../../../evidence/diff/RUN-TOOLCHECK-01/identical/comparison.png"><img src="../../../evidence/diff/RUN-TOOLCHECK-01/identical/comparison.png" alt="identical comparison" loading="lazy"></a><figcaption>identical comparison<br><code>evidence/diff/RUN-TOOLCHECK-01/identical/comparison.png</code></figcaption></figure>
+<figure><a href="../../../evidence/diff/RUN-TOOLCHECK-01/identical/heatmap.png"><img src="../../../evidence/diff/RUN-TOOLCHECK-01/identical/heatmap.png" alt="identical heatmap" loading="lazy"></a><figcaption>identical heatmap<br><code>evidence/diff/RUN-TOOLCHECK-01/identical/heatmap.png</code></figcaption></figure>
+<figure><a href="../../../evidence/diff/RUN-TOOLCHECK-01/identical/diff.png"><img src="../../../evidence/diff/RUN-TOOLCHECK-01/identical/diff.png" alt="identical diff" loading="lazy"></a><figcaption>identical diff<br><code>evidence/diff/RUN-TOOLCHECK-01/identical/diff.png</code></figcaption></figure>
+<figure><a href="../../../evidence/diff/RUN-TOOLCHECK-01/changed/annotated.png"><img src="../../../evidence/diff/RUN-TOOLCHECK-01/changed/annotated.png" alt="changed annotation" loading="lazy"></a><figcaption>changed annotation<br><code>evidence/diff/RUN-TOOLCHECK-01/changed/annotated.png</code></figcaption></figure>
+<figure><a href="../../../evidence/diff/RUN-TOOLCHECK-01/changed/comparison.png"><img src="../../../evidence/diff/RUN-TOOLCHECK-01/changed/comparison.png" alt="changed comparison" loading="lazy"></a><figcaption>changed comparison<br><code>evidence/diff/RUN-TOOLCHECK-01/changed/comparison.png</code></figcaption></figure>
+<figure><a href="../../../evidence/diff/RUN-TOOLCHECK-01/changed/heatmap.png"><img src="../../../evidence/diff/RUN-TOOLCHECK-01/changed/heatmap.png" alt="changed heatmap" loading="lazy"></a><figcaption>changed heatmap<br><code>evidence/diff/RUN-TOOLCHECK-01/changed/heatmap.png</code></figcaption></figure>
+<figure><a href="../../../evidence/diff/RUN-TOOLCHECK-01/changed/diff.png"><img src="../../../evidence/diff/RUN-TOOLCHECK-01/changed/diff.png" alt="changed diff" loading="lazy"></a><figcaption>changed diff<br><code>evidence/diff/RUN-TOOLCHECK-01/changed/diff.png</code></figcaption></figure>
+<figure><a href="../../../evidence/annotated/RUN-TOOLCHECK-01/image/new-item-crop.png"><img src="../../../evidence/annotated/RUN-TOOLCHECK-01/image/new-item-crop.png" alt="裁剪图" loading="lazy"></a><figcaption>裁剪图<br><code>evidence/annotated/RUN-TOOLCHECK-01/image/new-item-crop.png</code></figcaption></figure>
+<figure><a href="../../../evidence/annotated/RUN-TOOLCHECK-01/image/new-item-annotated.png"><img src="../../../evidence/annotated/RUN-TOOLCHECK-01/image/new-item-annotated.png" alt="中文标注图" loading="lazy"></a><figcaption>中文标注图<br><code>evidence/annotated/RUN-TOOLCHECK-01/image/new-item-annotated.png</code></figcaption></figure>
+<h3>TC-TOOL-MCP-001 Playwright MCP 扩展工具自检</h3>
+<p>状态：<span class='pass'>通过</span><br>预期：MCP 服务可初始化；navigate/type/wait/find/snapshot/click/evaluate/resize/console/network/tabs/screenshot/close 全部成功。<br>实际：25 个工具；14 个调用步骤全部成功；evaluate 返回 items=1 checked=1 count=&#x27;0 items left&#x27;；截图 1024x768 有效。<br>日志：<code>evidence/logs/RUN-TOOLCHECK-01/TC-TOOL-MCP-001.log</code></p>
+<ol><li>启动 Playwright MCP（headless chrome, isolated）</li><li>initialize + tools/list</li><li>navigate TodoMVC</li><li>type + wait_for + find + snapshot</li><li>click toggle + evaluate 状态</li><li>resize + console + network + tabs</li><li>fullPage screenshot + close</li></ol>
+<figure><a href="../../../evidence/raw/RUN-TOOLCHECK-01/mcp/mcp-fullpage.png"><img src="../../../evidence/raw/RUN-TOOLCHECK-01/mcp/mcp-fullpage.png" alt="MCP 整页截图" loading="lazy"></a><figcaption>MCP 整页截图<br><code>evidence/raw/RUN-TOOLCHECK-01/mcp/mcp-fullpage.png</code></figcaption></figure>
+<h3>TC-TOOL-OPENCODE-001 OpenCode 当前会话工具自检</h3>
+<p>状态：<span class='pass'>通过</span><br>预期：skill/task/glob/grep/webfetch/read image 可用；命令文件可枚举；图片可读取。<br>实际：skill visual-testing 加载成功；task explore 返回 6 skills/5 commands；glob 找到命令文件；grep 找到 READY 标记；webfetch 返回 Example Domain；read image 成功显示截图。<br>日志：<code>evidence/logs/RUN-TOOLCHECK-01/TC-TOOL-OPENCODE-001.log</code></p>
+<ol><li>加载 visual-testing Skill</li><li>glob 枚举 docs 与 .opencode/commands</li><li>grep 搜索 READY 标记</li><li>webfetch https://example.com</li><li>task explore 统计 skills/commands/evidence</li><li>read 读取 MCP 截图</li></ol>
+<h2>5. 缺陷与异常</h2>
+<p>未登记产品缺陷。若有 xfailed 用例，它只用于验证失败取证链路，不等同于产品缺陷。</p>
+<h2>6. 视觉差异证据</h2>
+<h3>工具自检 前后对比</h3>
+<p>基准：<code>evidence\raw\RUN-TOOLCHECK-01\browser\diff-before.png</code><br>实际：<code>evidence\raw\RUN-TOOLCHECK-01\browser\diff-after.png</code><br>判定：visual-change-detected（受控变化，待人工复核，不构成缺陷结论）<br>差异像素：7981 / 921600（0.00866）<br>区域数：6；PSNR：31.0085<br>指标：<code>evidence/diff/RUN-TOOLCHECK-01/changed/metrics.json</code></p>
+<table><tr><th>区域</th><th>x</th><th>y</th><th>w</th><th>h</th><th>面积</th></tr>
+<tr><td>R1</td><td>365</td><td>240</td><td>550</td><td>15</td><td>7564</td></tr>
+<tr><td>R2</td><td>469</td><td>262</td><td>8</td><td>15</td><td>60</td></tr>
+<tr><td>R3</td><td>489</td><td>266</td><td>8</td><td>12</td><td>56</td></tr>
+<tr><td>R4</td><td>501</td><td>267</td><td>3</td><td>11</td><td>33</td></tr>
+<tr><td>R5</td><td>427</td><td>268</td><td>3</td><td>10</td><td>30</td></tr>
+<tr><td>R6</td><td>456</td><td>268</td><td>3</td><td>10</td><td>30</td></tr>
+</table>
+<figure><a href='../../../evidence/diff/RUN-TOOLCHECK-01/changed/annotated.png'><img src='../../../evidence/diff/RUN-TOOLCHECK-01/changed/annotated.png' alt='annotated.png'></a><figcaption>annotated.png</figcaption></figure>
+<figure><a href='../../../evidence/diff/RUN-TOOLCHECK-01/changed/comparison.png'><img src='../../../evidence/diff/RUN-TOOLCHECK-01/changed/comparison.png' alt='comparison.png'></a><figcaption>comparison.png</figcaption></figure>
+<figure><a href='../../../evidence/diff/RUN-TOOLCHECK-01/changed/heatmap.png'><img src='../../../evidence/diff/RUN-TOOLCHECK-01/changed/heatmap.png' alt='heatmap.png'></a><figcaption>heatmap.png</figcaption></figure>
+<h3>identical</h3>
+<p>基准：<code>evidence\raw\RUN-TOOLCHECK-01\browser\diff-before.png</code><br>实际：<code>evidence\raw\RUN-TOOLCHECK-01\browser\diff-before.png</code><br>判定：no-change（受控变化，待人工复核，不构成缺陷结论）<br>差异像素：0 / 921600（0.0）<br>区域数：0；PSNR：None<br>指标：<code>evidence/diff/RUN-TOOLCHECK-01/identical/metrics.json</code></p>
+<figure><a href='../../../evidence/diff/RUN-TOOLCHECK-01/identical/annotated.png'><img src='../../../evidence/diff/RUN-TOOLCHECK-01/identical/annotated.png' alt='annotated.png'></a><figcaption>annotated.png</figcaption></figure>
+<figure><a href='../../../evidence/diff/RUN-TOOLCHECK-01/identical/comparison.png'><img src='../../../evidence/diff/RUN-TOOLCHECK-01/identical/comparison.png' alt='comparison.png'></a><figcaption>comparison.png</figcaption></figure>
+<figure><a href='../../../evidence/diff/RUN-TOOLCHECK-01/identical/heatmap.png'><img src='../../../evidence/diff/RUN-TOOLCHECK-01/identical/heatmap.png' alt='heatmap.png'></a><figcaption>heatmap.png</figcaption></figure>
+<h2>7. 证据完整性</h2>
+<p>已登记 36，校验通过 36；缺失 0；哈希不一致 0。</p>
+<h2>8. 执行日志</h2>
+<p>JUnit：<code><PROJECT_ROOT>\reports\executions\RUN-TOOLCHECK-01\junit.xml</code><br>控制台：<code><PROJECT_ROOT>\evidence\logs\RUN-TOOLCHECK-01\pytest-console.log</code><br>tests=1 failures=0 errors=0 xfailed=0</p>
+<h2>9. 结论与限制</h2>
+<p>本轮功能用例全部通过；本轮无受控预期失败用例。</p>
+<div class='warn'><strong>覆盖缺口</strong><ul>
+<li>未覆盖（设计完成但本轮未执行，不计入通过率）：TC-TODO-008 刷新后持久化；TC-TODO-009 全部完成/取消全部；TC-TODO-010 清除已完成；TC-TODO-012 键盘可访问性</li>
+<li>部分覆盖：TC-TODO-011 计数单复数</li>
+</ul></div>
+<p>像素差异不等同于产品缺陷；未执行场景不会标记为通过；比赛前需确认 AI 工具合规要求。</p>
+</body></html>

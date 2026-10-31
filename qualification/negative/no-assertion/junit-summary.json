@@ -1,0 +1,23 @@
+{
+  "run_id": "RUN-SAMPLE-NOASSERTION",
+  "exit_code": 0,
+  "elapsed_seconds": 0.5,
+  "timed_out": false,
+  "junit": "junit.xml",
+  "console_log": "console.log",
+  "tests": 1,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "xfailed": 0,
+  "cases": [
+    {
+      "name": "test_add_valid",
+      "classname": "tests.test_sample",
+      "time": 0.1,
+      "status": "passed",
+      "message": ""
+    }
+  ],
+  "status": "passed"
+}

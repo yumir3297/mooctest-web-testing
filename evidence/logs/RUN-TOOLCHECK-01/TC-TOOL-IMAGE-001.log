@@ -1,0 +1,9 @@
+2026-10-29T17:54:32+08:00 INFO inspect diff-before.png 1280x720 mean_rgb=[244.62,244.08,240.44]
+2026-10-29T17:54:32+08:00 INFO inspect diff-after.png 1280x720 mean_rgb=[245.02,244.48,240.84]
+2026-10-29T17:54:32+08:00 INFO compare identical diff-before.png vs itself -> changed_pixels=0 diff_ratio=0.0 verdict=no-change regions=0
+2026-10-29T17:54:35+08:00 INFO compare diff-before.png vs diff-after.png threshold=25 min_area=30 -> raw=12873 changed=7981 diff_ratio=0.00866 psnr=31.0085 regions=6
+2026-10-29T17:54:35+08:00 INFO largest region R1 x=365 y=240 w=550 h=15 area=7564
+2026-10-29T17:54:35+08:00 INFO outputs evidence/diff/RUN-TOOLCHECK-01/{identical,changed}/...
+2026-10-29T17:54:50+08:00 INFO crop diff-after.png box=365,235,550,48 -> evidence/annotated/RUN-TOOLCHECK-01/image/new-item-crop.png 550x48
+2026-10-29T17:54:50+08:00 INFO annotate diff-after.png box=365,235,550,48 label=新增待办行 -> evidence/annotated/RUN-TOOLCHECK-01/image/new-item-annotated.png
+2026-10-29T17:54:50+08:00 INFO raw diff-before.png / diff-after.png retained unchanged

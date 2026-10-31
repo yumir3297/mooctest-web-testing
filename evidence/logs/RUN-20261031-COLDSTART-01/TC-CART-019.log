@@ -1,0 +1,10 @@
+2026-10-31 01:04:19,677 INFO case=TC-CART-019 run=RUN-20261031-COLDSTART-01
+2026-10-31 01:04:19,778 INFO STEP 打开 http://127.0.0.1:8765/，等待「计算」按钮可点击（实测 0.069s）
+2026-10-31 01:04:19,810 INFO STEP 在 amount 输入 '500'，在 coupon 输入 'CP123'
+2026-10-31 01:04:19,964 INFO STEP level 选择 gold，points 不勾选
+2026-10-31 01:04:20,064 INFO STEP 点击「计算」按钮
+2026-10-31 01:04:20,177 INFO STEP 等待输出变化完成（触发通道：message）
+2026-10-31 01:04:20,398 INFO SCREENSHOT evidence/raw/RUN-20261031-COLDSTART-01/TC-CART-019/TC-CART-019__result__element__20261030T170420-304.png
+2026-10-31 01:04:20,399 INFO CHECK 提示文案 passed=True expected='优惠券码无效' actual='优惠券码无效'
+2026-10-31 01:04:20,432 INFO CHECK 优惠金额为 - passed=True expected='-' actual='-'
+2026-10-31 01:04:20,462 INFO CHECK 应付金额为 - passed=True expected='-' actual='-'

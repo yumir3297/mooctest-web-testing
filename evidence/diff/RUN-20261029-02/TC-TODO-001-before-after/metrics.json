@@ -1,0 +1,81 @@
+{
+  "label": "TodoMVC 添加待办前后",
+  "created_at": "2026-10-29T17:22:31+08:00",
+  "baseline": "evidence\\raw\\RUN-20261029-01\\browser\\viewport.png",
+  "actual": "evidence\\raw\\RUN-20261029-01\\browser\\fullpage.png",
+  "size_mismatch": false,
+  "baseline_size": [
+    1280,
+    720
+  ],
+  "actual_size": [
+    1280,
+    720
+  ],
+  "threshold": 25,
+  "min_area": 30,
+  "ignore_boxes": [],
+  "raw_changed_pixels": 13433,
+  "changed_pixels": 8122,
+  "total_pixels": 921600,
+  "diff_ratio": 0.008813,
+  "mean_abs_diff": 1.7283,
+  "rmse": 7.8533,
+  "psnr": 30.2297,
+  "region_count": 5,
+  "regions": [
+    {
+      "x": 365,
+      "y": 240,
+      "w": 550,
+      "h": 15,
+      "area": 7564,
+      "mean_abs_diff": 32.803,
+      "max_abs_diff": 56,
+      "region_id": "R1"
+    },
+    {
+      "x": 585,
+      "y": 261,
+      "w": 9,
+      "h": 17,
+      "area": 79,
+      "mean_abs_diff": 101.139,
+      "max_abs_diff": 160,
+      "region_id": "R2"
+    },
+    {
+      "x": 521,
+      "y": 267,
+      "w": 8,
+      "h": 11,
+      "area": 68,
+      "mean_abs_diff": 87.441,
+      "max_abs_diff": 160,
+      "region_id": "R3"
+    },
+    {
+      "x": 435,
+      "y": 268,
+      "w": 10,
+      "h": 8,
+      "area": 49,
+      "mean_abs_diff": 108.286,
+      "max_abs_diff": 159,
+      "region_id": "R4"
+    },
+    {
+      "x": 513,
+      "y": 265,
+      "w": 3,
+      "h": 13,
+      "area": 39,
+      "mean_abs_diff": 111.359,
+      "max_abs_diff": 160,
+      "region_id": "R5"
+    }
+  ],
+  "verdict": "visual-change-detected",
+  "defect_claim": false,
+  "defect_note": "Pixel changes are review signals. Confirm with DOM, expected behavior, and reproducible steps before filing a defect."
+}

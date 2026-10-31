@@ -1,0 +1,29 @@
+{
+  "run_id": "RUN-20261029-01",
+  "exit_code": 3,
+  "elapsed_seconds": 5.61,
+  "junit": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-20261029-01\\junit.xml",
+  "console_log": "D:\\桌面\\软件测试competion\\evidence\\logs\\RUN-20261029-01\\pytest-console.log",
+  "tests": 2,
+  "failures": 0,
+  "errors": 1,
+  "skipped": 0,
+  "time": 2.36,
+  "xfailed": 0,
+  "cases": [
+    {
+      "name": "test_add_todo",
+      "classname": "tests.test_todomvc",
+      "time": 2.039,
+      "status": "passed",
+      "message": ""
+    },
+    {
+      "name": "internal",
+      "classname": "pytest",
+      "time": 0.0,
+      "status": "failed",
+      "message": "internal error"
+    }
+  ]
+}

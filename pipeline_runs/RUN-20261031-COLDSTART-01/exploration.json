@@ -1,0 +1,458 @@
+{
+  "run_id": "RUN-20261031-COLDSTART-01",
+  "target": "http://127.0.0.1:8765/",
+  "captured_at": "2026-10-30T17:00:03+00:00",
+  "states": [
+    {
+      "discount": {
+        "boxes": 1,
+        "displayed": true,
+        "text": "-"
+      },
+      "inputs": {
+        "amount": "",
+        "coupon": "",
+        "level": "regular",
+        "points": false
+      },
+      "message": {
+        "boxes": 1,
+        "displayed": true,
+        "text": ""
+      },
+      "payable": {
+        "boxes": 1,
+        "displayed": true,
+        "text": "-"
+      },
+      "label": "initial"
+    },
+    {
+      "discount": {
+        "boxes": 1,
+        "displayed": true,
+        "text": "50"
+      },
+      "inputs": {
+        "amount": "500",
+        "coupon": "CP1234",
+        "level": "gold",
+        "points": false
+      },
+      "message": {
+        "boxes": 1,
+        "displayed": true,
+        "text": ""
+      },
+      "payable": {
+        "boxes": 1,
+        "displayed": true,
+        "text": "450"
+      },
+      "label": "E1 500/CP1234/gold/no-points"
+    },
+    {
+      "discount": {
+        "boxes": 1,
+        "displayed": true,
+        "text": "-"
+      },
+      "inputs": {
+        "amount": "0",
+        "coupon": "CP1234",
+        "level": "gold",
+        "points": false
+      },
+      "message": {
+        "boxes": 1,
+        "displayed": true,
+        "text": "金额需为 1-9999 的整数"
+      },
+      "payable": {
+        "boxes": 1,
+        "displayed": true,
+        "text": "-"
+      },
+      "label": "amount=0"
+    },
+    {
+      "discount": {
+        "boxes": 1,
+        "displayed": true,
+        "text": "50"
+      },
+      "inputs": {
+        "amount": "500",
+        "coupon": "cp1234",
+        "level": "gold",
+        "points": false
+      },
+      "message": {
+        "boxes": 1,
+        "displayed": true,
+        "text": ""
+      },
+      "payable": {
+        "boxes": 1,
+        "displayed": true,
+        "text": "450"
+      },
+      "label": "coupon=cp1234"
+    },
+    {
+      "discount": {
+        "boxes": 1,
+        "displayed": true,
+        "text": "56"
+      },
+      "inputs": {
+        "amount": "555",
+        "coupon": "CP1234",
+        "level": "gold",
+        "points": false
+      },
+      "message": {
+        "boxes": 1,
+        "displayed": true,
+        "text": ""
+      },
+      "payable": {
+        "boxes": 1,
+        "displayed": true,
+        "text": "499"
+      },
+      "label": "555 gold"
+    },
+    {
+      "discount": {
+        "boxes": 1,
+        "displayed": true,
+        "text": "56"
+      },
+      "inputs": {
+        "amount": "555",
+        "coupon": "CP1234",
+        "level": "gold",
+        "points": true
+      },
+      "message": {
+        "boxes": 1,
+        "displayed": true,
+        "text": ""
+      },
+      "payable": {
+        "boxes": 1,
+        "displayed": true,
+        "text": "498"
+      },
+      "label": "555 gold + points"
+    },
+    {
+      "discount": {
+        "boxes": 1,
+        "displayed": true,
+        "text": "0"
+      },
+      "inputs": {
+        "amount": "800",
+        "coupon": "CP1234",
+        "level": "silver",
+        "points": false
+      },
+      "message": {
+        "boxes": 1,
+        "displayed": true,
+        "text": ""
+      },
+      "payable": {
+        "boxes": 1,
+        "displayed": true,
+        "text": "800"
+      },
+      "label": "800 silver"
+    },
+    {
+      "discount": {
+        "boxes": 1,
+        "displayed": true,
+        "text": "1000"
+      },
+      "inputs": {
+        "amount": "9999",
+        "coupon": "CP1234",
+        "level": "gold",
+        "points": false
+      },
+      "message": {
+        "boxes": 1,
+        "displayed": true,
+        "text": ""
+      },
+      "payable": {
+        "boxes": 1,
+        "displayed": true,
+        "text": "8999"
+      },
+      "label": "9999 gold"
+    }
+  ],
+  "window_size": {
+    "width": 1280,
+    "height": 900
+  },
+  "viewport": {
+    "clientWidth": 1254,
+    "dpr": 1,
+    "innerHeight": 744,
+    "innerWidth": 1254,
+    "scrollHeight": 744,
+    "scrollWidth": 1254
+  },
+  "time_to_interactive_s": 0.21,
+  "title": "CartCheck 结算试算器",
+  "url": "http://127.0.0.1:8765/",
+  "page_language": "zh-CN",
+  "inventory": [
+    {
+      "cls": null,
+      "color": "rgb(29, 39, 51)",
+      "displayed": true,
+      "enabled": true,
+      "font_size": "16px",
+      "id": "amount",
+      "name": "amount",
+      "options": null,
+      "rect": {
+        "h": 42,
+        "w": 518,
+        "x": 457,
+        "y": 184
+      },
+      "role": null,
+      "tag": "input",
+      "testid": "amount",
+      "text": null,
+      "type": "text",
+      "value": ""
+    },
+    {
+      "cls": null,
+      "color": "rgb(29, 39, 51)",
+      "displayed": true,
+      "enabled": true,
+      "font_size": "16px",
+      "id": "coupon",
+      "name": "coupon",
+      "options": null,
+      "rect": {
+        "h": 42,
+        "w": 518,
+        "x": 457,
+        "y": 240
+      },
+      "role": null,
+      "tag": "input",
+      "testid": "coupon",
+      "text": null,
+      "type": "text",
+      "value": ""
+    },
+    {
+      "cls": null,
+      "color": "rgb(29, 39, 51)",
+      "displayed": true,
+      "enabled": true,
+      "font_size": "16px",
+      "id": "level",
+      "name": "level",
+      "options": [
+        {
+          "selected": true,
+          "text": "普通会员 regular",
+          "value": "regular"
+        },
+        {
+          "selected": false,
+          "text": "银卡 silver",
+          "value": "silver"
+        },
+        {
+          "selected": false,
+          "text": "金卡 gold",
+          "value": "gold"
+        }
+      ],
+      "rect": {
+        "h": 42,
+        "w": 518,
+        "x": 457,
+        "y": 296
+      },
+      "role": null,
+      "tag": "select",
+      "testid": "level",
+      "text": "普通会员 regular\n          银卡 silver\n          金卡 gold",
+      "type": null,
+      "value": "regular"
+    },
+    {
+      "cls": null,
+      "color": "rgb(0, 0, 0)",
+      "displayed": true,
+      "enabled": true,
+      "font_size": "13.3333px",
+      "id": "points",
+      "name": "points",
+      "options": null,
+      "rect": {
+        "h": 18,
+        "w": 18,
+        "x": 265,
+        "y": 355
+      },
+      "role": null,
+      "tag": "input",
+      "testid": "points",
+      "text": null,
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "cls": null,
+      "color": "rgb(255, 255, 255)",
+      "displayed": true,
+      "enabled": true,
+      "font_size": "16px",
+      "id": "calc",
+      "name": null,
+      "options": null,
+      "rect": {
+        "h": 44,
+        "w": 132,
+        "x": 457,
+        "y": 396
+      },
+      "role": null,
+      "tag": "button",
+      "testid": "calc",
+      "text": "计算",
+      "type": "button",
+      "value": ""
+    },
+    {
+      "cls": null,
+      "color": "rgb(29, 39, 51)",
+      "displayed": true,
+      "enabled": true,
+      "font_size": "30px",
+      "id": null,
+      "name": null,
+      "options": null,
+      "rect": {
+        "h": 40,
+        "w": 12,
+        "x": 282,
+        "y": 599
+      },
+      "role": null,
+      "tag": "output",
+      "testid": "discount",
+      "text": "-",
+      "type": null,
+      "value": "-"
+    },
+    {
+      "cls": null,
+      "color": "rgb(29, 39, 51)",
+      "displayed": true,
+      "enabled": true,
+      "font_size": "30px",
+      "id": null,
+      "name": null,
+      "options": null,
+      "rect": {
+        "h": 40,
+        "w": 12,
+        "x": 645,
+        "y": 599
+      },
+      "role": null,
+      "tag": "output",
+      "testid": "payable",
+      "text": "-",
+      "type": null,
+      "value": "-"
+    },
+    {
+      "cls": "message",
+      "color": "rgb(180, 35, 24)",
+      "displayed": true,
+      "enabled": true,
+      "font_size": "14px",
+      "id": null,
+      "name": null,
+      "options": null,
+      "rect": {
+        "h": 24,
+        "w": 710,
+        "x": 265,
+        "y": 675
+      },
+      "role": "status",
+      "tag": "p",
+      "testid": "message",
+      "text": "",
+      "type": null,
+      "value": null
+    }
+  ],
+  "body_text": "CartCheck 结算试算器\n本地练习应用，仅用于测试演练，不连接任何后端。\n订单信息\n订单金额（元）\n优惠券码\n会员等级\n          普通会员 regular\n          银卡 silver\n          金卡 gold\n         叠加积分（折扣后再减 1 元）\n计算\n计算结果\n优惠金额\n-\n应付金额\n-",
+  "screenshot_viewport": "evidence/raw/RUN-20261031-COLDSTART-01/EXPLORE/EXPLORE__initial__viewport__20261030T170004-883.png",
+  "e1_wait": "changed",
+  "e1_elapsed_s": 0.714,
+  "screenshot_key_area": "evidence/raw/RUN-20261031-COLDSTART-01/EXPLORE/EXPLORE__e1-result__element__20261030T170005-325.png",
+  "key_area_tag": "main",
+  "key_area_testid": null,
+  "key_area_class": "page",
+  "amount_0_wait": "changed",
+  "coupon_lower_wait": "changed",
+  "floor_wait": "changed",
+  "points_wait": "changed",
+  "silver_wait": "changed",
+  "upper_wait": "changed",
+  "console": [],
+  "console_errors": [],
+  "output_style": {
+    "discount": {
+      "display": "inline",
+      "font": "\"Segoe UI\", \"Microsoft YaHei\", Arial, sans-serif",
+      "h": 40,
+      "size": "30px",
+      "text": "1000",
+      "visibility": "visible",
+      "w": 69,
+      "weight": "700"
+    },
+    "message": {
+      "display": "block",
+      "font": "\"Segoe UI\", \"Microsoft YaHei\", Arial, sans-serif",
+      "h": 24,
+      "size": "14px",
+      "text": "",
+      "visibility": "visible",
+      "w": 710,
+      "weight": "400"
+    },
+    "payable": {
+      "display": "inline",
+      "font": "\"Segoe UI\", \"Microsoft YaHei\", Arial, sans-serif",
+      "h": 40,
+      "size": "30px",
+      "text": "8999",
+      "visibility": "visible",
+      "w": 69,
+      "weight": "700"
+    }
+  },
+  "console_log": "evidence/logs/RUN-20261031-COLDSTART-01/EXPLORE__browser__20261030T170006-425.log"
+}

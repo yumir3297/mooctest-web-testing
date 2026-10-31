@@ -1,0 +1,8 @@
+2026-10-31 00:47:06,590 INFO case=TC-TODO-001 run=RUN-20261031-ENVCHECK-01
+2026-10-31 00:47:06,592 INFO STEP 打开 TodoMVC 演示页
+2026-10-31 00:47:06,734 INFO STEP 在新增输入框中输入 Buy milk 并回车
+2026-10-31 00:47:07,022 INFO CHECK 待办列表包含新增项 passed=True expected=['Buy milk'] actual=['Buy milk']
+2026-10-31 00:47:07,127 INFO CHECK 剩余计数为 1 passed=True expected='1 item left' actual='1 item left'
+2026-10-31 00:47:07,224 INFO CHECK 底部状态栏可见 passed=True expected=True actual=True
+2026-10-31 00:47:07,416 INFO SCREENSHOT evidence/raw/RUN-20261031-ENVCHECK-01/TC-TODO-001/TC-TODO-001__case__element__20261030T164707-270.png
+2026-10-31 00:47:07,509 INFO SCREENSHOT evidence/raw/RUN-20261031-ENVCHECK-01/TC-TODO-001/TC-TODO-001__case__fullpage__20261030T164707-417.png

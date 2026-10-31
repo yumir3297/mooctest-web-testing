@@ -1,0 +1,49 @@
+rule_id,version,title,authority,trigger,canonical_file,status,supersedes,notes
+MS-00,v0.2,需求分诊,"[ENG] + [MY] ch2 p.13-14",任务开始/拿到需求后,references/method_selector.md,active,,新增于v0.2
+MS-01,v0.2.1,分区与边界(覆盖项口径),"[MY] ch4 p.51-57 + [ISTQB] 4.2.2",输入有量纲/精度/上下限,references/method_selector.md,active,MS-01-v0.1,v0.2.1补充精度一致性与开闭区间处理
+MS-01-v0.1,v0.1,每边界固定四点,无(工程习惯),边界设计,-,deprecated,,"作废:无标准出处且不考虑精度/可表示性"
+MS-02,v0.2,格式与枚举,"[MY] ch4 p.51-52, p.81",正则/校验位/枚举,references/method_selector.md,active,,
+MS-03,v0.2,判定表(业务条件触发),"[MY] ch4 p.61-66, p.72-74, p.79-80",多个业务条件决定同一结果且可枚举,references/method_selector.md,active,MS-03-v0.1,v0.2取消参数个数触发
+MS-03-v0.1,v0.1,参数>=4则判定表优先,无,方法选择,-,deprecated,,"作废:参数个数不能决定是否用判定表"
+MS-04,v0.2,状态迁移,"[ISTQB] 4.2.4 + [EI] ch8 p.88-99",存在状态机,references/method_selector.md,active,,
+MS-05,v0.2.1,组合覆盖,"[NIST] SP 800-142 + [MY] ch4 p.61",参数独立且存在交互风险且预算允许,references/method_selector.md,active,MS-05-v0.1,v0.2.1新增"无交互规则则不启用"前置判定
+MS-05-v0.1,v0.1,成对覆盖(无出处标注),无,多参数组合,-,deprecated,,"被MS-05替代"
+MS-06,v0.2,微型charter探索,"[EI] ch2 p.29-32, ch13 p.152",需求缺失/冲突/高风险待确认,references/method_selector.md,active,,
+MS-07,v0.2,非功能需求,"[MY] ch10 p.206",有阈值型非功能要求,references/method_selector.md,active,,
+MS-08,v0.2,组合顺序主流程,"[MY] ch4 p.82-83",每个功能点设计时,references/method_selector.md,active,,
+MS-09,v0.2,停止条件(覆盖项达成),"[MY] ch4 p.83 + [EI] ch13 p.152 + [ISTQB] 4.2.2",准备结束设计,references/method_selector.md,active,MS-09-v0.1,v0.2不再以用例数或四点为标志
+MS-09-v0.1,v0.1,停止条件(含每边界四点),无,结束设计,-,deprecated,,"随MS-01修正一并作废"
+MS-10,v0.2,赛题约束优先,"[ENG] + [S-01]",赛题限定范围/数量/命名,references/method_selector.md,active,,
+ORA-01,v0.2,需求明示型判据,"[MY] ch2 p.13-14",需求给出明确结果,references/test_oracle.md,active,,
+ORA-02,v0.2,规则推导型判据,"[MY] ch2 p.13-14",规则链完整可复算,references/test_oracle.md,active,,
+ORA-03,v0.2,部分可验证判据,"[MY] ch10 p.195-198 + [EI] ch5 p.66",结果依赖后端/第三方/异步,references/test_oracle.md,active,,
+ORA-04,v0.2,无依据转观察项,"[MY] ch2 p.13-14, ch10 p.200 + [EI] ch5 p.68",无可靠判据,references/test_oracle.md,active,ORA-04-v0.1,v0.2禁止UNKNOWN进入正式用例集
+ORA-04-v0.1,v0.1,无依据可保留为用例(只写观察),无,无规格,-,deprecated,,"被ORA-04替代:不计入覆盖率"
+ORA-05,v0.2,Never/Always底线,"[EI] ch5 p.63-65",规格不全但有不可违反底线,references/test_oracle.md,active,,
+ORA-06,v0.2,近似判定,"[EI] ch5 p.68-70",无精确值但可判明显错误,references/test_oracle.md,active,,
+ORA-07,v0.2,替代参照,"[EI] ch5 p.65-67",可利用内部一致性/标准/可比软件,references/test_oracle.md,active,,
+ORA-08,v0.2,观察不等于缺陷,"[EI] ch5 p.62-63",发现异常行为,references/test_oracle.md,active,,
+ORA-09,v0.2,失败归因与禁改预期,"[ENG]",任何FAIL,references/test_oracle.md,active,,新增于v0.2
+REV-00,v0.2,覆盖门禁口径,"[ENG] + [MY] ch2 p.13-14",统计覆盖率前,references/coverage_review.md,active,,新增于v0.2
+REV-01,v0.2,需求遗漏检查(按可测性),"[S-01] + MS-00",提交前,references/coverage_review.md,active,REV-01-v0.1,
+REV-01-v0.1,v0.1,每条需求至少一条用例,无,提交前,-,deprecated,,"未区分可测性导致虚高覆盖"
+REV-02,v0.2,覆盖项检查,"[MY] ch4 p.51-57 + [ISTQB] 4.2.1-4.2.4",每字段/规则/状态机,references/coverage_review.md,active,REV-02-v0.1,取消四点门禁
+REV-02-v0.1,v0.1,每边界必须四点齐全,无,边界评审,-,deprecated,,"作废:与MS-01-v0.1同因"
+REV-03,v0.2,重复与无意义用例,"[ENG] + [MY] ch4 p.49-50",用例数明显多于复杂度,references/coverage_review.md,active,,
+REV-04,v0.2,预期依据检查,"[MY] ch2 p.13-14 + [EI] ch5 p.68",每条用例,references/coverage_review.md,active,,
+REV-05,v0.2,测试目的明确性,"[ENG] + [MY] ch4 p.41",每条用例,references/coverage_review.md,active,,
+REV-06,v0.2,可执行性检查,"[S-01]",转脚本前,references/coverage_review.md,active,,
+REV-07,v0.2,通过失败可判定性,"[MY] ch2 p.13-14",每条用例,references/coverage_review.md,active,,
+REV-08,v0.2,边界语义检查,"[MY] ch4 p.56-57 + [ISTQB] 4.2.2",含数值/日期/长度字段,references/coverage_review.md,active,,v0.2增加可表示性检查
+REV-09,v0.2,覆盖度自评与缺口,"[MY] ch4 p.83 + [S-01]",提交前,references/coverage_review.md,active,,
+DEF-01,v0.2,输入异常,"[MY] ch4 p.81 + [EI] A2",可输入字段,references/defect_discovery.md,active,,
+DEF-02,v0.2,参数冲突,"[MY] ch4 p.61 + [EI] A2",参数互相制约,references/defect_discovery.md,active,,
+DEF-03,v0.2,边界条件,"[MY] ch4 p.56-57",有阈值/档位,references/defect_discovery.md,active,,
+DEF-04,v0.2,顺序与状态,"[ISTQB] 4.2.4 + [EI] ch8 p.88-99",多步流程/可重复提交,references/defect_discovery.md,active,,
+DEF-05,v0.2,页面状态不一致,"[EI] ch5 p.66",同数据多处展示,references/defect_discovery.md,active,,
+DEF-06,v0.2,表单与动态交互,"[MY] ch10 p.204-205 + [EI] A2",前端校验/联动/异步,references/defect_discovery.md,active,,
+DEF-07,v0.2,导航会话与重复提交,"[EI] A2 p.166",有提交动作/多页流程/需登录,references/defect_discovery.md,active,,
+DEF-08,v0.2,测试假设致假缺陷,"[ENG]",预期来源不明,references/defect_discovery.md,active,,
+DEF-09,v0.2,越权与安全,"[MY] ch10 p.196-198 + [ENG]",多角色/个人数据,references/defect_discovery.md,active,,具体检查项为工程经验
+DEF-10,v0.2,三态定性,"[EI] ch5 p.62-63",发现异常行为,references/defect_discovery.md,active,,
+LEGACY-01,v0.1(archive),项目级速查表,混合,通用,knowledge/08_derived_rules/test_design_decision_rules.md,archived,,"非规范:保留供历史对照,禁止与新规则同时编辑"

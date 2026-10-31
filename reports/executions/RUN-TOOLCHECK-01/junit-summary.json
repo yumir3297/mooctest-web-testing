@@ -1,0 +1,22 @@
+{
+  "run_id": "RUN-TOOLCHECK-01",
+  "exit_code": 0,
+  "elapsed_seconds": 7.53,
+  "junit": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-TOOLCHECK-01\\junit.xml",
+  "console_log": "D:\\桌面\\软件测试competion\\evidence\\logs\\RUN-TOOLCHECK-01\\pytest-console.log",
+  "tests": 1,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "time": 6.497,
+  "xfailed": 0,
+  "cases": [
+    {
+      "name": "test_add_todo",
+      "classname": "tests.test_todomvc",
+      "time": 6.123,
+      "status": "passed",
+      "message": ""
+    }
+  ]
+}

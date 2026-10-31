@@ -1,0 +1,14 @@
+﻿case_id,title,priority,requirement,precondition,data,steps,expected,automation,status
+TC-TODO-001,新增一条待办,P0,R1/R11,空列表,Buy milk,输入并回车,列表出现 Buy milk；计数 1 item left；状态栏可见,tests/test_todomvc.py::test_add_todo,已执行-通过
+TC-TODO-002,完成待办并按状态过滤,P0,R2,两条未完成,,勾选第一条；切换 Completed/Active,计数 1；Completed 仅第一条；Active 仅第二条,test_complete_and_filter,已执行-通过
+TC-TODO-003,编辑待办标题,P1,R3,一条 Old title,New title,双击标题，改为 New title，回车,列表仅显示 New title,test_edit_todo,已执行-通过
+TC-TODO-004,删除待办,P1,R4,一条 Delete me,,悬停并点击删除,列表为空；状态栏隐藏,test_delete_todo,已执行-通过
+TC-TODO-005,空与纯空白输入被拒绝,P0,R5,空列表,空字符串；三个空格,直接回车；输入三个空格回车,列表保持为空,test_empty_and_whitespace_rejected,已执行-通过
+TC-TODO-006,输入长度边界,P1,R6,空列表,1 字符 A；200 个 B,输入 1 字符；再输入 200 字符,两条均完整保存,test_boundary_lengths,已执行-通过
+TC-TODO-007,HTML/脚本文本被转义,P0,R7,空列表,<img src=x onerror=window.__xss=1>,输入 HTML 事件属性文本,按纯文本显示；window.__xss 未定义；无弹窗,test_text_is_escaped,已执行-通过
+TC-TODO-008,刷新后持久化,P1,R8,一条未完成、一条已完成,,刷新页面,两条及完成状态保留,待实现,未执行
+TC-TODO-009,全部完成/取消全部,P1,R9,两条未完成,,点击 toggle-all；再次点击,全部完成；再全部未完成；计数同步,待实现,未执行
+TC-TODO-010,清除已完成,P1,R10,一条未完成、一条已完成,,点击 Clear completed,仅移除已完成项,待实现,未执行
+TC-TODO-011,计数单复数,P2,R11,0/1/2 条,0 条、1 条、2 条,观察状态栏,0 条隐藏；1 条 item；2 条 items,部分由 001/002 覆盖,部分覆盖
+TC-TODO-012,键盘可访问性,P2,R12,空列表,,Tab 到输入框，输入并 Enter；Tab 到复选框,核心操作可键盘完成,待实现,未执行
+TC-TODO-099,受控失败断言,P2,取证链路,空列表,Only one,新增 Only one 后故意断言剩余计数为 2,断言按预期失败并保存截图/源码/日志,tests/test_todomvc_expected_failure.py,已执行-xfailed，不计通过率

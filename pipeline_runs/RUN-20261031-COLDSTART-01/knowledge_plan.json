@@ -1,0 +1,24 @@
+{
+  "stage": "requirement-analysis",
+  "skills": [
+    "test-design-methodology",
+    "test-case-design"
+  ],
+  "knowledge": [
+    "docs/WORKFLOW.md",
+    ".opencode/skills/test-design-methodology/references/method_selector.md"
+  ],
+  "rules": [
+    "MS-00",
+    "MS-09",
+    "MS-10"
+  ],
+  "avoid": [
+    {
+      "path": "knowledge/08_derived_rules/test_design_decision_rules.md",
+      "replacement": ".opencode/skills/test-design-methodology/references/method_selector.md",
+      "reason": "旧速查表的方法矩阵与四点边界已作废"
+    }
+  ],
+  "notes": "只做需求分诊与可测性判定，不产出用例与脚本。"
+}

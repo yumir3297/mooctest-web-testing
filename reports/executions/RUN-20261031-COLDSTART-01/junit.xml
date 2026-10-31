@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="5" skipped="0" tests="30" time="34.669" timestamp="2026-10-31T01:03:59.724275+08:00" hostname="LAPTOP-F6P4DP1J"><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_001" time="2.208" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_002" time="0.839"><failure message="AssertionError: 优惠金额: expected=120 actual='0'">tests\generated\cartcheck\test_cartcheck.py:111: in test_tc_cart_002
+    _assert_amounts(case_ctx, observed, 120, 680)
+tests\generated\cartcheck\test_cartcheck.py:65: in _assert_amounts
+    case_ctx.check(discount == expected_discount, "优惠金额", expected_discount, raw_discount)
+tests\conftest.py:444: in check
+    raise AssertionError(f"{name}: expected={expected!r} actual={actual!r}")
+E   AssertionError: 优惠金额: expected=120 actual='0'</failure></testcase><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_003" time="0.843"><failure message="AssertionError: 优惠金额: expected=55 actual='56'">tests\generated\cartcheck\test_cartcheck.py:123: in test_tc_cart_003
+    _assert_amounts(case_ctx, observed, 55, 500)
+tests\generated\cartcheck\test_cartcheck.py:65: in _assert_amounts
+    case_ctx.check(discount == expected_discount, "优惠金额", expected_discount, raw_discount)
+tests\conftest.py:444: in check
+    raise AssertionError(f"{name}: expected={expected!r} actual={actual!r}")
+E   AssertionError: 优惠金额: expected=55 actual='56'</failure></testcase><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_004" time="0.953" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_005" time="0.864" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_006" time="0.939" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_007" time="0.879" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_008" time="0.813" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_009" time="0.798" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_010" time="0.791" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_011" time="0.785"><failure message="AssertionError: 优惠金额: expected=999 actual='1000'">tests\generated\cartcheck\test_cartcheck.py:222: in test_tc_cart_011
+    _assert_amounts(case_ctx, observed, 999, 8999)
+tests\generated\cartcheck\test_cartcheck.py:65: in _assert_amounts
+    case_ctx.check(discount == expected_discount, "优惠金额", expected_discount, raw_discount)
+tests\conftest.py:444: in check
+    raise AssertionError(f"{name}: expected={expected!r} actual={actual!r}")
+E   AssertionError: 优惠金额: expected=999 actual='1000'</failure></testcase><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_012" time="0.750"><failure message="AssertionError: 优惠金额: expected=999 actual='1000'">tests\generated\cartcheck\test_cartcheck.py:234: in test_tc_cart_012
+    _assert_amounts(case_ctx, observed, 999, 9000)
+tests\generated\cartcheck\test_cartcheck.py:65: in _assert_amounts
+    case_ctx.check(discount == expected_discount, "优惠金额", expected_discount, raw_discount)
+tests\conftest.py:444: in check
+    raise AssertionError(f"{name}: expected={expected!r} actual={actual!r}")
+E   AssertionError: 优惠金额: expected=999 actual='1000'</failure></testcase><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_013" time="0.811" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_014" time="0.845" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_015" time="0.820" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_016" time="0.781" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_017" time="0.840" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_018" time="0.878" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_019" time="0.876" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_020" time="0.875" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_021" time="0.799"><failure message="AssertionError: 提示文案: expected='优惠券码无效' actual='(空)'">tests\generated\cartcheck\test_cartcheck.py:348: in test_tc_cart_021
+    _assert_error(case_ctx, observed, MSG_COUPON)
+tests\generated\cartcheck\test_cartcheck.py:81: in _assert_error
+    case_ctx.check(observed["message"] == expected_message, "提示文案", expected_message,
+tests\conftest.py:444: in check
+    raise AssertionError(f"{name}: expected={expected!r} actual={actual!r}")
+E   AssertionError: 提示文案: expected='优惠券码无效' actual='(空)'</failure></testcase><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_022" time="0.899" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_023" time="0.901" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_024" time="0.901" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_025" time="0.927" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_026" time="0.962" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_027" time="0.958" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_028" time="0.948" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_029" time="0.898" /><testcase classname="tests.generated.cartcheck.test_cartcheck" name="test_tc_cart_030" time="3.257" /></testsuite></testsuites>

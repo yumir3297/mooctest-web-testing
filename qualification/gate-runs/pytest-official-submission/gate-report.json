@@ -1,0 +1,230 @@
+{
+  "schema_version": "1.0",
+  "run_id": "RUN-SAMPLE-DEFECTREPORTED",
+  "generated_at": "2026-10-31T12:02:48+08:00",
+  "gate_status": {
+    "G0": "BLOCKED",
+    "G1": "PASS",
+    "G2": "PASS",
+    "G3": "PASS",
+    "G4": "SKIP",
+    "G5": "SKIP"
+  },
+  "delivery_verdict": "BLOCKED",
+  "test_verdict": "FAIL",
+  "findings": [
+    {
+      "gate": "G0",
+      "code": "ENV_CHECK_UNAVAILABLE",
+      "severity": "WARNING",
+      "subject": "tools/env_check.py",
+      "message": "env_check.py 不存在或无法输出 JSON：跳过实时环境探测，仅使用 manifest 记录（本次运行显式关闭）",
+      "evidence": "",
+      "advisory": true
+    },
+    {
+      "gate": "G0",
+      "code": "AI_USE_NOT_CONFIRMED",
+      "severity": "BLOCKED",
+      "subject": "RUN-SAMPLE-DEFECTREPORTED",
+      "message": "正式提交模式下未声明 AI 使用合规确认（meta.ai_use_confirmed）：阻断。门禁不判断官方是否允许 AI，只要求提交者给出书面依据",
+      "evidence": ""
+    },
+    {
+      "gate": "G4",
+      "code": "PACKAGE_SKIPPED",
+      "severity": "WARNING",
+      "subject": "submission",
+      "message": "未提供 --submission：交付包结构与哈希未校验",
+      "evidence": "",
+      "advisory": true
+    }
+  ],
+  "summary": {
+    "FAIL": 0,
+    "WARNING": 2,
+    "BLOCKED": 1,
+    "UNVERIFIED": 0,
+    "PASS": 86
+  },
+  "advisory": {
+    "count": 2,
+    "codes": [
+      "ENV_CHECK_UNAVAILABLE",
+      "PACKAGE_SKIPPED"
+    ],
+    "note": "advisory findings 只记录不阻断本地演练；--official-submission 会把合规项升级为 BLOCKED"
+  },
+  "exit_code": 2,
+  "verdict_notes": {
+    "delivery": "测试成果是否可信、可交付（确认缺陷不会拉低该结论）",
+    "test": "存在失败用例或 JUnit 记录 failure/error"
+  },
+  "inputs": {
+    "manifest": "D:\\桌面\\软件测试competion\\qualification\\positive\\defect-reported\\manifest.json",
+    "manifest_schema": "1.1",
+    "manifest_error": null,
+    "cases": [
+      "D:\\桌面\\软件测试competion\\qualification\\positive\\defect-reported\\cases.csv"
+    ],
+    "cases_candidates": [],
+    "junit_summary": "D:\\桌面\\软件测试competion\\qualification\\positive\\defect-reported\\junit-summary.json",
+    "requirements": "D:\\桌面\\软件测试competion\\qualification\\positive\\defect-reported\\requirements.csv",
+    "submission": null,
+    "official_submission": true,
+    "gates": [
+      "G0",
+      "G1",
+      "G2",
+      "G3",
+      "G4",
+      "G5"
+    ]
+  },
+  "execution": {
+    "manifest_case_counts": {
+      "passed": 1,
+      "failed": 1,
+      "not-run": 1
+    },
+    "junit_summary_passed": 1,
+    "junit_summary_counts": {
+      "tests": 2,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "xfailed": 0
+    },
+    "junit_xml_counts": {
+      "tests": 2,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "xfailed": 0
+    },
+    "collected_nodes": [
+      "tests/test_sample.py::test_add_valid",
+      "tests/test_sample.py::test_reject_blank_title"
+    ],
+    "failed_case_triage": {
+      "TC-SAMPLE-002": "已登记确认缺陷"
+    }
+  },
+  "evidence": {
+    "verify": {
+      "checked": 3,
+      "ok": 3,
+      "missing": 0,
+      "mismatched": 0,
+      "cross_run": 0,
+      "unscoped": 0
+    },
+    "manifest_audit": {
+      "evidence_total": 3,
+      "cross_run": 0,
+      "unscoped": 0,
+      "examples": []
+    }
+  },
+  "compliance": {
+    "ai_use_confirmed": false,
+    "ai_status": "UNVERIFIED",
+    "official_submission": true,
+    "env_check": null
+  },
+  "stats": {
+    "G0": {
+      "environment_keys": [
+        "chrome",
+        "chromedriver",
+        "pytest",
+        "python",
+        "selenium",
+        "target"
+      ],
+      "missing_env_keys": [],
+      "chrome_major": 156,
+      "chromedriver_major": 156,
+      "ai_use_confirmed": false,
+      "ai_use_raw": ""
+    },
+    "G1": {
+      "rows": 3,
+      "unique_case_ids": 3,
+      "case_types": {
+        "positive": 1,
+        "negative": 1,
+        "boundary": 1
+      },
+      "sources": [
+        "D:\\桌面\\软件测试competion\\qualification\\positive\\defect-reported\\cases.csv"
+      ]
+    },
+    "G2": {
+      "manifest_case_counts": {
+        "passed": 1,
+        "failed": 1,
+        "not-run": 1
+      },
+      "junit_summary": "D:\\桌面\\软件测试competion\\qualification\\positive\\defect-reported\\junit-summary.json",
+      "junit_summary_state": "ok",
+      "junit_summary_passed": 1,
+      "junit_summary_counts": {
+        "tests": 2,
+        "failures": 1,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0
+      },
+      "junit_xml": "D:\\桌面\\软件测试competion\\qualification\\positive\\defect-reported\\junit.xml",
+      "junit_xml_counts": {
+        "tests": 2,
+        "failures": 1,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0
+      },
+      "junit_case_names": [
+        "test_add_valid",
+        "test_reject_blank_title"
+      ],
+      "automation": [
+        {
+          "case_id": "TC-SAMPLE-001",
+          "file": "tests/test_sample.py",
+          "func": "test_add_valid"
+        },
+        {
+          "case_id": "TC-SAMPLE-002",
+          "file": "tests/test_sample.py",
+          "func": "test_reject_blank_title"
+        }
+      ],
+      "collected_nodes": [
+        "tests/test_sample.py::test_add_valid",
+        "tests/test_sample.py::test_reject_blank_title"
+      ]
+    },
+    "G3": {
+      "evidence_verify": {
+        "checked": 3,
+        "ok": 3,
+        "missing": 0,
+        "mismatched": 0,
+        "cross_run": 0,
+        "unscoped": 0
+      },
+      "manifest_audit": {
+        "evidence_total": 3,
+        "cross_run": 0,
+        "unscoped": 0,
+        "examples": []
+      },
+      "failed_case_triage": {
+        "TC-SAMPLE-002": "已登记确认缺陷"
+      },
+      "unconfirmed_defects": 0,
+      "confirmed_defects": 1
+    }
+  }
+}

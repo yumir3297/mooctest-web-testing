@@ -1,0 +1,4 @@
+2026-10-30 17:48:25,389 INFO case=TC-TODO-007 run=RUN-AUDIT-20261030-02
+2026-10-30 17:48:25,389 INFO STEP 输入包含 HTML 事件属性的文本
+2026-10-30 17:48:25,561 INFO CHECK HTML 文本按纯文本展示 passed=True expected=['<img src=x onerror=window.__xss=1>'] actual=['<img src=x onerror=window.__xss=1>']
+2026-10-30 17:48:25,592 INFO CHECK 未执行注入脚本 passed=True expected=None actual=None

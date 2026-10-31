@@ -1,0 +1,14 @@
+requirement_id,text,source,status,constraint
+REQ-01,订单金额必须是整数，范围 1-9999（含端点），单位元；该范围内的整数为有效输入,fixtures/cartcheck/REQUIREMENTS.md R1（第 27-28 行）,可测,"ORACLE-SPEC；整数、闭区间 [1, 9999]"
+REQ-02,金额为空、非整数（含小数）、小于 1、大于 9999 时提示「金额需为 1-9999 的整数」，优惠金额与应付金额均显示「-」，不进行计算,fixtures/cartcheck/REQUIREMENTS.md R1（第 29 行）,可测,ORACLE-SPEC；提示文案与「-」为字面量
+REQ-03,优惠券码必须是 6 位，匹配 ^CP[A-Z0-9]{4}$（CP + 4 位大写字母或数字）；合法券码不产生券码错误提示,fixtures/cartcheck/REQUIREMENTS.md R2（第 32 行）,可测,"ORACLE-SPEC；正则字符集 {A-Z, 0-9}，长度恰为 6"
+REQ-04,券码长度不符、前缀不符、含小写字母、含空格或符号时提示「优惠券码无效」，优惠金额与应付金额均显示「-」，不产生任何金额结果；券码校验先于折扣计算,fixtures/cartcheck/REQUIREMENTS.md R2（第 33-34 行）,可测,ORACLE-SPEC；无效类互斥且优先级最高
+REQ-05,金卡 gold 且订单金额 >= 500 时优惠率 10%，优惠金额 = floor(订单金额 x 0.10),fixtures/cartcheck/REQUIREMENTS.md R3（第 41 行、第 46 行）,可测,ORACLE-DERIVED；向下取整，不得四舍五入
+REQ-06,银卡 silver 且订单金额 >= 800 时优惠率 15%，优惠金额 = floor(订单金额 x 0.15),fixtures/cartcheck/REQUIREMENTS.md R3（第 42 行、第 46 行）,可测,ORACLE-DERIVED；向下取整，不得四舍五入
+REQ-07,普通会员 regular 任意金额优惠 0；金卡/银卡未达门槛时优惠 0，应付金额等于订单金额,fixtures/cartcheck/REQUIREMENTS.md R3（第 43-44 行）,可测,ORACLE-SPEC
+REQ-08,勾选叠加积分时在折扣之后再减 1 元（应付 = 金额 - 优惠 - 1），应付金额不得为负，最小为 0；未勾选时不扣减,fixtures/cartcheck/REQUIREMENTS.md R4（第 50-52 行）,可测,ORACLE-DERIVED；含输出下边界 0
+REQ-09,普通会员不参与折扣，优惠金额 0，应付等于订单金额（叠加积分时再减 1），且不因无折扣报错,fixtures/cartcheck/REQUIREMENTS.md R5（第 55-56 行）,可测,ORACLE-SPEC；「不报错」的可观察判据为不出现两种错误文案
+REQ-10,需求第 3 节计算示例 E1-E7 必须逐条成立（E1 50/450、E2 120/680、E3 55/500、E4 50/449、E5 0/1000、E6 0/499、E7 0/799）,fixtures/cartcheck/REQUIREMENTS.md 第 3 节（第 62-68 行）,可测,ORACLE-SPEC；7 组输入输出对逐条校验
+REQ-11,需求第 4 节边界清单必须成立：金额 0 无效/1 有效/2 有效/9998 有效/9999 有效/10000 无效；金卡门槛 499 无折扣/500 10%；银卡门槛 799 无折扣/800 15%；券码长度 5、6、7；券码字符集大写字母、数字、小写字母、符号、空格,fixtures/cartcheck/REQUIREMENTS.md 第 4 节（第 72-77 行）,可测,ORACLE-SPEC + ORACLE-DERIVED；边界值全部在页面可输入
+REQ-12,Chrome 1280x900 视口下页面可正常操作，无横向滚动遮挡输入区；计算结果区域在计算前后都可见,fixtures/cartcheck/REQUIREMENTS.md 第 5 节（第 81 行、第 83 行）,可测,ORACLE-PARTIAL；判据为 scrollWidth <= clientWidth 且输出元素计算前后均 displayed
+REQ-13,不出现 JavaScript 弹窗（alert）；页面加载后 2 秒内可交互,fixtures/cartcheck/REQUIREMENTS.md 第 5 节（第 82-83 行）,可测,ORACLE-PARTIAL；判据为无 alert 对话框且 2s 内可点击计算按钮并得到结果

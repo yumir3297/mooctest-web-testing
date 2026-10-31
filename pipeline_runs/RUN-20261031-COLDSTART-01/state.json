@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "run_id": "RUN-20261031-COLDSTART-01",
+  "target": "http://127.0.0.1:8765/",
+  "requirement": "fixtures/cartcheck/REQUIREMENTS.md",
+  "scope": "full",
+  "slug": "cartcheck",
+  "status": "complete",
+  "current_stage": "COMPLETE",
+  "stages": [
+    {
+      "name": "INIT",
+      "status": "done",
+      "started_at": "2026-10-31T00:57:26+08:00",
+      "finished_at": "2026-10-31T00:57:29+08:00",
+      "note": "",
+      "artifacts": [
+        "pipeline_runs/RUN-20261031-COLDSTART-01/state.json",
+        "pipeline_runs/RUN-20261031-COLDSTART-01/requirement.md"
+      ]
+    },
+    {
+      "name": "ENV_CHECK",
+      "status": "done",
+      "started_at": "2026-10-31T00:57:29+08:00",
+      "finished_at": "2026-10-31T00:57:36+08:00",
+      "note": "",
+      "artifacts": [
+        "pipeline_runs/RUN-20261031-COLDSTART-01/env_check.json"
+      ]
+    },
+    {
+      "name": "KNOWLEDGE_LOAD",
+      "status": "done",
+      "started_at": "2026-10-31T00:57:36+08:00",
+      "finished_at": "2026-10-31T00:57:56+08:00",
+      "note": "",
+      "artifacts": [
+        "pipeline_runs/RUN-20261031-COLDSTART-01/knowledge_plan.json"
+      ]
+    },
+    {
+      "name": "REQUIREMENT_ANALYSIS",
+      "status": "done",
+      "started_at": "2026-10-31T00:57:56+08:00",
+      "finished_at": "2026-10-31T00:59:20+08:00",
+      "note": "",
+      "artifacts": [
+        "pipeline_runs/RUN-20261031-COLDSTART-01/requirements.json",
+        "reports/test-cases/cartcheck-requirements.md"
+      ]
+    },
+    {
+      "name": "BROWSER_EXPLORATION",
+      "status": "done",
+      "started_at": "2026-10-31T00:59:20+08:00",
+      "finished_at": "2026-10-31T01:00:42+08:00",
+      "note": "",
+      "artifacts": [
+        "reports/executions/RUN-20261031-COLDSTART-01/exploration.md",
+        "evidence/raw/RUN-20261031-COLDSTART-01/EXPLORE/EXPLORE__e1-result__element__20261030T165938-381.png",
+        "evidence/raw/RUN-20261031-COLDSTART-01/EXPLORE/EXPLORE__e1-result__element__20261030T170005-325.png",
+        "evidence/raw/RUN-20261031-COLDSTART-01/EXPLORE/EXPLORE__initial__viewport__20261030T165937-969.png",
+        "evidence/raw/RUN-20261031-COLDSTART-01/EXPLORE/EXPLORE__initial__viewport__20261030T170004-883.png"
+      ]
+    },
+    {
+      "name": "TEST_DESIGN",
+      "status": "done",
+      "started_at": "2026-10-31T01:00:42+08:00",
+      "finished_at": "2026-10-31T01:02:12+08:00",
+      "note": "",
+      "artifacts": [
+        "reports/test-cases/cartcheck-test-cases.csv",
+        "reports/test-cases/cartcheck-test-cases.md"
+      ]
+    },
+    {
+      "name": "CASE_REVIEW",
+      "status": "done",
+      "started_at": "2026-10-31T01:02:12+08:00",
+      "finished_at": "2026-10-31T01:02:14+08:00",
+      "note": "",
+      "artifacts": [
+        "pipeline_runs/RUN-20261031-COLDSTART-01/case-review.md"
+      ]
+    },
+    {
+      "name": "SCRIPT_GENERATION",
+      "status": "done",
+      "started_at": "2026-10-31T01:02:14+08:00",
+      "finished_at": "2026-10-31T01:03:52+08:00",
+      "note": "",
+      "artifacts": [
+        "tests/generated/cartcheck/test_cartcheck.py",
+        "tests/generated/cartcheck/page_cartcheck.py"
+      ]
+    },
+    {
+      "name": "SCRIPT_VALIDATION",
+      "status": "done",
+      "started_at": "2026-10-31T01:03:52+08:00",
+      "finished_at": "2026-10-31T01:03:54+08:00",
+      "note": "",
+      "artifacts": [
+        "pipeline_runs/RUN-20261031-COLDSTART-01/script-validation.json"
+      ]
+    },
+    {
+      "name": "TEST_EXECUTION",
+      "status": "done",
+      "started_at": "2026-10-31T01:03:54+08:00",
+      "finished_at": "2026-10-31T01:06:34+08:00",
+      "note": "",
+      "artifacts": [
+        "reports/executions/RUN-20261031-COLDSTART-01/junit-summary.json"
+      ]
+    },
+    {
+      "name": "FAILURE_TRIAGE",
+      "status": "done",
+      "started_at": "2026-10-31T01:06:34+08:00",
+      "finished_at": "2026-10-31T01:06:36+08:00",
+      "note": "",
+      "artifacts": [
+        "pipeline_runs/RUN-20261031-COLDSTART-01/triage.md"
+      ]
+    },
+    {
+      "name": "EVIDENCE_REVIEW",
+      "status": "done",
+      "started_at": "2026-10-31T01:06:36+08:00",
+      "finished_at": "2026-10-31T01:07:01+08:00",
+      "note": "",
+      "artifacts": [
+        "pipeline_runs/RUN-20261031-COLDSTART-01/evidence-review.json"
+      ]
+    },
+    {
+      "name": "COVERAGE_REVIEW",
+      "status": "done",
+      "started_at": "2026-10-31T01:07:01+08:00",
+      "finished_at": "2026-10-31T01:07:02+08:00",
+      "note": "",
+      "artifacts": [
+        "pipeline_runs/RUN-20261031-COLDSTART-01/coverage.md"
+      ]
+    },
+    {
+      "name": "REPORT_GENERATION",
+      "status": "done",
+      "started_at": "2026-10-31T01:07:02+08:00",
+      "finished_at": "2026-10-31T01:07:17+08:00",
+      "note": "",
+      "artifacts": [
+        "reports/executions/RUN-20261031-COLDSTART-01/report.md",
+        "reports/executions/RUN-20261031-COLDSTART-01/report.json"
+      ]
+    },
+    {
+      "name": "QUALITY_GATE",
+      "status": "done",
+      "started_at": "2026-10-31T01:07:17+08:00",
+      "finished_at": "2026-10-31T01:07:37+08:00",
+      "note": "",
+      "artifacts": [
+        "qualification/gate-runs/RUN-20261031-COLDSTART-01/gate-report.json"
+      ]
+    },
+    {
+      "name": "PACKAGE_PREPARATION",
+      "status": "done",
+      "started_at": "2026-10-31T01:07:37+08:00",
+      "finished_at": "2026-10-31T01:09:17+08:00",
+      "note": "",
+      "artifacts": [
+        "submission/RUN-20261031-COLDSTART-01/submission.zip",
+        "submission/RUN-20261031-COLDSTART-01/manifest.json"
+      ]
+    },
+    {
+      "name": "COMPLETE",
+      "status": "done",
+      "started_at": "2026-10-31T01:09:17+08:00",
+      "finished_at": "2026-10-31T01:09:19+08:00",
+      "note": "",
+      "artifacts": [
+        "pipeline_runs/RUN-20261031-COLDSTART-01/FINAL.md"
+      ]
+    }
+  ],
+  "artifacts": {},
+  "repairs": [],
+  "repair_limit": 3,
+  "created_at": "2026-10-31T00:57:26+08:00",
+  "updated_at": "2026-10-31T01:09:19+08:00",
+  "finished_at": "2026-10-31T01:09:19+08:00",
+  "revision": 18
+}

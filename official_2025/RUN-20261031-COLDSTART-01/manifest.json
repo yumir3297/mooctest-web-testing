@@ -1,0 +1,560 @@
+{
+  "schema_version": "1.0",
+  "profile": "official-2025",
+  "official_format_confirmed": "2025-baseline-only",
+  "official_format_note": "依据 2025 赛题包；2026 官方格式未确认",
+  "run_id": "RUN-20261031-COLDSTART-01",
+  "app": "CartCheck",
+  "target": "http://127.0.0.1:8765/",
+  "case_count": 30,
+  "requirement_count": 10,
+  "screenshot_count": 30,
+  "cases_missing_screenshot": [],
+  "cases_with_multiple_requirements": [
+    {
+      "case_id": "TC-CART-001",
+      "requirement_ids": "REQ-10;REQ-05",
+      "chosen": "R010"
+    },
+    {
+      "case_id": "TC-CART-002",
+      "requirement_ids": "REQ-10;REQ-06",
+      "chosen": "R010"
+    },
+    {
+      "case_id": "TC-CART-003",
+      "requirement_ids": "REQ-10;REQ-05",
+      "chosen": "R010"
+    },
+    {
+      "case_id": "TC-CART-004",
+      "requirement_ids": "REQ-10;REQ-08",
+      "chosen": "R010"
+    },
+    {
+      "case_id": "TC-CART-005",
+      "requirement_ids": "REQ-10;REQ-07",
+      "chosen": "R010"
+    },
+    {
+      "case_id": "TC-CART-006",
+      "requirement_ids": "REQ-10;REQ-07;REQ-11",
+      "chosen": "R010"
+    },
+    {
+      "case_id": "TC-CART-007",
+      "requirement_ids": "REQ-10;REQ-07;REQ-11",
+      "chosen": "R010"
+    },
+    {
+      "case_id": "TC-CART-008",
+      "requirement_ids": "REQ-02;REQ-11",
+      "chosen": "R002"
+    },
+    {
+      "case_id": "TC-CART-009",
+      "requirement_ids": "REQ-01;REQ-11",
+      "chosen": "R001"
+    },
+    {
+      "case_id": "TC-CART-010",
+      "requirement_ids": "REQ-01;REQ-11",
+      "chosen": "R001"
+    },
+    {
+      "case_id": "TC-CART-011",
+      "requirement_ids": "REQ-01;REQ-05;REQ-11",
+      "chosen": "R001"
+    },
+    {
+      "case_id": "TC-CART-012",
+      "requirement_ids": "REQ-01;REQ-05;REQ-11",
+      "chosen": "R001"
+    },
+    {
+      "case_id": "TC-CART-013",
+      "requirement_ids": "REQ-02;REQ-11",
+      "chosen": "R002"
+    },
+    {
+      "case_id": "TC-CART-014",
+      "requirement_ids": "REQ-05;REQ-11",
+      "chosen": "R005"
+    },
+    {
+      "case_id": "TC-CART-015",
+      "requirement_ids": "REQ-06;REQ-11",
+      "chosen": "R006"
+    },
+    {
+      "case_id": "TC-CART-019",
+      "requirement_ids": "REQ-04;REQ-11",
+      "chosen": "R004"
+    },
+    {
+      "case_id": "TC-CART-020",
+      "requirement_ids": "REQ-04;REQ-11",
+      "chosen": "R004"
+    },
+    {
+      "case_id": "TC-CART-021",
+      "requirement_ids": "REQ-04;REQ-11",
+      "chosen": "R004"
+    },
+    {
+      "case_id": "TC-CART-022",
+      "requirement_ids": "REQ-04;REQ-11",
+      "chosen": "R004"
+    },
+    {
+      "case_id": "TC-CART-023",
+      "requirement_ids": "REQ-04;REQ-11",
+      "chosen": "R004"
+    },
+    {
+      "case_id": "TC-CART-027",
+      "requirement_ids": "REQ-08;REQ-09",
+      "chosen": "R008"
+    },
+    {
+      "case_id": "TC-CART-028",
+      "requirement_ids": "REQ-07;REQ-08",
+      "chosen": "R007"
+    },
+    {
+      "case_id": "TC-CART-029",
+      "requirement_ids": "REQ-03;REQ-11",
+      "chosen": "R003"
+    },
+    {
+      "case_id": "TC-CART-030",
+      "requirement_ids": "REQ-12;REQ-13",
+      "chosen": "R012"
+    }
+  ],
+  "mapping": [
+    {
+      "case_id": "TC-CART-001",
+      "official_id": "CartCheck_R010_001",
+      "requirement": "R010",
+      "screenshot": "01040231406_CartCheck_R010_001.png",
+      "source_evidence": "EV-c1d3831593"
+    },
+    {
+      "case_id": "TC-CART-002",
+      "official_id": "CartCheck_R010_002",
+      "requirement": "R010",
+      "screenshot": "01040331655_CartCheck_R010_002.png",
+      "source_evidence": "EV-251a55b185"
+    },
+    {
+      "case_id": "TC-CART-003",
+      "official_id": "CartCheck_R010_003",
+      "requirement": "R010",
+      "screenshot": "01040431808_CartCheck_R010_003.png",
+      "source_evidence": "EV-f172e16f67"
+    },
+    {
+      "case_id": "TC-CART-004",
+      "official_id": "CartCheck_R010_004",
+      "requirement": "R010",
+      "screenshot": "01040631079_CartCheck_R010_004.png",
+      "source_evidence": "EV-2e6ac19761"
+    },
+    {
+      "case_id": "TC-CART-005",
+      "official_id": "CartCheck_R010_005",
+      "requirement": "R010",
+      "screenshot": "01040731022_CartCheck_R010_005.png",
+      "source_evidence": "EV-ee9945159c"
+    },
+    {
+      "case_id": "TC-CART-006",
+      "official_id": "CartCheck_R010_006",
+      "requirement": "R010",
+      "screenshot": "01040831089_CartCheck_R010_006.png",
+      "source_evidence": "EV-9e2dfa97b5"
+    },
+    {
+      "case_id": "TC-CART-007",
+      "official_id": "CartCheck_R010_007",
+      "requirement": "R010",
+      "screenshot": "01040931070_CartCheck_R010_007.png",
+      "source_evidence": "EV-a5f762fba7"
+    },
+    {
+      "case_id": "TC-CART-008",
+      "official_id": "CartCheck_R002_001",
+      "requirement": "R002",
+      "screenshot": "01041031982_CartCheck_R002_001.png",
+      "source_evidence": "EV-4cf2dce3e2"
+    },
+    {
+      "case_id": "TC-CART-009",
+      "official_id": "CartCheck_R001_001",
+      "requirement": "R001",
+      "screenshot": "01041031896_CartCheck_R001_001.png",
+      "source_evidence": "EV-26140b366a"
+    },
+    {
+      "case_id": "TC-CART-010",
+      "official_id": "CartCheck_R001_002",
+      "requirement": "R001",
+      "screenshot": "01041131787_CartCheck_R001_002.png",
+      "source_evidence": "EV-106e62a284"
+    },
+    {
+      "case_id": "TC-CART-011",
+      "official_id": "CartCheck_R001_003",
+      "requirement": "R001",
+      "screenshot": "01041231696_CartCheck_R001_003.png",
+      "source_evidence": "EV-0a25812b8d"
+    },
+    {
+      "case_id": "TC-CART-012",
+      "official_id": "CartCheck_R001_004",
+      "requirement": "R001",
+      "screenshot": "01041331762_CartCheck_R001_004.png",
+      "source_evidence": "EV-5bf2046869"
+    },
+    {
+      "case_id": "TC-CART-013",
+      "official_id": "CartCheck_R002_002",
+      "requirement": "R002",
+      "screenshot": "01041431861_CartCheck_R002_002.png",
+      "source_evidence": "EV-a55359d604"
+    },
+    {
+      "case_id": "TC-CART-014",
+      "official_id": "CartCheck_R005_001",
+      "requirement": "R005",
+      "screenshot": "01041531809_CartCheck_R005_001.png",
+      "source_evidence": "EV-ba9d0c6ca2"
+    },
+    {
+      "case_id": "TC-CART-015",
+      "official_id": "CartCheck_R006_001",
+      "requirement": "R006",
+      "screenshot": "01041631724_CartCheck_R006_001.png",
+      "source_evidence": "EV-104634f454"
+    },
+    {
+      "case_id": "TC-CART-016",
+      "official_id": "CartCheck_R002_003",
+      "requirement": "R002",
+      "screenshot": "01041731608_CartCheck_R002_003.png",
+      "source_evidence": "EV-bcfd8ff112"
+    },
+    {
+      "case_id": "TC-CART-017",
+      "official_id": "CartCheck_R002_004",
+      "requirement": "R002",
+      "screenshot": "01041831541_CartCheck_R002_004.png",
+      "source_evidence": "EV-2ff66c4d70"
+    },
+    {
+      "case_id": "TC-CART-018",
+      "official_id": "CartCheck_R002_005",
+      "requirement": "R002",
+      "screenshot": "01041931525_CartCheck_R002_005.png",
+      "source_evidence": "EV-3d04225198"
+    },
+    {
+      "case_id": "TC-CART-019",
+      "official_id": "CartCheck_R004_001",
+      "requirement": "R004",
+      "screenshot": "01042031492_CartCheck_R004_001.png",
+      "source_evidence": "EV-0c271559e4"
+    },
+    {
+      "case_id": "TC-CART-020",
+      "official_id": "CartCheck_R004_002",
+      "requirement": "R004",
+      "screenshot": "01042131466_CartCheck_R004_002.png",
+      "source_evidence": "EV-c0f07467ff"
+    },
+    {
+      "case_id": "TC-CART-021",
+      "official_id": "CartCheck_R004_003",
+      "requirement": "R004",
+      "screenshot": "01042231411_CartCheck_R004_003.png",
+      "source_evidence": "EV-38a49db792"
+    },
+    {
+      "case_id": "TC-CART-022",
+      "official_id": "CartCheck_R004_004",
+      "requirement": "R004",
+      "screenshot": "01042331610_CartCheck_R004_004.png",
+      "source_evidence": "EV-c9095e4331"
+    },
+    {
+      "case_id": "TC-CART-023",
+      "official_id": "CartCheck_R004_005",
+      "requirement": "R004",
+      "screenshot": "01042431613_CartCheck_R004_005.png",
+      "source_evidence": "EV-c20d9f348c"
+    },
+    {
+      "case_id": "TC-CART-024",
+      "official_id": "CartCheck_R004_006",
+      "requirement": "R004",
+      "screenshot": "01042531628_CartCheck_R004_006.png",
+      "source_evidence": "EV-114ecaf534"
+    },
+    {
+      "case_id": "TC-CART-025",
+      "official_id": "CartCheck_R004_007",
+      "requirement": "R004",
+      "screenshot": "01042631656_CartCheck_R004_007.png",
+      "source_evidence": "EV-f871fd2bea"
+    },
+    {
+      "case_id": "TC-CART-026",
+      "official_id": "CartCheck_R008_001",
+      "requirement": "R008",
+      "screenshot": "01042731722_CartCheck_R008_001.png",
+      "source_evidence": "EV-290e19e60f"
+    },
+    {
+      "case_id": "TC-CART-027",
+      "official_id": "CartCheck_R008_002",
+      "requirement": "R008",
+      "screenshot": "01042831785_CartCheck_R008_002.png",
+      "source_evidence": "EV-33ae7d1b74"
+    },
+    {
+      "case_id": "TC-CART-028",
+      "official_id": "CartCheck_R007_001",
+      "requirement": "R007",
+      "screenshot": "01042931851_CartCheck_R007_001.png",
+      "source_evidence": "EV-9beb0b4eab"
+    },
+    {
+      "case_id": "TC-CART-029",
+      "official_id": "CartCheck_R003_001",
+      "requirement": "R003",
+      "screenshot": "01043031872_CartCheck_R003_001.png",
+      "source_evidence": "EV-d49760e34f"
+    },
+    {
+      "case_id": "TC-CART-030",
+      "official_id": "CartCheck_R012_001",
+      "requirement": "R012",
+      "screenshot": "01043131942_CartCheck_R012_001.png",
+      "source_evidence": "EV-4e460d1a81"
+    }
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "e1f5070bb684735599b20b137e1c2da3a785c6b3df00bd0b3cb3c9a82d2526c4",
+      "bytes": 953
+    },
+    {
+      "path": "screenshots/01040231406_CartCheck_R010_001.png",
+      "sha256": "d8f20e42fa44be26efa7c307a085940b4795bce9b0ae82eae384dde75e9754b5",
+      "bytes": 34309
+    },
+    {
+      "path": "screenshots/01040331655_CartCheck_R010_002.png",
+      "sha256": "f22f0556cd5e077e24c35e4b90c40199eae991a9b827a036d0ecc188c1cc8a9d",
+      "bytes": 34520
+    },
+    {
+      "path": "screenshots/01040431808_CartCheck_R010_003.png",
+      "sha256": "b0cdaf1518d91c82e52759066eef73525c59f2214d76dca6213e1230cc645607",
+      "bytes": 34426
+    },
+    {
+      "path": "screenshots/01040631079_CartCheck_R010_004.png",
+      "sha256": "e5279640437c0b5c725cf2101e2f454514955cabe352c9c23ea33c00016cbe0a",
+      "bytes": 34433
+    },
+    {
+      "path": "screenshots/01040731022_CartCheck_R010_005.png",
+      "sha256": "e68f79b7cbd5af964be1f54e9f6fd1842be5422763936af97d9d32abe15fc4f3",
+      "bytes": 34855
+    },
+    {
+      "path": "screenshots/01040831089_CartCheck_R010_006.png",
+      "sha256": "f2b17b6aa3801ae6c9ca00eb781ac0162842ef1b0c15c4905a2fcde51a736d37",
+      "bytes": 34150
+    },
+    {
+      "path": "screenshots/01040931070_CartCheck_R010_007.png",
+      "sha256": "b377012489e10f522bd58198bcf31bbf337698c954f58436758d4cd8d2609a2f",
+      "bytes": 34227
+    },
+    {
+      "path": "screenshots/01041031896_CartCheck_R001_001.png",
+      "sha256": "c03b0b7d7d849a8b02db822bf4454bb1373bfdb8197c7b0ff114cda179e0e04f",
+      "bytes": 33048
+    },
+    {
+      "path": "screenshots/01041031982_CartCheck_R002_001.png",
+      "sha256": "901a395f4b32336923e0622d9b2fc1fe55da64ec39d66ac6cb12d0e0287fc63f",
+      "bytes": 34081
+    },
+    {
+      "path": "screenshots/01041131787_CartCheck_R001_002.png",
+      "sha256": "010856f42359746fdb675050c44581e6720892fc68b3d16ea4f7cceb1488a348",
+      "bytes": 33418
+    },
+    {
+      "path": "screenshots/01041231696_CartCheck_R001_003.png",
+      "sha256": "a6c863a9edd0151198d09ac15efa0f33f120bd10cd43c3a84de525463880f82f",
+      "bytes": 36210
+    },
+    {
+      "path": "screenshots/01041331762_CartCheck_R001_004.png",
+      "sha256": "db3f7e4a097837e8e398a27500425edfbbe3a4d0195e3d63800a735dcd2e06ea",
+      "bytes": 35992
+    },
+    {
+      "path": "screenshots/01041431861_CartCheck_R002_002.png",
+      "sha256": "2d332c8c3d2fdb106e3eff16d11bf1008f29273fa4918f0d741ae42fd605e6cc",
+      "bytes": 34424
+    },
+    {
+      "path": "screenshots/01041531809_CartCheck_R005_001.png",
+      "sha256": "b1e164094d83811af715fbeb6e9003b61855e1dbf2c979eb80364b576cc57aee",
+      "bytes": 33840
+    },
+    {
+      "path": "screenshots/01041631724_CartCheck_R006_001.png",
+      "sha256": "5b54ad5cf5ab85d3fcb10fb6be6d7488fe82beee768835f78e6f32c6b06912da",
+      "bytes": 34620
+    },
+    {
+      "path": "screenshots/01041731608_CartCheck_R002_003.png",
+      "sha256": "49ee7bcd1f30e6a61c257c72513961c0cf2c5bd087a4257d6422fcd785f0b624",
+      "bytes": 35107
+    },
+    {
+      "path": "screenshots/01041831541_CartCheck_R002_004.png",
+      "sha256": "cb2f702af113c0056323a19eaadf95499d91a45822f29ba69bf3f89a0f7f4cba",
+      "bytes": 34339
+    },
+    {
+      "path": "screenshots/01041931525_CartCheck_R002_005.png",
+      "sha256": "79d5d7656cc4ac2f479d47e6d212387644c2edfeccb1330ee92dd910c394cc83",
+      "bytes": 34194
+    },
+    {
+      "path": "screenshots/01042031492_CartCheck_R004_001.png",
+      "sha256": "da1342efc4f619103b9eb4338ec06248940efc86734ecf70f4c78ca77e78cabd",
+      "bytes": 33665
+    },
+    {
+      "path": "screenshots/01042131466_CartCheck_R004_002.png",
+      "sha256": "374791d91a18f47dacb867c623c468430df32b31759625ba85004589f7d13556",
+      "bytes": 33832
+    },
+    {
+      "path": "screenshots/01042231411_CartCheck_R004_003.png",
+      "sha256": "06b662fa0f1fa93e194db93f3e7c6c3d54fa4076ed9e4bdc8a5ff8c021ee3c43",
+      "bytes": 34331
+    },
+    {
+      "path": "screenshots/01042331610_CartCheck_R004_004.png",
+      "sha256": "674bce9d67e0e64d41727c8e61fdaadc9d03aab58e1fa1784687487f4d8febff",
+      "bytes": 33698
+    },
+    {
+      "path": "screenshots/01042431613_CartCheck_R004_005.png",
+      "sha256": "5f2d51f16226297289a5b742aae5871d8472050c59ee31538d9e9b321c273757",
+      "bytes": 33719
+    },
+    {
+      "path": "screenshots/01042531628_CartCheck_R004_006.png",
+      "sha256": "2a4b0cffc8f7c616cbd757fd3945911df79ab5931f2e06eb0deb992a12968d63",
+      "bytes": 33904
+    },
+    {
+      "path": "screenshots/01042631656_CartCheck_R004_007.png",
+      "sha256": "a55b575a7d3fe232d8dc4ea313938624e4c7e92e04ddecf3715f63b1304cbec0",
+      "bytes": 33854
+    },
+    {
+      "path": "screenshots/01042731722_CartCheck_R008_001.png",
+      "sha256": "893886b3a1087917a1160208cb0018256d6868284aca7c1f37e5e7b2d7cd3970",
+      "bytes": 33236
+    },
+    {
+      "path": "screenshots/01042831785_CartCheck_R008_002.png",
+      "sha256": "a4641ae3a8cc567f02d936c32396b2a10922198fb55aefcdac202320c1df3743",
+      "bytes": 35041
+    },
+    {
+      "path": "screenshots/01042931851_CartCheck_R007_001.png",
+      "sha256": "03a7dae8d2f5f7fe802a982ed462596394611206e975d1da152bef2c33aecae3",
+      "bytes": 34583
+    },
+    {
+      "path": "screenshots/01043031872_CartCheck_R003_001.png",
+      "sha256": "903a26d65ba3b47098268c1197daad18eabca64fbd64c137a57bebfe2e850ec8",
+      "bytes": 34428
+    },
+    {
+      "path": "screenshots/01043131942_CartCheck_R012_001.png",
+      "sha256": "3490f17c14111244a02d88f0adcb46623b180cdb354baa0616e1f128b5574f85",
+      "bytes": 33573
+    },
+    {
+      "path": "screenshots.zip",
+      "sha256": "3a0aac58062636bc997cb0c6dc05807d0df69c7338249eb95784bd11eec6acb2",
+      "bytes": 917568
+    },
+    {
+      "path": "test-code/runner/pytest.ini",
+      "sha256": "92fb94859b46bd016753f5faded0ff56485cf5dc1e448d24315a47996718cdfc",
+      "bytes": 168
+    },
+    {
+      "path": "test-code/runner/requirements.txt",
+      "sha256": "aa31a24ae0849a369527caa7714b0dafbcfa5b521147baf325e472c14ae914bc",
+      "bytes": 1430
+    },
+    {
+      "path": "test-code/runner/tests/conftest.py",
+      "sha256": "11c228e3b2a123f13eb455efd14a6132ec6ba808c8648ccdc6eed639ff1506d4",
+      "bytes": 21522
+    },
+    {
+      "path": "test-code/runner/tests/generated/cartcheck/page_cartcheck.py",
+      "sha256": "62c24d6cd74e69febe2f6a482502bd67f53e99e1d4683e49b069b357e1df4996",
+      "bytes": 8490
+    },
+    {
+      "path": "test-code/runner/tests/generated/cartcheck/test_cartcheck.py",
+      "sha256": "fcaa1c65ad559461b5458231e639d9fe3ba1dd04ed5a1cffeaa0f707d07cd91c",
+      "bytes": 21616
+    },
+    {
+      "path": "test-code/runner/tests/pages/todo_page.py",
+      "sha256": "a27ecd56b8ae7ce545adace4f6a8a247ea42b75c0078ec545bb1801a57814b20",
+      "bytes": 5194
+    },
+    {
+      "path": "test-code/runner/tools/evidence.py",
+      "sha256": "8edc102d0f80ab6c4b1dbf9d831a7b39bc6426d90a69f833337c37747d96a76c",
+      "bytes": 24123
+    },
+    {
+      "path": "test-code/runner/tools/versioning.py",
+      "sha256": "eb2e40cfcad3a4935d0ace0a6998423229ca659ccdd6e259dd7539e4b98bd777",
+      "bytes": 3807
+    },
+    {
+      "path": "test-code/TestCartCheck.py",
+      "sha256": "6ab1ecac9fae3d3ca671f3751ae115d3a4bdd0192bf7f9fb9eebc33186226fd6",
+      "bytes": 10110
+    },
+    {
+      "path": "测试用例模版.xlsx",
+      "sha256": "a6c038f0ede5121b5eb8e075be1480318a820f0a78608208dce892f5f2e8c8ea",
+      "bytes": 9447
+    }
+  ],
+  "generated_at": "2026-10-31T12:01:02+08:00"
+}

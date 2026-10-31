@@ -1,0 +1,1251 @@
+{
+  "schema_version": "2.0",
+  "generator": {
+    "tool": "tools/generate_report.py",
+    "version": "2.0",
+    "generated_at": "2026-10-31T00:57:06+08:00"
+  },
+  "generated_at": "2026-10-31T00:57:06+08:00",
+  "title": "TodoMVC Web 应用测试执行报告（RUN-AUDIT-20261030-02）",
+  "run": {
+    "run_id": "RUN-AUDIT-20261030-02",
+    "label": "Selenium acceptance",
+    "target": "https://demo.playwright.dev/todomvc",
+    "status": "passed",
+    "status_label": "通过",
+    "stage": "executed",
+    "started_at": "2026-10-30T17:48:18+08:00",
+    "finished_at": "2026-10-30T17:48:29+08:00",
+    "case_counts": {
+      "passed": 7,
+      "xfailed": 1
+    },
+    "case_total": 8,
+    "evidence_count": 15,
+    "defect_count": 0,
+    "environment": {
+      "python": "3.13.9",
+      "platform": "Windows-11-10.0.26340-SP0",
+      "pytest": "pytest",
+      "target": "https://demo.playwright.dev/todomvc"
+    },
+    "notes": [
+      {
+        "at": "2026-10-30T17:48:18+08:00",
+        "note": "pytest started"
+      },
+      {
+        "at": "2026-10-30T17:48:29+08:00",
+        "note": "pytest exit=0; total=8; failed=False; xfailed=True"
+      },
+      {
+        "at": "2026-10-30T17:48:29+08:00",
+        "note": "pytest exit=0; tests=8; failures=0; errors=0; xfailed=1; elapsed=10.5s"
+      }
+    ]
+  },
+  "scope": {
+    "target": "https://demo.playwright.dev/todomvc",
+    "scope": "未声明",
+    "scope_source": "missing",
+    "requirement_source": "未找到本运行的用例表",
+    "case_table": null,
+    "design_doc": null,
+    "product": "Selenium acceptance"
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26340-SP0",
+    "platform": "Windows-11-10.0.26340-SP0",
+    "python": "3.13.9",
+    "selenium": "未采集",
+    "pytest": "pytest",
+    "chrome": "未采集",
+    "chromedriver": "未采集",
+    "node": "未采集",
+    "target": "https://demo.playwright.dev/todomvc"
+  },
+  "environment_meta": {
+    "os": {
+      "label": "操作系统",
+      "value": "Windows-11-10.0.26340-SP0",
+      "raw": "Windows-11-10.0.26340-SP0",
+      "source": "run(platform)"
+    },
+    "platform": {
+      "label": "平台",
+      "value": "Windows-11-10.0.26340-SP0",
+      "raw": "Windows-11-10.0.26340-SP0",
+      "source": "run"
+    },
+    "python": {
+      "label": "Python",
+      "value": "3.13.9",
+      "raw": "3.13.9",
+      "source": "run"
+    },
+    "selenium": {
+      "label": "Selenium",
+      "value": "未采集",
+      "raw": "",
+      "source": "missing"
+    },
+    "pytest": {
+      "label": "pytest",
+      "value": "pytest",
+      "raw": "pytest",
+      "source": "run"
+    },
+    "chrome": {
+      "label": "Chrome",
+      "value": "未采集",
+      "raw": "",
+      "source": "missing"
+    },
+    "chromedriver": {
+      "label": "ChromeDriver",
+      "value": "未采集",
+      "raw": "",
+      "source": "missing"
+    },
+    "node": {
+      "label": "Node.js",
+      "value": "未采集",
+      "raw": "",
+      "source": "missing"
+    },
+    "target": {
+      "label": "目标 URL",
+      "value": "https://demo.playwright.dev/todomvc",
+      "raw": "https://demo.playwright.dev/todomvc",
+      "source": "run"
+    },
+    "__probe__": {
+      "probed_at": "2026-10-31T00:57:06+08:00",
+      "note": "报告生成时探测，不是运行时刻记录；只作参考，不覆盖 manifest 中的运行环境"
+    }
+  },
+  "environment_probe": {
+    "probe_kind": "report-time",
+    "note": "报告生成时探测，不是运行时刻记录；只作参考，不覆盖 manifest 中的运行环境",
+    "python": "3.13.9",
+    "platform": "Windows-11-10.0.26340-SP0",
+    "os": "11",
+    "target": "https://demo.playwright.dev/todomvc",
+    "pytest": "9.1.1",
+    "selenium": "4.51.0",
+    "openpyxl": "3.1.5",
+    "pillow": "12.2.0",
+    "numpy": "2.4.4",
+    "opencv-python": "<not installed>",
+    "chrome_path": "C:\\Users\\<user>\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe",
+    "chrome": "156.0.8078.74",
+    "chromedriver": "ChromeDriver 156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705})",
+    "node": "v24.14.1",
+    "probed_at": "2026-10-31T00:57:06+08:00"
+  },
+  "case_table": {
+    "found": false,
+    "path": null,
+    "reason": "未找到本运行的用例表（没有 CSV 的 executed_in_run 包含 RUN-AUDIT-20261030-02）",
+    "row_count": 0,
+    "source": "run-scoped",
+    "inspected": [
+      {
+        "path": "reports/test-cases/TodoMVC-CMDCHECK-test-cases.csv",
+        "rows": 8,
+        "run_tokens": []
+      },
+      {
+        "path": "reports/test-cases/TodoMVC-CMDCHECK3-test-cases.csv",
+        "rows": 9,
+        "run_tokens": [
+          "RUN-CMDCHECK-03"
+        ]
+      },
+      {
+        "path": "reports/test-cases/todomvc-test-cases.csv",
+        "rows": 13,
+        "run_tokens": []
+      }
+    ]
+  },
+  "strategy": {
+    "design_source": "none",
+    "methods": [],
+    "case_types": [],
+    "priorities": [],
+    "missing_method_cases": [
+      "TC-TODO-001",
+      "TC-TODO-002",
+      "TC-TODO-003",
+      "TC-TODO-004",
+      "TC-TODO-005",
+      "TC-TODO-006",
+      "TC-TODO-007",
+      "TC-TODO-099"
+    ],
+    "note": "未找到本运行的用例表，无法从 method 列聚合设计方法分布。"
+  },
+  "summary": {
+    "case_total": 8,
+    "status_counts": {
+      "passed": 7,
+      "xfailed": 1
+    },
+    "executed": 7,
+    "passed": 7,
+    "failed": 0,
+    "xfailed": 1,
+    "skipped": 0,
+    "not_run": 0,
+    "blocked": 0,
+    "pass_rate": 1.0,
+    "pass_rate_note": "通过率 = passed / (passed + failed)；xfailed、skipped、not-run 不计入分母"
+  },
+  "cases": [
+    {
+      "case_id": "TC-TODO-001",
+      "title": "test_add_todo",
+      "source_title": "test_add_todo",
+      "title_source": "manifest",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "",
+      "expected_raw": "True",
+      "expected_source": "assertions",
+      "expected_invalid": true,
+      "expected_note": "运行记录中的 'True' 是历史断言取值，不作为用例级预期",
+      "actual": "断言通过",
+      "actual_raw": "断言通过",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "待办列表包含新增项",
+          "expected": "['Buy milk']",
+          "actual": "['Buy milk']",
+          "passed": true,
+          "at": "2026-10-30T17:48:21+08:00"
+        },
+        {
+          "name": "剩余计数为 1",
+          "expected": "1 item left",
+          "actual": "1 item left",
+          "passed": true,
+          "at": "2026-10-30T17:48:21+08:00"
+        },
+        {
+          "name": "底部状态栏可见",
+          "expected": "True",
+          "actual": "True",
+          "passed": true,
+          "at": "2026-10-30T17:48:21+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "打开 TodoMVC 演示页",
+        "在新增输入框中输入 Buy milk 并回车"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-c26fe08417",
+          "run_id": "RUN-AUDIT-20261030-02",
+          "case_id": "TC-TODO-001",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-001/TC-TODO-001__case__element__20261030T094821-351.png",
+          "bucket": "raw",
+          "step": "新增待办后的元素",
+          "caption": "用例证据：新增待办后的元素",
+          "created_at": "2026-10-30T17:48:21+08:00",
+          "size_bytes": 1999,
+          "sha256": "8ea0d5faa634e604978962cc979758182671a4c88e795bc5aa6b473c8637308b",
+          "immutable": true,
+          "meta": {},
+          "width": 550,
+          "height": 59,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-4f8b19c5c9",
+          "run_id": "RUN-AUDIT-20261030-02",
+          "case_id": "TC-TODO-001",
+          "kind": "fullpage-screenshot",
+          "path": "evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-001/TC-TODO-001__case__fullpage__20261030T094821-450.png",
+          "bucket": "raw",
+          "step": "新增待办后的整页",
+          "caption": "用例证据：新增待办后的整页",
+          "created_at": "2026-10-30T17:48:21+08:00",
+          "size_bytes": 27928,
+          "sha256": "fb13b17e660a50a4ea5f9a00362a4c2b2084f6be649317f409e41942cc9e334d",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-f55f7f1362",
+          "run_id": "RUN-AUDIT-20261030-02",
+          "case_id": "TC-TODO-001",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-001/TC-TODO-001__final__viewport__20261030T094821-526.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-30T17:48:21+08:00",
+          "size_bytes": 27928,
+          "sha256": "fb13b17e660a50a4ea5f9a00362a4c2b2084f6be649317f409e41942cc9e334d",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 3,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-001.log",
+      "log_exists": true,
+      "duration_ms": 1651,
+      "meta": {},
+      "requirement_ids": [],
+      "priority": "",
+      "case_type": "",
+      "method": "",
+      "preconditions": [],
+      "test_data": "",
+      "design_status": "",
+      "in_case_table": false,
+      "automation": "tests/test_todomvc.py::test_add_todo",
+      "junit": {
+        "name": "test_add_todo",
+        "classname": "tests.test_todomvc",
+        "time": 1.669,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-TODO-002",
+      "title": "test_complete_and_filter",
+      "source_title": "test_complete_and_filter",
+      "title_source": "manifest",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "['Task B']",
+      "expected_raw": "['Task B']",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "断言通过",
+      "actual_raw": "断言通过",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "完成后剩余计数为 1",
+          "expected": "1 item left",
+          "actual": "1 item left",
+          "passed": true,
+          "at": "2026-10-30T17:48:22+08:00"
+        },
+        {
+          "name": "Completed 仅显示已完成项",
+          "expected": "['Task A']",
+          "actual": "['Task A']",
+          "passed": true,
+          "at": "2026-10-30T17:48:22+08:00"
+        },
+        {
+          "name": "Active 仅显示未完成项",
+          "expected": "['Task B']",
+          "actual": "['Task B']",
+          "passed": true,
+          "at": "2026-10-30T17:48:22+08:00"
+        }
+      ],
+      "assertion_count": 3,
+      "assertions_passed": 3,
+      "steps": [
+        "新增 Task A 与 Task B",
+        "勾选第一条待办",
+        "切换到 Completed 过滤器",
+        "切换到 Active 过滤器"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-ce5641d35f",
+          "run_id": "RUN-AUDIT-20261030-02",
+          "case_id": "TC-TODO-002",
+          "kind": "fullpage-screenshot",
+          "path": "evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-002/TC-TODO-002__Active__fullpage__20261030T094822-312.png",
+          "bucket": "raw",
+          "step": "Active 过滤器结果",
+          "caption": "用例证据：Active 过滤器结果",
+          "created_at": "2026-10-30T17:48:22+08:00",
+          "size_bytes": 28529,
+          "sha256": "ea5ed797d07a31a818663ad4c877d10137b6eeaa31ec279e0cf5f05dc2b3ed90",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-3609b73776",
+          "run_id": "RUN-AUDIT-20261030-02",
+          "case_id": "TC-TODO-002",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-002/TC-TODO-002__final__viewport__20261030T094822-393.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-30T17:48:22+08:00",
+          "size_bytes": 28529,
+          "sha256": "ea5ed797d07a31a818663ad4c877d10137b6eeaa31ec279e0cf5f05dc2b3ed90",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-002.log",
+      "log_exists": true,
+      "duration_ms": 765,
+      "meta": {},
+      "requirement_ids": [],
+      "priority": "",
+      "case_type": "",
+      "method": "",
+      "preconditions": [],
+      "test_data": "",
+      "design_status": "",
+      "in_case_table": false,
+      "automation": "tests/test_todomvc.py::test_complete_and_filter",
+      "junit": {
+        "name": "test_complete_and_filter",
+        "classname": "tests.test_todomvc",
+        "time": 0.784,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-TODO-003",
+      "title": "test_edit_todo",
+      "source_title": "test_edit_todo",
+      "title_source": "manifest",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "['New title']",
+      "expected_raw": "['New title']",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "断言通过",
+      "actual_raw": "断言通过",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "标题被更新",
+          "expected": "['New title']",
+          "actual": "['New title']",
+          "passed": true,
+          "at": "2026-10-30T17:48:23+08:00"
+        }
+      ],
+      "assertion_count": 1,
+      "assertions_passed": 1,
+      "steps": [
+        "新增 Old title",
+        "双击标题并改为 New title"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-fb186d76c4",
+          "run_id": "RUN-AUDIT-20261030-02",
+          "case_id": "TC-TODO-003",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-003/TC-TODO-003__final__viewport__20261030T094823-181.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-30T17:48:23+08:00",
+          "size_bytes": 28512,
+          "sha256": "515e9683216c1e45fe50b2fb05196a842d005a0c7cb1de8fe5b49694d8373315",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-003.log",
+      "log_exists": true,
+      "duration_ms": 704,
+      "meta": {},
+      "requirement_ids": [],
+      "priority": "",
+      "case_type": "",
+      "method": "",
+      "preconditions": [],
+      "test_data": "",
+      "design_status": "",
+      "in_case_table": false,
+      "automation": "tests/test_todomvc.py::test_edit_todo",
+      "junit": {
+        "name": "test_edit_todo",
+        "classname": "tests.test_todomvc",
+        "time": 0.722,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-TODO-004",
+      "title": "test_delete_todo",
+      "source_title": "test_delete_todo",
+      "title_source": "manifest",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "",
+      "expected_raw": "False",
+      "expected_source": "assertions",
+      "expected_invalid": true,
+      "expected_note": "运行记录中的 'False' 是历史断言取值，不作为用例级预期",
+      "actual": "断言通过",
+      "actual_raw": "断言通过",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "列表被清空",
+          "expected": "[]",
+          "actual": "[]",
+          "passed": true,
+          "at": "2026-10-30T17:48:23+08:00"
+        },
+        {
+          "name": "无待办时底部状态栏隐藏",
+          "expected": "False",
+          "actual": "False",
+          "passed": true,
+          "at": "2026-10-30T17:48:23+08:00"
+        }
+      ],
+      "assertion_count": 2,
+      "assertions_passed": 2,
+      "steps": [
+        "新增 Delete me",
+        "悬停并点击删除按钮"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-5836c843dc",
+          "run_id": "RUN-AUDIT-20261030-02",
+          "case_id": "TC-TODO-004",
+          "kind": "fullpage-screenshot",
+          "path": "evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-004/TC-TODO-004__case__fullpage__20261030T094823-950.png",
+          "bucket": "raw",
+          "step": "删除后的空列表",
+          "caption": "用例证据：删除后的空列表",
+          "created_at": "2026-10-30T17:48:24+08:00",
+          "size_bytes": 23590,
+          "sha256": "c21e81a55f29fb6b4f0512b8abba021b4a1cccdc22339e42114d1c200004d1d3",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-1b78a5cf8c",
+          "run_id": "RUN-AUDIT-20261030-02",
+          "case_id": "TC-TODO-004",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-004/TC-TODO-004__final__viewport__20261030T094824-029.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-30T17:48:24+08:00",
+          "size_bytes": 23590,
+          "sha256": "c21e81a55f29fb6b4f0512b8abba021b4a1cccdc22339e42114d1c200004d1d3",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-004.log",
+      "log_exists": true,
+      "duration_ms": 736,
+      "meta": {},
+      "requirement_ids": [],
+      "priority": "",
+      "case_type": "",
+      "method": "",
+      "preconditions": [],
+      "test_data": "",
+      "design_status": "",
+      "in_case_table": false,
+      "automation": "tests/test_todomvc.py::test_delete_todo",
+      "junit": {
+        "name": "test_delete_todo",
+        "classname": "tests.test_todomvc",
+        "time": 0.756,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-TODO-005",
+      "title": "test_empty_and_whitespace_rejected",
+      "source_title": "test_empty_and_whitespace_rejected",
+      "title_source": "manifest",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "[]",
+      "expected_raw": "[]",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "断言通过",
+      "actual_raw": "断言通过",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "空输入不新增待办",
+          "expected": "[]",
+          "actual": "[]",
+          "passed": true,
+          "at": "2026-10-30T17:48:24+08:00"
+        },
+        {
+          "name": "纯空白输入不新增待办",
+          "expected": "[]",
+          "actual": "[]",
+          "passed": true,
+          "at": "2026-10-30T17:48:24+08:00"
+        }
+      ],
+      "assertion_count": 2,
+      "assertions_passed": 2,
+      "steps": [
+        "直接回车，不输入内容",
+        "输入三个空格并回车"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-0fa900f9c3",
+          "run_id": "RUN-AUDIT-20261030-02",
+          "case_id": "TC-TODO-005",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-005/TC-TODO-005__final__viewport__20261030T094824-528.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-30T17:48:24+08:00",
+          "size_bytes": 20079,
+          "sha256": "83a2f16bad885655fe64ec27d081aee23ace37e3f8b01c5ff26768b25eb2606f",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-005.log",
+      "log_exists": true,
+      "duration_ms": 402,
+      "meta": {},
+      "requirement_ids": [],
+      "priority": "",
+      "case_type": "",
+      "method": "",
+      "preconditions": [],
+      "test_data": "",
+      "design_status": "",
+      "in_case_table": false,
+      "automation": "tests/test_todomvc.py::test_empty_and_whitespace_rejected",
+      "junit": {
+        "name": "test_empty_and_whitespace_rejected",
+        "classname": "tests.test_todomvc",
+        "time": 0.421,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-TODO-006",
+      "title": "test_boundary_lengths",
+      "source_title": "test_boundary_lengths",
+      "title_source": "manifest",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "['A', 'BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB']",
+      "expected_raw": "['A', 'BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB']",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "断言通过",
+      "actual_raw": "断言通过",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "1 字符边界被接受",
+          "expected": "['A']",
+          "actual": "['A']",
+          "passed": true,
+          "at": "2026-10-30T17:48:24+08:00"
+        },
+        {
+          "name": "200 字符输入被完整保存",
+          "expected": "['A', 'BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB']",
+          "actual": "['A', 'BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB']",
+          "passed": true,
+          "at": "2026-10-30T17:48:25+08:00"
+        }
+      ],
+      "assertion_count": 2,
+      "assertions_passed": 2,
+      "steps": [
+        "输入 1 个字符 A",
+        "再输入 200 个字符"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-e741cc9bfa",
+          "run_id": "RUN-AUDIT-20261030-02",
+          "case_id": "TC-TODO-006",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-006/TC-TODO-006__final__viewport__20261030T094825-153.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-30T17:48:25+08:00",
+          "size_bytes": 31225,
+          "sha256": "d2886c72e3af1535394ea30f77980b153e88c5db50048bc56083be869bc02c20",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-006.log",
+      "log_exists": true,
+      "duration_ms": 527,
+      "meta": {},
+      "requirement_ids": [],
+      "priority": "",
+      "case_type": "",
+      "method": "",
+      "preconditions": [],
+      "test_data": "",
+      "design_status": "",
+      "in_case_table": false,
+      "automation": "tests/test_todomvc.py::test_boundary_lengths",
+      "junit": {
+        "name": "test_boundary_lengths",
+        "classname": "tests.test_todomvc",
+        "time": 0.544,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-TODO-007",
+      "title": "test_text_is_escaped",
+      "source_title": "test_text_is_escaped",
+      "title_source": "manifest",
+      "status": "passed",
+      "status_label": "通过",
+      "expected": "",
+      "expected_raw": "None",
+      "expected_source": "assertions",
+      "expected_invalid": true,
+      "expected_note": "运行记录中的 'None' 是历史断言取值，不作为用例级预期",
+      "actual": "断言通过",
+      "actual_raw": "断言通过",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "HTML 文本按纯文本展示",
+          "expected": "['<img src=x onerror=window.__xss=1>']",
+          "actual": "['<img src=x onerror=window.__xss=1>']",
+          "passed": true,
+          "at": "2026-10-30T17:48:25+08:00"
+        },
+        {
+          "name": "未执行注入脚本",
+          "expected": "None",
+          "actual": "None",
+          "passed": true,
+          "at": "2026-10-30T17:48:25+08:00"
+        }
+      ],
+      "assertion_count": 2,
+      "assertions_passed": 2,
+      "steps": [
+        "输入包含 HTML 事件属性的文本"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-51bf0eb345",
+          "run_id": "RUN-AUDIT-20261030-02",
+          "case_id": "TC-TODO-007",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-007/TC-TODO-007__final__viewport__20261030T094825-612.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-30T17:48:25+08:00",
+          "size_bytes": 31970,
+          "sha256": "1176f622e99452de07def456638b84ed595e15406e47113f0adba4b092317c08",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-007.log",
+      "log_exists": true,
+      "duration_ms": 346,
+      "meta": {},
+      "requirement_ids": [],
+      "priority": "",
+      "case_type": "",
+      "method": "",
+      "preconditions": [],
+      "test_data": "",
+      "design_status": "",
+      "in_case_table": false,
+      "automation": "tests/test_todomvc.py::test_text_is_escaped",
+      "junit": {
+        "name": "test_text_is_escaped",
+        "classname": "tests.test_todomvc",
+        "time": 0.366,
+        "status": "passed",
+        "message": ""
+      },
+      "needs_review": false
+    },
+    {
+      "case_id": "TC-TODO-099",
+      "title": "test_expected_failure_captures_evidence",
+      "source_title": "test_expected_failure_captures_evidence",
+      "title_source": "manifest",
+      "status": "xfailed",
+      "status_label": "受控预期失败",
+      "expected": "2 items left",
+      "expected_raw": "2 items left",
+      "expected_source": "case",
+      "expected_invalid": false,
+      "expected_note": "",
+      "actual": "tests\\test_todomvc_expected_failure.py:22: in test_expected_failure_captures_evidence\n    case_ctx.check(page.count_text().startswith(\"2\"), \"受控失败断言\", \"2 items left\", page.count_text())\ntests\\conftest.py:309: in check\n    raise AssertionError(f\"{name}: expected={expected!r} actual={actual!r}\")\nE   AssertionError: 受控失败断言: expected='2 items left' actual='1 item left'",
+      "actual_raw": "tests\\test_todomvc_expected_failure.py:22: in test_expected_failure_captures_evidence\n    case_ctx.check(page.count_text().startswith(\"2\"), \"受控失败断言\", \"2 items left\", page.count_text())\ntests\\conftest.py:309: in check\n    raise AssertionError(f\"{name}: expected={expected!r} actual={actual!r}\")\nE   AssertionError: 受控失败断言: expected='2 items left' actual='1 item left'",
+      "actual_source": "case",
+      "assertions": [
+        {
+          "name": "受控失败断言",
+          "expected": "2 items left",
+          "actual": "1 item left",
+          "passed": false,
+          "at": "2026-10-30T17:48:26+08:00"
+        }
+      ],
+      "assertion_count": 1,
+      "assertions_passed": 0,
+      "steps": [
+        "新增 Only one",
+        "故意断言剩余计数为 2（实际为 1）"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-de49b1c530",
+          "run_id": "RUN-AUDIT-20261030-02",
+          "case_id": "TC-TODO-099",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-099/TC-TODO-099__failure__viewport__20261030T094826-504.png",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时视口截图",
+          "created_at": "2026-10-30T17:48:26+08:00",
+          "size_bytes": 28544,
+          "sha256": "7493c3bb98308d3a19ba526444a9d7baa734373927a6f57914b13de95613d6e4",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-fca950100f",
+          "run_id": "RUN-AUDIT-20261030-02",
+          "case_id": "TC-TODO-099",
+          "kind": "fullpage-screenshot",
+          "path": "evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-099/TC-TODO-099__failure__fullpage__20261030T094826-504.png",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时整页截图",
+          "created_at": "2026-10-30T17:48:26+08:00",
+          "size_bytes": 28544,
+          "sha256": "7493c3bb98308d3a19ba526444a9d7baa734373927a6f57914b13de95613d6e4",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-5a6d581e1a",
+          "run_id": "RUN-AUDIT-20261030-02",
+          "case_id": "TC-TODO-099",
+          "kind": "page-source",
+          "path": "evidence/raw/RUN-AUDIT-20261030-02/TC-TODO-099/TC-TODO-099__failure__page-source__20261030T094826-504.html",
+          "bucket": "raw",
+          "step": "failure",
+          "caption": "失败时页面源码",
+          "created_at": "2026-10-30T17:48:26+08:00",
+          "size_bytes": 1727,
+          "sha256": "ecf386695d2b7389ef5b89db91402721d22c46d70aa906fb12db609657326e13",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-1b5f60dc0f",
+          "run_id": "RUN-AUDIT-20261030-02",
+          "case_id": "TC-TODO-099",
+          "kind": "log",
+          "path": "evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-099__browser__20261030T094826-504.log",
+          "bucket": "logs",
+          "step": "failure",
+          "caption": "失败时浏览器控制台日志",
+          "created_at": "2026-10-30T17:48:26+08:00",
+          "size_bytes": 6556,
+          "sha256": "d3e36202520fe576205ce179a9b76b5a7db585b26cf927b4ef41fcc8bb3661da",
+          "immutable": true,
+          "meta": {}
+        }
+      ],
+      "evidence_count": 4,
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-AUDIT-20261030-02/TC-TODO-099.log",
+      "log_exists": true,
+      "duration_ms": 793,
+      "meta": {},
+      "requirement_ids": [],
+      "priority": "",
+      "case_type": "",
+      "method": "",
+      "preconditions": [],
+      "test_data": "",
+      "design_status": "",
+      "in_case_table": false,
+      "automation": "tests/test_todomvc_expected_failure.py::test_expected_failure_captures_evidence",
+      "junit": {
+        "name": "test_expected_failure_captures_evidence",
+        "classname": "tests.test_todomvc_expected_failure",
+        "time": 2.829,
+        "status": "xfailed",
+        "message": "受控失败：验证失败截图、日志和断言记录链路"
+      },
+      "needs_review": true
+    }
+  ],
+  "defects": [],
+  "coverage": {
+    "case_table_found": false,
+    "run_id": "RUN-AUDIT-20261030-02",
+    "requirements": [],
+    "requirements_without_execution": [],
+    "unmapped_cases": [
+      "TC-TODO-001",
+      "TC-TODO-002",
+      "TC-TODO-003",
+      "TC-TODO-004",
+      "TC-TODO-005",
+      "TC-TODO-006",
+      "TC-TODO-007",
+      "TC-TODO-099"
+    ],
+    "not_run": [],
+    "partial": [],
+    "note": "未找到本运行的用例表，需求覆盖只能依据 manifest 中登记的 meta.requirement_ids。"
+  },
+  "visual": [],
+  "evidence": {
+    "checked": 15,
+    "ok": 15,
+    "missing": [],
+    "mismatched": [],
+    "cross_run": [],
+    "unscoped": [],
+    "duplicates": []
+  },
+  "junit": {
+    "run_id": "RUN-AUDIT-20261030-02",
+    "exit_code": 0,
+    "elapsed_seconds": 10.5,
+    "junit": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-AUDIT-20261030-02\\junit.xml",
+    "console_log": "D:\\桌面\\软件测试competion\\evidence\\logs\\RUN-AUDIT-20261030-02\\pytest-console.log",
+    "tests": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 1,
+    "time": 9.304,
+    "xfailed": 1,
+    "cases": [
+      {
+        "name": "test_add_todo",
+        "classname": "tests.test_todomvc",
+        "time": 1.669,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_complete_and_filter",
+        "classname": "tests.test_todomvc",
+        "time": 0.784,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_edit_todo",
+        "classname": "tests.test_todomvc",
+        "time": 0.722,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_delete_todo",
+        "classname": "tests.test_todomvc",
+        "time": 0.756,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_empty_and_whitespace_rejected",
+        "classname": "tests.test_todomvc",
+        "time": 0.421,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_boundary_lengths",
+        "classname": "tests.test_todomvc",
+        "time": 0.544,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_text_is_escaped",
+        "classname": "tests.test_todomvc",
+        "time": 0.366,
+        "status": "passed",
+        "message": ""
+      },
+      {
+        "name": "test_expected_failure_captures_evidence",
+        "classname": "tests.test_todomvc_expected_failure",
+        "time": 2.829,
+        "status": "xfailed",
+        "message": "受控失败：验证失败截图、日志和断言记录链路"
+      }
+    ]
+  },
+  "junit_summary_path": "reports\\executions\\RUN-AUDIT-20261030-02\\junit-summary.json",
+  "junit_counts": {
+    "total": 8,
+    "passed": 7,
+    "failed": 0,
+    "xfailed": 1,
+    "other": 0
+  },
+  "test_functions": {
+    "junit_backed_cases": [
+      "TC-TODO-001",
+      "TC-TODO-002",
+      "TC-TODO-003",
+      "TC-TODO-004",
+      "TC-TODO-005",
+      "TC-TODO-006",
+      "TC-TODO-007",
+      "TC-TODO-099"
+    ],
+    "non_junit_cases": [],
+    "junit_names": [
+      "test_add_todo",
+      "test_boundary_lengths",
+      "test_complete_and_filter",
+      "test_delete_todo",
+      "test_edit_todo",
+      "test_empty_and_whitespace_rejected",
+      "test_expected_failure_captures_evidence",
+      "test_text_is_escaped"
+    ]
+  },
+  "junit_backed_cases": [
+    "TC-TODO-001",
+    "TC-TODO-002",
+    "TC-TODO-003",
+    "TC-TODO-004",
+    "TC-TODO-005",
+    "TC-TODO-006",
+    "TC-TODO-007",
+    "TC-TODO-099"
+  ],
+  "non_junit_cases": [],
+  "test_case_design": null,
+  "quality_gate": {
+    "found": false,
+    "path": null,
+    "message": "本次未运行质量门禁",
+    "searched": "qualification/gate-runs/RUN-AUDIT-20261030-02/gate-report.json",
+    "delivery_verdict": null,
+    "test_verdict": null,
+    "gate_status": {},
+    "fail_findings": []
+  },
+  "artifacts": {
+    "markdown": "D:\\桌面\\软件测试competion\\submission\\RUN-AUDIT-20261030-02\\reports\\report.md",
+    "html": "D:\\桌面\\软件测试competion\\submission\\RUN-AUDIT-20261030-02\\reports\\report.html",
+    "json": "D:\\桌面\\软件测试competion\\submission\\RUN-AUDIT-20261030-02\\reports\\report.json",
+    "out_dir": "D:\\桌面\\软件测试competion\\submission\\RUN-AUDIT-20261030-02\\reports"
+  },
+  "limitations": [
+    "运行环境缺少字段：selenium、chrome、chromedriver、node（报告显示为「未采集」，未用报告生成时的探测值冒充运行环境）",
+    "未找到本运行的用例表（没有 CSV 的 executed_in_run 包含 RUN-AUDIT-20261030-02），设计方法与需求覆盖无法按用例表聚合。",
+    "本次未运行质量门禁（qualification/gate-runs/<run>/gate-report.json 不存在）。",
+    "以下用例的运行记录把断言取值写进了用例级预期，报告已剔除并回退到断言明细：TC-TODO-001、TC-TODO-004、TC-TODO-007",
+    "1 条 xfailed 用例只用于验证失败取证链路，不计入通过率，也不等同于产品缺陷。",
+    "比赛前需确认当届赛项对 AI 辅助工具的合规要求。"
+  ],
+  "gate": {
+    "enabled": true,
+    "verdict": "WARNING",
+    "exit_code": 0,
+    "findings": [
+      {
+        "code": "CASE_EXPECTED_FROM_ASSERTIONS",
+        "severity": "WARNING",
+        "subject": "TC-TODO-001",
+        "message": "用例级预期缺失或为历史断言取值，报告已回退到断言明细",
+        "evidence": "运行记录中的 'True' 是历史断言取值，不作为用例级预期"
+      },
+      {
+        "code": "CASE_EXPECTED_FROM_ASSERTIONS",
+        "severity": "WARNING",
+        "subject": "TC-TODO-004",
+        "message": "用例级预期缺失或为历史断言取值，报告已回退到断言明细",
+        "evidence": "运行记录中的 'False' 是历史断言取值，不作为用例级预期"
+      },
+      {
+        "code": "CASE_EXPECTED_FROM_ASSERTIONS",
+        "severity": "WARNING",
+        "subject": "TC-TODO-007",
+        "message": "用例级预期缺失或为历史断言取值，报告已回退到断言明细",
+        "evidence": "运行记录中的 'None' 是历史断言取值，不作为用例级预期"
+      },
+      {
+        "code": "CASE_TABLE_MISSING",
+        "severity": "WARNING",
+        "subject": "RUN-AUDIT-20261030-02",
+        "message": "未找到本运行的用例表（没有 CSV 的 executed_in_run 包含 RUN-AUDIT-20261030-02）",
+        "evidence": ""
+      },
+      {
+        "code": "QUALITY_GATE_NOT_RUN",
+        "severity": "WARNING",
+        "subject": "RUN-AUDIT-20261030-02",
+        "message": "未找到质量门禁报告，交付结论只依赖本报告的门禁",
+        "evidence": ""
+      }
+    ],
+    "counts": {
+      "WARNING": 5
+    },
+    "require_cases": null,
+    "fail_findings": [],
+    "blocked_findings": [],
+    "warning_findings": [
+      {
+        "code": "CASE_EXPECTED_FROM_ASSERTIONS",
+        "severity": "WARNING",
+        "subject": "TC-TODO-001",
+        "message": "用例级预期缺失或为历史断言取值，报告已回退到断言明细",
+        "evidence": "运行记录中的 'True' 是历史断言取值，不作为用例级预期"
+      },
+      {
+        "code": "CASE_EXPECTED_FROM_ASSERTIONS",
+        "severity": "WARNING",
+        "subject": "TC-TODO-004",
+        "message": "用例级预期缺失或为历史断言取值，报告已回退到断言明细",
+        "evidence": "运行记录中的 'False' 是历史断言取值，不作为用例级预期"
+      },
+      {
+        "code": "CASE_EXPECTED_FROM_ASSERTIONS",
+        "severity": "WARNING",
+        "subject": "TC-TODO-007",
+        "message": "用例级预期缺失或为历史断言取值，报告已回退到断言明细",
+        "evidence": "运行记录中的 'None' 是历史断言取值，不作为用例级预期"
+      },
+      {
+        "code": "CASE_TABLE_MISSING",
+        "severity": "WARNING",
+        "subject": "RUN-AUDIT-20261030-02",
+        "message": "未找到本运行的用例表（没有 CSV 的 executed_in_run 包含 RUN-AUDIT-20261030-02）",
+        "evidence": ""
+      },
+      {
+        "code": "QUALITY_GATE_NOT_RUN",
+        "severity": "WARNING",
+        "subject": "RUN-AUDIT-20261030-02",
+        "message": "未找到质量门禁报告，交付结论只依赖本报告的门禁",
+        "evidence": ""
+      }
+    ]
+  },
+  "exit_code": 0
+}

@@ -1,0 +1,533 @@
+{
+  "schema_version": "1.0",
+  "run_id": "RUN-20261031-COLDSTART-01",
+  "generated_at": "2026-10-31T01:07:25+08:00",
+  "gate_status": {
+    "G0": "PASS",
+    "G1": "FAIL",
+    "G2": "PASS",
+    "G3": "PASS",
+    "G4": "SKIP"
+  },
+  "delivery_verdict": "FAIL",
+  "test_verdict": "FAIL",
+  "findings": [
+    {
+      "gate": "G0",
+      "code": "AI_USE_UNVERIFIED",
+      "severity": "UNVERIFIED",
+      "subject": "RUN-20261031-COLDSTART-01",
+      "message": "未声明 AI 使用合规确认（meta.ai_use_confirmed）：本地产出视为 UNVERIFIED，不阻断本地演练；正式提交前必须人工核对当届赛项规则",
+      "evidence": "",
+      "advisory": true
+    },
+    {
+      "gate": "G1",
+      "code": "REQUIREMENT_UNKNOWN",
+      "severity": "FAIL",
+      "subject": "requirements",
+      "message": "用例引用的需求不在需求清单中：REQ-01, REQ-02, REQ-03, REQ-04, REQ-05, REQ-06, REQ-07, REQ-08 (+5 more)",
+      "evidence": ""
+    },
+    {
+      "gate": "G1",
+      "code": "REQUIREMENT_NOT_COVERED",
+      "severity": "FAIL",
+      "subject": "requirements",
+      "message": "需求没有任何用例覆盖：\"constraint\":, \"id\":, \"source\":, \"status\":, \"text\":, [, ], { (+1 more)",
+      "evidence": ""
+    },
+    {
+      "gate": "G3",
+      "code": "HISTORICAL_EVIDENCE_ANOMALY",
+      "severity": "WARNING",
+      "subject": "*",
+      "message": "全量扫描：manifest 共 9 条跨 run 登记、3 条无 run 归属证据；历史事实只报告不修改，不影响本 run 判定",
+      "evidence": "evidence/raw/RUN-20261029-01/exploration/snapshot.yml, evidence/raw/RUN-20261029-01/exploration/after-add.yml, evidence/raw/RUN-20261029-01/browser/viewport.png",
+      "advisory": true
+    },
+    {
+      "gate": "G4",
+      "code": "PACKAGE_SKIPPED",
+      "severity": "WARNING",
+      "subject": "submission",
+      "message": "未提供 --submission：交付包结构与哈希未校验",
+      "evidence": "",
+      "advisory": true
+    }
+  ],
+  "summary": {
+    "FAIL": 2,
+    "WARNING": 2,
+    "BLOCKED": 0,
+    "UNVERIFIED": 1,
+    "PASS": 572
+  },
+  "advisory": {
+    "count": 3,
+    "codes": [
+      "AI_USE_UNVERIFIED",
+      "HISTORICAL_EVIDENCE_ANOMALY",
+      "PACKAGE_SKIPPED"
+    ],
+    "note": "advisory findings 只记录不阻断本地演练；--official-submission 会把合规项升级为 BLOCKED"
+  },
+  "exit_code": 1,
+  "verdict_notes": {
+    "delivery": "测试成果是否可信、可交付（确认缺陷不会拉低该结论）",
+    "test": "存在失败用例或 JUnit 记录 failure/error"
+  },
+  "inputs": {
+    "manifest": "D:\\桌面\\软件测试competion\\evidence\\manifest.json",
+    "manifest_schema": "1.1",
+    "manifest_error": null,
+    "cases": [
+      "D:\\桌面\\软件测试competion\\reports\\test-cases\\cartcheck-test-cases.csv"
+    ],
+    "cases_candidates": [],
+    "junit_summary": "reports\\executions\\RUN-20261031-COLDSTART-01\\junit-summary.json",
+    "requirements": "pipeline_runs/RUN-20261031-COLDSTART-01/requirements.json",
+    "submission": null,
+    "official_submission": false,
+    "gates": [
+      "G0",
+      "G1",
+      "G2",
+      "G3",
+      "G4"
+    ]
+  },
+  "execution": {
+    "manifest_case_counts": {
+      "not-run": 1,
+      "passed": 25,
+      "failed": 5
+    },
+    "junit_summary_passed": 25,
+    "junit_summary_counts": {
+      "tests": 30,
+      "failures": 5,
+      "errors": 0,
+      "skipped": 0,
+      "xfailed": 0
+    },
+    "junit_xml_counts": {
+      "tests": 30,
+      "failures": 5,
+      "errors": 0,
+      "skipped": 0,
+      "xfailed": 0
+    },
+    "collected_nodes": [
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_001",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_002",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_003",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_004",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_005",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_006",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_007",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_008",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_009",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_010",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_011",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_012",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_013",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_014",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_015",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_016",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_017",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_018",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_019",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_020",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_021",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_022",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_023",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_024",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_025",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_026",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_027",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_028",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_029",
+      "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_030",
+      "tests/test_todomvc.py::test_add_todo",
+      "tests/test_todomvc.py::test_boundary_lengths",
+      "tests/test_todomvc.py::test_complete_and_filter",
+      "tests/test_todomvc.py::test_delete_todo",
+      "tests/test_todomvc.py::test_edit_todo",
+      "tests/test_todomvc.py::test_empty_and_whitespace_rejected",
+      "tests/test_todomvc.py::test_text_is_escaped",
+      "tests/test_todomvc_expected_failure.py::test_expected_failure_captures_evidence"
+    ],
+    "failed_case_triage": {
+      "TC-CART-002": "已登记确认缺陷",
+      "TC-CART-003": "已登记确认缺陷",
+      "TC-CART-011": "已登记确认缺陷",
+      "TC-CART-012": "已登记确认缺陷",
+      "TC-CART-021": "已登记确认缺陷"
+    }
+  },
+  "evidence": {
+    "verify": {
+      "checked": 83,
+      "ok": 83,
+      "missing": 0,
+      "mismatched": 0,
+      "cross_run": 0,
+      "unscoped": 0
+    },
+    "manifest_audit": {
+      "evidence_total": 216,
+      "cross_run": 9,
+      "unscoped": 3,
+      "examples": [
+        "evidence/raw/RUN-20261029-01/exploration/snapshot.yml",
+        "evidence/raw/RUN-20261029-01/exploration/after-add.yml",
+        "evidence/raw/RUN-20261029-01/browser/viewport.png",
+        "evidence/raw/RUN-20261029-01/browser/fullpage.png",
+        "evidence/raw/RUN-20261029-01/browser/element-todo-item.png"
+      ]
+    }
+  },
+  "compliance": {
+    "ai_use_confirmed": false,
+    "ai_status": "UNVERIFIED",
+    "official_submission": false,
+    "env_check": {
+      "verdict": "READY",
+      "summary": {
+        "PASS": 17,
+        "WARN": 0,
+        "BLOCKED": 0,
+        "total": 17
+      },
+      "blocking": [],
+      "warnings": []
+    }
+  },
+  "stats": {
+    "G0": {
+      "environment_keys": [
+        "chrome",
+        "chrome_path",
+        "chromedriver",
+        "node",
+        "os",
+        "platform",
+        "pytest",
+        "python",
+        "selenium",
+        "target"
+      ],
+      "missing_env_keys": [],
+      "chrome_major": 156,
+      "chromedriver_major": 156,
+      "env_check": {
+        "verdict": "READY",
+        "summary": {
+          "PASS": 17,
+          "WARN": 0,
+          "BLOCKED": 0,
+          "total": 17
+        },
+        "blocking": [],
+        "warnings": []
+      },
+      "ai_use_confirmed": false,
+      "ai_use_raw": ""
+    },
+    "G1": {
+      "rows": 30,
+      "unique_case_ids": 30,
+      "case_types": {
+        "positive": 6,
+        "boundary": 12,
+        "negative": 9,
+        "combination": 2,
+        "nonfunctional": 1
+      },
+      "sources": [
+        "D:\\桌面\\软件测试competion\\reports\\test-cases\\cartcheck-test-cases.csv"
+      ]
+    },
+    "G2": {
+      "manifest_case_counts": {
+        "not-run": 1,
+        "passed": 25,
+        "failed": 5
+      },
+      "junit_summary": "reports\\executions\\RUN-20261031-COLDSTART-01\\junit-summary.json",
+      "junit_summary_state": "ok",
+      "junit_summary_passed": 25,
+      "junit_summary_counts": {
+        "tests": 30,
+        "failures": 5,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0
+      },
+      "junit_xml": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-20261031-COLDSTART-01\\junit.xml",
+      "junit_xml_counts": {
+        "tests": 30,
+        "failures": 5,
+        "errors": 0,
+        "skipped": 0,
+        "xfailed": 0
+      },
+      "junit_case_names": [
+        "test_tc_cart_001",
+        "test_tc_cart_002",
+        "test_tc_cart_003",
+        "test_tc_cart_004",
+        "test_tc_cart_005",
+        "test_tc_cart_006",
+        "test_tc_cart_007",
+        "test_tc_cart_008",
+        "test_tc_cart_009",
+        "test_tc_cart_010",
+        "test_tc_cart_011",
+        "test_tc_cart_012",
+        "test_tc_cart_013",
+        "test_tc_cart_014",
+        "test_tc_cart_015",
+        "test_tc_cart_016",
+        "test_tc_cart_017",
+        "test_tc_cart_018",
+        "test_tc_cart_019",
+        "test_tc_cart_020",
+        "test_tc_cart_021",
+        "test_tc_cart_022",
+        "test_tc_cart_023",
+        "test_tc_cart_024",
+        "test_tc_cart_025",
+        "test_tc_cart_026",
+        "test_tc_cart_027",
+        "test_tc_cart_028",
+        "test_tc_cart_029",
+        "test_tc_cart_030"
+      ],
+      "automation": [
+        {
+          "case_id": "TC-CART-001",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_001"
+        },
+        {
+          "case_id": "TC-CART-002",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_002"
+        },
+        {
+          "case_id": "TC-CART-003",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_003"
+        },
+        {
+          "case_id": "TC-CART-004",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_004"
+        },
+        {
+          "case_id": "TC-CART-005",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_005"
+        },
+        {
+          "case_id": "TC-CART-006",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_006"
+        },
+        {
+          "case_id": "TC-CART-007",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_007"
+        },
+        {
+          "case_id": "TC-CART-008",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_008"
+        },
+        {
+          "case_id": "TC-CART-009",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_009"
+        },
+        {
+          "case_id": "TC-CART-010",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_010"
+        },
+        {
+          "case_id": "TC-CART-011",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_011"
+        },
+        {
+          "case_id": "TC-CART-012",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_012"
+        },
+        {
+          "case_id": "TC-CART-013",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_013"
+        },
+        {
+          "case_id": "TC-CART-014",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_014"
+        },
+        {
+          "case_id": "TC-CART-015",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_015"
+        },
+        {
+          "case_id": "TC-CART-016",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_016"
+        },
+        {
+          "case_id": "TC-CART-017",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_017"
+        },
+        {
+          "case_id": "TC-CART-018",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_018"
+        },
+        {
+          "case_id": "TC-CART-019",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_019"
+        },
+        {
+          "case_id": "TC-CART-020",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_020"
+        },
+        {
+          "case_id": "TC-CART-021",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_021"
+        },
+        {
+          "case_id": "TC-CART-022",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_022"
+        },
+        {
+          "case_id": "TC-CART-023",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_023"
+        },
+        {
+          "case_id": "TC-CART-024",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_024"
+        },
+        {
+          "case_id": "TC-CART-025",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_025"
+        },
+        {
+          "case_id": "TC-CART-026",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_026"
+        },
+        {
+          "case_id": "TC-CART-027",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_027"
+        },
+        {
+          "case_id": "TC-CART-028",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_028"
+        },
+        {
+          "case_id": "TC-CART-029",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_029"
+        },
+        {
+          "case_id": "TC-CART-030",
+          "file": "tests/generated/cartcheck/test_cartcheck.py",
+          "func": "test_tc_cart_030"
+        }
+      ],
+      "collected_nodes": [
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_001",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_002",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_003",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_004",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_005",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_006",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_007",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_008",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_009",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_010",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_011",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_012",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_013",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_014",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_015",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_016",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_017",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_018",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_019",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_020",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_021",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_022",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_023",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_024",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_025",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_026",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_027",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_028",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_029",
+        "tests/generated/cartcheck/test_cartcheck.py::test_tc_cart_030",
+        "tests/test_todomvc.py::test_add_todo",
+        "tests/test_todomvc.py::test_boundary_lengths",
+        "tests/test_todomvc.py::test_complete_and_filter",
+        "tests/test_todomvc.py::test_delete_todo",
+        "tests/test_todomvc.py::test_edit_todo",
+        "tests/test_todomvc.py::test_empty_and_whitespace_rejected",
+        "tests/test_todomvc.py::test_text_is_escaped",
+        "tests/test_todomvc_expected_failure.py::test_expected_failure_captures_evidence"
+      ]
+    },
+    "G3": {
+      "evidence_verify": {
+        "checked": 83,
+        "ok": 83,
+        "missing": 0,
+        "mismatched": 0,
+        "cross_run": 0,
+        "unscoped": 0
+      },
+      "manifest_audit": {
+        "evidence_total": 216,
+        "cross_run": 9,
+        "unscoped": 3,
+        "examples": [
+          "evidence/raw/RUN-20261029-01/exploration/snapshot.yml",
+          "evidence/raw/RUN-20261029-01/exploration/after-add.yml",
+          "evidence/raw/RUN-20261029-01/browser/viewport.png",
+          "evidence/raw/RUN-20261029-01/browser/fullpage.png",
+          "evidence/raw/RUN-20261029-01/browser/element-todo-item.png"
+        ]
+      },
+      "failed_case_triage": {
+        "TC-CART-002": "已登记确认缺陷",
+        "TC-CART-003": "已登记确认缺陷",
+        "TC-CART-011": "已登记确认缺陷",
+        "TC-CART-012": "已登记确认缺陷",
+        "TC-CART-021": "已登记确认缺陷"
+      },
+      "unconfirmed_defects": 0,
+      "confirmed_defects": 5
+    }
+  }
+}

@@ -1,0 +1,10 @@
+case_id,title,priority,requirement,precondition,test_data,steps,expected,automation,evidence,executed_in_run
+TC-TODO-001,新增待办,P0,R1,清空 localStorage 后打开页面,Buy milk,"1. 打开页面 2. input.new-todo 输入 Buy milk 回车","列表为 [Buy milk]；计数 1 item left；footer 可见",tests/test_todomvc.py::test_add_todo,元素截图+整页截图+日志,RUN-CMDCHECK-03
+TC-TODO-002,完成状态与过滤器,P0,R2,空列表,Task A; Task B,"1. 新增两项 2. 勾选第一项 3. 切 Completed 4. 切 Active","计数 1 item left；Completed 仅 Task A；Active 仅 Task B",tests/test_todomvc.py::test_complete_and_filter,整页截图+日志,未执行(smoke)
+TC-TODO-003,编辑标题,P1,R3,空列表,Old title -> New title,"1. 新增 Old title 2. 双击 3. 改为 New title 回车","列表为 [New title]",tests/test_todomvc.py::test_edit_todo,日志,未执行(smoke)
+TC-TODO-004,删除待办,P1,R4,空列表,Delete me,"1. 新增 Delete me 2. 悬停 3. 点击 destroy","列表为空；footer 不可见",tests/test_todomvc.py::test_delete_todo,整页截图+日志,未执行(smoke)
+TC-TODO-005,空与空白输入被拒绝,P0,R5,空列表,"空字符串；三个空格","1. 直接回车 2. 输入三个空格回车","两次后列表均为空",tests/test_todomvc.py::test_empty_and_whitespace_rejected,日志,未执行(smoke)
+TC-TODO-006,长度边界,P2,R6,空列表,"A；B*200","1. 输入 A 2. 输入 200 个 B","两项均接受且内容完整",tests/test_todomvc.py::test_boundary_lengths,日志,未执行(smoke)
+TC-TODO-007,HTML 文本转义,P1,R7,空列表,<img src=x onerror=window.__xss=1>,"1. 输入 payload 回车","按纯文本展示；window.__xss 为 undefined；无 alert",tests/test_todomvc.py::test_text_is_escaped,日志,未执行(smoke)
+TC-TODO-008,全选与清除完成项,P1,R8,空列表,3 项待办,"1. 新增 3 项 2. 点击 toggle-all 3. 点击 clear-completed","全选后计数 0 items left；清除后列表为空",未实现,待补,未覆盖
+TC-TODO-009,刷新持久化,P2,R9,空列表,Persist me,"1. 新增 Persist me 2. 刷新页面","刷新后仍含 Persist me",未实现,待补,未覆盖

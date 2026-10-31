@@ -1,0 +1,308 @@
+{
+  "generated_at": "2026-10-29T18:29:36+08:00",
+  "run": {
+    "run_id": "RUN-CMDCHECK-03",
+    "label": "TodoMVC-CMDCHECK3",
+    "target": "https://demo.playwright.dev/todomvc",
+    "status": "passed",
+    "stage": "done",
+    "started_at": "2026-10-29T18:26:50+08:00",
+    "finished_at": "2026-10-29T18:27:54+08:00",
+    "case_counts": {
+      "passed": 1
+    },
+    "case_total": 1,
+    "evidence_count": 7,
+    "defect_count": 0,
+    "environment": {
+      "python": "3.13.9",
+      "platform": "Windows-11-10.0.26340-SP0",
+      "pytest": "pytest",
+      "target": "https://demo.playwright.dev/todomvc"
+    },
+    "notes": [
+      {
+        "at": "2026-10-29T18:26:54+08:00",
+        "note": "开始用例设计"
+      },
+      {
+        "at": "2026-10-29T18:27:30+08:00",
+        "note": "用例 9 条（TC-TODO-001..009），探索验证 input.new-todo/.todo-list li/span.todo-count/footer.footer；控制台仅 favicon 404"
+      },
+      {
+        "at": "2026-10-29T18:27:33+08:00",
+        "note": "pytest started"
+      },
+      {
+        "at": "2026-10-29T18:27:39+08:00",
+        "note": "pytest exit=0; total=1; failed=False; xfailed=False"
+      },
+      {
+        "at": "2026-10-29T18:27:39+08:00",
+        "note": "pytest exit=0; tests=1; failures=0; errors=0; xfailed=0; elapsed=5.46s"
+      },
+      {
+        "at": "2026-10-29T18:27:47+08:00",
+        "note": "Selenium smoke: test_add_todo 通过 (1 passed, 0 failed)"
+      },
+      {
+        "at": "2026-10-29T18:27:54+08:00",
+        "note": "报告已生成；视觉检查：5 张截图均非空（stddev>9），无差异对比需求（单状态 smoke）"
+      }
+    ]
+  },
+  "verify": {
+    "checked": 7,
+    "ok": 7,
+    "missing": [],
+    "mismatched": []
+  },
+  "junit": {
+    "run_id": "RUN-CMDCHECK-03",
+    "exit_code": 0,
+    "elapsed_seconds": 5.46,
+    "junit": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-CMDCHECK-03\\junit.xml",
+    "console_log": "D:\\桌面\\软件测试competion\\evidence\\logs\\RUN-CMDCHECK-03\\pytest-console.log",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "time": 4.423,
+    "xfailed": 0,
+    "cases": [
+      {
+        "name": "test_add_todo",
+        "classname": "tests.test_todomvc",
+        "time": 4.072,
+        "status": "passed",
+        "message": ""
+      }
+    ]
+  },
+  "junit_counts": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "xfailed": 0,
+    "other": 0
+  },
+  "cases": [
+    {
+      "case_id": "TC-TODO-001",
+      "title": "新增待办",
+      "source_title": "test_add_todo",
+      "status": "passed",
+      "expected": "True",
+      "actual": "断言通过",
+      "steps": [
+        "打开 TodoMVC 演示页",
+        "在新增输入框中输入 Buy milk 并回车"
+      ],
+      "assertions": [
+        {
+          "name": "待办列表包含新增项",
+          "expected": "['Buy milk']",
+          "actual": "['Buy milk']",
+          "passed": true,
+          "at": "2026-10-29T18:27:36+08:00"
+        },
+        {
+          "name": "剩余计数为 1",
+          "expected": "1 item left",
+          "actual": "1 item left",
+          "passed": true,
+          "at": "2026-10-29T18:27:36+08:00"
+        },
+        {
+          "name": "底部状态栏可见",
+          "expected": "True",
+          "actual": "True",
+          "passed": true,
+          "at": "2026-10-29T18:27:36+08:00"
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EV-9951668576",
+          "run_id": "RUN-CMDCHECK-03",
+          "case_id": "TC-TODO-001",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-CMDCHECK-03/TC-TODO-001/TC-TODO-001__exploration__element__20261029T102720Z.png",
+          "bucket": "raw",
+          "step": "exploration: 验证 .todo-list li 定位",
+          "caption": "新增 Buy milk 后的待办条目（元素截图）",
+          "created_at": "2026-10-29T18:27:24+08:00",
+          "size_bytes": 2207,
+          "sha256": "d3876867c834f59fbc9691afda4538216ab30abc43eb3f49921363023a7eda70",
+          "immutable": true,
+          "meta": {},
+          "width": 550,
+          "height": 59,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-ce9c86ee17",
+          "run_id": "RUN-CMDCHECK-03",
+          "case_id": "TC-TODO-001",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-CMDCHECK-03/TC-TODO-001/TC-TODO-001__exploration__viewport__20261029T102721Z.png",
+          "bucket": "raw",
+          "step": "exploration: 验证计数与状态栏",
+          "caption": "新增 Buy milk 后的整页视口状态：1 item left 且 footer 可见",
+          "created_at": "2026-10-29T18:27:24+08:00",
+          "size_bytes": 29364,
+          "sha256": "b96dc1f952004c5aac29f2f760e2214474049cbd388b7c82ceba1bc9ef9d9671",
+          "immutable": true,
+          "meta": {},
+          "width": 1280,
+          "height": 720,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-9bad8c36f8",
+          "run_id": "RUN-CMDCHECK-03",
+          "case_id": "TC-TODO-001",
+          "kind": "snapshot",
+          "path": "evidence/raw/RUN-CMDCHECK-03/TC-TODO-001/TC-TODO-001__exploration__snapshot__20261029T102714Z.yml",
+          "bucket": "raw",
+          "step": "exploration: DOM 定位",
+          "caption": "新增后无障碍快照，确认 textbox/checkbox/filters 结构",
+          "created_at": "2026-10-29T18:27:25+08:00",
+          "size_bytes": 1520,
+          "sha256": "f7f3e292876f859491ee58f955c09b93ab8711ed46fd5b0ffa2db8e30b07c09e",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-047203b000",
+          "run_id": "RUN-CMDCHECK-03",
+          "case_id": "TC-TODO-001",
+          "kind": "log",
+          "path": "evidence/logs/RUN-CMDCHECK-03/TC-TODO-001__browser__20261029T102654Z.log",
+          "bucket": "logs",
+          "step": "exploration: 控制台观察",
+          "caption": "浏览器控制台：仅 favicon.ico 404，无脚本异常",
+          "created_at": "2026-10-29T18:27:25+08:00",
+          "size_bytes": 325,
+          "sha256": "c6b50a95053cc508e114864ee3f512befbd686cce5ba6476b9a9be7686b7216d",
+          "immutable": true,
+          "meta": {}
+        },
+        {
+          "evidence_id": "EV-593e18e7c4",
+          "run_id": "RUN-CMDCHECK-03",
+          "case_id": "TC-TODO-001",
+          "kind": "element-screenshot",
+          "path": "evidence/raw/RUN-CMDCHECK-03/TC-TODO-001/TC-TODO-001__case__element__20261029T102736-653.png",
+          "bucket": "raw",
+          "step": "新增待办后的元素",
+          "caption": "用例证据：新增待办后的元素",
+          "created_at": "2026-10-29T18:27:36+08:00",
+          "size_bytes": 1999,
+          "sha256": "8ea0d5faa634e604978962cc979758182671a4c88e795bc5aa6b473c8637308b",
+          "immutable": true,
+          "meta": {},
+          "width": 550,
+          "height": 59,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-2e6246f47d",
+          "run_id": "RUN-CMDCHECK-03",
+          "case_id": "TC-TODO-001",
+          "kind": "fullpage-screenshot",
+          "path": "evidence/raw/RUN-CMDCHECK-03/TC-TODO-001/TC-TODO-001__case__fullpage__20261029T102736-759.png",
+          "bucket": "raw",
+          "step": "新增待办后的整页",
+          "caption": "用例证据：新增待办后的整页",
+          "created_at": "2026-10-29T18:27:36+08:00",
+          "size_bytes": 27928,
+          "sha256": "fb13b17e660a50a4ea5f9a00362a4c2b2084f6be649317f409e41942cc9e334d",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        },
+        {
+          "evidence_id": "EV-3dbff63afe",
+          "run_id": "RUN-CMDCHECK-03",
+          "case_id": "TC-TODO-001",
+          "kind": "screenshot",
+          "path": "evidence/raw/RUN-CMDCHECK-03/TC-TODO-001/TC-TODO-001__final__viewport__20261029T102736-822.png",
+          "bucket": "raw",
+          "step": "final",
+          "caption": "通过后的最终视口截图",
+          "created_at": "2026-10-29T18:27:36+08:00",
+          "size_bytes": 27928,
+          "sha256": "fb13b17e660a50a4ea5f9a00362a4c2b2084f6be649317f409e41942cc9e334d",
+          "immutable": true,
+          "meta": {},
+          "width": 1262,
+          "height": 748,
+          "mode": "RGB",
+          "format": "PNG"
+        }
+      ],
+      "evidence_complete": true,
+      "defects": [],
+      "log_path": "evidence/logs/RUN-CMDCHECK-03/TC-TODO-001.log",
+      "duration_ms": 1842
+    }
+  ],
+  "junit_backed_cases": [
+    "TC-TODO-001"
+  ],
+  "non_junit_cases": [],
+  "coverage": {
+    "not_run": [
+      {
+        "case_id": "TC-TODO-002",
+        "title": "完成状态与过滤器",
+        "design_status": "未执行（本轮 scope 外）"
+      },
+      {
+        "case_id": "TC-TODO-003",
+        "title": "编辑标题",
+        "design_status": "未执行（本轮 scope 外）"
+      },
+      {
+        "case_id": "TC-TODO-004",
+        "title": "删除待办",
+        "design_status": "未执行（本轮 scope 外）"
+      },
+      {
+        "case_id": "TC-TODO-005",
+        "title": "空与空白输入被拒绝",
+        "design_status": "未执行（本轮 scope 外）"
+      },
+      {
+        "case_id": "TC-TODO-006",
+        "title": "长度边界",
+        "design_status": "未执行（本轮 scope 外）"
+      },
+      {
+        "case_id": "TC-TODO-007",
+        "title": "HTML 文本转义",
+        "design_status": "未执行（本轮 scope 外）"
+      },
+      {
+        "case_id": "TC-TODO-008",
+        "title": "全选与清除完成项",
+        "design_status": "未执行（未覆盖）"
+      },
+      {
+        "case_id": "TC-TODO-009",
+        "title": "刷新持久化",
+        "design_status": "未执行（未覆盖）"
+      }
+    ],
+    "partial": []
+  },
+  "visual": [],
+  "test_case_design": "D:\\桌面\\软件测试competion\\reports\\test-cases\\TodoMVC-CMDCHECK3-test-cases.md"
+}

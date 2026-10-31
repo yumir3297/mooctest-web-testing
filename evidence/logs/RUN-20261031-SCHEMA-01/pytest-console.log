@@ -1,0 +1,32 @@
+$ C:\Users\李洵\AppData\Local\Programs\Python\Python313\python.exe -m pytest -q --tb=short --junitxml D:\桌面\软件测试competion\reports\executions\RUN-20261031-SCHEMA-01\junit.xml -k add_todo or whitespace tests/test_todomvc.py
+Exception in thread Thread-1 (_readerthread):
+Traceback (most recent call last):
+  File "C:\Users\李洵\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Users\李洵\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\李洵\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1615, in _readerthread
+    buffer.append(fh.read())
+                  ~~~~~~~^^
+  File "<frozen codecs>", line 325, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 0: invalid continuation byte
+EE                                                                       [100%]
+=================================== ERRORS ====================================
+_______________________ ERROR at setup of test_add_todo _______________________
+tests\conftest.py:373: in driver
+    _assert_major_match(compat)
+tests\conftest.py:100: in _assert_major_match
+    raise RuntimeError(
+E   RuntimeError: driver compatibility check could not determine a version: chrome='<empty>' chromedriver='ChromeDriver 156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705})'
+____________ ERROR at setup of test_empty_and_whitespace_rejected _____________
+tests\conftest.py:373: in driver
+    _assert_major_match(compat)
+tests\conftest.py:100: in _assert_major_match
+    raise RuntimeError(
+E   RuntimeError: driver compatibility check could not determine a version: chrome='<empty>' chromedriver='ChromeDriver 156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705})'
+=========================== short test summary info ===========================
+ERROR tests/test_todomvc.py::test_add_todo - RuntimeError: driver compatibili...
+ERROR tests/test_todomvc.py::test_empty_and_whitespace_rejected - RuntimeErro...
+5 deselected, 2 errors in 1.46s

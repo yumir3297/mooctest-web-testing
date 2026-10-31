@@ -1,0 +1,665 @@
+{
+  "schema_version": "1.0",
+  "package_kind": "internal-rehearsal",
+  "official_format_confirmed": false,
+  "official_format_note": "内部演练交付包，2026 官方提交格式未确认",
+  "generator": {
+    "tool": "tools/package_submission.py",
+    "version": "1.0"
+  },
+  "run_id": "RUN-20261031-COLDSTART-01",
+  "generated_at": "2026-10-31T01:10:41+08:00",
+  "target": "http://127.0.0.1:8765/",
+  "tool_versions": {
+    "python": "3.13.9",
+    "platform": "Windows-11-10.0.26340-SP0",
+    "pytest": "9.1.1",
+    "selenium": "4.51.0",
+    "openpyxl": "3.1.5",
+    "pillow": "12.2.0",
+    "package_submission": "1.0"
+  },
+  "case_count": 30,
+  "case_table": {
+    "source": "run-scoped",
+    "path": "D:\\桌面\\软件测试competion\\reports\\test-cases\\cartcheck-test-cases.csv"
+  },
+  "counts": {
+    "files": 89,
+    "test_code": 8,
+    "screenshots": 72,
+    "reports": 6
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "a8ea94ec75ce05683c48233ea47cbb2431753fe82391ceae26d774915d0771b9",
+      "size_bytes": 1506,
+      "case_id": null,
+      "source": "generated"
+    },
+    {
+      "path": "reports/junit-summary.json",
+      "sha256": "886fdf5791815b09e0623d8b4cf066696645e9d1cebfe4dae031b4744c285f95",
+      "size_bytes": 6379,
+      "case_id": null,
+      "source": "reports"
+    },
+    {
+      "path": "reports/junit.xml",
+      "sha256": "94f4bfccefa512ad51a18ae4fc57caf71ad0663b8aaa7b4a661b73b8cd69aaab",
+      "size_bytes": 6106,
+      "case_id": null,
+      "source": "reports"
+    },
+    {
+      "path": "reports/pytest-console.log",
+      "sha256": "ced567886a7333c155a7d4862a4ff8482daf90aa52d42c4816e178f7392cce52",
+      "size_bytes": 8034,
+      "case_id": null,
+      "source": "reports"
+    },
+    {
+      "path": "reports/report.html",
+      "sha256": "e096af3ffccc1a2c747ac599bd36e8a7616c030305cbaa8969c5d51fd1eaa7f3",
+      "size_bytes": 143544,
+      "case_id": null,
+      "source": "reports"
+    },
+    {
+      "path": "reports/report.json",
+      "sha256": "df37990efa24704a8ec0a215a17ce5338b13bc781f44e46aa6af76e40b4e6eba",
+      "size_bytes": 217746,
+      "case_id": null,
+      "source": "reports"
+    },
+    {
+      "path": "reports/report.md",
+      "sha256": "1ae46fe55d2724a42d456c28f92c9b10e1eef4977b5eabb53bbff9f95207322f",
+      "size_bytes": 106254,
+      "case_id": null,
+      "source": "reports"
+    },
+    {
+      "path": "screenshots/EXPLORE__e1-result__element__20261030T170005-325.png",
+      "sha256": "f267121a1090596b4faae4e8166f54794f08549e0cd74d9c62506c01193d8080",
+      "size_bytes": 31236,
+      "case_id": "EXPLORE",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/EXPLORE__initial__viewport__20261030T170004-883.png",
+      "sha256": "9770ff3b7581380cf6d764f5742d025b8db73a0c3285e600ad5105a2a5cc805b",
+      "size_bytes": 34019,
+      "case_id": "EXPLORE",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-001__final__viewport__20261030T170402-406.png",
+      "sha256": "d8f20e42fa44be26efa7c307a085940b4795bce9b0ae82eae384dde75e9754b5",
+      "size_bytes": 34309,
+      "case_id": "TC-CART-001",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-001__result__element__20261030T170402-200.png",
+      "sha256": "e7439182840dfab718bed67bdfa1a688f383794a0c232a1862fe111b98300793",
+      "size_bytes": 7819,
+      "case_id": "TC-CART-001",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-002__failure__fullpage__20261030T170403-655.png",
+      "sha256": "b80f6e8bd2e8d556f97be811d1e856767fd463627b731f29c0ff1260ad7462c1",
+      "size_bytes": 34004,
+      "case_id": "TC-CART-002",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-002__failure__viewport__20261030T170403-655.png",
+      "sha256": "f22f0556cd5e077e24c35e4b90c40199eae991a9b827a036d0ecc188c1cc8a9d",
+      "size_bytes": 34520,
+      "case_id": "TC-CART-002",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-002__repro__element__20261030T170517-678.png",
+      "sha256": "9fdaaa2b3f28e60481c9614dcbfb18c93f5ecb15f0019238a78b96f6ceb31929",
+      "size_bytes": 7884,
+      "case_id": "TC-CART-002",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-002__result__element__20261030T170403-230.png",
+      "sha256": "9fdaaa2b3f28e60481c9614dcbfb18c93f5ecb15f0019238a78b96f6ceb31929",
+      "size_bytes": 7884,
+      "case_id": "TC-CART-002",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-003__failure__fullpage__20261030T170404-808.png",
+      "sha256": "73f13d0f224670d050a60fe4c5bfc7dec8174c6daf0b8debf14f00324f9f67a7",
+      "size_bytes": 33953,
+      "case_id": "TC-CART-003",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-003__failure__viewport__20261030T170404-808.png",
+      "sha256": "b0cdaf1518d91c82e52759066eef73525c59f2214d76dca6213e1230cc645607",
+      "size_bytes": 34426,
+      "case_id": "TC-CART-003",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-003__repro__element__20261030T170518-304.png",
+      "sha256": "b9bd03e94e38dee914f0f6f9bac55d056db2c653ac43d320580a8a2c584580c5",
+      "size_bytes": 8023,
+      "case_id": "TC-CART-003",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-003__result__element__20261030T170404-653.png",
+      "sha256": "b9bd03e94e38dee914f0f6f9bac55d056db2c653ac43d320580a8a2c584580c5",
+      "size_bytes": 8023,
+      "case_id": "TC-CART-003",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-004__final__viewport__20261030T170406-079.png",
+      "sha256": "e5279640437c0b5c725cf2101e2f454514955cabe352c9c23ea33c00016cbe0a",
+      "size_bytes": 34433,
+      "case_id": "TC-CART-004",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-004__result__element__20261030T170405-894.png",
+      "sha256": "fa89120b48256e964730258dbee729e9e2989e8782efb68702082988514b41c4",
+      "size_bytes": 7740,
+      "case_id": "TC-CART-004",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-005__final__viewport__20261030T170407-022.png",
+      "sha256": "e68f79b7cbd5af964be1f54e9f6fd1842be5422763936af97d9d32abe15fc4f3",
+      "size_bytes": 34855,
+      "case_id": "TC-CART-005",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-005__result__element__20261030T170406-823.png",
+      "sha256": "6ff27cfc58c038a15d11c8cfca863b7adb9538d5bba0d53a431616a5684d1183",
+      "size_bytes": 7897,
+      "case_id": "TC-CART-005",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-006__final__viewport__20261030T170408-089.png",
+      "sha256": "f2b17b6aa3801ae6c9ca00eb781ac0162842ef1b0c15c4905a2fcde51a736d37",
+      "size_bytes": 34150,
+      "case_id": "TC-CART-006",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-006__result__element__20261030T170407-925.png",
+      "sha256": "0ed0e022824d98c64bc8a4d1c2002301a7a6db83e1838b5e5f27720104add25b",
+      "size_bytes": 7656,
+      "case_id": "TC-CART-006",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-007__final__viewport__20261030T170409-070.png",
+      "sha256": "b377012489e10f522bd58198bcf31bbf337698c954f58436758d4cd8d2609a2f",
+      "size_bytes": 34227,
+      "case_id": "TC-CART-007",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-007__result__element__20261030T170408-918.png",
+      "sha256": "26083635fc7f52dae3209063c44185da96b8363706e1be16a34f397e7905b8cd",
+      "size_bytes": 7656,
+      "case_id": "TC-CART-007",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-008__final__viewport__20261030T170409-982.png",
+      "sha256": "901a395f4b32336923e0622d9b2fc1fe55da64ec39d66ac6cb12d0e0287fc63f",
+      "size_bytes": 34081,
+      "case_id": "TC-CART-008",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-008__result__element__20261030T170409-812.png",
+      "sha256": "90fb83e6a5416efedffdf53550ab5db928276ff96bda6668fb601c743ecd0530",
+      "size_bytes": 7852,
+      "case_id": "TC-CART-008",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-009__final__viewport__20261030T170410-896.png",
+      "sha256": "c03b0b7d7d849a8b02db822bf4454bb1373bfdb8197c7b0ff114cda179e0e04f",
+      "size_bytes": 33048,
+      "case_id": "TC-CART-009",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-009__result__element__20261030T170410-728.png",
+      "sha256": "e100454d13a30f47c58a360e7dd8886fae1575a445cb8a8fb0af67c478a8ee93",
+      "size_bytes": 6511,
+      "case_id": "TC-CART-009",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-010__final__viewport__20261030T170411-787.png",
+      "sha256": "010856f42359746fdb675050c44581e6720892fc68b3d16ea4f7cceb1488a348",
+      "size_bytes": 33418,
+      "case_id": "TC-CART-010",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-010__result__element__20261030T170411-631.png",
+      "sha256": "6359b458c51a2006212c006171e8d2f9b4d1323c6a675afd1dda3abea0068146",
+      "size_bytes": 6826,
+      "case_id": "TC-CART-010",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-011__failure__fullpage__20261030T170412-696.png",
+      "sha256": "7989503b98f96ce45083e79c897cb28701167ff05225ad7b95cf59f20e019e4e",
+      "size_bytes": 35765,
+      "case_id": "TC-CART-011",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-011__failure__viewport__20261030T170412-696.png",
+      "sha256": "a6c863a9edd0151198d09ac15efa0f33f120bd10cd43c3a84de525463880f82f",
+      "size_bytes": 36210,
+      "case_id": "TC-CART-011",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-011__repro__element__20261030T170518-810.png",
+      "sha256": "24aee32978f032d9f4dbd3a0ce72cfa928aad858f21a0760426fb3982932ca1c",
+      "size_bytes": 9553,
+      "case_id": "TC-CART-011",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-011__result__element__20261030T170412-556.png",
+      "sha256": "24aee32978f032d9f4dbd3a0ce72cfa928aad858f21a0760426fb3982932ca1c",
+      "size_bytes": 9553,
+      "case_id": "TC-CART-011",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-012__failure__fullpage__20261030T170413-762.png",
+      "sha256": "cbc73f006b68655afd298d803fce33fc9b3cf871c3b98ce00b6ca4b8456f569e",
+      "size_bytes": 35566,
+      "case_id": "TC-CART-012",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-012__failure__viewport__20261030T170413-762.png",
+      "sha256": "db3f7e4a097837e8e398a27500425edfbbe3a4d0195e3d63800a735dcd2e06ea",
+      "size_bytes": 35992,
+      "case_id": "TC-CART-012",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-012__repro__element__20261030T170519-364.png",
+      "sha256": "ddfc939e080013a866b7637ad57f4122f80b89a3e2e3bd15d96a59f5df83eb9d",
+      "size_bytes": 9425,
+      "case_id": "TC-CART-012",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-012__result__element__20261030T170413-627.png",
+      "sha256": "ddfc939e080013a866b7637ad57f4122f80b89a3e2e3bd15d96a59f5df83eb9d",
+      "size_bytes": 9425,
+      "case_id": "TC-CART-012",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-013__final__viewport__20261030T170414-861.png",
+      "sha256": "2d332c8c3d2fdb106e3eff16d11bf1008f29273fa4918f0d741ae42fd605e6cc",
+      "size_bytes": 34424,
+      "case_id": "TC-CART-013",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-013__result__element__20261030T170414-695.png",
+      "sha256": "90fb83e6a5416efedffdf53550ab5db928276ff96bda6668fb601c743ecd0530",
+      "size_bytes": 7852,
+      "case_id": "TC-CART-013",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-014__final__viewport__20261030T170415-809.png",
+      "sha256": "b1e164094d83811af715fbeb6e9003b61855e1dbf2c979eb80364b576cc57aee",
+      "size_bytes": 33840,
+      "case_id": "TC-CART-014",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-014__result__element__20261030T170415-645.png",
+      "sha256": "7ba1cefbc6b6aa16d7a5575603d73948841d49bc12c3d175295d0145bf3332a0",
+      "size_bytes": 7443,
+      "case_id": "TC-CART-014",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-015__final__viewport__20261030T170416-724.png",
+      "sha256": "5b54ad5cf5ab85d3fcb10fb6be6d7488fe82beee768835f78e6f32c6b06912da",
+      "size_bytes": 34620,
+      "case_id": "TC-CART-015",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-015__result__element__20261030T170416-561.png",
+      "sha256": "57fbb7c7a81b2d7da514171192a96dcaa7b8fd9b1d048e29f3faefcd1959464b",
+      "size_bytes": 8118,
+      "case_id": "TC-CART-015",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-016__final__viewport__20261030T170417-608.png",
+      "sha256": "49ee7bcd1f30e6a61c257c72513961c0cf2c5bd087a4257d6422fcd785f0b624",
+      "size_bytes": 35107,
+      "case_id": "TC-CART-016",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-016__result__element__20261030T170417-446.png",
+      "sha256": "90fb83e6a5416efedffdf53550ab5db928276ff96bda6668fb601c743ecd0530",
+      "size_bytes": 7852,
+      "case_id": "TC-CART-016",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-017__final__viewport__20261030T170418-541.png",
+      "sha256": "cb2f702af113c0056323a19eaadf95499d91a45822f29ba69bf3f89a0f7f4cba",
+      "size_bytes": 34339,
+      "case_id": "TC-CART-017",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-017__result__element__20261030T170418-368.png",
+      "sha256": "90fb83e6a5416efedffdf53550ab5db928276ff96bda6668fb601c743ecd0530",
+      "size_bytes": 7852,
+      "case_id": "TC-CART-017",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-018__final__viewport__20261030T170419-525.png",
+      "sha256": "79d5d7656cc4ac2f479d47e6d212387644c2edfeccb1330ee92dd910c394cc83",
+      "size_bytes": 34194,
+      "case_id": "TC-CART-018",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-018__result__element__20261030T170419-358.png",
+      "sha256": "90fb83e6a5416efedffdf53550ab5db928276ff96bda6668fb601c743ecd0530",
+      "size_bytes": 7852,
+      "case_id": "TC-CART-018",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-019__final__viewport__20261030T170420-492.png",
+      "sha256": "da1342efc4f619103b9eb4338ec06248940efc86734ecf70f4c78ca77e78cabd",
+      "size_bytes": 33665,
+      "case_id": "TC-CART-019",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-019__result__element__20261030T170420-304.png",
+      "sha256": "077cc59082e0bc2543877f7424f75b117d5fc48fabc9c1a1eaab3d4af424527a",
+      "size_bytes": 7316,
+      "case_id": "TC-CART-019",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-020__final__viewport__20261030T170421-466.png",
+      "sha256": "374791d91a18f47dacb867c623c468430df32b31759625ba85004589f7d13556",
+      "size_bytes": 33832,
+      "case_id": "TC-CART-020",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-020__result__element__20261030T170421-299.png",
+      "sha256": "077cc59082e0bc2543877f7424f75b117d5fc48fabc9c1a1eaab3d4af424527a",
+      "size_bytes": 7316,
+      "case_id": "TC-CART-020",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-021__failure__fullpage__20261030T170422-411.png",
+      "sha256": "06637480e308a9060dd8da0865869dafb7e6ea2bdd44ea2bb670dddd472097dc",
+      "size_bytes": 33878,
+      "case_id": "TC-CART-021",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-021__failure__viewport__20261030T170422-411.png",
+      "sha256": "06b662fa0f1fa93e194db93f3e7c6c3d54fa4076ed9e4bdc8a5ff8c021ee3c43",
+      "size_bytes": 34331,
+      "case_id": "TC-CART-021",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-021__repro__element__20261030T170519-913.png",
+      "sha256": "e7439182840dfab718bed67bdfa1a688f383794a0c232a1862fe111b98300793",
+      "size_bytes": 7819,
+      "case_id": "TC-CART-021",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-021__result__element__20261030T170422-258.png",
+      "sha256": "e7439182840dfab718bed67bdfa1a688f383794a0c232a1862fe111b98300793",
+      "size_bytes": 7819,
+      "case_id": "TC-CART-021",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-022__final__viewport__20261030T170423-610.png",
+      "sha256": "674bce9d67e0e64d41727c8e61fdaadc9d03aab58e1fa1784687487f4d8febff",
+      "size_bytes": 33698,
+      "case_id": "TC-CART-022",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-022__result__element__20261030T170423-430.png",
+      "sha256": "077cc59082e0bc2543877f7424f75b117d5fc48fabc9c1a1eaab3d4af424527a",
+      "size_bytes": 7316,
+      "case_id": "TC-CART-022",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-023__final__viewport__20261030T170424-613.png",
+      "sha256": "5f2d51f16226297289a5b742aae5871d8472050c59ee31538d9e9b321c273757",
+      "size_bytes": 33719,
+      "case_id": "TC-CART-023",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-023__result__element__20261030T170424-449.png",
+      "sha256": "077cc59082e0bc2543877f7424f75b117d5fc48fabc9c1a1eaab3d4af424527a",
+      "size_bytes": 7316,
+      "case_id": "TC-CART-023",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-024__final__viewport__20261030T170425-628.png",
+      "sha256": "2a4b0cffc8f7c616cbd757fd3945911df79ab5931f2e06eb0deb992a12968d63",
+      "size_bytes": 33904,
+      "case_id": "TC-CART-024",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-024__result__element__20261030T170425-461.png",
+      "sha256": "077cc59082e0bc2543877f7424f75b117d5fc48fabc9c1a1eaab3d4af424527a",
+      "size_bytes": 7316,
+      "case_id": "TC-CART-024",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-025__final__viewport__20261030T170426-656.png",
+      "sha256": "a55b575a7d3fe232d8dc4ea313938624e4c7e92e04ddecf3715f63b1304cbec0",
+      "size_bytes": 33854,
+      "case_id": "TC-CART-025",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-025__result__element__20261030T170426-482.png",
+      "sha256": "4db1c97c4c105d78867dd40fc2e51562260f10454b643c480d0d25d0c1bf561e",
+      "size_bytes": 7332,
+      "case_id": "TC-CART-025",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-026__final__viewport__20261030T170427-722.png",
+      "sha256": "893886b3a1087917a1160208cb0018256d6868284aca7c1f37e5e7b2d7cd3970",
+      "size_bytes": 33236,
+      "case_id": "TC-CART-026",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-026__result__element__20261030T170427-508.png",
+      "sha256": "9095ab7fdabd05cc109fc44f92f2e83f44c48855ca82f165f7726f699b83654e",
+      "size_bytes": 6498,
+      "case_id": "TC-CART-026",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-027__final__viewport__20261030T170428-785.png",
+      "sha256": "a4641ae3a8cc567f02d936c32396b2a10922198fb55aefcdac202320c1df3743",
+      "size_bytes": 35041,
+      "case_id": "TC-CART-027",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-027__result__element__20261030T170428-578.png",
+      "sha256": "40d332983d839d334ea64dc5fd57fa39e7adf6ebe8f47ddb4b5a185b852f7c0c",
+      "size_bytes": 7888,
+      "case_id": "TC-CART-027",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-028__final__viewport__20261030T170429-851.png",
+      "sha256": "03a7dae8d2f5f7fe802a982ed462596394611206e975d1da152bef2c33aecae3",
+      "size_bytes": 34583,
+      "case_id": "TC-CART-028",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-028__result__element__20261030T170429-680.png",
+      "sha256": "6c423c58c96e2fcc1f347dfad84f6ca8904ed831ede1c433581ae86a9b52af64",
+      "size_bytes": 7770,
+      "case_id": "TC-CART-028",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-029__final__viewport__20261030T170430-872.png",
+      "sha256": "903a26d65ba3b47098268c1197daad18eabca64fbd64c137a57bebfe2e850ec8",
+      "size_bytes": 34428,
+      "case_id": "TC-CART-029",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-029__result__element__20261030T170430-695.png",
+      "sha256": "e7439182840dfab718bed67bdfa1a688f383794a0c232a1862fe111b98300793",
+      "size_bytes": 7819,
+      "case_id": "TC-CART-029",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-030__final__viewport__20261030T170431-942.png",
+      "sha256": "3490f17c14111244a02d88f0adcb46623b180cdb354baa0616e1f128b5574f85",
+      "size_bytes": 33573,
+      "case_id": "TC-CART-030",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/TC-CART-030__layout__fullpage__20261030T170431-675.png",
+      "sha256": "501a5eabf92242d6c27a8d3f8eeabba95d480ad67793ed987d728fca6c18a417",
+      "size_bytes": 33857,
+      "case_id": "TC-CART-030",
+      "source": "evidence"
+    },
+    {
+      "path": "screenshots/index.csv",
+      "sha256": "4e23d1f76967aed84628e228246fcbf7f6d846609ca572cc95aaf7e15cbee877",
+      "size_bytes": 13785,
+      "case_id": null,
+      "source": "evidence"
+    },
+    {
+      "path": "test-cases.xlsx",
+      "sha256": "9d0079f065bfbc49e27183c3d6cdfa94303a3a577f2c66d79ff7c6e3b88b29a9",
+      "size_bytes": 12850,
+      "case_id": null,
+      "source": "generated"
+    },
+    {
+      "path": "test-code/pytest.ini",
+      "sha256": "92fb94859b46bd016753f5faded0ff56485cf5dc1e448d24315a47996718cdfc",
+      "size_bytes": 168,
+      "case_id": null,
+      "source": "project"
+    },
+    {
+      "path": "test-code/requirements.txt",
+      "sha256": "aa31a24ae0849a369527caa7714b0dafbcfa5b521147baf325e472c14ae914bc",
+      "size_bytes": 1430,
+      "case_id": null,
+      "source": "project"
+    },
+    {
+      "path": "test-code/tests/conftest.py",
+      "sha256": "11c228e3b2a123f13eb455efd14a6132ec6ba808c8648ccdc6eed639ff1506d4",
+      "size_bytes": 21522,
+      "case_id": null,
+      "source": "project"
+    },
+    {
+      "path": "test-code/tests/generated/cartcheck/page_cartcheck.py",
+      "sha256": "62c24d6cd74e69febe2f6a482502bd67f53e99e1d4683e49b069b357e1df4996",
+      "size_bytes": 8490,
+      "case_id": null,
+      "source": "project"
+    },
+    {
+      "path": "test-code/tests/generated/cartcheck/test_cartcheck.py",
+      "sha256": "fcaa1c65ad559461b5458231e639d9fe3ba1dd04ed5a1cffeaa0f707d07cd91c",
+      "size_bytes": 21616,
+      "case_id": "TC-CART-030",
+      "source": "project"
+    },
+    {
+      "path": "test-code/tests/pages/todo_page.py",
+      "sha256": "a27ecd56b8ae7ce545adace4f6a8a247ea42b75c0078ec545bb1801a57814b20",
+      "size_bytes": 5194,
+      "case_id": null,
+      "source": "project"
+    },
+    {
+      "path": "test-code/tools/evidence.py",
+      "sha256": "8edc102d0f80ab6c4b1dbf9d831a7b39bc6426d90a69f833337c37747d96a76c",
+      "size_bytes": 24123,
+      "case_id": null,
+      "source": "project"
+    },
+    {
+      "path": "test-code/tools/versioning.py",
+      "sha256": "eb2e40cfcad3a4935d0ace0a6998423229ca659ccdd6e259dd7539e4b98bd777",
+      "size_bytes": 3807,
+      "case_id": null,
+      "source": "project"
+    }
+  ],
+  "zip": {
+    "path": "submission.zip",
+    "sha256": "0a946a0275209584c39338ad814f40ac7dad1012da47770e460a7ae0c2a7b50b",
+    "size_bytes": 1512372,
+    "entries": 89,
+    "entry_time": "1980-01-01T00:00:00"
+  }
+}

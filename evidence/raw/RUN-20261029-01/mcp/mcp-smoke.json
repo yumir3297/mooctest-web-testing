@@ -1,0 +1,85 @@
+{
+  "runId": "RUN-20261029-01",
+  "server": "D:\\桌面\\软件测试competion\\node_modules\\@playwright\\mcp\\cli.js",
+  "outDir": "D:\\桌面\\软件测试competion\\evidence\\raw\\RUN-20261029-01\\mcp",
+  "steps": [
+    {
+      "step": "initialize",
+      "ok": true
+    },
+    {
+      "step": "tools/list",
+      "ok": true,
+      "toolCount": 25
+    },
+    {
+      "step": "browser_navigate",
+      "ok": true
+    },
+    {
+      "step": "browser_snapshot",
+      "ok": true
+    },
+    {
+      "step": "browser_take_screenshot",
+      "ok": true
+    }
+  ],
+  "serverInfo": {
+    "name": "Playwright",
+    "version": "1.64.0-alpha-1790635538000"
+  },
+  "protocolVersion": "2025-06-18",
+  "toolCount": 25,
+  "tools": [
+    "browser_close",
+    "browser_resize",
+    "browser_console_messages",
+    "browser_handle_dialog",
+    "browser_emulate_media",
+    "browser_evaluate",
+    "browser_file_upload",
+    "browser_drop",
+    "browser_find",
+    "browser_fill_form",
+    "browser_press_key",
+    "browser_type",
+    "browser_navigate",
+    "browser_navigate_back",
+    "browser_network_requests",
+    "browser_network_request",
+    "browser_run_code_unsafe",
+    "browser_take_screenshot",
+    "browser_snapshot",
+    "browser_click",
+    "browser_drag",
+    "browser_hover",
+    "browser_select_option",
+    "browser_tabs",
+    "browser_wait_for"
+  ],
+  "navigate": [
+    {
+      "type": "text",
+      "text": "### Ran Playwright code\n```js\nawait page.goto('https://demo.playwright.dev/todomvc');\n```\n### Page\n- Page URL: https://demo.playwright.dev/todomvc/#/\n- Page Title: React • TodoMVC\n- Console: 1 errors, 0 warnings\n### Snapshot\n- [Snapshot](evidence\\raw\\RUN-20261029-01\\mcp\\auto\\page-2026-10-29T09-18-08-049Z.yml)\n### Events\n- New console entries: evidence\\raw\\RUN-20261029-01\\mcp\\auto\\console-2026-10-29T09-18-06-768Z.log#L1"
+    }
+  ],
+  "snapshot": [
+    {
+      "type": "text",
+      "text": "### Page\n- Page URL: https://demo.playwright.dev/todomvc/#/\n- Page Title: React • TodoMVC\n- Console: 1 errors, 0 warnings\n### Snapshot\n- [Snapshot](evidence\\raw\\RUN-20261029-01\\mcp\\mcp-snapshot.yml)\n### Events\n- New console entries: evidence\\raw\\RUN-20261029-01\\mcp\\auto\\console-2026-10-29T09-18-06-768Z.log#L2"
+    }
+  ],
+  "snapshotFile": "D:\\桌面\\软件测试competion\\evidence\\raw\\RUN-20261029-01\\mcp\\mcp-snapshot.yml",
+  "screenshot": [
+    {
+      "type": "text",
+      "text": "### Result\n- [Screenshot of full page](evidence\\raw\\RUN-20261029-01\\mcp\\mcp-screenshot.png)\n### Ran Playwright code\n```js\n// Screenshot full page and save it as evidence\\raw\\RUN-20261029-01\\mcp\\mcp-screenshot.png\nawait page.screenshot({\n  fullPage: true,\n  path: 'evidence\\\\raw\\\\RUN-20261029-01\\\\mcp\\\\mcp-screenshot.png',\n  scale: 'css',\n  type: 'png'\n});\n```"
+    }
+  ],
+  "screenshotFile": "D:\\桌面\\软件测试competion\\evidence\\raw\\RUN-20261029-01\\mcp\\mcp-screenshot.png",
+  "ok": true,
+  "serverLog": [
+    "[notification] notifications/tools/list_changed"
+  ]
+}

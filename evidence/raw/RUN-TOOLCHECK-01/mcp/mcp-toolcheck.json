@@ -1,0 +1,114 @@
+{
+  "runId": "RUN-TOOLCHECK-01",
+  "steps": [
+    {
+      "tool": "tools/list",
+      "ok": true,
+      "count": 25
+    },
+    {
+      "tool": "browser_navigate",
+      "ok": true,
+      "text": "### Ran Playwright code\n```js\nawait page.goto('https://demo.playwright.dev/todomvc');\n```\n### Page\n- Page URL: https://demo.playwright.dev/todomvc/#/\n- Page Title: React • TodoMVC\n### Snapshot\n- [Snapshot](evidence\\raw\\RUN-TOOLCHECK-01\\mcp\\auto\\page-2026-10-29T09-54-56-712Z.yml)\n### Events\n- New console entries: evidence\\raw\\RUN-TOOLCHECK-01\\mcp\\auto\\console-2026-10-29T09-54-55-684Z.log#L1"
+    },
+    {
+      "tool": "browser_type",
+      "ok": true,
+      "text": "### Ran Playwright code\n```js\nawait page.locator('input.new-todo').fill('MCP tool check');\nawait page.locator('input.new-todo').press('Enter');\n```\n### Page\n- Page URL: https://demo.playwright.dev/todomvc/#/\n- Page Title: React • TodoMVC\n- Console: 1 errors, 0 warnings\n### Snapshot\n- [Snapshot](evidence\\raw\\RUN-TOOLCHECK-01\\mcp\\auto\\page-2026-10-29T09-54-57-298Z.yml)\n### Events\n- New console entries: evidence\\raw\\RUN-TOOLCHECK-01\\mcp\\auto\\console-2026-10-29T09-54-55-684Z.log#L2"
+    },
+    {
+      "tool": "browser_wait_for",
+      "ok": true,
+      "text": "### Result\nWaited for MCP tool check\n### Ran Playwright code\n```js\nawait page.getByText(\"MCP tool check\").first().waitFor({ state: 'visible' });\n```\n### Page\n- Page URL: https://demo.playwright.dev/todomvc/#/\n- Page Title: React • TodoMVC\n- Console: 1 errors, 0 warnings\n### Snapshot\n- [Snapshot](evidence\\raw\\RUN-TOOLCHECK-01\\mcp\\auto\\page-2026-10-29T09-54-57-316Z.yml)"
+    },
+    {
+      "tool": "browser_find",
+      "ok": true,
+      "text": "### Result\nFound 1 match for \"MCP tool check\":\n\n- generic [ref=e1]:\n  - generic [ref=e5]:\n    - generic [ref=e15]:\n      - list [ref=e18]:\n        - listitem [ref=e19]:\n          - generic [ref=e20]:\n            - checkbox \"Toggle Todo\" [ref=e21]\n            - generic [ref=e22]: MCP tool check\n            - text: ×\n    - generic [ref=e23]:\n      - generic [ref=e24]:"
+    },
+    {
+      "tool": "browser_snapshot",
+      "ok": true,
+      "text": "### Page\n- Page URL: https://demo.playwright.dev/todomvc/#/\n- Page Title: React • TodoMVC\n- Console: 1 errors, 0 warnings\n### Snapshot\n- [Snapshot](evidence\\raw\\RUN-TOOLCHECK-01\\mcp\\mcp-snapshot.yml)"
+    },
+    {
+      "tool": "browser_click",
+      "ok": true,
+      "text": "### Ran Playwright code\n```js\nawait page.locator('input.toggle').click();\n```\n### Page\n- Page URL: https://demo.playwright.dev/todomvc/#/\n- Page Title: React • TodoMVC\n- Console: 1 errors, 0 warnings\n### Snapshot\n- [Snapshot](evidence\\raw\\RUN-TOOLCHECK-01\\mcp\\auto\\page-2026-10-29T09-54-57-888Z.yml)"
+    },
+    {
+      "tool": "browser_evaluate",
+      "ok": true,
+      "text": "### Result\n{\n  \"items\": 1,\n  \"checked\": 1,\n  \"count\": \"0 items left\"\n}\n### Ran Playwright code\n```js\nawait page.evaluate('() => ({items: document.querySelectorAll(\\'.todo-list li\\').length, checked: document.querySelectorAll(\\'input.toggle:checked\\').length, count: document.querySelector(\\'.todo-count\\')?.textContent})');\n```"
+    },
+    {
+      "tool": "browser_resize",
+      "ok": true,
+      "text": "### Ran Playwright code\n```js\nawait page.setViewportSize({ width: 1024, height: 768 });\n```"
+    },
+    {
+      "tool": "browser_console_messages",
+      "ok": true,
+      "text": "### Result\nTotal messages: 2 (Errors: 1, Warnings: 0)\nReturning 1 messages for level \"error\"\n\n[ERROR] Failed to load resource: the server responded with a status of 404 () @ https://demo.playwright.dev/favicon.ico:0"
+    },
+    {
+      "tool": "browser_network_requests",
+      "ok": true,
+      "text": "### Result\n\nNote: 6 static requests not shown, run with \"static\" option to see them."
+    },
+    {
+      "tool": "browser_tabs",
+      "ok": true,
+      "text": "### Result\n- 0: (current) [React • TodoMVC](https://demo.playwright.dev/todomvc/#/)"
+    },
+    {
+      "tool": "browser_take_screenshot",
+      "ok": true,
+      "text": "### Result\n- [Screenshot of full page](evidence\\raw\\RUN-TOOLCHECK-01\\mcp\\mcp-fullpage.png)\n### Ran Playwright code\n```js\n// Screenshot full page and save it as evidence\\raw\\RUN-TOOLCHECK-01\\mcp\\mcp-fullpage.png\nawait page.screenshot({\n  fullPage: true,\n  path: 'evidence\\\\raw\\\\RUN-TOOLCHECK-01\\\\mcp\\\\mcp-fullpage.png',\n  scale: 'css',\n  type: 'png'\n});\n```"
+    },
+    {
+      "tool": "browser_close",
+      "ok": true,
+      "text": "### Result\nNo open tabs. Navigate to a URL to create one.\n### Ran Playwright code\n```js\nawait page.close()\n```"
+    }
+  ],
+  "tools": [
+    "browser_close",
+    "browser_resize",
+    "browser_console_messages",
+    "browser_handle_dialog",
+    "browser_emulate_media",
+    "browser_evaluate",
+    "browser_file_upload",
+    "browser_drop",
+    "browser_find",
+    "browser_fill_form",
+    "browser_press_key",
+    "browser_type",
+    "browser_navigate",
+    "browser_navigate_back",
+    "browser_network_requests",
+    "browser_network_request",
+    "browser_run_code_unsafe",
+    "browser_take_screenshot",
+    "browser_snapshot",
+    "browser_click",
+    "browser_drag",
+    "browser_hover",
+    "browser_select_option",
+    "browser_tabs",
+    "browser_wait_for"
+  ],
+  "serverInfo": {
+    "name": "Playwright",
+    "version": "1.64.0-alpha-1790635538000"
+  },
+  "protocolVersion": "2025-06-18",
+  "evaluate": "### Result\n{\n  \"items\": 1,\n  \"checked\": 1,\n  \"count\": \"0 items left\"\n}\n### Ran Playwright code\n```js\nawait page.evaluate('() => ({items: document.querySelectorAll(\\'.todo-list li\\').length, checked: document.querySelectorAll(\\'input.toggle:checked\\').length, count: document.querySelector(\\'.todo-count\\')?.textContent})');\n```",
+  "screenshotFile": "D:\\桌面\\软件测试competion\\evidence\\raw\\RUN-TOOLCHECK-01\\mcp\\mcp-fullpage.png",
+  "snapshotFile": "D:\\桌面\\软件测试competion\\evidence\\raw\\RUN-TOOLCHECK-01\\mcp\\mcp-snapshot.yml",
+  "ok": true,
+  "log": [
+    "[notification] notifications/tools/list_changed"
+  ]
+}

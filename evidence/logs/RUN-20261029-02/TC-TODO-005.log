@@ -1,0 +1,5 @@
+2026-10-29 17:22:14,107 INFO case=TC-TODO-005 run=RUN-20261029-02
+2026-10-29 17:22:14,149 INFO STEP 直接回车，不输入内容
+2026-10-29 17:22:14,239 INFO CHECK 空输入不新增待办 passed=True expected=[] actual=[]
+2026-10-29 17:22:14,253 INFO STEP 输入三个空格并回车
+2026-10-29 17:22:14,326 INFO CHECK 纯空白输入不新增待办 passed=True expected=[] actual=[]

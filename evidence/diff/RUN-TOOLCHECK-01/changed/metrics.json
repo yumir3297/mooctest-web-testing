@@ -1,0 +1,91 @@
+{
+  "label": "工具自检 前后对比",
+  "created_at": "2026-10-29T17:54:35+08:00",
+  "baseline": "evidence\\raw\\RUN-TOOLCHECK-01\\browser\\diff-before.png",
+  "actual": "evidence\\raw\\RUN-TOOLCHECK-01\\browser\\diff-after.png",
+  "size_mismatch": false,
+  "baseline_size": [
+    1280,
+    720
+  ],
+  "actual_size": [
+    1280,
+    720
+  ],
+  "threshold": 25,
+  "min_area": 30,
+  "ignore_boxes": [],
+  "raw_changed_pixels": 12873,
+  "changed_pixels": 7981,
+  "total_pixels": 921600,
+  "diff_ratio": 0.00866,
+  "mean_abs_diff": 1.6674,
+  "rmse": 7.1799,
+  "psnr": 31.0085,
+  "region_count": 6,
+  "regions": [
+    {
+      "x": 365,
+      "y": 240,
+      "w": 550,
+      "h": 15,
+      "area": 7564,
+      "mean_abs_diff": 32.803,
+      "max_abs_diff": 56,
+      "region_id": "R1"
+    },
+    {
+      "x": 469,
+      "y": 262,
+      "w": 8,
+      "h": 15,
+      "area": 60,
+      "mean_abs_diff": 101.35,
+      "max_abs_diff": 160,
+      "region_id": "R2"
+    },
+    {
+      "x": 489,
+      "y": 266,
+      "w": 8,
+      "h": 12,
+      "area": 56,
+      "mean_abs_diff": 103.429,
+      "max_abs_diff": 158,
+      "region_id": "R3"
+    },
+    {
+      "x": 501,
+      "y": 267,
+      "w": 3,
+      "h": 11,
+      "area": 33,
+      "mean_abs_diff": 113.606,
+      "max_abs_diff": 160,
+      "region_id": "R4"
+    },
+    {
+      "x": 427,
+      "y": 268,
+      "w": 3,
+      "h": 10,
+      "area": 30,
+      "mean_abs_diff": 119.567,
+      "max_abs_diff": 160,
+      "region_id": "R5"
+    },
+    {
+      "x": 456,
+      "y": 268,
+      "w": 3,
+      "h": 10,
+      "area": 30,
+      "mean_abs_diff": 98.167,
+      "max_abs_diff": 157,
+      "region_id": "R6"
+    }
+  ],
+  "verdict": "visual-change-detected",
+  "defect_claim": false,
+  "defect_note": "Pixel changes are review signals. Confirm with DOM, expected behavior, and reproducible steps before filing a defect."
+}

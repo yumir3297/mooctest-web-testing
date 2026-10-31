@@ -1,0 +1,9 @@
+case_id,title,priority,requirement,preconditions,test_data,steps,expected,automation,evidence,status
+TC-CMDCHECK-001,新增一条待办,P0,R1;R8,清空 localStorage,Buy milk,"1.打开页面;2.在 input.new-todo 输入 Buy milk;3.回车","列表出现 Buy milk; 计数为 1 item left; footer 可见",tests/test_todomvc.py::test_add_todo,"元素截图+整页截图",待执行
+TC-CMDCHECK-002,完成待办并按状态过滤,P0,R2,清空 localStorage,Task A / Task B,"1.新增两条;2.勾选第一条;3.切 Completed;4.切 Active","计数 1 item left; Completed 仅 Task A; Active 仅 Task B",tests/test_todomvc.py::test_complete_and_filter,整页截图,设计态-本次不执行
+TC-CMDCHECK-003,编辑待办标题,P1,R3,清空 localStorage,Old title -> New title,"1.新增 Old title;2.双击标题;3.改为 New title;4.回车","列表仅显示 New title",tests/test_todomvc.py::test_edit_todo,用例日志,设计态-本次不执行
+TC-CMDCHECK-004,删除待办,P1,R4,清空 localStorage,Delete me,"1.新增 Delete me;2.悬停;3.点击 destroy","列表为空; footer 隐藏",tests/test_todomvc.py::test_delete_todo,整页截图,设计态-本次不执行
+TC-CMDCHECK-005,空与纯空白输入被拒绝,P0,R5,清空 localStorage,""""" ; ""   ""","1.直接回车;2.输入三个空格回车","列表保持为空",tests/test_todomvc.py::test_empty_and_whitespace_rejected,用例日志,设计态-本次不执行
+TC-CMDCHECK-006,输入长度边界,P1,R6,清空 localStorage,A ; 200 个 B,"1.输入 A 回车;2.输入 200 个 B 回车","两条均完整保存",tests/test_todomvc.py::test_boundary_lengths,用例日志,设计态-本次不执行
+TC-CMDCHECK-007,HTML/脚本文本被转义,P0,R7,清空 localStorage,"<img src=x onerror=window.__xss=1>","1.输入 payload 回车;2.检查渲染文本;3.检查 window.__xss","按纯文本展示; 未执行脚本; 无弹窗",tests/test_todomvc.py::test_text_is_escaped,快照+用例日志,设计态-本次不执行
+TC-CMDCHECK-099,受控失败断言,辅助,-,清空 localStorage,intentionally-wrong-assertion,"1.执行受控失败用例","失败截图/源码/浏览器日志/断言记录齐全",tests/test_todomvc_expected_failure.py,失败截图+整页+源码+日志,设计态-本次不执行

@@ -1,0 +1,4 @@
+2026-10-31 01:12:04,737 INFO case=TC-TODO-099 run=RUN-20261031-FINAL-REGRESSION-01
+2026-10-31 01:12:04,738 INFO STEP 新增 Only one
+2026-10-31 01:12:04,951 INFO STEP 故意断言剩余计数为 2（实际为 1）
+2026-10-31 01:12:05,032 INFO CHECK 受控失败断言 passed=False expected='2 items left' actual='1 item left'

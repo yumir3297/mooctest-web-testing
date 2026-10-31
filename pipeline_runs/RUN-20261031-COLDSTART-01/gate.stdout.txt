@@ -1,0 +1,10 @@
+== pre_submission_gate RUN-20261031-COLDSTART-01 ==
+G0=PASS  G1=PASS  G2=PASS  G3=PASS  G4=SKIP
+delivery_verdict=PASS  test_verdict=FAIL  exit=0
+
+[UNVERIFIED] G0 AI_USE_UNVERIFIED (advisory) RUN-20261031-COLDSTART-01: 未声明 AI 使用合规确认（meta.ai_use_confirmed）：本地产出视为 UNVERIFIED，不阻断本地演练；正式提交前必须人工核对当届赛项规则
+[WARNING   ] G3 HISTORICAL_EVIDENCE_ANOMALY (advisory) *: 全量扫描：manifest 共 9 条跨 run 登记、3 条无 run 归属证据；历史事实只报告不修改，不影响本 run 判定
+[WARNING   ] G4 PACKAGE_SKIPPED (advisory) submission: 未提供 --submission：交付包结构与哈希未校验
+
+summary: FAIL=0 WARNING=2 BLOCKED=0 UNVERIFIED=1 PASS=574
+report: <PROJECT_ROOT>\qualification\gate-runs\RUN-20261031-COLDSTART-01\gate-report.json

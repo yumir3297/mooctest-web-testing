@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "run_id": "RUN-20261031-COLDSTART-01",
+  "generated_at": "2026-10-31T01:01:54+08:00",
+  "gate_status": {
+    "G0": "SKIP",
+    "G1": "FAIL",
+    "G2": "SKIP",
+    "G3": "SKIP",
+    "G4": "SKIP"
+  },
+  "delivery_verdict": "FAIL",
+  "test_verdict": "UNVERIFIED",
+  "findings": [
+    {
+      "gate": "G1",
+      "code": "REQUIREMENT_UNKNOWN",
+      "severity": "FAIL",
+      "subject": "requirements",
+      "message": "用例引用的需求不在需求清单中：REQ-01, REQ-02, REQ-03, REQ-04, REQ-05, REQ-06, REQ-07, REQ-08 (+5 more)",
+      "evidence": ""
+    },
+    {
+      "gate": "G1",
+      "code": "REQUIREMENT_NOT_COVERED",
+      "severity": "FAIL",
+      "subject": "requirements",
+      "message": "需求没有任何用例覆盖：\"constraint\":, \"id\":, \"source\":, \"status\":, \"text\":, [, ], { (+1 more)",
+      "evidence": ""
+    }
+  ],
+  "summary": {
+    "FAIL": 2,
+    "WARNING": 0,
+    "BLOCKED": 0,
+    "UNVERIFIED": 0,
+    "PASS": 364
+  },
+  "advisory": {
+    "count": 0,
+    "codes": [],
+    "note": "advisory findings 只记录不阻断本地演练；--official-submission 会把合规项升级为 BLOCKED"
+  },
+  "exit_code": 1,
+  "verdict_notes": {
+    "delivery": "测试成果是否可信、可交付（确认缺陷不会拉低该结论）",
+    "test": "没有任何已执行用例"
+  },
+  "inputs": {
+    "manifest": "D:\\桌面\\软件测试competion\\evidence\\manifest.json",
+    "manifest_schema": "1.1",
+    "manifest_error": null,
+    "cases": [
+      "D:\\桌面\\软件测试competion\\reports\\test-cases\\cartcheck-test-cases.csv"
+    ],
+    "cases_candidates": [],
+    "junit_summary": "D:\\桌面\\软件测试competion\\reports\\executions\\RUN-20261031-COLDSTART-01\\junit-summary.json",
+    "requirements": "pipeline_runs/RUN-20261031-COLDSTART-01/requirements.json",
+    "submission": null,
+    "official_submission": false,
+    "gates": [
+      "G1"
+    ]
+  },
+  "execution": {
+    "manifest_case_counts": {},
+    "junit_summary_passed": null,
+    "junit_summary_counts": null,
+    "junit_xml_counts": null,
+    "collected_nodes": [],
+    "failed_case_triage": {}
+  },
+  "evidence": {
+    "verify": {},
+    "manifest_audit": {}
+  },
+  "compliance": {
+    "ai_use_confirmed": null,
+    "ai_status": "UNVERIFIED",
+    "official_submission": false,
+    "env_check": null
+  },
+  "stats": {
+    "G1": {
+      "rows": 30,
+      "unique_case_ids": 30,
+      "case_types": {
+        "positive": 6,
+        "boundary": 12,
+        "negative": 9,
+        "combination": 2,
+        "nonfunctional": 1
+      },
+      "sources": [
+        "D:\\桌面\\软件测试competion\\reports\\test-cases\\cartcheck-test-cases.csv"
+      ]
+    }
+  }
+}

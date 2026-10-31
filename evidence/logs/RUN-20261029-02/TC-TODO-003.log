@@ -1,0 +1,4 @@
+2026-10-29 17:22:12,372 INFO case=TC-TODO-003 run=RUN-20261029-02
+2026-10-29 17:22:12,373 INFO STEP 新增 Old title
+2026-10-29 17:22:12,560 INFO STEP 双击标题并改为 New title
+2026-10-29 17:22:12,992 INFO CHECK 标题被更新 passed=True expected=['New title'] actual=['New title']

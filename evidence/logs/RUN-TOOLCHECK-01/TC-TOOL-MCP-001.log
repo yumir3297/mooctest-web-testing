@@ -1,0 +1,16 @@
+2026-10-29T17:54:00+08:00 INFO Playwright MCP 0.0.83 server=1.64.0-alpha-1790635538000 protocol=2025-06-18 tools=25
+2026-10-29T17:54:00+08:00 INFO tools/list ok
+2026-10-29T17:54:00+08:00 INFO browser_navigate https://demo.playwright.dev/todomvc ok
+2026-10-29T17:54:00+08:00 INFO browser_type input.new-todo "MCP tool check" submit=true ok
+2026-10-29T17:54:00+08:00 INFO browser_wait_for text="MCP tool check" ok
+2026-10-29T17:54:00+08:00 INFO browser_find "MCP tool check" -> Found 1 match
+2026-10-29T17:54:00+08:00 INFO browser_snapshot -> evidence/raw/RUN-TOOLCHECK-01/mcp/mcp-snapshot.yml
+2026-10-29T17:54:00+08:00 INFO browser_click input.toggle ok
+2026-10-29T17:54:00+08:00 INFO browser_evaluate -> items=1 checked=1 count="0 items left"
+2026-10-29T17:54:00+08:00 INFO browser_resize 1024x768 ok
+2026-10-29T17:54:00+08:00 INFO browser_console_messages level=error -> 2 messages total, 1 error (failed resource)
+2026-10-29T17:54:00+08:00 INFO browser_network_requests static=false -> 6 static requests not shown
+2026-10-29T17:54:00+08:00 INFO browser_tabs action=list -> 1 tab TodoMVC
+2026-10-29T17:54:00+08:00 INFO browser_take_screenshot fullPage -> evidence/raw/RUN-TOOLCHECK-01/mcp/mcp-fullpage.png 1024x768
+2026-10-29T17:54:00+08:00 INFO browser_close ok
+2026-10-29T17:54:00+08:00 INFO report -> evidence/raw/RUN-TOOLCHECK-01/mcp/mcp-toolcheck.json

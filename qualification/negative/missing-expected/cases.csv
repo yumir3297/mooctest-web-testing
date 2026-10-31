@@ -1,0 +1,4 @@
+﻿case_id,title,priority,requirement_ids,case_type,method,preconditions,test_data,steps,expected,actual,status,automation,evidence_required,executed_in_run,notes
+TC-SAMPLE-001,新增一条合法待办,P0,R1,positive,等价类划分,列表为空,标题=Buy milk,1. 打开页面;2. 输入 Buy milk 并回车,,,已执行-通过,tests/test_sample.py::test_add_valid,元素截图,RUN-SAMPLE-MISSINGEXPECTED,qualification sample
+TC-SAMPLE-002,拒绝空标题,P1,R2,negative,边界值分析,列表为空,标题=空字符串,1. 打开页面;2. 不输入内容直接回车,列表保持为空；不出现空标题条目,,待执行,,用例日志,RUN-SAMPLE-MISSINGEXPECTED,qualification sample
+TC-SAMPLE-003,拒绝纯空白标题,P1,R3,boundary,边界值分析,列表为空,标题=三个空格,1. 打开页面;2. 输入三个空格;3. 回车,列表保持为空；不产生空白条目,,待执行,,用例日志,RUN-SAMPLE-MISSINGEXPECTED,qualification sample
