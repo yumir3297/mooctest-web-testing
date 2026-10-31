@@ -1,0 +1,365 @@
+{
+  "schema_version": "1.0",
+  "profile": "2026-video-baseline",
+  "official_format_confirmed": false,
+  "official_format_note": "依据 2026 官方培训视频；官方 2026 docx/脚本包模板未获取",
+  "run_id": "RUN-20261031-COLDSTART-01",
+  "app": "CartCheck",
+  "slug": "cartcheck",
+  "target": "http://127.0.0.1:8765/",
+  "case_count": 30,
+  "screenshot_count": 30,
+  "cases_missing_screenshot": [],
+  "cases_with_multiple_requirements": [
+    {
+      "case_id": "TC-CART-001",
+      "requirement_ids": "REQ-10;REQ-05",
+      "chosen": "R010"
+    },
+    {
+      "case_id": "TC-CART-002",
+      "requirement_ids": "REQ-10;REQ-06",
+      "chosen": "R010"
+    },
+    {
+      "case_id": "TC-CART-003",
+      "requirement_ids": "REQ-10;REQ-05",
+      "chosen": "R010"
+    },
+    {
+      "case_id": "TC-CART-004",
+      "requirement_ids": "REQ-10;REQ-08",
+      "chosen": "R010"
+    },
+    {
+      "case_id": "TC-CART-005",
+      "requirement_ids": "REQ-10;REQ-07",
+      "chosen": "R010"
+    },
+    {
+      "case_id": "TC-CART-006",
+      "requirement_ids": "REQ-10;REQ-07;REQ-11",
+      "chosen": "R010"
+    },
+    {
+      "case_id": "TC-CART-007",
+      "requirement_ids": "REQ-10;REQ-07;REQ-11",
+      "chosen": "R010"
+    },
+    {
+      "case_id": "TC-CART-008",
+      "requirement_ids": "REQ-02;REQ-11",
+      "chosen": "R002"
+    },
+    {
+      "case_id": "TC-CART-009",
+      "requirement_ids": "REQ-01;REQ-11",
+      "chosen": "R001"
+    },
+    {
+      "case_id": "TC-CART-010",
+      "requirement_ids": "REQ-01;REQ-11",
+      "chosen": "R001"
+    },
+    {
+      "case_id": "TC-CART-011",
+      "requirement_ids": "REQ-01;REQ-05;REQ-11",
+      "chosen": "R001"
+    },
+    {
+      "case_id": "TC-CART-012",
+      "requirement_ids": "REQ-01;REQ-05;REQ-11",
+      "chosen": "R001"
+    },
+    {
+      "case_id": "TC-CART-013",
+      "requirement_ids": "REQ-02;REQ-11",
+      "chosen": "R002"
+    },
+    {
+      "case_id": "TC-CART-014",
+      "requirement_ids": "REQ-05;REQ-11",
+      "chosen": "R005"
+    },
+    {
+      "case_id": "TC-CART-015",
+      "requirement_ids": "REQ-06;REQ-11",
+      "chosen": "R006"
+    },
+    {
+      "case_id": "TC-CART-019",
+      "requirement_ids": "REQ-04;REQ-11",
+      "chosen": "R004"
+    },
+    {
+      "case_id": "TC-CART-020",
+      "requirement_ids": "REQ-04;REQ-11",
+      "chosen": "R004"
+    },
+    {
+      "case_id": "TC-CART-021",
+      "requirement_ids": "REQ-04;REQ-11",
+      "chosen": "R004"
+    },
+    {
+      "case_id": "TC-CART-022",
+      "requirement_ids": "REQ-04;REQ-11",
+      "chosen": "R004"
+    },
+    {
+      "case_id": "TC-CART-023",
+      "requirement_ids": "REQ-04;REQ-11",
+      "chosen": "R004"
+    },
+    {
+      "case_id": "TC-CART-027",
+      "requirement_ids": "REQ-08;REQ-09",
+      "chosen": "R008"
+    },
+    {
+      "case_id": "TC-CART-028",
+      "requirement_ids": "REQ-07;REQ-08",
+      "chosen": "R007"
+    },
+    {
+      "case_id": "TC-CART-029",
+      "requirement_ids": "REQ-03;REQ-11",
+      "chosen": "R003"
+    },
+    {
+      "case_id": "TC-CART-030",
+      "requirement_ids": "REQ-12;REQ-13",
+      "chosen": "R012"
+    }
+  ],
+  "deliverables": [
+    {
+      "name": "测试用例文档.docx",
+      "bytes": 40356,
+      "sha256": "c35af2f3ffe3345dd83d1bcb10a4e42de83001ed316bbf0151a244782ceb32a8"
+    },
+    {
+      "name": "test-code.zip",
+      "bytes": 25364,
+      "sha256": "8a4f77a063319f7414f6bbcaea27fd00060c0588c1528e3ae03e1562ac0a3466"
+    },
+    {
+      "name": "screenshots.zip",
+      "bytes": 917568,
+      "sha256": "3a0aac58062636bc997cb0c6dc05807d0df69c7338249eb95784bd11eec6acb2"
+    }
+  ],
+  "mapping": [
+    {
+      "case_id": "TC-CART-001",
+      "official_id": "CartCheck_R010_001",
+      "requirement": "R010",
+      "screenshot": "01040231406_CartCheck_R010_001.png",
+      "source_evidence": "EV-c1d3831593"
+    },
+    {
+      "case_id": "TC-CART-002",
+      "official_id": "CartCheck_R010_002",
+      "requirement": "R010",
+      "screenshot": "01040331655_CartCheck_R010_002.png",
+      "source_evidence": "EV-251a55b185"
+    },
+    {
+      "case_id": "TC-CART-003",
+      "official_id": "CartCheck_R010_003",
+      "requirement": "R010",
+      "screenshot": "01040431808_CartCheck_R010_003.png",
+      "source_evidence": "EV-f172e16f67"
+    },
+    {
+      "case_id": "TC-CART-004",
+      "official_id": "CartCheck_R010_004",
+      "requirement": "R010",
+      "screenshot": "01040631079_CartCheck_R010_004.png",
+      "source_evidence": "EV-2e6ac19761"
+    },
+    {
+      "case_id": "TC-CART-005",
+      "official_id": "CartCheck_R010_005",
+      "requirement": "R010",
+      "screenshot": "01040731022_CartCheck_R010_005.png",
+      "source_evidence": "EV-ee9945159c"
+    },
+    {
+      "case_id": "TC-CART-006",
+      "official_id": "CartCheck_R010_006",
+      "requirement": "R010",
+      "screenshot": "01040831089_CartCheck_R010_006.png",
+      "source_evidence": "EV-9e2dfa97b5"
+    },
+    {
+      "case_id": "TC-CART-007",
+      "official_id": "CartCheck_R010_007",
+      "requirement": "R010",
+      "screenshot": "01040931070_CartCheck_R010_007.png",
+      "source_evidence": "EV-a5f762fba7"
+    },
+    {
+      "case_id": "TC-CART-008",
+      "official_id": "CartCheck_R002_001",
+      "requirement": "R002",
+      "screenshot": "01041031982_CartCheck_R002_001.png",
+      "source_evidence": "EV-4cf2dce3e2"
+    },
+    {
+      "case_id": "TC-CART-009",
+      "official_id": "CartCheck_R001_001",
+      "requirement": "R001",
+      "screenshot": "01041031896_CartCheck_R001_001.png",
+      "source_evidence": "EV-26140b366a"
+    },
+    {
+      "case_id": "TC-CART-010",
+      "official_id": "CartCheck_R001_002",
+      "requirement": "R001",
+      "screenshot": "01041131787_CartCheck_R001_002.png",
+      "source_evidence": "EV-106e62a284"
+    },
+    {
+      "case_id": "TC-CART-011",
+      "official_id": "CartCheck_R001_003",
+      "requirement": "R001",
+      "screenshot": "01041231696_CartCheck_R001_003.png",
+      "source_evidence": "EV-0a25812b8d"
+    },
+    {
+      "case_id": "TC-CART-012",
+      "official_id": "CartCheck_R001_004",
+      "requirement": "R001",
+      "screenshot": "01041331762_CartCheck_R001_004.png",
+      "source_evidence": "EV-5bf2046869"
+    },
+    {
+      "case_id": "TC-CART-013",
+      "official_id": "CartCheck_R002_002",
+      "requirement": "R002",
+      "screenshot": "01041431861_CartCheck_R002_002.png",
+      "source_evidence": "EV-a55359d604"
+    },
+    {
+      "case_id": "TC-CART-014",
+      "official_id": "CartCheck_R005_001",
+      "requirement": "R005",
+      "screenshot": "01041531809_CartCheck_R005_001.png",
+      "source_evidence": "EV-ba9d0c6ca2"
+    },
+    {
+      "case_id": "TC-CART-015",
+      "official_id": "CartCheck_R006_001",
+      "requirement": "R006",
+      "screenshot": "01041631724_CartCheck_R006_001.png",
+      "source_evidence": "EV-104634f454"
+    },
+    {
+      "case_id": "TC-CART-016",
+      "official_id": "CartCheck_R002_003",
+      "requirement": "R002",
+      "screenshot": "01041731608_CartCheck_R002_003.png",
+      "source_evidence": "EV-bcfd8ff112"
+    },
+    {
+      "case_id": "TC-CART-017",
+      "official_id": "CartCheck_R002_004",
+      "requirement": "R002",
+      "screenshot": "01041831541_CartCheck_R002_004.png",
+      "source_evidence": "EV-2ff66c4d70"
+    },
+    {
+      "case_id": "TC-CART-018",
+      "official_id": "CartCheck_R002_005",
+      "requirement": "R002",
+      "screenshot": "01041931525_CartCheck_R002_005.png",
+      "source_evidence": "EV-3d04225198"
+    },
+    {
+      "case_id": "TC-CART-019",
+      "official_id": "CartCheck_R004_001",
+      "requirement": "R004",
+      "screenshot": "01042031492_CartCheck_R004_001.png",
+      "source_evidence": "EV-0c271559e4"
+    },
+    {
+      "case_id": "TC-CART-020",
+      "official_id": "CartCheck_R004_002",
+      "requirement": "R004",
+      "screenshot": "01042131466_CartCheck_R004_002.png",
+      "source_evidence": "EV-c0f07467ff"
+    },
+    {
+      "case_id": "TC-CART-021",
+      "official_id": "CartCheck_R004_003",
+      "requirement": "R004",
+      "screenshot": "01042231411_CartCheck_R004_003.png",
+      "source_evidence": "EV-38a49db792"
+    },
+    {
+      "case_id": "TC-CART-022",
+      "official_id": "CartCheck_R004_004",
+      "requirement": "R004",
+      "screenshot": "01042331610_CartCheck_R004_004.png",
+      "source_evidence": "EV-c9095e4331"
+    },
+    {
+      "case_id": "TC-CART-023",
+      "official_id": "CartCheck_R004_005",
+      "requirement": "R004",
+      "screenshot": "01042431613_CartCheck_R004_005.png",
+      "source_evidence": "EV-c20d9f348c"
+    },
+    {
+      "case_id": "TC-CART-024",
+      "official_id": "CartCheck_R004_006",
+      "requirement": "R004",
+      "screenshot": "01042531628_CartCheck_R004_006.png",
+      "source_evidence": "EV-114ecaf534"
+    },
+    {
+      "case_id": "TC-CART-025",
+      "official_id": "CartCheck_R004_007",
+      "requirement": "R004",
+      "screenshot": "01042631656_CartCheck_R004_007.png",
+      "source_evidence": "EV-f871fd2bea"
+    },
+    {
+      "case_id": "TC-CART-026",
+      "official_id": "CartCheck_R008_001",
+      "requirement": "R008",
+      "screenshot": "01042731722_CartCheck_R008_001.png",
+      "source_evidence": "EV-290e19e60f"
+    },
+    {
+      "case_id": "TC-CART-027",
+      "official_id": "CartCheck_R008_002",
+      "requirement": "R008",
+      "screenshot": "01042831785_CartCheck_R008_002.png",
+      "source_evidence": "EV-33ae7d1b74"
+    },
+    {
+      "case_id": "TC-CART-028",
+      "official_id": "CartCheck_R007_001",
+      "requirement": "R007",
+      "screenshot": "01042931851_CartCheck_R007_001.png",
+      "source_evidence": "EV-9beb0b4eab"
+    },
+    {
+      "case_id": "TC-CART-029",
+      "official_id": "CartCheck_R003_001",
+      "requirement": "R003",
+      "screenshot": "01043031872_CartCheck_R003_001.png",
+      "source_evidence": "EV-d49760e34f"
+    },
+    {
+      "case_id": "TC-CART-030",
+      "official_id": "CartCheck_R012_001",
+      "requirement": "R012",
+      "screenshot": "01043131942_CartCheck_R012_001.png",
+      "source_evidence": "EV-4e460d1a81"
+    }
+  ],
+  "generated_at": "2026-10-31T21:38:18+08:00"
+}

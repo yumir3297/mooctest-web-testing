@@ -262,6 +262,18 @@ python tools/export_official_2025.py --verify official_2025/<RUN_ID> --json
 - 再把 `--official-2025 official_2025/<RUN_ID>` 传给质量门禁，启用 **G5** 校验。
 - 这是 **2025 基线**；2026 规则未确认时，只能说「按 2025 模板导出」，不能说「符合 2026 官方要求」。
 
+### C15.6 2026 视频基线导出（非官方认证）
+
+```powershell
+python tools\export_official_2026.py --run-id <RUN_ID> --app <App> `
+  --cases reports\test-cases\<slug>-test-cases.csv --slug <slug> --out official_2026
+python tools\export_official_2026.py --verify official_2026/<RUN_ID> --json
+```
+
+- 生成三件套：`测试用例文档.docx`、`test-code.zip`、`screenshots.zip`。
+- profile 固定为 `2026-video-baseline`，`official_format_confirmed=false`；官方 2026 模板到手前不得声称 official-2026。
+- 质量门禁加 `--official-2026 official_2026/<RUN_ID>`，启用 **G6** 校验；G5 继续校验 2025 布局。
+
 ### C16 COMPLETE
 
 写 `pipeline_runs/<RUN_ID>/FINAL.md`：运行结论、用例统计（passed/failed/xfailed/blocked）、缺陷清单、覆盖缺口、门禁结论、证据路径、剩余限制。然后 `pipeline.py advance` 到 `COMPLETE`。

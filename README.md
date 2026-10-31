@@ -22,6 +22,7 @@
 | 2025 官方格式 | **已适配并实测** | 10 列用例表、`<App>_R001_001` 编号、`<11位时间戳>_<编号>.png` 截图、一需求一函数 |
 | 2026 官方规则 | **已整理培训视频** | 评分维度、提交格式、环境要求见 `docs/COMPETITION_RULES_2026.md`；2026 赛题包与 AI 许可仍未获取 |
 | Python 运行环境 | **READY** | `env_check` 17/17；官方版本组合 Selenium 4.49.0 + pytest 8.4.2 回归 7 passed + 1 xfailed，15/15 证据 |
+| 2026 提交包 | **视频基线已生成** | `official_2026/RUN-20261031-COLDSTART-01`：docx + test-code.zip + screenshots.zip；G6 PASS with warnings；`official_format_confirmed=false` |
 | AI 使用许可 | **部分确认** | 2025 携程机票练习赛《注意事项》明文允许用大模型生成用例与代码；2026 未确认 |
 
 完整验收报告见 [`docs/ACCEPTANCE_REPORT_20261031.md`](docs/ACCEPTANCE_REPORT_20261031.md)。
@@ -37,6 +38,7 @@
 | 模块间机器可读接口契约 | [`docs/CONTRACTS.md`](docs/CONTRACTS.md) |
 | 2025 官方规范与差异对照 | [`docs/OFFICIAL_2025.md`](docs/OFFICIAL_2025.md) |
 | 2026 官方培训视频规则整理 | [`docs/COMPETITION_RULES_2026.md`](docs/COMPETITION_RULES_2026.md) |
+| 2026 视频基线提交包 | [`docs/OFFICIAL_2026_VIDEO.md`](docs/OFFICIAL_2026_VIDEO.md) |
 | 环境与工具链基线 | [`docs/ENVIRONMENT.md`](docs/ENVIRONMENT.md) |
 | 第一次实测交接单 | [`docs/HANDOFF_FIRST_TEST.md`](docs/HANDOFF_FIRST_TEST.md) |
 | 题目与答案隔离协议 | [`docs/ISOLATION_PROTOCOL.md`](docs/ISOLATION_PROTOCOL.md) |

@@ -3,8 +3,8 @@
 
     python tools/pre_submission_gate.py --run-id RUN-X [--cases PATH ...]
            [--junit-summary PATH] [--manifest PATH] [--submission PATH]
-           [--official-2025 PATH] [--out DIR]
-           [--gates G0,G1,G2,G3,G4,G5] [--json]
+           [--official-2025 PATH] [--official-2026 PATH] [--out DIR]
+           [--gates G0,G1,G2,G3,G4,G5,G6] [--json]
 
 The gate answers two different questions and never mixes them up:
 
@@ -177,6 +177,8 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument("--submission", default=None, help="submission/<RUN-X> directory (G4)")
     parser.add_argument("--official-2025", default=None,
                         help="official_2025/<RUN-X> directory exported by tools/export_official_2025.py (G5)")
+    parser.add_argument("--official-2026", default=None,
+                        help="official_2026/<RUN-X> video-baseline package exported by tools/export_official_2026.py (G6)")
     parser.add_argument("--out", default=None, help="report directory (default qualification/gate-runs/<run>)")
     parser.add_argument("--gates", default=None, help="subset, e.g. G0,G1,G3")
     parser.add_argument("--requirements", default=None, help="requirement list file for G1")
@@ -338,6 +340,27 @@ def _execute(args: argparse.Namespace, gates: Sequence[str], run_id: str, projec
             stats["G5"]["profile"] = "official-2025"
         else:
             report.skip("G5", "no --official-2025")
+
+    # --- G6: 2026 video-baseline package -----------------------------------
+    if "G6" in gates:
+        if args.official_2026:
+            official_2026 = Path(args.official_2026)
+            if not official_2026.is_absolute():
+                official_2026 = (ROOT / official_2026).resolve()
+            tools_dir = str(ROOT / "tools")
+            if tools_dir not in sys.path:
+                sys.path.insert(0, tools_dir)
+            from export_official_2026 import verify as verify_official_2026
+            result_2026 = verify_official_2026(official_2026, emit=False)
+            for item in result_2026.get("findings", []):
+                report.add("G6", item["code"], item["severity"], item["subject"], item["message"])
+            report.check("G6", "OFFICIAL_2026_VIDEO", bool(result_2026.get("ok")), str(official_2026),
+                         "2026 视频基线三件套校验未通过（docx / 脚本 zip / 截图 zip）")
+            stats["G6"] = {k: result_2026.get(k) for k in
+                           ("ok", "verdict", "case_count", "screenshot_count", "finding_counts")}
+            stats["G6"]["profile"] = "2026-video-baseline"
+        else:
+            report.skip("G6", "no --official-2026")
 
     # --- verdicts ----------------------------------------------------------
     delivery_verdict = report.delivery_verdict()

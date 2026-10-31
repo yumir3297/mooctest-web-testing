@@ -251,6 +251,18 @@ exit_code=0  status=passed  tests=8  failures=0  errors=0  xfailed=1
 
 > 本机没有 `C:\Program Files\Google\Chrome\Application\chromedriver.exe`（Chrome 为用户级安装），因此该路径只用于提交件；本地运行使用项目内驱动。比赛前需确认官方环境中的实际驱动路径与模板一致。
 
+### 6.5 2026 视频基线提交包
+
+已实现 `tools/export_official_2026.py`，按视频的三项交付物生成并校验：
+
+- `测试用例文档.docx`（10 列，≤10MB）
+- `test-code.zip`（可运行 pytest + Selenium 套件，≤10MB）
+- `screenshots.zip`（`screenshots/` + 一条用例一张 PNG，≤50MB）
+
+样例：`official_2026/RUN-20261031-COLDSTART-01/`，30 用例 / 30 截图，`verify` 为 PASS（2 条 WARNING：官方模板未确认、参考骨架非运行入口）。脚本 zip 已解压实跑，单条测试通过、30 条可收集。
+
+边界：这是 **`2026-video-baseline`**，`official_format_confirmed=false`。2026 官方 docx/脚本包模板到手后，必须替换模板并重新校验，才能升级为 `official-2026`。
+
 ## 7. 赛前检查清单
 
 - [x] `python tools/env_check.py` 返回 `READY`，退出码 0
@@ -261,6 +273,8 @@ exit_code=0  status=passed  tests=8  failures=0  errors=0  xfailed=1
 - [x] ChromeDriver 与 Chrome 主版本一致（156 / 156）
 - [x] 驱动 SHA-256 与 `DRIVER.md` 一致
 - [x] Selenium 4.49.0 + pytest 8.4.2 隔离环境回归通过
+- [x] 2026 视频基线三件套已生成并校验（`official_2026/RUN-20261031-COLDSTART-01`，G6 PASS with warnings）
+- [ ] 2026 官方模板到手后替换 docx/脚本包并重新校验
 - [ ] 比赛前复核 Chrome 是否自动升级，驱动是否仍匹配
 - [ ] 提交前把脚本中的 chromedriver 路径改回官方路径
 - [ ] 在比赛环境确认 `C:\Program Files\Google\Chrome\Application\chromedriver.exe` 存在，或按官方模板要求改为比赛机实际路径

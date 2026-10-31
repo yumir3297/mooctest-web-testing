@@ -27,7 +27,7 @@ SEVERITY_ORDER: dict[str, int] = {
     "BLOCKED": 4,
 }
 
-GATES: tuple[str, ...] = ("G0", "G1", "G2", "G3", "G4", "G5")
+GATES: tuple[str, ...] = ("G0", "G1", "G2", "G3", "G4", "G5", "G6")
 
 DELIVERY_VERDICTS = ("PASS", "WARNING", "FAIL", "BLOCKED", "UNVERIFIED")
 TEST_VERDICTS = ("PASS", "FAIL", "BLOCKED", "UNVERIFIED")

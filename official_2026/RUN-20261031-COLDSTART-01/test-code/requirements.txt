@@ -1,0 +1,27 @@
+# mooctest-web-testing 依赖锁定
+#
+# 本文件锁定的是「本机实测并通过回归」的版本组合，不是最低要求。
+# 安装：python -m pip install -r requirements.txt
+# 校验：python tools/env_check.py --json   （verdict 必须为 READY / READY_WITH_WARNINGS）
+#
+# 实测环境：Windows 11（10.0.26340）+ Python 3.13.9（64-bit CPython）
+# 实测日期：2026-10-31
+#
+# 2026 官方最低要求（官方培训视频）：Python 3.10+ / Selenium 4.49.0 / pytest 8.0+ / Chrome 150+。
+# 本文件锁定的是高于最低要求、且已通过回归的版本；Selenium 4.49.0 + pytest 8.4.2 的
+# 兼容性回归见 docs/ENVIRONMENT.md §9.3，完整规则见 docs/COMPETITION_RULES_2026.md。
+#
+# --- 测试执行核心（缺失即 BLOCKED）-------------------------------------------
+selenium==4.51.0          # 浏览器自动化；与 tools/driver/chromedriver.exe 156.0.8078.80 搭配使用
+pytest==9.1.1             # 用例执行、junitxml 输出、xfail 标记
+
+# --- 报告与视觉检查（缺失仅 WARN，不影响功能回归）-----------------------------
+openpyxl==3.1.5           # 生成 xlsx 版用例表/结果表
+pillow==12.2.0            # 截图裁剪、标注、差异图像素计算
+opencv-python==5.0.0.93  # 差异区域定位、热力图（运行时 cv2.__version__ 报告 5.0.0）
+numpy==2.4.4              # 图像数组运算（opencv 与 pillow 的底层依赖）
+
+# --- 说明 ---------------------------------------------------------------------
+# Chromedriver 不是 pip 包：固定二进制在 tools/driver/chromedriver.exe，
+# 版本、SHA-256、来源 URL 与升级步骤见 tools/driver/DRIVER.md。
+# Node 与 playwright-cli（0.1.22）由 package.json 管理，不属于 pip 依赖。

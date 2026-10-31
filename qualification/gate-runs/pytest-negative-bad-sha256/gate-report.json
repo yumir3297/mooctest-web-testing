@@ -1,14 +1,15 @@
 {
   "schema_version": "1.0",
   "run_id": "RUN-SAMPLE-BADSHA",
-  "generated_at": "2026-10-31T12:02:34+08:00",
+  "generated_at": "2026-10-31T21:39:59+08:00",
   "gate_status": {
     "G0": "PASS",
     "G1": "PASS",
     "G2": "PASS",
     "G3": "FAIL",
     "G4": "SKIP",
-    "G5": "SKIP"
+    "G5": "SKIP",
+    "G6": "SKIP"
   },
   "delivery_verdict": "FAIL",
   "test_verdict": "PASS",
@@ -88,7 +89,8 @@
       "G2",
       "G3",
       "G4",
-      "G5"
+      "G5",
+      "G6"
     ]
   },
   "execution": {

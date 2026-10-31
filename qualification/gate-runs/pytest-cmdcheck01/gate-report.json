@@ -1,14 +1,15 @@
 {
   "schema_version": "1.0",
   "run_id": "RUN-CMDCHECK-01",
-  "generated_at": "2026-10-31T12:03:23+08:00",
+  "generated_at": "2026-10-31T21:40:18+08:00",
   "gate_status": {
     "G0": "WARNING",
     "G1": "FAIL",
     "G2": "BLOCKED",
     "G3": "PASS",
     "G4": "SKIP",
-    "G5": "SKIP"
+    "G5": "SKIP",
+    "G6": "SKIP"
   },
   "delivery_verdict": "BLOCKED",
   "test_verdict": "BLOCKED",
@@ -154,7 +155,8 @@
       "G2",
       "G3",
       "G4",
-      "G5"
+      "G5",
+      "G6"
     ]
   },
   "execution": {
@@ -214,7 +216,7 @@
       "unscoped": 0
     },
     "manifest_audit": {
-      "evidence_total": 231,
+      "evidence_total": 401,
       "cross_run": 9,
       "unscoped": 3,
       "examples": [
@@ -351,7 +353,7 @@
         "unscoped": 0
       },
       "manifest_audit": {
-        "evidence_total": 231,
+        "evidence_total": 401,
         "cross_run": 9,
         "unscoped": 3,
         "examples": [

@@ -47,6 +47,7 @@ ChromeDriver  156.0.8078.80（主版本 156 一致）
 - `docs/ACCEPTANCE_REPORT_20261031.md`：内部验收报告。
 - `docs/WORKFLOW.md`：阶段与命令。
 - `docs/ISOLATION_PROTOCOL.md`：题目与答案隔离协议（干净工作区、答案移出、开跑前门禁）。
+- `docs/OFFICIAL_2026_VIDEO.md`：2026 视频基线三件套（docx + 脚本 zip + 截图 zip）的生成与校验。
 
 ### 证据与交付样例
 
@@ -108,8 +109,16 @@ python tools\evidence.py verify --run-id <RUN_ID> --fail-on-error
 # 报告
 python tools\generate_report.py --run-id <RUN_ID>
 
-# 质量门禁
-python tools\pre_submission_gate.py --run-id <RUN_ID> --out qualification/gate-runs/<RUN_ID>
+# 质量门禁（G5 = 2025 布局，G6 = 2026 视频基线）
+python tools\pre_submission_gate.py --run-id <RUN_ID> `
+  --official-2025 official_2025\<RUN_ID> `
+  --official-2026 official_2026\<RUN_ID> `
+  --out qualification/gate-runs/<RUN_ID>
+
+# 2026 视频基线三件套（docx + 脚本 zip + 截图 zip）
+python tools\export_official_2026.py --run-id <RUN_ID> --app <App> `
+  --cases reports\test-cases\<slug>-test-cases.csv --slug <slug> --out official_2026
+python tools\export_official_2026.py --verify official_2026\<RUN_ID> --json
 ```
 
 结果位置：
@@ -119,6 +128,7 @@ pipeline_runs/<RUN_ID>/          阶段状态与中间产物
 reports/executions/<RUN_ID>/     JUnit、report.md/html/json
 evidence/raw/<RUN_ID>/           原始截图与页面源码
 evidence/logs/<RUN_ID>/          执行日志
+official_2026/<RUN_ID>/          2026 视频基线三件套 + manifest
 ```
 
 ## 6. 已知限制

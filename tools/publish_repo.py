@@ -44,6 +44,7 @@ INCLUDE = [
     "pipeline_runs",
     "qualification",
     "official_2025",
+    "official_2026",
     "submission",
     "backups",
 ]
@@ -101,7 +102,10 @@ def denied(rel: Path) -> bool:
     if any(part in DENY_PARTS for part in rel.parts):
         return True
     if rel.suffix.lower() in DENY_SUFFIX:
-        return True
+        # The 2026 video-baseline zips are small, self-contained deliverables
+        # that reviewers need to inspect; keep them in the public snapshot.
+        if not (rel.suffix.lower() == ".zip" and posix.startswith("official_2026/")):
+            return True
     if any(posix == p or posix.startswith(p + "/") for p in DENY_PREFIX):
         return True
     return any(posix == d or posix.startswith(d + "/") for d in DENY_DIRS)
